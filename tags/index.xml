@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags</title>
+    <link>https://qavit.github.io/tags/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://qavit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag :: Calculus</title>
+      <link>https://qavit.github.io/tags/calculus/index.html</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/calculus/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Tutor</title>
+      <link>https://qavit.github.io/tags/tutor/index.html</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/tutor/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Integral</title>
+      <link>https://qavit.github.io/tags/integral/index.html</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/integral/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Gradient</title>
+      <link>https://qavit.github.io/tags/gradient/index.html</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/gradient/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Partial_derivative</title>
+      <link>https://qavit.github.io/tags/partial_derivative/index.html</link>
+      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/partial_derivative/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qavit&#39;s Notebook</title>
+    <link>https://qavit.github.io/index.html</link>
+    <description>This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。&#xA;Che sī góa ê phō͘-á-chóa.&#xA;Get Hugo </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 09 Aug 2024 15:42:09 +0800</lastBuildDate>
+    <atom:link href="https://qavit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notebook</title>
+      <link>https://qavit.github.io/notebook/index.html</link>
+      <pubDate>Fri, 09 Aug 2024 15:42:09 +0800</pubDate>
+      <guid>https://qavit.github.io/notebook/index.html</guid>
+      <description>This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。&#xA;Che sī góa ê phō͘-á-chóa.</description>
+    </item>
+  </channel>
+</rss>
