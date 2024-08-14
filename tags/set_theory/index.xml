@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set_theory :: Tag</title>
+    <link>https://qavit.github.io/tags/set_theory/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://qavit.github.io/tags/set_theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>集合論與數系</title>
+      <link>https://qavit.github.io/math/set-theory/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/set-theory/index.html</guid>
+      <description>量詞 \(\forall\) for all… 對所有⋯⋯ \(\forall x \in \mathbb{R}\) \(\exists\) there exists 存在（只要有一個） \(\exists x \in \mathbb{R}\) \(\exists !\) there exists unique 存在唯一 \(\exists! x \in \mathbb{R}\) 集合（set）、元素（element） \(\ x\in S\), \(\ x\notin S\), \(\ S=\{1,2,3\}\), \(\ 2\in S\) \(\ S=\{a,b,c,\ldots\}\) \(\ S=\{x\mid x \text{ 滿足的條件}\}\) \(\ S=\{x\mid |x|\leq3\text{ and }x\in\mathbb{Z}\}=\{-3,-2,-1,0,1,2,3\}\) 子集（subset） \(\ A\subset S\), \(\ A\subseteq S\)&#xA;真子集（proper subset） \(\ A\subsetneq S\) \(\{1\}\subseteq\{1,2\}\), \(\{1,2\}\subseteq\{1,2\}\) \(\ \mathbb{N}\subseteq\mathbb{Z}\) 空集（empty set） \(\ A=\varnothing=\{\}=\emptyset\)</description>
+    </item>
+  </channel>
+</rss>

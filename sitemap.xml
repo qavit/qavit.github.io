@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://qavit.github.io/physics/index.html</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/physics/qm/index.html</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/tags/mutiple_integral/index.html</loc>
+    <lastmod>2024-08-13T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/tags/index.html</loc>
+    <lastmod>2024-08-13T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/tags/tutor/index.html</loc>
+    <lastmod>2024-08-13T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/notebook/ml/index.html</loc>
+    <lastmod>2024-08-09T15:42:39+08:00</lastmod>
+  </url>
+  <url>
     <loc>https://qavit.github.io/notebook/index.html</loc>
     <lastmod>2024-08-09T15:42:09+08:00</lastmod>
   </url>
   <url>
     <loc>https://qavit.github.io/index.html</loc>
     <lastmod>2024-08-09T15:42:09+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/math/index.html</loc>
+    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/notebook/hum/index.html</loc>
+    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/notebook/cs/index.html</loc>
+    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://qavit.github.io/notebook/ml/b-buduma-1/index.html</loc>
@@ -17,24 +53,16 @@
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/index.html</loc>
-    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://qavit.github.io/tags/tutor/index.html</loc>
-    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
-  </url>
-  <url>
     <loc>https://qavit.github.io/tags/integral/index.html</loc>
     <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-12/index.html</loc>
-    <lastmod>2024-07-16T00:00:00+00:00</lastmod>
+    <loc>https://qavit.github.io/tags/sequence/index.html</loc>
+    <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-11/index.html</loc>
-    <lastmod>2024-07-10T00:00:00+00:00</lastmod>
+    <loc>https://qavit.github.io/tags/series/index.html</loc>
+    <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>https://qavit.github.io/tags/gradient/index.html</loc>
@@ -43,6 +71,9 @@
   <url>
     <loc>https://qavit.github.io/tags/partial_derivative/index.html</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/math/function-on-r/index.html</loc>
   </url>
   <url>
     <loc>https://qavit.github.io/categories/index.html</loc>
@@ -57,24 +88,42 @@
     <loc>https://qavit.github.io/notebook/ml/hugging-face/index.html</loc>
   </url>
   <url>
+    <loc>https://qavit.github.io/tags/logic/index.html</loc>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/math/math-models-and-ode/index.html</loc>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/tags/ode/index.html</loc>
+  </url>
+  <url>
     <loc>https://qavit.github.io/notebook/cs/b-python-da/index.html</loc>
   </url>
   <url>
     <loc>https://qavit.github.io/notebook/ml/relu/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-17/index.html</loc>
+    <loc>https://qavit.github.io/tags/set-theory/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-7/index.html</loc>
+    <loc>https://qavit.github.io/tags/set_theory/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-8/index.html</loc>
+    <loc>https://qavit.github.io/notebook/cs/shell-var/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-9/index.html</loc>
+    <loc>https://qavit.github.io/math/double-integral/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/notebook/math/tutor-10/index.html</loc>
+    <loc>https://qavit.github.io/math/topology-on-r/index.html</loc>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/math/limit-and-continuity-on-r/index.html</loc>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/math/logical-quantifier/index.html</loc>
+  </url>
+  <url>
+    <loc>https://qavit.github.io/math/set-theory/index.html</loc>
   </url>
 </urlset>

@@ -3,59 +3,38 @@
   <channel>
     <title>基礎數學</title>
     <link>http://localhost:1313/notebook/math/index.html</link>
-    <description></description>
+    <description> 微積分 線性代數 微分方程式 </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/notebook/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>積分技巧 (2)</title>
-      <link>http://localhost:1313/notebook/math/tutor-12/index.html</link>
-      <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-12/index.html</guid>
-      <description>目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#|雙曲函數]] 〔[[#|雙曲函數的定義]]、[[#|反雙曲函數的定義]]、[[#|雙曲恆等式]]、[[#|雙曲函數的導函數]]〕 3.2 [[#|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#|有理函數]] 4.2 [[#|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#|原理]] 5.2 [[#|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#|正切半角代換]]（Weierstrass 代換） 6.2 [[#|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3. 雙曲代換法 ^3 雙曲代換法（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 $\sqrt{a^2 \pm x^2}$ 或 $\sqrt{x^2 \pm a^2}$ 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。</description>
-    </item>
-    <item>
-      <title>積分技巧 (1)</title>
-      <link>http://localhost:1313/notebook/math/tutor-11/index.html</link>
-      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-11/index.html</guid>
-      <description>積分技巧 (1) 上課日期：[[2024-07-10]] 目錄 1. [[#^1|含有三角函數的被積函數]] 1.1 [[#^1-1|sinᵐ(x) cosⁿ(x) 型]] 1.1.1 [[#^1-1-1|關鍵概念]] 1.1.2 [[#^1-1-2|例題]] 1.1.3 [[#^1-1-3|策略]] 1.2 [[#^1-2|tanᵐ(x) secⁿ(x) 型]] 1.2.1 [[#^1-2-1|關鍵概念]] 1.2.2 [[#^1-2-2|一般型]] — $m$ 奇或 $n$ 偶 1.2.3 [[#^1-2-3|策略]] 1.2.4 [[#^1-2-4|特殊型]] — $\int{\tan{x}\dd{x}}$、$\int{\sec{x}\dd{x}}$ 1.3 [[#^1-3|sin(mx) cos(nx) 型]] 1.3.1 [[#^1-3-1|關鍵概念]] 1.3.2 [[#^1-3-2|例題]] 1.3.3 [[#^1-3-3|三角函數的正交性]] 2. [[#^2|三角代換法]]（trigonometric substitution） 2.1 [[#^2-1|範例：橢圓面積]] 2.2 [[#^2-2|常用的三角代換]]・[[#^tri-sub|表格]] 2.3 [[#^2-3|例題]] 2.4 [[#^2-4|積分表中的三角代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 1.</description>
-    </item>
-    <item>
-      <title>向量函數</title>
-      <link>http://localhost:1313/notebook/math/tutor-17/index.html</link>
+      <title>Mathematical model and ODE</title>
+      <link>http://localhost:1313/notebook/math/math-models-and-ode/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-17/index.html</guid>
-      <description>1. 向量函數 向量值函數 向量函數（vector function），或稱向量值函數（vector-valued function），是一種函數，其輸出值為向量，即 $\mathbf{r}:\mathbb{R}\to \mathcal{V}$。例如，若 $\mathbf{r}(t)$ 是向量值函數，則： $$ \mathbf{r}(t) = \begin{bmatrix} x(t) \\ y(t) \\ z(t) \end{bmatrix} = x(t) \mathbf{i} + y(t) \mathbf{j} + z(t) \mathbf{k} $$ 其中， $x,y,z:\mathbb{R}\to\mathbb{R}$ 是 $t\in\mathbb{R}$ 的實值函數，$\mathbf{i},\mathbf{j},\mathbf{k}\in\mathcal{V}$ 是基底向量。$x,y,z$ 稱為 $\mathbf{r}$ 的 分量函數（component function）。 $$ $$ 向量函數的極限 對於每個 $\epsilon &gt; 0$，存在 $\delta &gt; 0$ 使得當 $|t - t_0| &lt; \delta$ 時，$|\mathbf{r}(t) - \mathbf{L}| &lt; \epsilon$ $\iff\displaystyle \lim_{t \to t_0} \mathbf{r}(t) = \mathbf{L}$ 向量函數的連續性 向量函數 $\mathbf{r}(t)$ 在點 $t = t_0$ 連續 $\iff$ $\displaystyle\lim_{t \to t_0} \mathbf{r}(t) = \mathbf{r}(t_0)$</description>
+      <guid>http://localhost:1313/notebook/math/math-models-and-ode/index.html</guid>
+      <description>Materials W.E. Boyce and R.C. DiPrima. Elementary Differential Equations and Boundary Value Problems. 10th edition. John Wiley &amp; Sons. Chapter 1 (pp.1–19) 翁秉仁（2015）。微積分乙。臺北市：臺大出版中心。 第七章 數學模型與微分方程 王懷權（2013）。數學分析基礎。新竹市：國立清華大學出版社。ISBN [!quote] A differential equation that describes some physical process is often called a mathematical model of the process, and many such models are discussed throughout this book.&#xA;First glance at mathematical models Example 1 Physical law—Newton’s 2nd law\[F=ma=m\frac{\text{d}v}{\text{d}t}=m\dot{v}\] Physical model (falling in the atmophere) \[\begin{aligned}F=m\dot{v}&amp;=mg-\gamma v\\\dot{v}&amp;=g-\beta v\end{aligned}\] \(g\) = gravitational constant 重力常數 mag.</description>
     </item>
     <item>
-      <title>數列與級數 (1)</title>
-      <link>http://localhost:1313/notebook/math/tutor-7/index.html</link>
+      <title>二重積分</title>
+      <link>http://localhost:1313/notebook/math/double-integral/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-7/index.html</guid>
-      <description>1. 數列 無窮數列（infinite sequence） 可寫成 $$\{a_1,a_2,a_3,\ldots,a_n,\ldots\}$$ 記作 $$\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}$$ $a_k$ 稱為第 $k$ 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 $a:\mathbb{N}\to\mathbb{R}$。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 $a:I_n\to\mathbb{R}$，其中 $I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}$。 例題 求 $\left\{\frac{n+1}{n+2}\right\}^{\infty}_{n=1}$ 的前五項。答：$\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}$。 求 $\left\{(-1)^n\frac{(n+1)}{3^n}\right\}^\infty_{n=0}$ 的前五項。答：$\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}$。 求數列 $\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}$ 的一般項。答：$a_n = (-1)^{n-1}\frac{n+2}{5^n}$。 觀察：數列 $\left\{\frac{n}{n+1}\right\}_{n\in\mathbb{N}}$ 似乎收斂（converge）至 $1$，記作 $$\lim_{n\to\infty}{\frac{n}{n+1}}=1$$ ![[tutor7-n-over-n+1_1.png]] ![[tutor7-n-over-n+1_2.png]] 直觀上，只要當 $n$ 夠大，$a_n$ 就會夠接近 $L$ ，記作 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 $L$（converges to $L$）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 $\infty$。 數列發散至 $-\infty$。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 $\{a_n\}_{n\in\mathbb{N}}$ 為一無窮數列。則 $\{a_n\}$ 的極限 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 存在，且稱 $\{a_n\}$ 收斂至 $L$，若且唯若「對所有 $\varepsilon &gt; 0$ ，都存在一個正整數 $N$ ，使得 $$n&gt;N\implies |a_n-L|&lt;\varepsilon$$ 註.</description>
+      <guid>http://localhost:1313/notebook/math/double-integral/index.html</guid>
+      <description>多重積分 1. 矩形區域上的二重積分 例題： 計算&#xA;(a) \(\int_{0}^{3}{\int_{1}^{2}{x^{2}y \dd{y} \dd{x}}}\) (b) \(\int_{1}^{2}{\int_{0}^{3}{x^{2}y \dd{x}\dd{y}}}\) 富比尼定理（Fubini’s Theorem）說明在某些條件下，二重積分的順序可以交換。&#xA;1.4 富比尼定理的初步形式 如果 \(f\) 在矩形 \(R = [a,b] \times [c,d] = \left\{ (x,y) \in \mathbb{R}^{2} \mid a \leq x \leq b, c \leq y \leq d \right\}\) 上連續，則&#xA;\[ \iint_R f(x, y) \dd{x} \dd{y} = \int_c^d \left( \int_a^b f(x, y) \dd{x} \right) \dd{y} = \int_a^b \left( \int_c^d f(x, y) \dd{y} \right) \dd{x} \] 此定理適用於被積函數在積分區域上連續或可積的情況。一般來說，Fubini 定理成立的條件如下：&#xA;\(f\) 在 \(R\) 上有界， \(f\) 只在「有限多條光滑曲線上」不連續， 迭代積分存在。 Fubini 定理的證明非常複雜。</description>
     </item>
     <item>
-      <title>數列與級數 (2)</title>
-      <link>http://localhost:1313/notebook/math/tutor-8/index.html</link>
+      <title>量詞邏輯</title>
+      <link>http://localhost:1313/notebook/math/logical-quantifier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-8/index.html</guid>
-      <description>1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 $$ \sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 + b_3 - b_4 - b_5 - b_6 + \cdots\quad(b_n&gt;0) $$ 滿足條件 (i) 對所有 $n$ 都有 $b_{n+1}\leq b_n$ (ii) $\displaystyle\lim_{n\to\infty}{b_n}=0$ 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 $\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$ （交錯調和級數。答： 是 。 $\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}$。答： 否 。 【定義】絕對收斂 設 $\sum a_n$ 為一級數。 若 $\sum a_n$ 各項的絕對值所構成的級數 $\sum |a_n|$ 收斂，則稱 $\sum a_n$ 為絕對收斂（absolutley convergent）。 若 $\sum a_n$ 收斂但 $\sum |a_n|$ 不收斂，則稱 $\sum a_n$ 為條件收斂（conditionally convergent）。 【定理】 若一級數 $\sum a_n$ 絕對收斂，則 $\sum a_n$ 收斂。</description>
+      <guid>http://localhost:1313/notebook/math/logical-quantifier/index.html</guid>
+      <description> 全稱量化（universal quantification）——「對所有」、「任何」、「所有⋯⋯都」 例：\(\forall n\in\mathbb{N}\ \big(2n&gt;2+n\big)\) ——「對所有正整數 \(n\)，使得 \(2n &gt; 2+n\)」（假） 存在量化（existential quantification）——「存在」、「某些」、「有⋯⋯」 例：\(\exists n\in\mathbb{N}\ \big(5n&gt;20\big)\) ——「存在正整數 \(n\)，使得 \(5n&gt;20\)」（真） 組合運用 * 例：\((\forall n\in \mathbb{N})(\exists k\in\mathbb{N})\ \big(k=n+1\big)\)——「對所有正整數 \(n\)，都存在一個正整數 \(k\)，使得 \(k=n+1\)」（真） </description>
     </item>
     <item>
-      <title>積分</title>
-      <link>http://localhost:1313/notebook/math/tutor-9/index.html</link>
+      <title>集合論與函數</title>
+      <link>http://localhost:1313/notebook/math/set-theory/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-9/index.html</guid>
-      <description>$\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}$&#xA;1. 定積分 求 $y=x^2$ 底下、從 $x=0$ 到 $x=1$ 的面積？ ![[tutor9-sum1.png|300]]&#xA;將區間 $[a,b]$ 分為 $n$ 個閉區間 $$[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i+1}],\ldots,[x_{n-1},x_n],$$其中 $x_0=a$，$x_n=b$，且 $x_0</description>
-    </item>
-    <item>
-      <title>積分技巧 (0)</title>
-      <link>http://localhost:1313/notebook/math/tutor-10/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notebook/math/tutor-10/index.html</guid>
-      <description>上課日期：[[2024-07-09]] 目錄 A. [[#^A|基本積分公式]]〔[[#^poly|多項式]]、[[#^exp|指數函數]]、[[#^ln|對數函數]]和[[#^tri|三角函數]]〕 B. [[#^B|變數變換法]]（integration by substitution） C. [[#^C|分部積分法]]（integration by parts） [[tutor-int-tech|本章]]其他部分 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) A. 基本積分公式 ^A A.1 多項式函數的積分 ^poly 定理： 若 $n \neq -1$，則&#xA;$$ \int x^n \dd{x} = \frac{x^{n+1}}{n+1} + C $$ 其中，$C$ 是積分常數。&#xA;證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 $F(x) = \frac{x^{n+1}}{n+1}$，則&#xA;$$ F&#39;(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n $$ 因此，</description>
+      <guid>http://localhost:1313/notebook/math/set-theory/index.html</guid>
+      <description>集合論概念 量詞 \(\forall\) for all… 對所有⋯⋯ \(\forall x \in \mathbb{R}\) \(\exists\) there exists 存在（只要有一個） \(\exists x \in \mathbb{R}\) \(\exists !\) there exists unique 存在唯一 \(\exists! x \in \mathbb{R}\) 集合（set）、元素（element） \(\ x\in S\), \(\ x\notin S\), \(\ S=\{1,2,3\}\), \(\ 2\in S\) \(\ S=\{a,b,c,\ldots\}\) \(\ S=\{x\mid x \text{ 滿足的條件}\}\) \(\ S=\{x\mid |x|\leq3\text{ and }x\in\mathbb{Z}\}=\{-3,-2,-1,0,1,2,3\}\) 子集（subset） \(\ A\subset S\), \(\ A\subseteq S\)&#xA;真子集（proper subset） \(\ A\subsetneq S\) \(\{1\}\subseteq\{1,2\}\), \(\{1,2\}\subseteq\{1,2\}\) \(\ \mathbb{N}\subseteq\mathbb{Z}\) 空集（empty set） \(\ A=\varnothing=\{\}=\emptyset\)</description>
     </item>
   </channel>
 </rss>

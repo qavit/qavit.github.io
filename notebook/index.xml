@@ -3,10 +3,31 @@
   <channel>
     <title>Notebook</title>
     <link>https://qavit.github.io/notebook/index.html</link>
-    <description>This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。&#xA;Che sī góa ê phō͘-á-chóa.</description>
+    <description></description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2024 15:42:39 +0800</lastBuildDate>
     <atom:link href="https://qavit.github.io/notebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>機器學習</title>
+      <link>https://qavit.github.io/notebook/ml/index.html</link>
+      <pubDate>Fri, 09 Aug 2024 15:42:39 +0800</pubDate>
+      <guid>https://qavit.github.io/notebook/ml/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人文社會</title>
+      <link>https://qavit.github.io/notebook/hum/index.html</link>
+      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/notebook/hum/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>技術</title>
+      <link>https://qavit.github.io/notebook/cs/index.html</link>
+      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/notebook/cs/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

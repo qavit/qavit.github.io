@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set Theory :: Tag</title>
+    <link>https://qavit.github.io/tags/set-theory/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://qavit.github.io/tags/set-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>\(\mathbb{R}\) 上的函數</title>
+      <link>https://qavit.github.io/math/function-on-r/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/function-on-r/index.html</guid>
+      <description> 映射（map）或函數（function）\(\ f:X\to Y\) 〔值的〕映射，\(\ f:x\mapsto x^2\) 相當於 \(\ f(x)=x^2\) 定義域（domain） \(\ X=\operatorname{dom}f\) 對應域（codomain）、像（image）\(\ f(X)=\{y\in Y\mid y=f(x),x\in X\}\) 值域（range）\(\ Y\) 三種映射 單射／嵌射（injection）、一對一函數（one-to-one function） 滿射／蓋射（surjection）、映成（onto function） 對射／雙射（bijection）、一對一且映成函數（one-to-one and onto function） 水平線測試 奇偶性（oddness）——奇函數（odd function）、偶函數（even function） 初等函數(一) 常數函數、冪函數 \(\ y=x^a\), \(\ x^2\), \(\ x^{1/2}=\pm\sqrt{x}\) 多項式函數 \(\ p(x)=a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n\) 有理函數 \(\ f(x) = \frac{p(x)}{q(x)}\)，其中\(\ p(x)\)、\(\ q(x)\) 為多項式 </description>
+    </item>
+  </channel>
+</rss>

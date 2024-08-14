@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.129.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
-    <meta name="description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 $e^{ix}$ 代入三角函數積分中，進而簡化積分的一種方法。
-Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計算 $\int e^{ix} \, \dd{x}$。">
+    <meta name="description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 \(e^{ix}\) 代入三角函數積分中，進而簡化積分的一種方法。
+Euler 公式為 \[ e^{ix} = \cos{x} &#43; i \sin{x}。 \] 例題 6-3 ^eq6-3 計算 \(\int e^{ix} \, \dd{x}\)。">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
-    <meta name="twitter:description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 $e^{ix}$ 代入三角函數積分中，進而簡化積分的一種方法。
-Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計算 $\int e^{ix} \, \dd{x}$。">
-    <meta property="og:url" content="https://qavit.github.io/notebook/math/tutor-13/index.html">
-    <meta property="og:description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 $e^{ix}$ 代入三角函數積分中，進而簡化積分的一種方法。
-Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計算 $\int e^{ix} \, \dd{x}$。">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
+    <meta name="twitter:description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 \(e^{ix}\) 代入三角函數積分中，進而簡化積分的一種方法。
+Euler 公式為 \[ e^{ix} = \cos{x} &#43; i \sin{x}。 \] 例題 6-3 ^eq6-3 計算 \(\int e^{ix} \, \dd{x}\)。">
+    <meta property="og:url" content="http://localhost:1313/notebook/math/tutor-13/index.html">
+    <meta property="og:description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 \(e^{ix}\) 代入三角函數積分中，進而簡化積分的一種方法。
+Euler 公式為 \[ e^{ix} = \cos{x} &#43; i \sin{x}。 \] 例題 6-3 ^eq6-3 計算 \(\int e^{ix} \, \dd{x}\)。">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Notebook">
@@ -24,32 +24,32 @@ Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計�
     <meta property="article:tag" content="Tutor">
     <meta property="article:tag" content="Calculus">
     <meta property="article:tag" content="Integral">
-    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
-    <meta itemprop="description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 $e^{ix}$ 代入三角函數積分中，進而簡化積分的一種方法。
-Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計算 $\int e^{ix} \, \dd{x}$。">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="description" content="積分技巧 (3) 上課日期：[[2024-07-17]] 目錄 6. [[#^6|其他積分技巧 (2)]] 6.3 [[#^6-3|使用 Euler 公式積分]] 7. [[#^7|積分策略]] 8. [[#^8|積分表與計算機代數系統]] 8.1 [[#^8-1|積分表]] 8.2 [[#^8-2|計算機代數系統]]・[[#^8-2-1|比較表]] 8.3 [[#^8-3|其他「家私」]] 9. [[#^9|數值積分簡介]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 6. 其他積分技巧 (2) ^6 6.3 使用 Euler 公式積分 ^6-3 使用 Euler 公式積分是將複數指數函數 \(e^{ix}\) 代入三角函數積分中，進而簡化積分的一種方法。
+Euler 公式為 \[ e^{ix} = \cos{x} &#43; i \sin{x}。 \] 例題 6-3 ^eq6-3 計算 \(\int e^{ix} \, \dd{x}\)。">
     <meta itemprop="datePublished" content="2024-07-30T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-07-30T00:00:00+00:00">
     <meta itemprop="wordCount" content="761">
-    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Tutor,Calculus,Integral">
     <title></title>
-    <link href="/images/favicon.png?1723213040" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723213040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723213040" rel="stylesheet">
-    <link href="/css/fonts.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723213040" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723213040" rel="stylesheet">
-    <link href="/css/print.css?1723213040" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723213040"></script>
+    <link href="/images/favicon.png?1723649390" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723649390" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723649390" rel="stylesheet">
+    <link href="/css/fonts.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723649390" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723649390" rel="stylesheet">
+    <link href="/css/print.css?1723649390" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723649390"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       // variant stuff
       window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
       // translations
@@ -107,14 +107,14 @@ Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計�
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">基礎數學</span><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/math/tutor-13.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Qavit&#39;s Notebook (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/index.html" title="基礎數學 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/math-models-and-ode/index.html" title="Mathematical model and ODE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -175,110 +175,110 @@ Euler 公式為 $$ e^{ix} = \cos{x} &#43; i \sin{x}。 $$ 例題 6-3 ^eq6-3 計�
 </ul>
 <h2 id="6-其他積分技巧-2-6">6. 其他積分技巧 (2) ^6</h2>
 <h3 id="63-使用-euler-公式積分-6-3">6.3 使用 Euler 公式積分 ^6-3</h3>
-<p>使用 Euler 公式積分是將複數指數函數 $e^{ix}$ 代入三角函數積分中，進而簡化積分的一種方法。</p>
+<p>使用 Euler 公式積分是將複數指數函數 \(e^{ix}\) 代入三角函數積分中，進而簡化積分的一種方法。</p>
 <p>Euler 公式為
 </p>
-$$
+\[
 e^{ix} = \cos{x} + i \sin{x}。
-$$
+\]
 <h5 id="例題-6-3-eq6-3">例題 6-3 ^eq6-3</h5>
-<p>計算 $\int e^{ix} \, \dd{x}$。</p>
+<p>計算 \(\int e^{ix} \, \dd{x}\)。</p>
 <p><strong>解.</strong><br>
 使用 Euler 公式，積分變為：
 </p>
-$$
+\[
 \int e^{ix} \, \dd{x} = \frac{1}{i} e^{ix} + C = -i e^{ix} + C
-$$
+\]
 <p>
 根據 Euler 公式，得到：
 </p>
-$$
+\[
 -i (\cos{x} + i \sin{x}) + C = -i \cos{x} - \sin{x} + C
-$$
+\]
 <p>
 因此，積分結果為：
 </p>
-$$
+\[
 \int e^{ix} \, \dd{x} = -i \cos{x} - \sin{x} + C
-$$
+\]
 <h5 id="例題-6-4-eq6-4">例題 6-4 ^eq6-4</h5>
-<p>使用 Euler 公式計算積分 $\displaystyle\int {e^{-x} \cos{x}\dd{x}}$。</p>
+<p>使用 Euler 公式計算積分 \(\displaystyle\int {e^{-x} \cos{x}\dd{x}}\)。</p>
 <p><strong>解.</strong>
-首先，將 $\cos x$ 表示成
+首先，將 \(\cos x\) 表示成
 </p>
-$$
+\[
 \cos x = \frac{e^{ix} + e^{-ix}}{2}
-$$
+\]
 <p>
 因此，積分可以改寫為
 </p>
-$$
+\[
 \int {e^{-x} \cos{x}\dd{x}} = \int e^{-x} \left( \frac{e^{ix} + e^{-ix}}{2} \right) \dd{x} = \frac{1}{2} \int \left( e^{(i-1)x} + e^{-(i+1)x} \right) \dd{x} \equiv I
-$$
+\]
 <p>於是可以（像實變函數那樣）做積分：
 </p>
-$$
+\[
 I =  \frac{1}{2} \left( \int{e^{(i-1)x} \dd{x}} + \int{e^{-(i+1)x} \dd{x}} \right) 
 = \frac{1}{2} \left( \frac{e^{(i-1)x}}{i-1} + \frac{e^{-(i+1)x}}{-(i+1)} \right) 
 = \frac{1}{2} \left( \frac{e^{(i-1)x}}{i-1} - \frac{e^{-(i+1)x}}{i+1} \right)
-$$
-<p>但是這是複變函數，我們想取出其實部。首先處理分子裡的指數函數，並代入 $e^{ix} = \cos x + i \sin x$ 和 $e^{-ix} = \cos x - i \sin x$ ，得到
+\]
+<p>但是這是複變函數，我們想取出其實部。首先處理分子裡的指數函數，並代入 \(e^{ix} = \cos x + i \sin x\) 和 \(e^{-ix} = \cos x - i \sin x\) ，得到
 </p>
-$$
+\[
 I = \frac{1}{2} \left( \frac{e^{ix - x}}{i-1} - \frac{e^{-ix - x}}{i+1} \right) 
 = \frac{e^{-x}}{2} \left( \frac{\cos x + i \sin x}{i-1} - \frac{\cos x - i \sin x}{i+1} \right)
-$$
+\]
 <p>
 然後化簡分母：
 </p>
-$$
+\[
    \frac{1}{i-1} = \frac{1}{i-1}\frac{i+1}{i+1} = \frac{i+1}{-2} \quad \text{和} \quad \frac{1}{i+1} = \frac{1}{i+1}\frac{i-1}{i-1} = \frac{i-1}{-2}
-   $$
+   \]
 <p>
-代回 $I$，得到
+代回 \(I\)，得到
 </p>
-$$
+\[
 \require{color}\require{cancel}
 I = \frac{e^{-x}}{2}\left[ 
 {\color{blue}\left( \cos x + i \sin x \right) \left( \frac{i+1}{-2} \right)} - 
 {\color{green}\left( \cos x - i \sin x \right) \left( \frac{i-1}{-2} \right)} 
 \right]
-$$
+\]
 <p>
 乘開並化簡：
 </p>
-$$
+\[
 I = -\frac{e^{-x}}{4} \big[
 {\color{blue} (\cancel{i\cos{x}} - \sin{x} + \cos{x} + \cancel{i\sin{x})}} -
 {\color{green} (\cancel{i\cos{x}} + \sin{x} - \cos{x} + \cancel{i\sin{x})}}
 \big]
-$$
-<p>於是發現 $I$ 不含虛部：
+\]
+<p>於是發現 \(I\) 不含虛部：
 </p>
-$$
+\[
 I= e^{-x} \left( \frac{-\cos x + \sin x}{2} \right)
-$$
+\]
 <p>結論：
 </p>
-$$
+\[
 \int{e^{-x} \cos{x}\dd{x}} =  e^{-x} \left( \frac{-\cos x + \sin x}{2} \right)
-$$
+\]
 <h2 id="7-積分策略-7">7. 積分策略 ^7</h2>
 <p>直到現在，我們已經學會各種積分技巧。但本節我們將隨機介紹一系列雜項積分，主要挑戰在於「辨認應該使用哪種技巧或公式」。==沒有硬性規則可以告訴我們在特定情況下應該使用哪種方法==，但我們提供一些通用指南，這些指南可能會對你有所幫助。</p>
 <p>應用這些策略的前提是掌握基本的積分公式。在下表中，我們收集了之前列表中的積分公式以及本章中學到的幾個額外公式。大多數這些公式應該被記住。知道所有這些公式是有益的，但標有星號的公式不需要記住，因為它們很容易推導出來。公式 19 可以通過使用部分分式來避免，而公式 20 可以用三角代換來代替。</p>
 <p>一旦掌握了這些基本積分公式，如果你不能立即看出如何攻克給定的積分問題，你可以嘗試以下四步策略：</p>
 <ol>
 <li>盡可能簡化被積函數：有時候使用代數運算或三角恆等式可以簡化被積函數，並使積分方法變得明顯。</li>
-<li>尋找明顯的代換：嘗試在被積函數中找到某個函數 $u = g(x)$，其微分 $\dd{u} = g'(x) \dd{x}$ 也出現，僅差一個常數因子。</li>
-<li>根據形式分類被積函數：如果步驟 1 和 2 沒有解決問題，那麼我們看一下被積函數 $f(x)$ 的形式。
+<li>尋找明顯的代換：嘗試在被積函數中找到某個函數 \(u = g(x)\)，其微分 \(\dd{u} = g'(x) \dd{x}\) 也出現，僅差一個常數因子。</li>
+<li>根據形式分類被積函數：如果步驟 1 和 2 沒有解決問題，那麼我們看一下被積函數 \(f(x)\) 的形式。
 <ul>
-<li>(a) 三角函數：如果 $f(x)$ 是 $\sin x$ 和 $\cos x$、$\tan x$ 和 $\sec x$ 或 $\cot x$ 和 $\csc x$ 的乘積，那麼我們使用「[[tutor-11#^1|§三角函數的積分]]」中的代換。</li>
-<li>(b) 有理函數：如果 $f(x)$ 是有理函數，我們使用 [[tutor-12#^4|§部分分式法]]。</li>
-<li>(c) 分部積分：如果 $f(x)$ 是 $x$ 的冪次（或多項式）與超越函數（如三角函數、指數函數或對數函數）的乘積，那麼我們嘗試 [[tutor-10#3. 分部積分法 (Integration by Parts)|§分部積分法]]，==按照第 7.1 節中的建議選擇 $u$ 和 $\dd{v}$。如果你看一下第 7.1 節中的函數，你會發現它們大多數是剛才描述的類型==。</li>
+<li>(a) 三角函數：如果 \(f(x)\) 是 \(\sin x\) 和 \(\cos x\)、\(\tan x\) 和 \(\sec x\) 或 \(\cot x\) 和 \(\csc x\) 的乘積，那麼我們使用「[[tutor-11#^1|§三角函數的積分]]」中的代換。</li>
+<li>(b) 有理函數：如果 \(f(x)\) 是有理函數，我們使用 [[tutor-12#^4|§部分分式法]]。</li>
+<li>(c) 分部積分：如果 \(f(x)\) 是 \(x\) 的冪次（或多項式）與超越函數（如三角函數、指數函數或對數函數）的乘積，那麼我們嘗試 [[tutor-10#3. 分部積分法 (Integration by Parts)|§分部積分法]]，==按照第 7.1 節中的建議選擇 \(u\) 和 \(\dd{v}\)。如果你看一下第 7.1 節中的函數，你會發現它們大多數是剛才描述的類型==。</li>
 <li>(d) 根式：當某些根式出現時，建議使用特定的代換。
 <ul>
-<li>(i) 當 $\sqrt{x^2 \pm a^2}$ 或 $\sqrt{a^2 - x^2}$ 出現時，我們根據[[tutor-11#^tri-sub|表格]]使用[[tutor-11#^2|三角代換法]]。</li>
-<li>(ii) 當 $\sqrt[n]{ax + b}$ 出現時，我們使用有理化代換 $u = \sqrt[n]{ax + b}$ → [[tutor-14#^6-4|§根式的處理技巧]]。更一般地說，有時這對 $\sqrt[n]{g(x)}$ 也有效。</li>
+<li>(i) 當 \(\sqrt{x^2 \pm a^2}\) 或 \(\sqrt{a^2 - x^2}\) 出現時，我們根據[[tutor-11#^tri-sub|表格]]使用[[tutor-11#^2|三角代換法]]。</li>
+<li>(ii) 當 \(\sqrt[n]{ax + b}\) 出現時，我們使用有理化代換 \(u = \sqrt[n]{ax + b}\) → [[tutor-14#^6-4|§根式的處理技巧]]。更一般地說，有時這對 \(\sqrt[n]{g(x)}\) 也有效。</li>
 </ul>
 </li>
 </ul>
@@ -286,7 +286,7 @@ $$
 <li>再試一次：如果前三步沒有產生答案，記住基本上只有兩種積分方法：[[tutor-10#^2|§變數代換法]]和 [[tutor-10#3. 分部積分法 (Integration by Parts)|§分部積分法]]。
 <ul>
 <li>(a) 嘗試代換法：即使沒有明顯的代換（步驟 2），一些靈感或創意（甚至絕望）可能會提示適當的代換。</li>
-<li>(b) 嘗試分部積分：雖然分部積分法通常用於步驟 3(c) 中描述的乘積形式，但有時對單一函數也有效。我們會發現它對 $\tan^{-1} x$、$\sin^{-1} x$ 和 $\ln x$ 有效，這些都是反函數。</li>
+<li>(b) 嘗試分部積分：雖然分部積分法通常用於步驟 3(c) 中描述的乘積形式，但有時對單一函數也有效。我們會發現它對 \(\tan^{-1} x\)、\(\sin^{-1} x\) 和 \(\ln x\) 有效，這些都是反函數。</li>
 <li>(c) 操作被積函數：代數運算（如有理化分母或使用三角恆等式）可能有助於將積分轉換為更簡單的形式。這些操作可能比步驟 1 中更為複雜，並可能需要一些創意。</li>
 <li>(d) 將問題與之前的問題聯繫起來：當你積累了一些積分經驗，你可能會在給定積分中使用類似於之前積分的方法。或者你甚至可能能夠將給定積分表示為之前積分的形式。</li>
 <li>(e) 使用多種方法：有時需要兩種或三種方法來評估積分。評估可能涉及幾個連續的不同類型的代換，或者可能將分部積分與一個或多個代換結合。</li>
@@ -294,20 +294,20 @@ $$
 </li>
 </ol>
 <h4 id="例題-7-1-eq7-1">例題 7-1 ^eq7-1</h4>
-<p>求 $\displaystyle \int{\frac{\tan^3{x}}{\cos^3{x}}\dd{x}}$。</p>
+<p>求 \(\displaystyle \int{\frac{\tan^3{x}}{\cos^3{x}}\dd{x}}\)。</p>
 <p><strong>解 1.</strong>
 </p>
-$$\int{\frac{\tan^3{x}}{\cos^3{x}}\dd{x}} =  \int{\tan^3{x}\sec^3{x}\dd{x}}$$
+\[\int{\frac{\tan^3{x}}{\cos^3{x}}\dd{x}} =  \int{\tan^3{x}\sec^3{x}\dd{x}}\]
 <p><strong>解 2.</strong>
 </p>
-$$\int{\frac{\tan^3{x}}{\cos^3{x}}\dd{x}}=\int{\frac{\sin^3{x}}{\cos^6{x}}\dd{x}}=\int{\frac{1-\cos^2{x}}{\cos^6{x}}\sin{x}\dd{x}}$$
+\[\int{\frac{\tan^3{x}}{\cos^3{x}}\dd{x}}=\int{\frac{\sin^3{x}}{\cos^6{x}}\dd{x}}=\int{\frac{1-\cos^2{x}}{\cos^6{x}}\sin{x}\dd{x}}\]
 <h4 id="例題-7-2-eq7-2">例題 7-2 ^eq7-2</h4>
-<p>求 $\displaystyle \int{\sin{\sqrt{x}}\dd{x}}$。</p>
+<p>求 \(\displaystyle \int{\sin{\sqrt{x}}\dd{x}}\)。</p>
 <p><strong>解.</strong>
-令 $u=\sqrt{x}$ ，則 $\dd{x} = 2u\dd{u}$。</p>
-$$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
+令 \(u=\sqrt{x}\) ，則 \(\dd{x} = 2u\dd{u}\)。</p>
+\[\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}\]
 <h4 id="例題-7-3-eq7-3">例題 7-3 ^eq7-3</h4>
-<p>求 $\displaystyle \int{\frac{x^5+1}{x^3-2x^2-10}\dd{x}}$。</p>
+<p>求 \(\displaystyle \int{\frac{x^5+1}{x^3-2x^2-10}\dd{x}}\)。</p>
 <h2 id="8-積分表與計算機代數系統-8">8. 積分表與計算機代數系統 ^8</h2>
 <h3 id="81-積分表-8-1">8.1 積分表 ^8-1</h3>
 <p>積分表（table of integrals）是一種的參考資料，列出常見函數的不定積分，使用積分表可以快速查找某些函數的不定積分，省去繁瑣的計算過程。對於一些複雜的積分問題，我們可以利用計算機或數學軟體來求解。</p>
@@ -328,7 +328,7 @@ $$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
 <p><strong>WolframAlpha / Mathematica</strong></p>
 <ul>
 <li><strong>功能</strong>：<a href="https://www.wolframalpha.com/" rel="external" target="_self">WolframAlpha</a> 是一個線上計算工具，而 <a href="https://www.wolfram.com/mathematica/" rel="external" target="_self">Mathematica</a> 是 Wolfram 公司開發的桌面版軟體。它們都具有強大的符號計算功能，包括代數、微積分、矩陣運算、數值計算等。</li>
-<li><strong>例子</strong>：求解定積分 $\int e^{x^2} \, \dd{x}$。
+<li><strong>例子</strong>：求解定積分 \(\int e^{x^2} \, \dd{x}\)。
 <ul>
 <li>在 WolframAlpha 中輸入：<code>integrate e^(x^2) dx</code> 即可得到結果。</li>
 </ul>
@@ -339,7 +339,7 @@ $$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
 <p><strong>Maple</strong></p>
 <ul>
 <li><strong>功能</strong>：<a href="https://www.maplesoft.com/products/Maple/" rel="external" target="_self">Maple</a> 是由 <a href="https://www.maplesoft.com/" rel="external" target="_self">Maplesoft</a> 公司開發的計算機代數系統，擅長符號計算、數值計算、圖形繪製和程式設計。</li>
-<li><strong>例子</strong>：求解方程 $x^3 - 3x + 1 = 0$。
+<li><strong>例子</strong>：求解方程 \(x^3 - 3x + 1 = 0\)。
 <ul>
 <li>在 Maple 中輸入：<code>solve(x^3 - 3*x + 1 = 0, x)</code> 即可得到解。</li>
 </ul>
@@ -362,7 +362,7 @@ $$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
 <p><strong>SageMath</strong></p>
 <ul>
 <li><strong>功能</strong>：<a href="https://www.sagemath.org/" rel="external" target="_self">SageMath</a> 是一個開源的數學軟體系統，整合了許多數學軟體套件，具有符號計算、數值計算和圖形繪製功能。</li>
-<li><strong>例子</strong>：計算 $\int x \sin(x) \, \dd{x}$。
+<li><strong>例子</strong>：計算 \(\int x \sin(x) \, \dd{x}\)。
 <ul>
 <li>在 SageMath 中輸入：<code>integrate(x*sin(x), x)</code> 即可得到結果。</li>
 </ul>
@@ -373,7 +373,7 @@ $$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
 <p><strong>SymPy</strong></p>
 <ul>
 <li><strong>功能</strong>：<a href="https://www.sympy.org/" rel="external" target="_self">SymPy</a> 是一個基於 Python 的符號數學函式庫，適用於符號計算和代數操作。它可以與 <a href="https://jupyter.org/" rel="external" target="_self">Jupyter Notebook</a> 整合，提供互動式計算環境。</li>
-<li><strong>例子</strong>：求導數 $\dv{x}(\sin(x) \cos(x))$。
+<li><strong>例子</strong>：求導數 \(\dv{x}(\sin(x) \cos(x))\)。
 <ul>
 <li>在 SymPy 中輸入：
 <div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sympy <span style="color:#f92672">import</span> symbols, sin, cos, diff
@@ -447,7 +447,7 @@ $$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
 </table>
 <p>這些計算機代數系統各有特點，使用者可以根據具體需求選擇合適的工具進行符號計算和數值計算。</p>
 <h4 id="例題-8-3-ex8-3">例題 8-3 ^ex8-3</h4>
-<p>利用 CAS 求 $\int e^{x^2} \, \dd{x}$。</p>
+<p>利用 CAS 求 \(\int e^{x^2} \, \dd{x}\)。</p>
 <p><strong>解答：</strong></p>
 <ul>
 <li>
@@ -470,17 +470,17 @@ $$\int{\sin{\sqrt{x}}\dd{x}}=2\int{u\sin{u}\dd{u}}$$
 <p>數值積分是通過數值方法來近似計算定積分的方法。常見的數值積分方法包括矩形法、梯形法和辛普森法。</p>
 <h3 id="方法">方法</h3>
 <p><strong>矩形法</strong>
-將積分區間分成 $n$ 個等長小區間，每個小區間上取矩形的高為函數值，然後求這些矩形的面積和來近似定積分。</p>
+將積分區間分成 \(n\) 個等長小區間，每個小區間上取矩形的高為函數值，然後求這些矩形的面積和來近似定積分。</p>
 <p><strong>梯形法</strong>
-將積分區間分成 $n$ 個等長小區間，用梯形面積來近似每個小區間的面積，然後求和來近似定積分。</p>
+將積分區間分成 \(n\) 個等長小區間，用梯形面積來近似每個小區間的面積，然後求和來近似定積分。</p>
 <p><strong>辛普森法</strong>
-將積分區間分成 $n$ 個等長小區間，用二次多項式來近似每個小區間的函數值，然後求和來近似定積分。</p>
+將積分區間分成 \(n\) 個等長小區間，用二次多項式來近似每個小區間的函數值，然後求和來近似定積分。</p>
 <blockquote>
 <p>[!NOTE]
 此部分使用 Stewart 課本講解</p>
 </blockquote>
-<p>$\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}$
-$\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
+<p>\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
+\(\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}\)</p>
 
             <footer class="footline">
             </footer>
@@ -556,12 +556,12 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723213040" defer></script>
-        <script src="/js/search.js?1723213040" defer></script>
+        <script src="/js/auto-complete.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723649390" defer></script>
+        <script src="/js/search.js?1723649390" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -572,7 +572,25 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/notebook/index.html" class=""><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/tutor-13/index.html" class="active"><a class="padding" href="/notebook/math/tutor-13/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/math-models-and-ode/index.html" class=""><a class="padding" href="/notebook/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/double-integral/index.html" class=""><a class="padding" href="/notebook/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
@@ -637,8 +655,8 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723213040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723213040" defer></script>
+    <script src="/js/clipboard.min.js?1723649390" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723649390" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -653,28 +671,28 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723213040"></script>
-    <script src="/js/d3/d3-color.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723213040" defer></script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
-    <script src="/js/mermaid.min.js?1723213040" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723649390"></script>
+    <script src="/js/d3/d3-color.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723649390" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
+    <script src="/js/mermaid.min.js?1723649390" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723213040" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723213040" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723649390" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723649390" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723213040", cssInProject: true, assetsBuster: "?1723213040" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723649390", cssInProject: true, assetsBuster: "?1723649390" };
     </script>
-    <script src="/js/theme.js?1723213040" defer></script>
+    <script src="/js/theme.js?1723649390" defer></script>
   </body>
 </html>

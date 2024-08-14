@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.129.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
-    <meta name="description" content="1. 數列 無窮數列（infinite sequence） 可寫成 $$\{a_1,a_2,a_3,\ldots,a_n,\ldots\}$$ 記作 $$\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}$$ $a_k$ 稱為第 $k$ 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 $a:\mathbb{N}\to\mathbb{R}$。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 $a:I_n\to\mathbb{R}$，其中 $I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}$。 例題 求 $\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}$ 的前五項。答：$\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}$。 求 $\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}$ 的前五項。答：$\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}$。 求數列 $\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}$ 的一般項。答：$a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}$。 觀察：數列 $\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}$ 似乎收斂（converge）至 $1$，記作 $$\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1$$ ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 $n$ 夠大，$a_n$ 就會夠接近 $L$ ，記作 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 $L$（converges to $L$）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 $\infty$。 數列發散至 $-\infty$。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 $\{a_n\}_{n\in\mathbb{N}}$ 為一無窮數列。則 $\{a_n\}$ 的極限 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 存在，且稱 $\{a_n\}$ 收斂至 $L$，若且唯若「對所有 $\varepsilon &gt; 0$ ，都存在一個正整數 $N$ ，使得 $$n&gt;N\implies |a_n-L|&lt;\varepsilon$$ 註.">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="1. 數列 無窮數列（infinite sequence） 可寫成 \[\{a_1,a_2,a_3,\ldots,a_n,\ldots\}\] 記作 \[\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}\] \(a_k\) 稱為第 \(k\) 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 \(a:\mathbb{N}\to\mathbb{R}\)。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 \(a:I_n\to\mathbb{R}\)，其中 \(I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}\)。 例題 求 \(\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}\) 的前五項。答：\(\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}\)。 求 \(\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}\) 的前五項。答：\(\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}\)。 求數列 \(\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}\) 的一般項。答：\(a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}\)。 觀察：數列 \(\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}\) 似乎收斂（converge）至 \(1\)，記作 \[\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1\] ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 \(n\) 夠大，\(a_n\) 就會夠接近 \(L\) ，記作 \[\lim_{n\to\infty}a_n=L\tag{1}\] 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 \(L\)（converges to \(L\)）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 \(\infty\)。 數列發散至 \(-\infty\)。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一無窮數列。則 \(\{a_n\}\) 的極限 \[\lim_{n\to\infty}a_n=L\tag{1}\] 存在，且稱 \(\{a_n\}\) 收斂至 \(L\)，若且唯若「對所有 \(\varepsilon &gt; 0\) ，都存在一個正整數 \(N\) ，使得 \[n&gt;N\implies |a_n-L|&lt;\varepsilon\] 註.">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
-    <meta name="twitter:title" content="數列與級數 (1)">
-    <meta name="twitter:description" content="1. 數列 無窮數列（infinite sequence） 可寫成 $$\{a_1,a_2,a_3,\ldots,a_n,\ldots\}$$ 記作 $$\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}$$ $a_k$ 稱為第 $k$ 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 $a:\mathbb{N}\to\mathbb{R}$。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 $a:I_n\to\mathbb{R}$，其中 $I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}$。 例題 求 $\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}$ 的前五項。答：$\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}$。 求 $\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}$ 的前五項。答：$\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}$。 求數列 $\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}$ 的一般項。答：$a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}$。 觀察：數列 $\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}$ 似乎收斂（converge）至 $1$，記作 $$\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1$$ ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 $n$ 夠大，$a_n$ 就會夠接近 $L$ ，記作 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 $L$（converges to $L$）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 $\infty$。 數列發散至 $-\infty$。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 $\{a_n\}_{n\in\mathbb{N}}$ 為一無窮數列。則 $\{a_n\}$ 的極限 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 存在，且稱 $\{a_n\}$ 收斂至 $L$，若且唯若「對所有 $\varepsilon &gt; 0$ ，都存在一個正整數 $N$ ，使得 $$n&gt;N\implies |a_n-L|&lt;\varepsilon$$ 註.">
-    <meta property="og:url" content="https://qavit.github.io/notebook/math/tutor-7/index.html">
-    <meta property="og:title" content="數列與級數 (1)">
-    <meta property="og:description" content="1. 數列 無窮數列（infinite sequence） 可寫成 $$\{a_1,a_2,a_3,\ldots,a_n,\ldots\}$$ 記作 $$\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}$$ $a_k$ 稱為第 $k$ 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 $a:\mathbb{N}\to\mathbb{R}$。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 $a:I_n\to\mathbb{R}$，其中 $I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}$。 例題 求 $\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}$ 的前五項。答：$\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}$。 求 $\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}$ 的前五項。答：$\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}$。 求數列 $\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}$ 的一般項。答：$a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}$。 觀察：數列 $\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}$ 似乎收斂（converge）至 $1$，記作 $$\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1$$ ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 $n$ 夠大，$a_n$ 就會夠接近 $L$ ，記作 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 $L$（converges to $L$）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 $\infty$。 數列發散至 $-\infty$。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 $\{a_n\}_{n\in\mathbb{N}}$ 為一無窮數列。則 $\{a_n\}$ 的極限 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 存在，且稱 $\{a_n\}$ 收斂至 $L$，若且唯若「對所有 $\varepsilon &gt; 0$ ，都存在一個正整數 $N$ ，使得 $$n&gt;N\implies |a_n-L|&lt;\varepsilon$$ 註.">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
+    <meta name="twitter:description" content="1. 數列 無窮數列（infinite sequence） 可寫成 \[\{a_1,a_2,a_3,\ldots,a_n,\ldots\}\] 記作 \[\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}\] \(a_k\) 稱為第 \(k\) 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 \(a:\mathbb{N}\to\mathbb{R}\)。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 \(a:I_n\to\mathbb{R}\)，其中 \(I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}\)。 例題 求 \(\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}\) 的前五項。答：\(\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}\)。 求 \(\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}\) 的前五項。答：\(\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}\)。 求數列 \(\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}\) 的一般項。答：\(a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}\)。 觀察：數列 \(\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}\) 似乎收斂（converge）至 \(1\)，記作 \[\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1\] ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 \(n\) 夠大，\(a_n\) 就會夠接近 \(L\) ，記作 \[\lim_{n\to\infty}a_n=L\tag{1}\] 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 \(L\)（converges to \(L\)）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 \(\infty\)。 數列發散至 \(-\infty\)。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一無窮數列。則 \(\{a_n\}\) 的極限 \[\lim_{n\to\infty}a_n=L\tag{1}\] 存在，且稱 \(\{a_n\}\) 收斂至 \(L\)，若且唯若「對所有 \(\varepsilon &gt; 0\) ，都存在一個正整數 \(N\) ，使得 \[n&gt;N\implies |a_n-L|&lt;\varepsilon\] 註.">
+    <meta property="og:url" content="http://localhost:1313/notebook/math/tutor-7/index.html">
+    <meta property="og:description" content="1. 數列 無窮數列（infinite sequence） 可寫成 \[\{a_1,a_2,a_3,\ldots,a_n,\ldots\}\] 記作 \[\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}\] \(a_k\) 稱為第 \(k\) 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 \(a:\mathbb{N}\to\mathbb{R}\)。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 \(a:I_n\to\mathbb{R}\)，其中 \(I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}\)。 例題 求 \(\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}\) 的前五項。答：\(\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}\)。 求 \(\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}\) 的前五項。答：\(\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}\)。 求數列 \(\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}\) 的一般項。答：\(a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}\)。 觀察：數列 \(\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}\) 似乎收斂（converge）至 \(1\)，記作 \[\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1\] ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 \(n\) 夠大，\(a_n\) 就會夠接近 \(L\) ，記作 \[\lim_{n\to\infty}a_n=L\tag{1}\] 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 \(L\)（converges to \(L\)）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 \(\infty\)。 數列發散至 \(-\infty\)。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一無窮數列。則 \(\{a_n\}\) 的極限 \[\lim_{n\to\infty}a_n=L\tag{1}\] 存在，且稱 \(\{a_n\}\) 收斂至 \(L\)，若且唯若「對所有 \(\varepsilon &gt; 0\) ，都存在一個正整數 \(N\) ，使得 \[n&gt;N\implies |a_n-L|&lt;\varepsilon\] 註.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Notebook">
-    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
-    <meta itemprop="name" content="數列與級數 (1)">
-    <meta itemprop="description" content="1. 數列 無窮數列（infinite sequence） 可寫成 $$\{a_1,a_2,a_3,\ldots,a_n,\ldots\}$$ 記作 $$\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}$$ $a_k$ 稱為第 $k$ 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 $a:\mathbb{N}\to\mathbb{R}$。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 $a:I_n\to\mathbb{R}$，其中 $I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}$。 例題 求 $\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}$ 的前五項。答：$\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}$。 求 $\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}$ 的前五項。答：$\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}$。 求數列 $\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}$ 的一般項。答：$a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}$。 觀察：數列 $\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}$ 似乎收斂（converge）至 $1$，記作 $$\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1$$ ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 $n$ 夠大，$a_n$ 就會夠接近 $L$ ，記作 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 $L$（converges to $L$）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 $\infty$。 數列發散至 $-\infty$。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 $\{a_n\}_{n\in\mathbb{N}}$ 為一無窮數列。則 $\{a_n\}$ 的極限 $$\lim_{n\to\infty}a_n=L\tag{1}$$ 存在，且稱 $\{a_n\}$ 收斂至 $L$，若且唯若「對所有 $\varepsilon &gt; 0$ ，都存在一個正整數 $N$ ，使得 $$n&gt;N\implies |a_n-L|&lt;\varepsilon$$ 註.">
-    <meta itemprop="wordCount" content="794">
-    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
-    <title>數列與級數 (1)</title>
-    <link href="/images/favicon.png?1723213040" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723213040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723213040" rel="stylesheet">
-    <link href="/css/fonts.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723213040" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723213040" rel="stylesheet">
-    <link href="/css/print.css?1723213040" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723213040"></script>
+    <meta property="article:published_time" content="2024-06-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-28T00:00:00+00:00">
+    <meta property="article:tag" content="Tutor">
+    <meta property="article:tag" content="Calculus">
+    <meta property="article:tag" content="Sequence">
+    <meta property="article:tag" content="Series">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="description" content="1. 數列 無窮數列（infinite sequence） 可寫成 \[\{a_1,a_2,a_3,\ldots,a_n,\ldots\}\] 記作 \[\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}\] \(a_k\) 稱為第 \(k\) 項。 註. 參考：Stewart 9ed, §11.1, Sequences (pp.724–726) 無限實數列可視為映射 \(a:\mathbb{N}\to\mathbb{R}\)。本文假定所探討的數列都是無限實數列。 有限實數列可視為映射 \(a:I_n\to\mathbb{R}\)，其中 \(I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}\)。 例題 求 \(\left\{\frac{n&#43;1}{n&#43;2}\right\}^{\infty}_{n=1}\) 的前五項。答：\(\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}\)。 求 \(\left\{(-1)^n\frac{(n&#43;1)}{3^n}\right\}^\infty_{n=0}\) 的前五項。答：\(\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}\)。 求數列 \(\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}\) 的一般項。答：\(a_n = (-1)^{n-1}\frac{n&#43;2}{5^n}\)。 觀察：數列 \(\left\{\frac{n}{n&#43;1}\right\}_{n\in\mathbb{N}}\) 似乎收斂（converge）至 \(1\)，記作 \[\lim_{n\to\infty}{\frac{n}{n&#43;1}}=1\] ![[tutor7-n-over-n&#43;1_1.png]] ![[tutor7-n-over-n&#43;1_2.png]] 直觀上，只要當 \(n\) 夠大，\(a_n\) 就會夠接近 \(L\) ，記作 \[\lim_{n\to\infty}a_n=L\tag{1}\] 這稱為數列的極限。 當極限 (1) 存在，稱 數列是收斂的（is convergent）； 數列收斂至 \(L\)（converges to \(L\)）。 當極限 (1) 不存在，則稱數列是發散的（divergent）。這有三種情況： 數列發散至 \(\infty\)。 數列發散至 \(-\infty\)。 數列不收斂到任何有限值，因為數值不斷振盪。 【定義】數列的收斂性 設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一無窮數列。則 \(\{a_n\}\) 的極限 \[\lim_{n\to\infty}a_n=L\tag{1}\] 存在，且稱 \(\{a_n\}\) 收斂至 \(L\)，若且唯若「對所有 \(\varepsilon &gt; 0\) ，都存在一個正整數 \(N\) ，使得 \[n&gt;N\implies |a_n-L|&lt;\varepsilon\] 註.">
+    <meta itemprop="datePublished" content="2024-06-28T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-06-28T00:00:00+00:00">
+    <meta itemprop="wordCount" content="795">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="keywords" content="Tutor,Calculus,Sequence,Series">
+    <title></title>
+    <link href="/images/favicon.png?1723649390" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723649390" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723649390" rel="stylesheet">
+    <link href="/css/fonts.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723649390" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723649390" rel="stylesheet">
+    <link href="/css/print.css?1723649390" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723649390"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       // variant stuff
       window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
       // translations
@@ -87,15 +94,14 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">基礎數學</span><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">數列與級數 (1)</span><meta itemprop="position" content="4"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/math/tutor-7.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Qavit&#39;s Notebook (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/index.html" title="基礎數學 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/math-models-and-ode/index.html" title="Mathematical model and ODE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -113,58 +119,66 @@
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/sequence/index.html">Sequence</a></li>
+    <li><a class="term-link" href="/tags/series/index.html">Series</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
             </header>
 
-<h1 id="數列與級數-1">數列與級數 (1)</h1>
+<h1 id=""></h1>
 
 <h2 id="1-數列">1. 數列</h2>
 <p><strong>無窮數列</strong>（infinite sequence） 可寫成</p>
-$$\{a_1,a_2,a_3,\ldots,a_n,\ldots\}$$
+\[\{a_1,a_2,a_3,\ldots,a_n,\ldots\}\]
 <p>
 記作 </p>
-$$\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}$$
+\[\{a_n\}\quad\mbox{或}\quad\{a_n\}^\infty_{n=1}\quad\mbox{或}\quad \{a_n\}_{n\in\mathbb{N}}\]
 <p>
-$a_k$ 稱為第 $k$ 項。</p>
+\(a_k\) 稱為第 \(k\) 項。</p>
 <p><strong>註.</strong></p>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Sequences (pp.724–726)</li>
-<li>無限實數列可視為映射 $a:\mathbb{N}\to\mathbb{R}$。本文假定所探討的數列都是無限實數列。</li>
-<li>有限實數列可視為映射 $a:I_n\to\mathbb{R}$，其中 $I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}$。</li>
+<li>無限實數列可視為映射 \(a:\mathbb{N}\to\mathbb{R}\)。本文假定所探討的數列都是無限實數列。</li>
+<li>有限實數列可視為映射 \(a:I_n\to\mathbb{R}\)，其中 \(I_n=\{k\in\mathbb{N}\mid k\leq n\}=\{1,2,\ldots,n\}\)。</li>
 </ul>
 <h4 id="例題">例題</h4>
 <ol>
-<li>求 $\left\{\frac{n+1}{n+2}\right\}^{\infty}_{n=1}$ 的前五項。答：$\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}$。</li>
-<li>求 $\left\{(-1)^n\frac{(n+1)}{3^n}\right\}^\infty_{n=0}$ 的前五項。答：$\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}$。</li>
-<li>求數列 $\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}$ 的一般項。答：$a_n = (-1)^{n-1}\frac{n+2}{5^n}$。</li>
+<li>求 \(\left\{\frac{n+1}{n+2}\right\}^{\infty}_{n=1}\) 的前五項。答：<!-- raw HTML omitted -->\(\frac{2}{3},\frac{3}{4},\frac{4}{5},\frac{5}{6},\frac{6}{7}\)<!-- raw HTML omitted -->。</li>
+<li>求 \(\left\{(-1)^n\frac{(n+1)}{3^n}\right\}^\infty_{n=0}\) 的前五項。答：<!-- raw HTML omitted -->\(\frac{1}{1},-\frac{2}{3},\frac{3}{9},-\frac{4}{27},\frac{5}{81}\)<!-- raw HTML omitted -->。</li>
+<li>求數列 \(\left\{\frac{3}{5},-\frac{4}{25},\frac{5}{125},-\frac{6}{625},\frac{7}{3125},\ldots\right\}\) 的一般項。答：<!-- raw HTML omitted -->\(a_n = (-1)^{n-1}\frac{n+2}{5^n}\)<!-- raw HTML omitted -->。</li>
 </ol>
-<p>觀察：數列 $\left\{\frac{n}{n+1}\right\}_{n\in\mathbb{N}}$ 似乎<strong>收斂</strong>（converge）至 $1$，記作 </p>
-$$\lim_{n\to\infty}{\frac{n}{n+1}}=1$$
+<p>觀察：數列 \(\left\{\frac{n}{n+1}\right\}_{n\in\mathbb{N}}\) 似乎<strong>收斂</strong>（converge）至 \(1\)，記作 </p>
+\[\lim_{n\to\infty}{\frac{n}{n+1}}=1\]
 <p>![[tutor7-n-over-n+1_1.png]] ![[tutor7-n-over-n+1_2.png]]</p>
-<p>直觀上，只要當 $n$ 夠大，$a_n$ 就會夠接近 $L$ ，記作 </p>
-$$\lim_{n\to\infty}a_n=L\tag{1}$$
+<p>直觀上，只要當 \(n\) 夠大，\(a_n\) 就會夠接近 \(L\) ，記作 </p>
+\[\lim_{n\to\infty}a_n=L\tag{1}\]
 <p>
 這稱為數列的極限。</p>
 <ul>
 <li>當極限 (1) 存在，稱
 <ul>
 <li>數列是<strong>收斂</strong>的（is convergent）；</li>
-<li>數列收斂至 $L$（converges to $L$）。</li>
+<li>數列收斂至 \(L\)（converges to \(L\)）。</li>
 </ul>
 </li>
 <li>當極限 (1) 不存在，則稱數列是<strong>發散</strong>的（divergent）。這有三種情況：
 <ul>
-<li>數列發散至 $\infty$。</li>
-<li>數列發散至 $-\infty$。</li>
+<li>數列發散至 \(\infty\)。</li>
+<li>數列發散至 \(-\infty\)。</li>
 <li>數列不收斂到任何有限值，因為數值不斷振盪。</li>
 </ul>
 </li>
 </ul>
 <h4 id="定義數列的收斂性">【定義】數列的收斂性</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一無窮數列。則 $\{a_n\}$ 的極限 </p>
-$$\lim_{n\to\infty}a_n=L\tag{1}$$
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一無窮數列。則 \(\{a_n\}\) 的極限 </p>
+\[\lim_{n\to\infty}a_n=L\tag{1}\]
 <p>
-存在，且稱  $\{a_n\}$ <strong>收斂</strong>至 $L$，若且唯若「對所有 $\varepsilon > 0$ ，都存在一個正整數 $N$ ，使得 </p>
-$$n>N\implies |a_n-L|<\varepsilon$$
+存在，且稱  \(\{a_n\}\) <strong>收斂</strong>至 \(L\)，若且唯若「對所有 \(\varepsilon > 0\) ，都存在一個正整數 \(N\) ，使得 </p>
+\[n>N\implies |a_n-L|<\varepsilon\]
 <h6 id="註">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Defintion 2 (p.727)</li>
@@ -172,81 +186,81 @@ $$n>N\implies |a_n-L|<\varepsilon$$
 </ul>
 <p>![[tutor7-limit-seq.png|900]]
 ![[tutor7-limit-seq-2.png|900]]</p>
-<h4 id="定義數列發散至-pminfty">【定義】數列發散至 $\pm\infty$</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一數列。則 </p>
-$$\lim_{n\to\infty}a_n=\infty,\tag{2}$$
+<h4 id="定義數列發散至-pminfty">【定義】數列發散至 \(\pm\infty\)</h4>
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一數列。則 </p>
+\[\lim_{n\to\infty}a_n=\infty,\tag{2}\]
 <p>
-，稱數列 $\{a_n\}$ 發散至 $\infty$，若且唯若「對所有 $M > 0$ ，都存在一個正整數 $N$ ，使得 </p>
-$$n>N\implies a_n>M$$
+，稱數列 \(\{a_n\}\) 發散至 \(\infty\)，若且唯若「對所有 \(M > 0\) ，都存在一個正整數 \(N\) ，使得 </p>
+\[n>N\implies a_n>M\]
 <p>
-類比的定義適用於 $\lim_{n\to\infty}a_n=-\infty$。</p>
+類比的定義適用於 \(\lim_{n\to\infty}a_n=-\infty\)。</p>
 <h6 id="註-1">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Defintion 3 (p.728)</li>
 </ul>
 <h4 id="定理收斂數列的運算法則">【定理】收斂數列的運算法則</h4>
-<p>若 $\{a_n\}$、 $\{b_n\}$ 為兩個收斂數列，$c$ 為一常數。則</p>
+<p>若 \(\{a_n\}\)、 \(\{b_n\}\) 為兩個收斂數列，\(c\) 為一常數。則</p>
 <ol>
-<li>（和法則） $\displaystyle \lim_{n\to\infty}(a_n+ b_n) =\lim_{n\to\infty}{a_n}+\lim_{n\to\infty}{b_n}$，</li>
-<li>（齊法則）$\displaystyle \lim_{n\to\infty}{ca_n} =c\lim_{n\to\infty}{a_n}$，</li>
-<li>（積法則）$\displaystyle \lim_{n\to\infty}{(a_n b_n)} =\lim_{n\to\infty}{a_n}\cdot\lim_{n\to\infty}{b_n}$，</li>
-<li>（商法則）若 $\displaystyle\lim_{n\to \infty}b_n\neq0$，$\displaystyle \lim_{n\to\infty}\left\{\frac{a_n}{b_n}\right\} =\frac{\displaystyle \lim_{n\to\infty}{a_n}}{\displaystyle \lim_{n\to\infty}{b_n}}$。</li>
-<li>（冪法則）設 $p>0$ 。若對所有 $n\in\mathbb{N}$ 都有 $a_n>0$ ，則 $$\lim_{n\to\infty}(a_n)^p=\left(\lim_{n\to\infty}{a_n}\right)^n$$</li>
+<li>（和法則） \(\displaystyle \lim_{n\to\infty}(a_n+ b_n) =\lim_{n\to\infty}{a_n}+\lim_{n\to\infty}{b_n}\)，</li>
+<li>（齊法則）\(\displaystyle \lim_{n\to\infty}{ca_n} =c\lim_{n\to\infty}{a_n}\)，</li>
+<li>（積法則）\(\displaystyle \lim_{n\to\infty}{(a_n b_n)} =\lim_{n\to\infty}{a_n}\cdot\lim_{n\to\infty}{b_n}\)，</li>
+<li>（商法則）若 \(\displaystyle\lim_{n\to \infty}b_n\neq0\)，\(\displaystyle \lim_{n\to\infty}\left\{\frac{a_n}{b_n}\right\} =\frac{\displaystyle \lim_{n\to\infty}{a_n}}{\displaystyle \lim_{n\to\infty}{b_n}}\)。</li>
+<li>（冪法則）設 \(p>0\) 。若對所有 \(n\in\mathbb{N}\) 都有 \(a_n>0\) ，則 \[\lim_{n\to\infty}(a_n)^p=\left(\lim_{n\to\infty}{a_n}\right)^n\]</li>
 </ol>
 <h4 id="定理數列的夾擠定理-squeeze">【定理】數列的夾擠定理 ^squeeze</h4>
-<p>設 $\{a_n\}$、$\{b_n\}$、$\{c_n\}$ 為三個無窮數列。若對所有 $n\in\{n_0,n_0+1,\ldots\}$，都有 $a_n\leq b_n \leq c_n$ ，且 $\displaystyle\lim_{n\to\infty}{a_n}=\lim_{n\to\infty}{c_n}=L$，則 $\displaystyle \lim_{n\to\infty}{b_n}=L$。</p>
+<p>設 \(\{a_n\}\)、\(\{b_n\}\)、\(\{c_n\}\) 為三個無窮數列。若對所有 \(n\in\{n_0,n_0+1,\ldots\}\)，都有 \(a_n\leq b_n \leq c_n\) ，且 \(\displaystyle\lim_{n\to\infty}{a_n}=\lim_{n\to\infty}{c_n}=L\)，則 \(\displaystyle \lim_{n\to\infty}{b_n}=L\)。</p>
 <p>![[tutor7-squeeze.png|500]]</p>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Squeeze Theorem for Sequences (p.729)</li>
 </ul>
 <h4 id="定理">【定理】</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一數列。若 $\displaystyle\lim_{n\to\infty}{|a_n|}=0$，則 $\displaystyle\lim_{n\to\infty}{a_n}=0$。</p>
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一數列。若 \(\displaystyle\lim_{n\to\infty}{|a_n|}=0\)，則 \(\displaystyle\lim_{n\to\infty}{a_n}=0\)。</p>
 <h6 id="註-2">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Theorem 6 (p.729)</li>
 </ul>
 <h4 id="定理-1">【定理】</h4>
-<p>設 $f:\mathbb{R}\to\mathbb{R}$ 為一函數，$a:\mathbb{N}\to\mathbb{R}$ 為一數列，且對所有 $n\in\mathbb{N}$，都滿足 $f(n)=a_n$。若 $\lim_{x\to\infty}f(x)=L$ ，則  $\lim_{n\to\infty}a_n=L$。</p>
+<p>設 \(f:\mathbb{R}\to\mathbb{R}\) 為一函數，\(a:\mathbb{N}\to\mathbb{R}\) 為一數列，且對所有 \(n\in\mathbb{N}\)，都滿足 \(f(n)=a_n\)。若 \(\lim_{x\to\infty}f(x)=L\) ，則  \(\lim_{n\to\infty}a_n=L\)。</p>
 <h6 id="註-3">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Theorem 4 (p.728)</li>
 </ul>
 <h4 id="定理-2">【定理】</h4>
-<p>設 $f:\mathbb{R}\to\mathbb{R}$ 為一函數，$a:\mathbb{N}\to\mathbb{R}$ 為一數列。若 $\lim_{n\to\infty}{a_n}=L$ 且 $f$ 在點 $x=L$ 連續，則 </p>
-$$\lim_{n\to\infty}f(a_n)=f(L)=f\left(\lim_{n\to\infty}{a_n}\right)$$
+<p>設 \(f:\mathbb{R}\to\mathbb{R}\) 為一函數，\(a:\mathbb{N}\to\mathbb{R}\) 為一數列。若 \(\lim_{n\to\infty}{a_n}=L\) 且 \(f\) 在點 \(x=L\) 連續，則 </p>
+\[\lim_{n\to\infty}f(a_n)=f(L)=f\left(\lim_{n\to\infty}{a_n}\right)\]
 <h6 id="註-4">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Theorem 7 (p.730)</li>
 </ul>
 <h4 id="例題-1">例題</h4>
 <ol>
-<li>求 $\lim_{n\to\infty}\frac{n^2}{n^2+1}$。答：$1$。</li>
+<li>求 \(\lim_{n\to\infty}\frac{n^2}{n^2+1}\)。答：<!-- raw HTML omitted -->\(1\)<!-- raw HTML omitted -->。</li>
 <li>判斷以下數列是收斂還是發散。
 <ul>
-<li>$\big\{\frac{n}{\sqrt{10+n}}\big\}$ 發散到 $\infty$。</li>
-<li>$\left\{\frac{\ln{n}}{n}\right\}$ 收斂到 $0$。</li>
-<li>$\left\{(-1)^n\right\}$ 發散。</li>
-<li>$\big\{\frac{(-1)^n}{n}\big\}$ 收斂到 $0$。</li>
+<li>\(\big\{\frac{n}{\sqrt{10+n}}\big\}\) <!-- raw HTML omitted -->發散到 \(\infty\)<!-- raw HTML omitted -->。</li>
+<li>\(\left\{\frac{\ln{n}}{n}\right\}\) <!-- raw HTML omitted -->收斂到 \(0\)<!-- raw HTML omitted -->。</li>
+<li>\(\left\{(-1)^n\right\}\) <!-- raw HTML omitted -->發散<!-- raw HTML omitted -->。</li>
+<li>\(\big\{\frac{(-1)^n}{n}\big\}\) <!-- raw HTML omitted -->收斂到 \(0\)<!-- raw HTML omitted -->。</li>
 </ul>
 </li>
-<li>求 $\lim_{n\to\infty}{\sin{\frac{\pi}{n}}}$。</li>
-<li>討論數列 $\{r^n\}$ 的收斂性。
-答：$\displaystyle \lim_{n\to\infty}{r^n}=\left\{\begin{array}{ll}0&\mbox{若 }|r|<1\\1&\mbox{若 }r=1\\\infty&\mbox{若 }|r|>1\end{array}\right.$
-當 $r=-1$，$\{r^n\}$ 發散（但不是發散到 $\infty$）</li>
-<li>證明 $\big\{\big(1+\frac{1}{n}\big)^n\big\}$ 收斂。</li>
+<li>求 \(\lim_{n\to\infty}{\sin{\frac{\pi}{n}}}\)。</li>
+<li>討論數列 \(\{r^n\}\) 的收斂性。
+答：\(\displaystyle \lim_{n\to\infty}{r^n}=\left\{\begin{array}{ll}0&\mbox{若 }|r|<1\\1&\mbox{若 }r=1\\\infty&\mbox{若 }|r|>1\end{array}\right.\)
+當 \(r=-1\)，\(\{r^n\}\) 發散（但不是發散到 \(\infty\)）</li>
+<li>證明 \(\big\{\big(1+\frac{1}{n}\big)^n\big\}\) 收斂。</li>
 </ol>
 <h4 id="定義數列的單調性">【定義】數列的單調性</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一數列。</p>
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一數列。</p>
 <ul>
-<li>若對所有 $n\geq 1$，都有 $a_n < a_{n+1}$，則稱 $\{a_n\}$ 遞增（increasing）。</li>
-<li>若對所有 $n\geq 1$，都有 $a_n > a_{n+1}$，則稱 $\{a_n\}$ 遞減（decreasing）。</li>
+<li>若對所有 \(n\geq 1\)，都有 \(a_n < a_{n+1}\)，則稱 \(\{a_n\}\) 遞增（increasing）。</li>
+<li>若對所有 \(n\geq 1\)，都有 \(a_n > a_{n+1}\)，則稱 \(\{a_n\}\) 遞減（decreasing）。</li>
 <li>遞增或遞減數列，統稱為<strong>單調</strong>（monotonic）數列。</li>
 </ul>
 <h4 id="定義數列的有界性">【定義】數列的有界性</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一數列。</p>
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一數列。</p>
 <ul>
-<li>若存在 $M\in \mathbb{R}$，使得對所有 $n\geq 1$ 都有 $a_n\leq M$ ，則稱 $\{a_n\}$ <strong>有上界</strong>（bounded above）。</li>
-<li>若存在 $m\in \mathbb{R}$，使得對所有 $n\geq 1$ 都有 $m\leq a_n$ ，則稱 $\{a_n\}$ <strong>有下界</strong>（bounded below）。</li>
+<li>若存在 \(M\in \mathbb{R}\)，使得對所有 \(n\geq 1\) 都有 \(a_n\leq M\) ，則稱 \(\{a_n\}\) <strong>有上界</strong>（bounded above）。</li>
+<li>若存在 \(m\in \mathbb{R}\)，使得對所有 \(n\geq 1\) 都有 \(m\leq a_n\) ，則稱 \(\{a_n\}\) <strong>有下界</strong>（bounded below）。</li>
 <li>有上界且有下界的數列，稱為<strong>有界</strong>（bounded）數列。</li>
 </ul>
 <h4 id="定理單調收斂定理">【定理】單調收斂定理</h4>
@@ -254,138 +268,138 @@ $$\lim_{n\to\infty}f(a_n)=f(L)=f\left(\lim_{n\to\infty}{a_n}\right)$$
 <h6 id="註-5">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.1, Theorem 12 (p.733)</li>
-<li>此定理的證明是基於 $\mathbb{R}$ 的[[tutor-4#^completeness|完備性公理]]（completeness axiom）——若實數的非空子集 $S$ 有上界，則 $S$ 有上確界（或稱最小上界）。</li>
+<li>此定理的證明是基於 \(\mathbb{R}\) 的[[tutor-4#^completeness|完備性公理]]（completeness axiom）——若實數的非空子集 \(S\) 有上界，則 \(S\) 有上確界（或稱最小上界）。</li>
 <li>完備性公理的直觀理解：實數線上沒有「洞」。</li>
 </ul>
 <h4 id="例題-2">例題</h4>
 <ol>
 <li>是非題
 <ul>
-<li>( X ) 所有有界數列都會收斂。</li>
-<li>( X ) 所有單調數列都會收斂。</li>
-<li>( O ) 所有單調有界數列都會收斂。</li>
+<li>(<!-- raw HTML omitted --> X <!-- raw HTML omitted -->) 所有有界數列都會收斂。</li>
+<li>(<!-- raw HTML omitted --> X <!-- raw HTML omitted -->) 所有單調數列都會收斂。</li>
+<li>(<!-- raw HTML omitted --> O <!-- raw HTML omitted -->) 所有單調有界數列都會收斂。</li>
 </ul>
 </li>
 <li>判斷以下數列的單調性（遞增／遞減／非單調）和有界性（有界／無界）和收斂性（收斂／發散）
 <ul>
-<li>$\{(2n-3)/(n-1)\}$ 遞增、有界、收斂。</li>
-<li>$\left\{n/\left(n^2+1\right)\right\}$ 遞減、有界、收斂。</li>
-<li>$\{n^{1/4}\}$ 遞增、無界、發散。</li>
-<li>$\{\cos{n}\}$ 非單調、有界、發散。</li>
-<li>$\{-2ne^{-n}\}$ 遞增、有界、收斂。</li>
-<li>$\{\sqrt{n}\sin{n}\}$ 非單調、無界、發散。</li>
+<li>\(\{(2n-3)/(n-1)\}\) <!-- raw HTML omitted -->遞增<!-- raw HTML omitted -->、<!-- raw HTML omitted -->有界<!-- raw HTML omitted -->、<!-- raw HTML omitted -->收斂<!-- raw HTML omitted -->。</li>
+<li>\(\left\{n/\left(n^2+1\right)\right\}\) <!-- raw HTML omitted -->遞減<!-- raw HTML omitted -->、<!-- raw HTML omitted -->有界<!-- raw HTML omitted -->、<!-- raw HTML omitted -->收斂<!-- raw HTML omitted -->。</li>
+<li>\(\{n^{1/4}\}\) <!-- raw HTML omitted -->遞增<!-- raw HTML omitted -->、<!-- raw HTML omitted -->無界<!-- raw HTML omitted -->、<!-- raw HTML omitted -->發散<!-- raw HTML omitted -->。</li>
+<li>\(\{\cos{n}\}\) <!-- raw HTML omitted -->非單調<!-- raw HTML omitted -->、<!-- raw HTML omitted -->有界<!-- raw HTML omitted -->、<!-- raw HTML omitted -->發散<!-- raw HTML omitted -->。</li>
+<li>\(\{-2ne^{-n}\}\) <!-- raw HTML omitted -->遞增<!-- raw HTML omitted -->、<!-- raw HTML omitted -->有界<!-- raw HTML omitted -->、<!-- raw HTML omitted -->收斂<!-- raw HTML omitted -->。</li>
+<li>\(\{\sqrt{n}\sin{n}\}\) <!-- raw HTML omitted -->非單調<!-- raw HTML omitted -->、<!-- raw HTML omitted -->無界<!-- raw HTML omitted -->、<!-- raw HTML omitted -->發散<!-- raw HTML omitted -->。</li>
 </ul>
 </li>
 </ol>
 <h2 id="2-級數">2. 級數</h2>
-<p>數列 $\{a_n\}_{n\in\mathbb{N}}$ 的第 $k$ <strong>部分和</strong>（$k$-th partial sum）$S_k$ 是數列前 $k$ 項之和，即 </p>
-$$S_k=a_1+a_2+\cdots+a_k=\sum^{k}_{n=1}a_k,\tag{3}$$
+<p>數列 \(\{a_n\}_{n\in\mathbb{N}}\) 的第 \(k\) <strong>部分和</strong>（\(k\)-th partial sum）\(S_k\) 是數列前 \(k\) 項之和，即 </p>
+\[S_k=a_1+a_2+\cdots+a_k=\sum^{k}_{n=1}a_k,\tag{3}\]
 <p>
-其中 $\sum$ 為求和（summation）記號，$i$ 稱為指標（index），$1$ 是求和下界，$k$ 是求和上界。(3) 式讀作「sum of $a_i$, from $i = 1$ to $k$」</p>
-<p>數列 $\{a_n\}_{n\in\mathbb{N}}$ 的<strong>無窮級數</strong>（infinite series）為 </p>
-$$a_1+a_2+\cdots+a_n+\cdots$$
+其中 \(\sum\) 為求和（summation）記號，\(i\) 稱為指標（index），\(1\) 是求和下界，\(k\) 是求和上界。(3) 式讀作「sum of \(a_i\), from \(i = 1\) to \(k\)」</p>
+<p>數列 \(\{a_n\}_{n\in\mathbb{N}}\) 的<strong>無窮級數</strong>（infinite series）為 </p>
+\[a_1+a_2+\cdots+a_n+\cdots\]
 <p>
 記作 </p>
-$$\sum^{\infty}_{n=1}{a_n}\quad\mbox{或}\quad\sum_na_n\quad\mbox{或}\quad\sum{a_n}.$$
+\[\sum^{\infty}_{n=1}{a_n}\quad\mbox{或}\quad\sum_na_n\quad\mbox{或}\quad\sum{a_n}.\]
 <p>觀察 </p>
-$$\begin{aligned}S_1&=a_1\\S_2&=a_1+a_2\\S_3&=a_1+a_2+a_3\\\vdots\\S_n&=a_1+a_2+a_3+\cdots=\sum^{n}_{i=1}a_i\end{aligned}$$
+\[\begin{aligned}S_1&=a_1\\S_2&=a_1+a_2\\S_3&=a_1+a_2+a_3\\\vdots\\S_n&=a_1+a_2+a_3+\cdots=\sum^{n}_{i=1}a_i\end{aligned}\]
 <p>
-發現部分和構成一數列 $\{S_n\}_{n\in\mathbb{N}}$ ，它的極限可能存在，也可能不存在。如果 $\lim_{n\to\infty}S_n$ 存在，則稱之為級數 $\sum a_n$ 的和。</p>
+發現部分和構成一數列 \(\{S_n\}_{n\in\mathbb{N}}\) ，它的極限可能存在，也可能不存在。如果 \(\lim_{n\to\infty}S_n\) 存在，則稱之為級數 \(\sum a_n\) 的和。</p>
 <h4 id="定義級數的收斂性">【定義】級數的收斂性</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一數列，且 $S_n=\sum^n_{i=1}a_i$ 為 $\{a_n\}_{n\in\mathbb{N}}$ 的第 $n$ 個部分和。</p>
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一數列，且 \(S_n=\sum^n_{i=1}a_i\) 為 \(\{a_n\}_{n\in\mathbb{N}}\) 的第 \(n\) 個部分和。</p>
 <ul>
-<li>若數列 $\{S_n\}_{n\in\mathbb{N}}$ 收斂，亦即存在 $S\in\mathbb{R}$ 使得 $\lim_{n\to\infty}S_n=S$， 則稱級數 $\sum^\infty_{n=1}a_n$ <strong>收斂</strong>（convergent），且寫作 $$\lim_{n\to\infty}{\sum^{n}_{i=1}{a_i}}=\sum^\infty_{n=1}a_n=a_1+a_2+\cdots+a_n+\cdots=S.\tag{4}$$
+<li>若數列 \(\{S_n\}_{n\in\mathbb{N}}\) 收斂，亦即存在 \(S\in\mathbb{R}\) 使得 \(\lim_{n\to\infty}S_n=S\)， 則稱級數 \(\sum^\infty_{n=1}a_n\) <strong>收斂</strong>（convergent），且寫作 \[\lim_{n\to\infty}{\sum^{n}_{i=1}{a_i}}=\sum^\infty_{n=1}a_n=a_1+a_2+\cdots+a_n+\cdots=S.\tag{4}\]
 <ul>
-<li>$S$ 稱為<strong>級數和</strong>（sum of the series）</li>
+<li>\(S\) 稱為<strong>級數和</strong>（sum of the series）</li>
 </ul>
 </li>
-<li>若數列 $\{S_n\}_{n\in\mathbb{N}}$ 發散，則則稱級數 $\sum^\infty_{n=1}a_n$ <strong>發散</strong>（divergent）
+<li>若數列 \(\{S_n\}_{n\in\mathbb{N}}\) 發散，則則稱級數 \(\sum^\infty_{n=1}a_n\) <strong>發散</strong>（divergent）
 。</li>
 </ul>
 <h4 id="例題-3">例題</h4>
-<p>求級數和 $\displaystyle \sum^{\infty}_{n=1}{\frac{1}{n(n+1)}}$。</p>
+<p>求級數和 \(\displaystyle \sum^{\infty}_{n=1}{\frac{1}{n(n+1)}}\)。</p>
 <ul>
 <li>提示：使用部分分式分解（partial fraction decomposition）</li>
-<li>答：$\sum^{\infty}_{n=1}{\frac{1}{n(n+1)}}=1$。</li>
+<li>答：<!-- raw HTML omitted -->\(\sum^{\infty}_{n=1}{\frac{1}{n(n+1)}}=1\)<!-- raw HTML omitted -->。</li>
 </ul>
 <h4 id="定義等比數列與等比級數">【定義】等比數列與等比級數</h4>
 <ul>
-<li>等比數列，又稱幾何數列（geometric sequence），定義為 $$\{ar^{n-1}\}_{n\in\mathbb{R}}=\left\{a,ar,ar^2,\ldots,ar^{n-1},\ldots\right\},$$其中 $a$ 為首項， $r$ 為<strong>公比</strong>（common ratio）。</li>
-<li><strong>等比級數</strong>，又稱<strong>幾何級數</strong>（geometric series），定義為 $$a+ar+ar^2+\cdots+ar^{n-1}+\cdots=\sum^{\infty}_{n=1}ar^{n-1},\tag{5}$$其中 $a\neq0$。</li>
+<li>等比數列，又稱幾何數列（geometric sequence），定義為 \[\{ar^{n-1}\}_{n\in\mathbb{R}}=\left\{a,ar,ar^2,\ldots,ar^{n-1},\ldots\right\},\]其中 \(a\) 為首項， \(r\) 為<strong>公比</strong>（common ratio）。</li>
+<li><strong>等比級數</strong>，又稱<strong>幾何級數</strong>（geometric series），定義為 \[a+ar+ar^2+\cdots+ar^{n-1}+\cdots=\sum^{\infty}_{n=1}ar^{n-1},\tag{5}\]其中 \(a\neq0\)。</li>
 </ul>
 <h4 id="定理等比數列的部分和">【定理】等比數列的部分和</h4>
-<p>等比數列 $\{ar^{n-1}\}$ 的第 $n$ 部分和為 </p>
-$$S_n=\frac{a\left(1-r^n\right)}{1-r}\tag{6}$$
+<p>等比數列 \(\{ar^{n-1}\}\) 的第 \(n\) 部分和為 </p>
+\[S_n=\frac{a\left(1-r^n\right)}{1-r}\tag{6}\]
 <h4 id="定理等比級數和-geom">【定理】等比級數和 ^geom</h4>
-<p>設 $\sum^\infty_{n=1}ar^{n-1}$ 為一等比級數。</p>
+<p>設 \(\sum^\infty_{n=1}ar^{n-1}\) 為一等比級數。</p>
 <ul>
-<li>若 $|r|<1$ ，則 $\sum^\infty_{n=1}ar^{n-1}$ 收斂，且等比級數和為 $$\sum^\infty_{n=1}ar^{n-1}=\frac{a}{1-r}.\tag{7}$$</li>
-<li>若 $|r|\geq1$，則 $\sum^\infty_{n=1}ar^{n-1}$ 發散。</li>
+<li>若 \(|r|<1\) ，則 \(\sum^\infty_{n=1}ar^{n-1}\) 收斂，且等比級數和為 \[\sum^\infty_{n=1}ar^{n-1}=\frac{a}{1-r}.\tag{7}\]</li>
+<li>若 \(|r|\geq1\)，則 \(\sum^\infty_{n=1}ar^{n-1}\) 發散。</li>
 </ul>
 <h4 id="例題-4">例題</h4>
 <ol>
-<li>判斷 $\displaystyle \sum^{\infty}_{n=1}{2^{2n}3^{1-n}}$ 是否收斂。
-提示：將一般項化為 $ar^{n-1}$ 的形式。
-答：公比 $r=4/3>1$，故該級數發散。</li>
+<li>判斷 \(\displaystyle \sum^{\infty}_{n=1}{2^{2n}3^{1-n}}\) 是否收斂。
+提示：將一般項化為 \(ar^{n-1}\) 的形式。
+答：<!-- raw HTML omitted -->公比 \(r=4/3>1\)，故該級數發散<!-- raw HTML omitted -->。</li>
 </ol>
 <h4 id="定義調和級數">【定義】調和級數</h4>
 <p><strong>調和級數</strong>（harmonic series）為
 </p>
-$$\sum^\infty_{n=1}{\frac{1}{n}}=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots\tag{8}$$
+\[\sum^\infty_{n=1}{\frac{1}{n}}=1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\cdots\tag{8}\]
 <h4 id="例題-5">例題</h4>
 <p>證明調和級數是發散的。</p>
 <h6 id="證">證.</h6>
-<p>計算 $\{\frac{1}{n}\}_{n\in\mathbb{N}}$ 的第 $2^n$ 部分和 $S_{2^n}=\sum^{2^n}_{k=1}{\frac{1}{k}}$：</p>
+<p>計算 \(\{\frac{1}{n}\}_{n\in\mathbb{N}}\) 的第 \(2^n\) 部分和 \(S_{2^n}=\sum^{2^n}_{k=1}{\frac{1}{k}}\)：</p>
 <ul>
-<li>$S_2=1+\frac{1}{2}$</li>
-<li>$S_4=1+\frac{1}{2}+\big(\frac{1}{3}+\frac{1}{4}\big)>1+\frac{1}{2}+\big(\frac{1}{4}+\frac{1}{4}\big)=1+\frac{2}{2}$</li>
-<li>$\begin{aligned} S_8&=1+\tfrac{1}{2}+\big(\tfrac{1}{3}+\tfrac{1}{4}\big)+\big(\tfrac{1}{5}+\tfrac{1}{6}+\tfrac{1}{7}+\tfrac{1}{8}\big)\\&>1+\tfrac{1}{2}+\big(\tfrac{1}{4}+\tfrac{1}{4}\big)+\big(\tfrac{1}{8}+\tfrac{1}{8}+\tfrac{1}{8}+\tfrac{1}{8}\big)=1+\tfrac{3}{2}\end{aligned}$</li>
-<li>$\ldots$</li>
-<li>可歸納出 $S_{2^n}>1+\frac{n}{2}$。</li>
+<li>\(S_2=1+\frac{1}{2}\)</li>
+<li>\(S_4=1+\frac{1}{2}+\big(\frac{1}{3}+\frac{1}{4}\big)>1+\frac{1}{2}+\big(\frac{1}{4}+\frac{1}{4}\big)=1+\frac{2}{2}\)</li>
+<li>\(\begin{aligned} S_8&=1+\tfrac{1}{2}+\big(\tfrac{1}{3}+\tfrac{1}{4}\big)+\big(\tfrac{1}{5}+\tfrac{1}{6}+\tfrac{1}{7}+\tfrac{1}{8}\big)\\&>1+\tfrac{1}{2}+\big(\tfrac{1}{4}+\tfrac{1}{4}\big)+\big(\tfrac{1}{8}+\tfrac{1}{8}+\tfrac{1}{8}+\tfrac{1}{8}\big)=1+\tfrac{3}{2}\end{aligned}\)</li>
+<li>\(\ldots\)</li>
+<li>可歸納出 \(S_{2^n}>1+\frac{n}{2}\)。</li>
 </ul>
-<p>因為 $\lim_{n\to\infty}\big(1+\frac{n}{2}\big)=\infty$ $\implies$ $\lim_{n\to\infty}S_{2^n}=\infty$ $\implies$ $\lim_{n\to\infty}S_n=\infty$ ，故調和級數是發散的。</p>
+<p>因為 \(\lim_{n\to\infty}\big(1+\frac{n}{2}\big)=\infty\) \(\implies\) \(\lim_{n\to\infty}S_{2^n}=\infty\) \(\implies\) \(\lim_{n\to\infty}S_n=\infty\) ，故調和級數是發散的。</p>
 <h4 id="定理-3">【定理】</h4>
-<p>若級數 $\sum^{\infty}_{n=1}a_n$ 收斂，則 $\lim_{n\to\infty}a_n=0$。</p>
+<p>若級數 \(\sum^{\infty}_{n=1}a_n\) 收斂，則 \(\lim_{n\to\infty}a_n=0\)。</p>
 <h6 id="證-1">證.</h6>
 <ol>
-<li>令 $S_n = a_1 + a_2 + \cdots + a_n$，則 $a_n=S_n-S_{n-1}$。</li>
-<li>因級數 $\sum^{\infty}_{n=1}a_n$ 收斂，故部分和數列 $\{S_n\}$ 收斂。</li>
-<li>令 $\lim_{n\to\infty}S_n=S$。可證明 $\lim_{n\to \infty}S_{n-1}=S$。</li>
-<li>於是 $$\lim_{n\to\infty}{a_n} = \lim_{n\to\infty}{(S_n-S_{n-1})} = \lim_{n\to\infty}{S_n} - \lim_{n\to\infty}{S_{n-1}} =S-S=0.\ \blacksquare$$</li>
+<li>令 \(S_n = a_1 + a_2 + \cdots + a_n\)，則 \(a_n=S_n-S_{n-1}\)。</li>
+<li>因級數 \(\sum^{\infty}_{n=1}a_n\) 收斂，故部分和數列 \(\{S_n\}\) 收斂。</li>
+<li>令 \(\lim_{n\to\infty}S_n=S\)。可證明 \(\lim_{n\to \infty}S_{n-1}=S\)。</li>
+<li>於是 \[\lim_{n\to\infty}{a_n} = \lim_{n\to\infty}{(S_n-S_{n-1})} = \lim_{n\to\infty}{S_n} - \lim_{n\to\infty}{S_{n-1}} =S-S=0.\ \blacksquare\]</li>
 </ol>
 <h6 id="註-6">註.</h6>
 <ul>
 <li>參考：Stewart 9ed, §11.2, Theorem 6 (p.745)</li>
-<li>此定理的逆命題（$\lim_{n\to\infty}a_n=0\implies\sum^{\infty}_{n=1}a_n$ 收斂）不成立。
+<li>此定理的逆命題（\(\lim_{n\to\infty}a_n=0\implies\sum^{\infty}_{n=1}a_n\) 收斂）不成立。
 <ul>
-<li>「$\lim_{n\to\infty}{\frac{1}{n}}=0$ 但 $\sum^\infty_{n=1}{\frac{1}{n}}$ 發散」恰好是一個反例。</li>
+<li>「\(\lim_{n\to\infty}{\frac{1}{n}}=0\) 但 \(\sum^\infty_{n=1}{\frac{1}{n}}\) 發散」恰好是一個反例。</li>
 </ul>
 </li>
 <li>不過，此定理的否逆命題可以用來檢驗級數是否發散。見以下定理。</li>
 </ul>
-<h4 id="定理級數發散測試">【定理】級數發散測試</h4>
-<p>若 $\lim_{n\to\infty}a_n$ 不存在或 $\lim_{n\to\infty}a_n\neq0$，則級數 $\sum^{\infty}_{n=1}a_n$ 發散。</p>
+<h4 id="定理級數發散測試-div-test">【定理】級數發散測試 ^div-test</h4>
+<p>若 \(\lim_{n\to\infty}a_n\) 不存在或 \(\lim_{n\to\infty}a_n\neq0\)，則級數 \(\sum^{\infty}_{n=1}a_n\) 發散。</p>
 <h4 id="例題-6">例題</h4>
-<p>證明 $\displaystyle\sum^\infty_{n=1}\frac{n^2}{5n^2+4}$ 發散。</p>
+<p>證明 \(\displaystyle\sum^\infty_{n=1}\frac{n^2}{5n^2+4}\) 發散。</p>
 <h6 id="證-2">證.</h6>
 <p>因為 </p>
-$$\lim_{n\to\infty}{\frac{n^2}{5n^2+4}}=\lim_{n\to\infty}{\frac{1}{5+4/n^2}}=\frac{1}{5}\neq0,$$
-<p> 所以根據級數發散測試，$\sum^\infty_{n=1}\frac{n^2}{5n^2+4}$ 發散。$\blacksquare$</p>
+\[\lim_{n\to\infty}{\frac{n^2}{5n^2+4}}=\lim_{n\to\infty}{\frac{1}{5+4/n^2}}=\frac{1}{5}\neq0,\]
+<p> 所以根據級數發散測試，\(\sum^\infty_{n=1}\frac{n^2}{5n^2+4}\) 發散。\(\blacksquare\)</p>
 <h4 id="定理收斂級數的運算定理">【定理】收斂級數的運算定理</h4>
-<p>設 $\sum^\infty_{n=1}a_n=A$ 和 $\sum^\infty_{n=1}b_n=B$ 是兩個收斂級數和，$c\in\mathbb{R}$。則</p>
+<p>設 \(\sum^\infty_{n=1}a_n=A\) 和 \(\sum^\infty_{n=1}b_n=B\) 是兩個收斂級數和，\(c\in\mathbb{R}\)。則</p>
 <ol>
-<li>（和法則）$\sum^\infty_{n=1}(a_n+b_n)=A+B$</li>
-<li>（齊法則）$\sum^\infty_{n=1}(ca_n)=cA$</li>
+<li>（和法則）\(\sum^\infty_{n=1}(a_n+b_n)=A+B\)</li>
+<li>（齊法則）\(\sum^\infty_{n=1}(ca_n)=cA\)</li>
 </ol>
 <h6 id="證-3">證.</h6>
-<p>令 $A_n=\sum^n_{i=1}a_i$ 和 $B_n=\sum^n_{i=1}b_i$ 分別為數列 $\{a_n\}$ 和 $\{b_n\}$ 的第 $n$ 部分和，且令 $C_n$ 為數列 $\{a_n+b_n\}$ 的第 $n$ 部分和，即 </p>
-$$C_n=\sum^n_{i=1}\left(a_i+b_i\right)$$
+<p>令 \(A_n=\sum^n_{i=1}a_i\) 和 \(B_n=\sum^n_{i=1}b_i\) 分別為數列 \(\{a_n\}\) 和 \(\{b_n\}\) 的第 \(n\) 部分和，且令 \(C_n\) 為數列 \(\{a_n+b_n\}\) 的第 \(n\) 部分和，即 </p>
+\[C_n=\sum^n_{i=1}\left(a_i+b_i\right)\]
 <p>
 然後計算 </p>
-$$\begin{aligned}\lim_{n\to\infty}C_n&=\lim_{n\to\infty}{\sum^n_{i=1}\left(a_i+b_i\right)}=\lim_{n\to\infty}{\left(\sum^n_{i=1}{a_i}+\sum^n_{i=1}{b_i}\right)}\\&=\lim_{n\to\infty}{\sum^n_{i=1}a_i}+\lim_{n\to\infty}{\sum^n_{i=1}b_i}\\&=\lim_{n\to\infty}{A_n}+\lim_{n\to\infty}{B_n}=A+B.\end{aligned}$$
+\[\begin{aligned}\lim_{n\to\infty}C_n&=\lim_{n\to\infty}{\sum^n_{i=1}\left(a_i+b_i\right)}=\lim_{n\to\infty}{\left(\sum^n_{i=1}{a_i}+\sum^n_{i=1}{b_i}\right)}\\&=\lim_{n\to\infty}{\sum^n_{i=1}a_i}+\lim_{n\to\infty}{\sum^n_{i=1}b_i}\\&=\lim_{n\to\infty}{A_n}+\lim_{n\to\infty}{B_n}=A+B.\end{aligned}\]
 <p>
 所以 </p>
-$$\sum^\infty_{n=1}\left(a_n+b_n\right)=A+B=\sum^\infty_{n=1}{a_n}+\sum^\infty_{n=1}{b_n}.\ \blacksquare$$
+\[\sum^\infty_{n=1}\left(a_n+b_n\right)=A+B=\sum^\infty_{n=1}{a_n}+\sum^\infty_{n=1}{b_n}.\ \blacksquare\]
 <h6 id="註-7">註.</h6>
 <ul>
 <li>參考
@@ -396,13 +410,13 @@ $$\sum^\infty_{n=1}\left(a_n+b_n\right)=A+B=\sum^\infty_{n=1}{a_n}+\sum^\infty_{
 </li>
 </ul>
 <h4 id="定義">【定義】</h4>
-<p>設 $\{a_n\}_{n\in\mathbb{N}}$ 為一數列。</p>
+<p>設 \(\{a_n\}_{n\in\mathbb{N}}\) 為一數列。</p>
 <ol>
-<li>若 $\forall n\in\mathbb{N}$ ，$a_n>0$，則稱級數 $\sum^\infty_{n=1}a_n$ 為<strong>正項級數</strong>（positive term series）。</li>
-<li>若 $\forall n\in\mathbb{N}$ ，$a_n\geq0$，則稱級數 $\sum^\infty_{n=1}a_n$ 為<strong>非負項級數</strong>（nonnegative term series）。</li>
-<li>若 $\forall n\in\mathbb{N}$ ，$a_n<0$，則稱級數 $\sum^\infty_{n=1}a_n$ 為<strong>負項級數</strong>（negative term series）。</li>
-<li>若 $\forall n\in\mathbb{N}$ ，$a_n>0$，則稱級數 $\sum^\infty_{n=1}(-1)^{n-1}a_n$ 為<strong>交錯級數</strong>（alternating term series）。</li>
-<li>若 $\forall n\in\mathbb{N}$ ，有 $a_n\neq0$，使得「對任一 $N>0$，存在 $m,l\geq N$，使得 $a_m>0$ 且 $a_l<0$」，則稱級數 $\sum^\infty_{n=1}a_n$ 為<strong>廣義交錯級數</strong>（generalized alternating term series）。。</li>
+<li>若 \(\forall n\in\mathbb{N}\) ，\(a_n>0\)，則稱級數 \(\sum^\infty_{n=1}a_n\) 為<strong>正項級數</strong>（positive term series）。</li>
+<li>若 \(\forall n\in\mathbb{N}\) ，\(a_n\geq0\)，則稱級數 \(\sum^\infty_{n=1}a_n\) 為<strong>非負項級數</strong>（nonnegative term series）。</li>
+<li>若 \(\forall n\in\mathbb{N}\) ，\(a_n<0\)，則稱級數 \(\sum^\infty_{n=1}a_n\) 為<strong>負項級數</strong>（negative term series）。</li>
+<li>若 \(\forall n\in\mathbb{N}\) ，\(a_n>0\)，則稱級數 \(\sum^\infty_{n=1}(-1)^{n-1}a_n\) 為<strong>交錯級數</strong>（alternating term series）。</li>
+<li>若 \(\forall n\in\mathbb{N}\) ，有 \(a_n\neq0\)，使得「對任一 \(N>0\)，存在 \(m,l\geq N\)，使得 \(a_m>0\) 且 \(a_l<0\)」，則稱級數 \(\sum^\infty_{n=1}a_n\) 為<strong>廣義交錯級數</strong>（generalized alternating term series）。。</li>
 </ol>
 <h6 id="註-8">註.</h6>
 <ul>
@@ -411,20 +425,20 @@ $$\sum^\infty_{n=1}\left(a_n+b_n\right)=A+B=\sum^\infty_{n=1}{a_n}+\sum^\infty_{
 <li>王 定義 10.2-1 (p.340)</li>
 </ul>
 </li>
-<li>級數 $1-2-3+4+5+6-\cdots+100-101+\cdots$ 為一廣義交錯級數。</li>
+<li>級數 \(1-2-3+4+5+6-\cdots+100-101+\cdots\) 為一廣義交錯級數。</li>
 <li>非負項級數和負向級數都可以變換成正項級數且不改變收斂性，所以三者的收斂性一致。</li>
 </ul>
 <h3 id="21-積分審斂法">2.1 積分審斂法</h3>
 <p>級數 </p>
-$$\sum^{\infty}_{n=1}\frac{1}{n^2}=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\cdots$$
+\[\sum^{\infty}_{n=1}\frac{1}{n^2}=\frac{1}{1^2}+\frac{1}{2^2}+\frac{1}{3^2}+\frac{1}{4^2}+\cdots\]
 <p> 是否收斂？</p>
 <p>考慮以下圖形。
 ![[tutor6-integral-test.png]]</p>
-<p>長方形面積的總和 $=\sum^{\infty}_{n=1}{1/n^2}<$ 曲線底下的面積 $\int^{\infty}_1(1/x^2)\text{d}x=1$，所以級數 $\sum^{\infty}_{n=1}{1/n^2}$ 收斂。</p>
-<p>這個級數的求和的問題稱為<a href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98" rel="external" target="_self">巴塞爾問題</a>（Bassel problem），歐拉在 1735 年證明這個級數的和是 $\pi^2/6$。</p>
+<p>長方形面積的總和 \(=\sum^{\infty}_{n=1}{1/n^2}<\) 曲線底下的面積 \(\int^{\infty}_1(1/x^2)\text{d}x=1\)，所以級數 \(\sum^{\infty}_{n=1}{1/n^2}\) 收斂。</p>
+<p>這個級數的求和的問題稱為<a href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98" rel="external" target="_self">巴塞爾問題</a>（Bassel problem），歐拉在 1735 年證明這個級數的和是 \(\pi^2/6\)。</p>
 <h4 id="定理積分審斂法-int-test">【定理】積分審斂法 ^int-test</h4>
-<p>設 $f:[1,\infty)\to\mathbb{R}$ 為一遞減函數，且對每一點 $x\in[1,\infty)$ 都有 $f(x)>0$。對所有 $n\in\mathbb{N}$，令 $a_n=f(n)$。則 </p>
-$$\sum^{\infty}_{n=1}a_n\mbox{ 收斂}\iff\int^\infty_1f(x)\text{d}x\mbox{ 收斂}$$
+<p>設 \(f:[1,\infty)\to\mathbb{R}\) 為一遞減函數，且對每一點 \(x\in[1,\infty)\) 都有 \(f(x)>0\)。對所有 \(n\in\mathbb{N}\)，令 \(a_n=f(n)\)。則 </p>
+\[\sum^{\infty}_{n=1}a_n\mbox{ 收斂}\iff\int^\infty_1f(x)\text{d}x\mbox{ 收斂}\]
 <h6 id="註-9">註.</h6>
 <ul>
 <li>參考
@@ -434,35 +448,35 @@ $$\sum^{\infty}_{n=1}a_n\mbox{ 收斂}\iff\int^\infty_1f(x)\text{d}x\mbox{ 收�
 </ul>
 </li>
 </ul>
-<h4 id="定義p-級數">【定義】$p$-級數</h4>
-<p>設 $p>0$，形如 $\sum^\infty_{n=1}=\frac{1}{n^p}$ 的級數稱為 $p$<strong>-級數</strong>（$p$-series）。</p>
-<h4 id="定理p-級數的收斂性-p-series-conv">【定理】$p$-級數的收斂性 ^p-series-conv</h4>
-<p>設 $p>0$，則 $p$-級數
+<h4 id="定義p-級數">【定義】\(p\)-級數</h4>
+<p>設 \(p>0\)，形如 \(\sum^\infty_{n=1}=\frac{1}{n^p}\) 的級數稱為 \(p\)<strong>-級數</strong>（\(p\)-series）。</p>
+<h4 id="定理p-級數的收斂性-p-series-conv">【定理】\(p\)-級數的收斂性 ^p-series-conv</h4>
+<p>設 \(p>0\)，則 \(p\)-級數
 </p>
-$$\sum^\infty_{n=1}\frac{1}{n^p}\mbox{ 收斂}\iff p>1$$
+\[\sum^\infty_{n=1}\frac{1}{n^p}\mbox{ 收斂}\iff p>1\]
 <h6 id="證-4">證.</h6>
 <ol>
-<li>令函數 $f:[1,\infty)\to\mathbb{R}$，定義為 $f(x)=1/x^p$。</li>
-<li>則對所有 $x\in[1,\infty)$， $f$ 滿足：
+<li>令函數 \(f:[1,\infty)\to\mathbb{R}\)，定義為 \(f(x)=1/x^p\)。</li>
+<li>則對所有 \(x\in[1,\infty)\)， \(f\) 滿足：
 <ul>
-<li>(i) $f$ 為遞減函數；</li>
-<li>(ii) $f(x)>0$。</li>
+<li>(i) \(f\) 為遞減函數；</li>
+<li>(ii) \(f(x)>0\)。</li>
 </ul>
 </li>
-<li>當 $p=1$ 時，$$\int^\infty_1{\frac{1}{x^p}\text{d}x}=\lim_{n\to\infty}{\int^n_1{\frac{1}{x}\text{d}x}}=\lim_{n\to\infty}\ln{n}=\infty$$</li>
-<li>當 $p\neq1$ 時，$$\int^\infty_1{\frac{1}{x^p}\text{d}x}=\lim_{n\to\infty}{\int^n_1{\frac{1}{x^p}\text{d}x}}=\lim_{n\to\infty}{\frac{n^{1-p}-1}{1-p}}=\left\{\begin{array}{ll}\frac{1}{p-1}&\mbox{若 }p>1\\\infty&\mbox{若 }p<1\end{array}\right.$$</li>
-<li>由陳述 2、3、4 及積分審斂法，$$p>1\iff\int^\infty_1\frac{1}{x^p}\text{d}x\mbox{ 收斂}\iff\sum^{\infty}_{n=1}\frac{1}{n^p}\mbox{ 收斂}.\ \blacksquare$$</li>
+<li>當 \(p=1\) 時，\[\int^\infty_1{\frac{1}{x^p}\text{d}x}=\lim_{n\to\infty}{\int^n_1{\frac{1}{x}\text{d}x}}=\lim_{n\to\infty}\ln{n}=\infty\]</li>
+<li>當 \(p\neq1\) 時，\[\int^\infty_1{\frac{1}{x^p}\text{d}x}=\lim_{n\to\infty}{\int^n_1{\frac{1}{x^p}\text{d}x}}=\lim_{n\to\infty}{\frac{n^{1-p}-1}{1-p}}=\left\{\begin{array}{ll}\frac{1}{p-1}&\mbox{若 }p>1\\\infty&\mbox{若 }p<1\end{array}\right.\]</li>
+<li>由陳述 2、3、4 及積分審斂法，\[p>1\iff\int^\infty_1\frac{1}{x^p}\text{d}x\mbox{ 收斂}\iff\sum^{\infty}_{n=1}\frac{1}{n^p}\mbox{ 收斂}.\ \blacksquare\]</li>
 </ol>
 <h3 id="22-比較審斂法-comp-test">2.2 比較審斂法 ^comp-test</h3>
 <p>考慮兩個級數 </p>
-$$\sum^\infty_{n=1}\frac{1}{2^n+1}\quad\mbox{和}\quad\sum^\infty_{n=1}\frac{1}{2^n},$$
+\[\sum^\infty_{n=1}\frac{1}{2^n+1}\quad\mbox{和}\quad\sum^\infty_{n=1}\frac{1}{2^n},\]
 <p>
-因為對所有 $n\in\mathbb{N}$ ，都有 $\frac{1}{2^n+1}<\frac{1}{2^n}$。又 $\sum^\infty_{n=1}\frac{1}{2^n}=1$ （此為等比級數）。所以可推論 $\sum^\infty_{n=1}\frac{1}{2^n+1}$ 收斂到小於 $1$ 的數。</p>
+因為對所有 \(n\in\mathbb{N}\) ，都有 \(\frac{1}{2^n+1}<\frac{1}{2^n}\)。又 \(\sum^\infty_{n=1}\frac{1}{2^n}=1\) （此為等比級數）。所以可推論 \(\sum^\infty_{n=1}\frac{1}{2^n+1}\) 收斂到小於 \(1\) 的數。</p>
 <h4 id="定理直接比較審斂法-dir-comp-test">【定理】直接比較審斂法 ^dir-comp-test</h4>
-<p>設 $\sum^\infty_{n=1}a_n$、 $\sum^\infty_{n=1}b_n$ 是兩個正項級數，且假設對所有 $n\in\mathbb{N}$ 都有 $0<a_n\leq b_n$。</p>
+<p>設 \(\sum^\infty_{n=1}a_n\)、 \(\sum^\infty_{n=1}b_n\) 是兩個正項級數，且假設對所有 \(n\in\mathbb{N}\) 都有 \(0<a_n\leq b_n\)。</p>
 <ol>
-<li>若 $\sum^\infty_{n=1}b_n$ 收斂，則 $\sum^\infty_{n=1}a_n$ 收斂。</li>
-<li>若 $\sum^\infty_{n=1}a_n$ 發散，則 $\sum^\infty_{n=1}b_n$ 發散。</li>
+<li>若 \(\sum^\infty_{n=1}b_n\) 收斂，則 \(\sum^\infty_{n=1}a_n\) 收斂。</li>
+<li>若 \(\sum^\infty_{n=1}a_n\) 發散，則 \(\sum^\infty_{n=1}b_n\) 發散。</li>
 </ol>
 <h6 id="註-10">註.</h6>
 <ul>
@@ -475,22 +489,22 @@ $$\sum^\infty_{n=1}\frac{1}{2^n+1}\quad\mbox{和}\quad\sum^\infty_{n=1}\frac{1}{
 </ul>
 <h4 id="例題-7">例題</h4>
 <ol>
-<li>證明 $\sum^{\infty}_{n=1}\frac{1}{n!}$ 收斂。
-提示：利用 $2^n<n!$</li>
-<li>證明 $\sum^{\infty}_{n=1}\frac{\ln{n}}{n}$ 發散。</li>
+<li>證明 \(\sum^{\infty}_{n=1}\frac{1}{n!}\) 收斂。
+提示：利用 \(2^n<n!\)</li>
+<li>證明 \(\sum^{\infty}_{n=1}\frac{\ln{n}}{n}\) 發散。</li>
 </ol>
 <p>考慮級數 </p>
-$$\sum^\infty_{n=1}\frac{1}{2^n-1}\quad\mbox{和}\quad\sum^\infty_{n=1}\frac{1}{2^n}.$$
+\[\sum^\infty_{n=1}\frac{1}{2^n-1}\quad\mbox{和}\quad\sum^\infty_{n=1}\frac{1}{2^n}.\]
 <p>
-無法使用直接比較審斂法來證明 $\sum^\infty_{n=1}\frac{1}{2^n-1}$ 收斂，但可以用以下方法。</p>
+無法使用直接比較審斂法來證明 \(\sum^\infty_{n=1}\frac{1}{2^n-1}\) 收斂，但可以用以下方法。</p>
 <h4 id="定理極限值比較審斂法">【定理】極限值比較審斂法</h4>
-<p>設 $\sum^\infty_{n=1}a_n$、 $\sum^\infty_{n=1}b_n$ 是兩個正項級數，且假設 </p>
-$$\lim_{n\to\infty}\frac{a_n}{b_n}=L$$
+<p>設 \(\sum^\infty_{n=1}a_n\)、 \(\sum^\infty_{n=1}b_n\) 是兩個正項級數，且假設 </p>
+\[\lim_{n\to\infty}\frac{a_n}{b_n}=L\]
 <p>
 則</p>
 <ol>
-<li>$\sum^\infty_{n=1}b_n$ 收斂 $\implies$ $\sum^\infty_{n=1}a_n$ 收斂</li>
-<li>若 $L\neq 0$，則  $\sum^\infty_{n=1}a_n$ 收斂 $\iff$ $\sum^\infty_{n=1}b_n$ 收斂</li>
+<li>\(\sum^\infty_{n=1}b_n\) 收斂 \(\implies\) \(\sum^\infty_{n=1}a_n\) 收斂</li>
+<li>若 \(L\neq 0\)，則  \(\sum^\infty_{n=1}a_n\) 收斂 \(\iff\) \(\sum^\infty_{n=1}b_n\) 收斂</li>
 </ol>
 <h6 id="註-11">註.</h6>
 <ul>
@@ -503,9 +517,9 @@ $$\lim_{n\to\infty}\frac{a_n}{b_n}=L$$
 </ul>
 <h4 id="例題-8">例題</h4>
 <ol>
-<li>證明 $\sum^\infty_{n=1}\frac{1}{2^n-1}$ 收斂。</li>
-<li>證明 $\sum^\infty_{n=1}\frac{1}{4n^2-3n+17}$ 收斂。</li>
-<li>證明 $\sum^\infty_{n=1}\frac{n}{3n^2-3n+7}$ 發散。</li>
+<li>證明 \(\sum^\infty_{n=1}\frac{1}{2^n-1}\) 收斂。</li>
+<li>證明 \(\sum^\infty_{n=1}\frac{1}{4n^2-3n+17}\) 收斂。</li>
+<li>證明 \(\sum^\infty_{n=1}\frac{n}{3n^2-3n+7}\) 發散。</li>
 </ol>
 
             <footer class="footline">
@@ -582,12 +596,12 @@ $$\lim_{n\to\infty}\frac{a_n}{b_n}=L$$
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723213040" defer></script>
-        <script src="/js/search.js?1723213040" defer></script>
+        <script src="/js/auto-complete.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723649390" defer></script>
+        <script src="/js/search.js?1723649390" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -598,7 +612,25 @@ $$\lim_{n\to\infty}\frac{a_n}{b_n}=L$$
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/notebook/index.html" class=""><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/tutor-7/index.html" class="active"><a class="padding" href="/notebook/math/tutor-7/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/math-models-and-ode/index.html" class=""><a class="padding" href="/notebook/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/double-integral/index.html" class=""><a class="padding" href="/notebook/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
@@ -663,8 +695,8 @@ $$\lim_{n\to\infty}\frac{a_n}{b_n}=L$$
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723213040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723213040" defer></script>
+    <script src="/js/clipboard.min.js?1723649390" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723649390" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -679,28 +711,28 @@ $$\lim_{n\to\infty}\frac{a_n}{b_n}=L$$
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723213040"></script>
-    <script src="/js/d3/d3-color.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723213040" defer></script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
-    <script src="/js/mermaid.min.js?1723213040" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723649390"></script>
+    <script src="/js/d3/d3-color.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723649390" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
+    <script src="/js/mermaid.min.js?1723649390" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723213040" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723213040" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723649390" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723649390" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723213040", cssInProject: true, assetsBuster: "?1723213040" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723649390", cssInProject: true, assetsBuster: "?1723649390" };
     </script>
-    <script src="/js/theme.js?1723213040" defer></script>
+    <script src="/js/theme.js?1723649390" defer></script>
   </body>
 </html>

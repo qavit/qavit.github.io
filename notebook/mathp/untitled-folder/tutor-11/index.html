@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="積分技巧 (1) 上課日期：[[2024-07-10]] 目錄 1. [[#^1|含有三角函數的被積函數]] 1.1 [[#^1-1|sinᵐ(x) cosⁿ(x) 型]] 1.1.1 [[#^1-1-1|關鍵概念]] 1.1.2 [[#^1-1-2|例題]] 1.1.3 [[#^1-1-3|策略]] 1.2 [[#^1-2|tanᵐ(x) secⁿ(x) 型]] 1.2.1 [[#^1-2-1|關鍵概念]] 1.2.2 [[#^1-2-2|一般型]] — $m$ 奇或 $n$ 偶 1.2.3 [[#^1-2-3|策略]] 1.2.4 [[#^1-2-4|特殊型]] — $\int{\tan{x}\dd{x}}$、$\int{\sec{x}\dd{x}}$ 1.3 [[#^1-3|sin(mx) cos(nx) 型]] 1.3.1 [[#^1-3-1|關鍵概念]] 1.3.2 [[#^1-3-2|例題]] 1.3.3 [[#^1-3-3|三角函數的正交性]] 2. [[#^2|三角代換法]]（trigonometric substitution） 2.1 [[#^2-1|範例：橢圓面積]] 2.2 [[#^2-2|常用的三角代換]]・[[#^tri-sub|表格]] 2.3 [[#^2-3|例題]] 2.4 [[#^2-4|積分表中的三角代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 1.">
+    <meta name="author" content="Sin-iu Ho">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
+    <meta name="twitter:description" content="積分技巧 (1) 上課日期：[[2024-07-10]] 目錄 1. [[#^1|含有三角函數的被積函數]] 1.1 [[#^1-1|sinᵐ(x) cosⁿ(x) 型]] 1.1.1 [[#^1-1-1|關鍵概念]] 1.1.2 [[#^1-1-2|例題]] 1.1.3 [[#^1-1-3|策略]] 1.2 [[#^1-2|tanᵐ(x) secⁿ(x) 型]] 1.2.1 [[#^1-2-1|關鍵概念]] 1.2.2 [[#^1-2-2|一般型]] — $m$ 奇或 $n$ 偶 1.2.3 [[#^1-2-3|策略]] 1.2.4 [[#^1-2-4|特殊型]] — $\int{\tan{x}\dd{x}}$、$\int{\sec{x}\dd{x}}$ 1.3 [[#^1-3|sin(mx) cos(nx) 型]] 1.3.1 [[#^1-3-1|關鍵概念]] 1.3.2 [[#^1-3-2|例題]] 1.3.3 [[#^1-3-3|三角函數的正交性]] 2. [[#^2|三角代換法]]（trigonometric substitution） 2.1 [[#^2-1|範例：橢圓面積]] 2.2 [[#^2-2|常用的三角代換]]・[[#^tri-sub|表格]] 2.3 [[#^2-3|例題]] 2.4 [[#^2-4|積分表中的三角代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 1.">
+    <meta property="og:url" content="http://localhost:1313/notebook/mathp/untitled-folder/tutor-11/index.html">
+    <meta property="og:description" content="積分技巧 (1) 上課日期：[[2024-07-10]] 目錄 1. [[#^1|含有三角函數的被積函數]] 1.1 [[#^1-1|sinᵐ(x) cosⁿ(x) 型]] 1.1.1 [[#^1-1-1|關鍵概念]] 1.1.2 [[#^1-1-2|例題]] 1.1.3 [[#^1-1-3|策略]] 1.2 [[#^1-2|tanᵐ(x) secⁿ(x) 型]] 1.2.1 [[#^1-2-1|關鍵概念]] 1.2.2 [[#^1-2-2|一般型]] — $m$ 奇或 $n$ 偶 1.2.3 [[#^1-2-3|策略]] 1.2.4 [[#^1-2-4|特殊型]] — $\int{\tan{x}\dd{x}}$、$\int{\sec{x}\dd{x}}$ 1.3 [[#^1-3|sin(mx) cos(nx) 型]] 1.3.1 [[#^1-3-1|關鍵概念]] 1.3.2 [[#^1-3-2|例題]] 1.3.3 [[#^1-3-3|三角函數的正交性]] 2. [[#^2|三角代換法]]（trigonometric substitution） 2.1 [[#^2-1|範例：橢圓面積]] 2.2 [[#^2-2|常用的三角代換]]・[[#^tri-sub|表格]] 2.3 [[#^2-3|例題]] 2.4 [[#^2-4|積分表中的三角代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 1.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Notebook">
+    <meta property="article:published_time" content="2024-07-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-30T00:00:00+00:00">
+    <meta property="article:tag" content="Tutor">
+    <meta property="article:tag" content="Calculus">
+    <meta property="article:tag" content="Integral">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="description" content="積分技巧 (1) 上課日期：[[2024-07-10]] 目錄 1. [[#^1|含有三角函數的被積函數]] 1.1 [[#^1-1|sinᵐ(x) cosⁿ(x) 型]] 1.1.1 [[#^1-1-1|關鍵概念]] 1.1.2 [[#^1-1-2|例題]] 1.1.3 [[#^1-1-3|策略]] 1.2 [[#^1-2|tanᵐ(x) secⁿ(x) 型]] 1.2.1 [[#^1-2-1|關鍵概念]] 1.2.2 [[#^1-2-2|一般型]] — $m$ 奇或 $n$ 偶 1.2.3 [[#^1-2-3|策略]] 1.2.4 [[#^1-2-4|特殊型]] — $\int{\tan{x}\dd{x}}$、$\int{\sec{x}\dd{x}}$ 1.3 [[#^1-3|sin(mx) cos(nx) 型]] 1.3.1 [[#^1-3-1|關鍵概念]] 1.3.2 [[#^1-3-2|例題]] 1.3.3 [[#^1-3-3|三角函數的正交性]] 2. [[#^2|三角代換法]]（trigonometric substitution） 2.1 [[#^2-1|範例：橢圓面積]] 2.2 [[#^2-2|常用的三角代換]]・[[#^tri-sub|表格]] 2.3 [[#^2-3|例題]] 2.4 [[#^2-4|積分表中的三角代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 1.">
+    <meta itemprop="datePublished" content="2024-07-30T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-30T00:00:00+00:00">
+    <meta itemprop="wordCount" content="1146">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="keywords" content="Tutor,Calculus,Integral">
+    <title></title>
+    <link href="/images/favicon.png?1723648765" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723648765" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723648765" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723648765" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723648765" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723648765" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723648765" rel="stylesheet">
+    <link href="/css/fonts.css?1723648765" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723648765" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723648765" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723648765" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723648765" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723648765" rel="stylesheet">
+    <link href="/css/print.css?1723648765" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723648765"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/notebook/mathp/untitled-folder/tutor-11/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#1-含有三角函數的被積函數-1">1. 含有三角函數的被積函數 ^1</a>
+      <ul>
+        <li><a href="#11-sinmx-cosnx-型-1-1">1.1 $\sin^m{x} \cos^n{x}$ 型 ^1-1</a></li>
+        <li><a href="#12-tanmx-secnx-型-1-2">1.2 $\tan^m{x} \sec^n{x}$ 型 ^1-2</a></li>
+        <li><a href="#13-sinmx-cosnx-型-1-3">1.3 $\sin{mx} \cos{nx}$ 型 ^1-3</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-三角代換法-2">2. 三角代換法 ^2</a>
+      <ul>
+        <li><a href="#21-範例橢圓面積-2-1">2.1 範例：橢圓面積 ^2-1</a></li>
+        <li><a href="#22-常用的三角代換-2-2">2.2 常用的三角代換 ^2-2</a></li>
+        <li><a href="#23-例題-2-3">2.3 例題 ^2-3</a></li>
+        <li><a href="#24-積分表中的三角代換-2-4">2.4 積分表中的三角代換 ^2-4</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/mathp/untitled%20folder/tutor-11.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/cs/shell-var/index.html" title="Shell 變數操作 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/integral/index.html">Integral</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id=""></h1>
+
+<h1 id="積分技巧-1">積分技巧 (1)</h1>
+<ul>
+<li>上課日期：[[2024-07-10]]</li>
+<li><strong>目錄</strong>
+<ul>
+<li>1. <strong>[[#^1|含有三角函數的被積函數]]</strong>
+<ul>
+<li>1.1 [[#^1-1|sinᵐ(x) cosⁿ(x) 型]]
+<ul>
+<li>1.1.1 [[#^1-1-1|關鍵概念]]</li>
+<li>1.1.2 [[#^1-1-2|例題]]</li>
+<li>1.1.3 [[#^1-1-3|策略]]</li>
+</ul>
+</li>
+<li>1.2 [[#^1-2|tanᵐ(x) secⁿ(x) 型]]
+<ul>
+<li>1.2.1 [[#^1-2-1|關鍵概念]]</li>
+<li>1.2.2 [[#^1-2-2|一般型]] — $m$ 奇或 $n$ 偶</li>
+<li>1.2.3 [[#^1-2-3|策略]]</li>
+<li>1.2.4 [[#^1-2-4|特殊型]] — $\int{\tan{x}\dd{x}}$、$\int{\sec{x}\dd{x}}$</li>
+</ul>
+</li>
+<li>1.3 [[#^1-3|sin(mx) cos(nx) 型]]
+<ul>
+<li>1.3.1 [[#^1-3-1|關鍵概念]]</li>
+<li>1.3.2 [[#^1-3-2|例題]]</li>
+<li>1.3.3 [[#^1-3-3|三角函數的正交性]]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2. <strong>[[#^2|三角代換法]]</strong>（trigonometric substitution）
+<ul>
+<li>2.1 [[#^2-1|範例：橢圓面積]]</li>
+<li>2.2 [[#^2-2|常用的三角代換]]・[[#^tri-sub|表格]]</li>
+<li>2.3 [[#^2-3|例題]]</li>
+<li>2.4 [[#^2-4|積分表中的三角代換]]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>[[tutor-int-tech|本章]]其他部分</strong>
+<ul>
+<li>[[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法</li>
+<li>[[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1)</li>
+<li>[[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介</li>
+<li>[[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3)</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-含有三角函數的被積函數-1">1. 含有三角函數的被積函數 ^1</h2>
+<h3 id="11-sinmx-cosnx-型-1-1">1.1 $\sin^m{x} \cos^n{x}$ 型 ^1-1</h3>
+<h4 id="111-關鍵概念-1-1-1">1.1.1 關鍵概念 ^1-1-1</h4>
+<ol>
+<li>三角恆等式 $\sin^2{x} + \cos^2{x} = 1$</li>
+<li>變數變換 $u=\cos{x}$ 或 $u=\sin{x}$</li>
+</ol>
+<h4 id="112-例題-1-1-2">1.1.2 例題 ^1-1-2</h4>
+<h5 id="例題-1-1-eq1-1">例題 1-1 ^eq1-1</h5>
+<p>求 $\displaystyle\int \cos^3{x} \dd{x}$。 %%Stewart, §7.2, Example 1, p.493%%</p>
+<ul>
+<li>提示：將 $\cos^3{x}$ 分解為 $\cos{x} \cdot \cos^2{x}$，然後使用 $\cos^2{x} = 1 - \sin^2{x}$，再進行變數變換 $u=\sin{x}$。</li>
+<li>解：<!-- raw HTML omitted -->$\int \cos^3{x} \dd{x}=\sin{x}-\frac{1}{3}\sin^3{x}+C$<!-- raw HTML omitted --></li>
+</ul>
+<h5 id="例題-1-2-eq1-2">例題 1-2 ^eq1-2</h5>
+<p>求 $\displaystyle \int \sin^5{x} \cos^2{x} \dd{x}$。 %%Stewart, §7.2, Example 2, p.493%%</p>
+<ul>
+<li>提示：將 $\sin^5{x}$ 分解為 $\sin^4{x} \cdot \sin{x}$，然後使用 $\sin^4{x} = (1 - \cos^2{x})^2$，再進行變數變換 $u=\cos{x}$。</li>
+<li>解：<!-- raw HTML omitted -->$\int \sin^5{x} \cos^2{x} \dd{x} =-\frac{1}{3}\cos^3{x}+\frac{2}{5}\cos^5{x}-\frac{1}{7}\cos^7{x}+C$<!-- raw HTML omitted --></li>
+</ul>
+<h5 id="例題-1-3-eq1-3">例題 1-3 ^eq1-3</h5>
+<p>求 $\displaystyle \int_0^\pi \sin^2{x} \dd{x}$。%%Stewart, §7.2, Example 3, p.494%%</p>
+<ul>
+<li>提示：使用三角半角公式 $\sin^2{x} = \frac{1 - \cos{2x}}{2}$。</li>
+<li>解：<!-- raw HTML omitted -->$\int_0^\pi \sin^2{x} \dd{x}=\frac{\pi}{2}$<!-- raw HTML omitted --></li>
+<li>註：也可以用分部積分法、降次積分法。</li>
+</ul>
+<h5 id="例題-1-4-eq1-4">例題 1-4 ^eq1-4</h5>
+<p>求 $\displaystyle \int_0^\pi \sin^4{x} \dd{x}$。%%Stewart, §7.2, Example 4, p.494%%</p>
+<ul>
+<li>提示：使用 $\sin^4{x} = (\sin^2{x})^2 = \left(\frac{1 - \cos{2x}}{2}\right)^2$ 和 $\cos^2(2x)=\frac{1}{2}(1+\cos{4x})$。</li>
+<li>解：<!-- raw HTML omitted -->$\int_0^\pi{\sin^4{x}\dd{x}}=\frac{1}{4}\left(\frac{3}{2}x-\sin{2x}+\frac{1}{8}\sin{4x}\right)+C$<!-- raw HTML omitted --></li>
+<li>註：也可以用降次積分法。</li>
+</ul>
+<h4 id="113-策略-1-1-3">1.1.3 策略 ^1-1-3</h4>
+<blockquote>
+<p>[!tip]</p>
+<p>對於 $\displaystyle\int \sin^m{x} \cos^n{x} \dd{x}$ 形式的積分，</p>
+<ol>
+<li>若 $\cos$ 的冪次是奇數，則使用代換 $\cos^2{x} = 1 - \sin^2{x}$ 和 $u=\sin{x}$</li>
+<li>若 $\sin$ 的冪次是奇數，則使用代換 $\sin^2{x} = 1 - \cos^2{x}$ 和 $u=\cos{x}$</li>
+<li>若 $\sin$ 和 $\cos$ 的冪次都是偶數，則使用半角公式：
+<ul>
+<li>$\displaystyle \sin^2{x} = \frac{1 - \cos{2x}}{2}$</li>
+<li>$\displaystyle \cos^2{x} = \frac{1 + \cos{2x}}{2}$</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h3 id="12-tanmx-secnx-型-1-2">1.2 $\tan^m{x} \sec^n{x}$ 型 ^1-2</h3>
+<h4 id="121-關鍵概念-1-2-1">1.2.1 關鍵概念 ^1-2-1</h4>
+<ol>
+<li>三角恆等式 $\sec^2{x} = 1+\tan^2{x}$</li>
+<li>變數變換
+<ul>
+<li>$u=\tan{x}$，$\dd{u}=\sec^2{x}\dd{x}$</li>
+<li>$u=\sec{x}$，$\dd{u}=\sec{x}\tan{x}\dd{x}$</li>
+</ul>
+</li>
+</ol>
+<h4 id="122-例題一般型-1-2-2">1.2.2 例題（一般型） ^1-2-2</h4>
+<h5 id="例題-1-5-eq1-5">例題 1-5 ^eq1-5</h5>
+<p>求 $\displaystyle \int \tan^6{x} \sec^4{x} \dd{x}$。%%Stewart, §7.2, Example 5, p.495%%</p>
+<ul>
+<li>提示：使用 $\sec^2{x} = 1+\tan^2{x}$ 和變數變換 $u=\tan{x}$。</li>
+<li>解：<!-- raw HTML omitted -->$\int {\tan^6{x} \sec^4{x} \dd{x}}=\frac{1}{7}\tan^7{x}+\frac{1}{9}\tan^9{x}+C$<!-- raw HTML omitted --></li>
+</ul>
+<h5 id="例題-1-6-eq1-6">例題 1-6 ^eq1-6</h5>
+<p>求 $\displaystyle \int \tan^5{x} \sec^7{x} \dd{x}$。%%Stewart, §7.2, Example 6, p.496%%</p>
+<ul>
+<li>提示：使用 $\tan^2{x} = \sec^2{x}-1$ 和變數變換 $u=\sec{x}$。</li>
+<li>解：<!-- raw HTML omitted -->$\int \tan^5{x} \sec^7{x} \dd{x}=\frac{1}{11}\sec^{11}{x}-\frac{2}{9}\sec^9{x}+\frac{1}{7}\sec^7{x}+C$<!-- raw HTML omitted --></li>
+</ul>
+<h4 id="123-策略-1-2-3">1.2.3 策略 ^1-2-3</h4>
+<blockquote>
+<p>[!tip]
+對於 $\displaystyle\int\tan^m{x} \sec^n{x}\dd{x}$ 形式的積分，</p>
+<ol>
+<li>一般型
+1. 若 $\sec$ 的冪次是偶數，則使用代換  $\sec^2{x} = 1+\tan^2{x}$ 和 $u=\tan{x}$
+2. 若 $\tan$ 的冪次是奇數，則使用代換   $\tan^2{x} = 1-\sec^2{x}$ 和 $u=\sec{x}$</li>
+<li>（特殊型）其他狀況下，此策略不夠明確。可能需要一些恆等式、分部積分、偶爾需要：
+- $\displaystyle \int \tan{x} \dd{x}=\ln{\left|\sec{x}\right|} + C,$
+- $\displaystyle \int \sec{x} \dd{x}=\ln{\left|\sec{x} + \tan{x}\right|} + C,$
+- 和一些小聰明。</li>
+</ol>
+</blockquote>
+<h4 id="124-例題特殊型-1-2-4">1.2.4 例題（特殊型） ^1-2-4</h4>
+<h5 id="例題-1-7-eq1-7">例題 1-7 ^eq1-7</h5>
+<p>證明 $\displaystyle \int \tan{x} \dd{x}=\ln{\left|\sec{x}\right|} + C$ 。%%Stewart, §7.2 p.496%%</p>
+<ul>
+<li>提示：使用恆等式 $\tan{x}=\dfrac{\sin{x}}{\cos{x}}$ 和變數變換 $u = \cos{x}$。</li>
+<li>證：$$\begin{aligned}\int{\tan{x}\dd{x}}&=\int{\frac{\sin{x}}{\cos{x}}\dd{x}}=\int\frac{\dd{u}}{u}\\&=-\ln|u|+C=\ln{\left(\left|\cos{x}\right|^{-1}\right)}+C=\ln{\left|\sec{x}\right|}+C.\end{aligned}$$</li>
+</ul>
+<h5 id="例題-1-8-eq1-8">例題 1-8 ^eq1-8</h5>
+<p>證明 $\displaystyle \int \sec{x} \dd{x}=\ln{|\sec{x} + \tan{x}|} + C$ 。%% Stewart, §7.2, p.497%%</p>
+<ul>
+<li>提示：乘以因子 $\dfrac{\sec{x} + \tan{x}}{\sec{x} + \tan{x}}$，然後使用變數變換 $u=\sec{x}+\tan{x}$，$\dd{u}=\left(\sec{x}\tan{x}+\sec^2{x}\right)\dd{x}$。</li>
+<li>證：$$\begin{aligned}\int \sec{x} &= \int{\left(\sec{x}\cdot\frac{\sec{x} + \tan{x}}{\sec{x} + \tan{x}}\right)\dd{x}} = \int{\frac{\sec^2{x}+\sec{x}\tan{x}}{\sec{x}+\tan{x}}\dd{x}}\\&=\int{\frac{\dd{u}}{u}}=\ln{|u|}+C=\ln{|\sec{x} + \tan{x}|} + C.\end{aligned}$$</li>
+<li>註：<a href="https://en.wikipedia.org/wiki/Integral_of_the_secant_function#By_a_standard_substitution_(Gregory's_approach)" rel="external" target="_self">Gregory&rsquo;s approach</a></li>
+</ul>
+<h5 id="例題-1-9-eq1-9">例題 1-9 ^eq1-9</h5>
+<p>求 $\displaystyle \int \tan^3{x} \dd{x}$。%% Stewart, §7.2, Example 7, p.497%%</p>
+<ul>
+<li>提示：
+<ul>
+<li>將 $\tan^3{x}$ 分解為 $\tan{x} \cdot \tan^2{x}$，使用 $\tan^2{x} = \sec^2{x} - 1$，之後拆成兩項各自積分。</li>
+<li>或者使用一般型的變數變換 $u=\sec{x}$。</li>
+</ul>
+</li>
+<li>解：<!-- raw HTML omitted -->$\int \tan^3{x} \dd{x}=\frac{1}{2}\tan^2{x}-\ln{|\sec{x}|}+C = \frac{1}{2}\sec^2{x}-\ln{|\sec{x}|}+C&rsquo;$<!-- raw HTML omitted --></li>
+</ul>
+<h5 id="例題-1-10-eq1-10">例題 1-10 ^eq1-10</h5>
+<p>求 $\displaystyle \int \sec^3{\theta} \dd{\theta}$ 。%% Stewart, §7.2, Example 8, p.497%%</p>
+<ul>
+<li>提示：使用分部積分 $\int u \dd{v}$，其中 $u=\sec{\theta}$，$\dd{v} = \sec^2{\theta}\dd{\theta}$。</li>
+<li>解：
+<ol>
+<li>設 $u = \sec{\theta}$ 和 $\dd{v} = \sec^2{\theta} \dd{\theta}$。那麼 $\dd{u} = \sec{\theta} \tan{\theta} \dd{\theta}$ 和 $v = \tan{\theta}$，則 $$\int\sec^3{\theta} \dd{\theta} = \sec{\theta} \tan{\theta} - \int \sec{\theta} \tan^2{\theta} \dd{\theta}.$$</li>
+<li>. 由於 $\tan^2{\theta} = \sec^2{\theta} - 1$，我們得到 $$\underbrace{\int \sec^3{\theta} \dd{\theta}}_{=I} = \sec{\theta} \tan{\theta} - \int (\sec^3{\theta} - \sec{\theta}) \dd{\theta} = \sec{\theta} \tan{\theta} - \underbrace{\int \sec^3{\theta} \dd{\theta}}_{=I} + \int{\sec{\theta}\dd{\theta}}.$$</li>
+<li>故 $$\begin{aligned}2I=2 \int \sec^3{\theta} \dd{\theta} &= \sec{\theta} \tan{\theta} + \ln{\left|\sec{\theta} + \tan{\theta}\right|} + C'\\\implies \int \sec^3{\theta} \dd{\theta} &= \frac{1}{2}\left(\sec{\theta} \tan{\theta} + \ln{\left|\sec{\theta} + \tan{\theta}\right|}\right) + C.\end{aligned}$$</li>
+</ol>
+</li>
+<li>Ref: <a href="https://en.wikipedia.org/wiki/Integral_of_secant_cubed" rel="external" target="_self">Wikipedia - Integral of secant cubed</a></li>
+</ul>
+<h3 id="13-sinmx-cosnx-型-1-3">1.3 $\sin{mx} \cos{nx}$ 型 ^1-3</h3>
+<h4 id="131-關鍵概念-1-3-1">1.3.1 關鍵概念 ^1-3-1</h4>
+<p>利用<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F#%E7%A7%AF%E5%8C%96%E5%92%8C%E5%B7%AE%E4%B8%8E%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%E6%81%86%E7%AD%89%E5%BC%8F" rel="external" target="_self"><strong>積化和差公式</strong></a>（product-to-sum identities）處理。</p>
+<ul>
+<li>$\sin{A}\cos{B} = \frac{1}{2} [\sin{(A-B)} + \sin{(A+B)}]$</li>
+<li>$\sin{A}\sin{B} = \frac{1}{2} [\cos{(A-B)} - \cos{(A+B)}]$</li>
+<li>$\cos{A}\cos{B} = \frac{1}{2} [\cos{(A-B)} + \cos{(A+B)}]$</li>
+</ul>
+<h4 id="132-例題-1-3-2">1.3.2 例題 ^1-3-2</h4>
+<h5 id="例題-1-11-eq1-11">例題 1-11 ^eq1-11</h5>
+<p>求 $\displaystyle \int \sin{4x}\cos{5x} \dd{x}$。%% Stewart, §7.2, Example 9, p.498%%</p>
+<ul>
+<li>提示：使用積化和差公式 $\sin{A}\cos{B} = \frac{1}{2} [\sin{(A-B)} + \sin{(A+B)}]$  ，將積分轉化 $\frac{1}{2}\int{(\sin{9x}-\sin{x})\dd{x}}$，然後進行積分。</li>
+</ul>
+<h4 id="133-三角函數的正交性-1-3-3">1.3.3 三角函數的正交性 ^1-3-3</h4>
+<p>設 $m,n\in\mathbb{Z}$</p>
+<ol>
+<li>$\displaystyle \int^\pi_{-\pi}{\sin{mx}\cos{nx}\dd{x}}=0$</li>
+<li>$\displaystyle \int^\pi_{-\pi}{\sin{mx}\sin{nx}\dd{x}}=\pi\delta_{mn}=\begin{cases}0&amp;\mbox{若 }m\neq n\\pi&amp;\mbox{若 }m = n\end{cases}$</li>
+<li>$\displaystyle \int^\pi_{-\pi}{\cos{mx}\cos{nx}\dd{x}}=\pi\delta_{mn}=\begin{cases}0&amp;\mbox{若 }m\neq n\\pi&amp;\mbox{若 }m = n\end{cases}$</li>
+</ol>
+<p>%% 朱 Ch7 例 7.4.8, p.75%%
+%% Stewart, §7.2, Exercises 75–77, p.500%%</p>
+<p>其中 <strong><a href="https://zh.wikipedia.org/zh-tw/%E5%85%8B%E7%BD%97%E5%86%85%E5%85%8B%CE%B4%E5%87%BD%E6%95%B0" rel="external" target="_self">克羅內克 δ 函數</a></strong>（Kronecker delta）定義為 $\delta_{ij}=\begin{cases}0&amp;\mbox{若 }i\neq j\1&amp;\mbox{若 }i = j\end{cases}$</p>
+<p>函數 $1$、$\sin{nx}$ 和 $\cos{nx}$ 彼此正交（$n\in\mathbb{N}$），可以作為 $[-\pi,\pi]$ 上函數空間的基底，並允許定義<strong>傅立葉級數</strong>（Fourier series）</p>
+$$f(x)=a_0+\sum^\infty_{n=1}\left(a_n\cos{nx}+b_n\sin{nx}\right)$$
+<hr>
+<h2 id="2-三角代換法-2">2. 三角代換法 ^2</h2>
+<p>三角代換法是一種有效的積分技巧，特別適用於處理包含平方根的積分問題。這些代換將積分中的多項式變為三角函數，簡化積分過程。</p>
+<h3 id="21-範例橢圓面積-2-1">2.1 範例：橢圓面積 ^2-1</h3>
+<p>已知橢圓的標準方程式為</p>
+$$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1,$$
+<p>其中 $a&gt;b&gt;0$ （分別為長軸和短軸）。求橢圓內部的面積。</p>
+<h6 id="解">解</h6>
+<p>將橢圓的標準方程式寫成 </p>
+$$\displaystyle y=\pm\frac{b}{a}\sqrt{a^2-x^2}.$$
+<p>
+基於對稱性，橢圓內部的面積等於 </p>
+$$A=4\displaystyle\int^a_0{\frac{b}{a}\sqrt{a^2-x^2}\dd{x}}.$$
+<p>
+![[tutor11-ellipse.png|350]]
+對於 $0 \leq x\leq a$，可以做變數變換 $x=a\sin{\theta}$，使得 $\dd{x}=a\cos{\theta}\dd{\theta}$，而且</p>
+$$\sqrt{a^2-x^2}=\sqrt{a^2-a^2\sin^2{\theta}}=\sqrt{a^2\cos^2{\theta}}=|a|\left|\cos{\theta}\right|=a\cos{\theta}.$$
+<p>
+其中利用到三角恆等式 $1 - \sin^2{\theta} = \cos^2{\theta}$。</p>
+<p>於是
+</p>
+$$\begin{aligned}A&=\frac{4b}{a}\int^a_0{\sqrt{a^2-x^2}\dd{x}}=\frac{4b}{a}\int^{\pi/2}_0{a\cos{\theta}\cdot\left(a\cos{\theta}\dd{\theta}\right)}\\&=4ab\int^{\pi/2}_0\cos^2{\theta}\dd{\theta}=4ab\int^{\pi/2}_0\left[\frac{1}{2}(1+\cos{2\theta})\right]\dd{\theta}\\&=2ab\left[\theta+\frac{1}{2}\sin{2\theta}\right]^{\pi/2}_{0}=2ab\left[\left(\frac{\pi}{2}+0\right)-(0+0)\right]=\pi ab.\end{aligned}$$
+<p>故橢圓內部的面積等於 $\pi ab$。</p>
+<h3 id="22-常用的三角代換-2-2">2.2 常用的三角代換 ^2-2</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">被積函數含有表達式</th>
+<th style="text-align:center">代換</th>
+<th style="text-align:center">$\theta$ 的限制<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></th>
+<th style="text-align:center">代換時所使用的三角恆等式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$a^2-x^2$</td>
+<td style="text-align:center">$\begin{aligned}x&amp;=a\sin{\theta}\\dd{x}&amp;=a\cos{\theta}\dd{\theta}\a^2-x^2&amp;=a^2\cos^2{\theta}\end{aligned}$</td>
+<td style="text-align:center">$\theta\in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$</td>
+<td style="text-align:center">$1 - \sin^2{\theta} = \cos^2{\theta}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$a^2+x^2$</td>
+<td style="text-align:center">$\begin{aligned}x&amp;=a\tan{\theta}\\dd{x}&amp;=a\sec^2{\theta}\dd{\theta}\a^2+x^2&amp;=a^2\sec^2{\theta}\end{aligned}$</td>
+<td style="text-align:center">$\theta\in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$</td>
+<td style="text-align:center">$1 + \tan^2{\theta} = \sec^2{\theta}$</td>
+</tr>
+<tr>
+<td style="text-align:center">$x^2-a^2$</td>
+<td style="text-align:center">$\begin{aligned}x&amp;=a\sec{\theta}\\dd{x}&amp;=a\sec{\theta}\tan{\theta}\dd{\theta}\x^2-a^2&amp;=a^2\tan^2{\theta}\end{aligned}$</td>
+<td style="text-align:center">$\theta\in \left[0, \frac{\pi}{2}\right)\cup \left[\pi,\frac{3\pi}{2}\right)$</td>
+<td style="text-align:center">$\sec^2{\theta} - 1 = \tan^2{\theta}$</td>
+</tr>
+<tr>
+<td style="text-align:center">^tri-sub</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>通常，當這些表達式出現在<strong>根式</strong>內或<strong>分式內的分母</strong>時，三角代換才實用。</p>
+<h3 id="23-例題-2-3">2.3 例題 ^2-3</h3>
+<h5 id="例題-2-1-a2x2-型-eq2-1">例題 2-1 （$a^2+x^2$ 型） ^eq2-1</h5>
+<p>求  $\displaystyle\int \frac{1}{a^2 + x^2},\dd{x}$。</p>
+<p><strong>解.</strong>
+設 $x = a \tan \theta$，則 $\dd{x} = a \sec^2 \theta \dd{\theta}$。則 </p>
+$$
+\int \frac{1}{a^2 + x^2} \dd{x} = \int \frac{1}{a^2 + a^2 \tan^2 \theta} \cdot a \sec^2 \theta \dd{\theta} = \int \frac{\sec^2 \theta}{1 + \tan^2 \theta} \dd{\theta}= \int \dd{\theta} = \theta + C.$$
+<p>
+將 $\theta = \arctan{\frac{x}{a}}$，所以 </p>
+$$\int{\frac{1}{a^2 + x^2}\,\dd{x}}=\arctan{\left(\frac{x}{a}\right)}+C.$$
+<h5 id="例題-2-2-a2x2-型-eq2-2">例題 2-2 （$a^2+x^2$ 型） ^eq2-2</h5>
+<p>證明 $\displaystyle \int^1_0{\frac{4}{1+x^2}\dd{x}}=\pi$。</p>
+<p><strong>證.</strong></p>
+$$4\int^1_0{\frac{1}{1+x^2}\,\dd{x}}=4\left[\arctan{x}\right]^1_0=4\left(\frac{\pi}{4}-0\right)=\pi.$$
+<p><a href="https://www.desmos.com/calculator/mxchbu0nnr" rel="external" target="_self">Desmos link</a>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h5 id="例題-2-3-a2-x2-型-eq2-3">例題 2-3 （$a^2-x^2$ 型） ^eq2-3</h5>
+<p>求 $\displaystyle \int \frac{\sqrt{9-x^2}}{x^2} \dd{x}$。%% Stewart, §7.3, Example 1, p.501%%</p>
+<ul>
+<li>提示：使用[[#^tri-sub|三角代換]] $x = 3 \sin{\theta}$，則 $\sqrt{9 - x^2} = 3 \cos{\theta}$，並且 $\dd{x} = 3 \cos{\theta} \dd{\theta}$。</li>
+<li>答：<!-- raw HTML omitted -->$\int \frac{\sqrt{9-x^2}}{x^2} \dd{x}=-\frac{\sqrt{9-x^2}}{x}-\arcsin{\left(\frac{x}{3}\right)}+C$<!-- raw HTML omitted --></li>
+</ul>
+<h5 id="例題-2-4-a2x2-型-eq2-4">例題 2-4 （$a^2+x^2$ 型） ^eq2-4</h5>
+<p>求 $\displaystyle \int \frac{1}{x^2\sqrt{x^2+4}} \dd{x}$。%% Stewart, §7.3, Example 3, p.502%%</p>
+<ul>
+<li>提示：使用[[#^tri-sub|三角代換]] $x = 2 \tan{\theta}$，則 $\sqrt{x^2 + 4} = 2 \sec{\theta}$，並且 $\dd{x} = 2 \sec^2{\theta}\dd{\theta}$。</li>
+<li>答：<!-- raw HTML omitted -->$\int \frac{1}{x^2\sqrt{x^2+4}} \dd{x}=-\frac{\sqrt{x^2+4}}{4x}+C$<!-- raw HTML omitted --></li>
+</ul>
+<h5 id="例題-2-5-x2-a2-型-eq2-5">例題 2-5 （$x^2-a^2$ 型） ^eq2-5</h5>
+<p>證明  </p>
+$$\displaystyle \int{\frac{1}{\sqrt{x^2-a^2}} \dd{x}}=\ln{\left|x+\sqrt{x^2-a^2}\right|}+C.$$
+<p>
+%% Stewart, §7.3, Example 5, p.503%%</p>
+<ul>
+<li>提示：使用[[#^tri-sub|三角代換]] $x = a \sec{\theta}$，則 $\sqrt{x^2 - a^2} = a \tan{\theta}$，並且 $\dd{x} = a \sec{\theta} \tan{\theta} \dd{\theta}$。</li>
+<li>也可以用雙曲代換法，詳見[[#^eq3-2|例題 3-2]]。</li>
+</ul>
+<h5 id="例題-2-6-a2x2-型-eq2-6">例題 2-6 （$a^2+x^2$ 型） ^eq2-6</h5>
+<p>證明 </p>
+$$\int \sqrt{x^2+a^2} \dd{x}=\int \sqrt{x^2 + a^2} \dd{x} = \frac{a^2}{2} \left( \frac{x \sqrt{x^2 + a^2}}{a^2} + \ln{\left|\sqrt{x^2 + a^2} + x\right|} \right) + C.$$
+<p><strong>證.</strong></p>
+<ol>
+<li>
+<p><strong>三角代換法</strong>：
+使用[[#^tri-sub|三角代換]] $x = a \tan{\theta}$，則 $\dd{x} = a \sec^2{\theta} \dd{\theta}$。因此，我們有：
+</p>
+$$
+   \int \sqrt{x^2 + a^2} \dd{x} = \int \sqrt{a^2 \tan^2{\theta} + a^2} \cdot a \sec^2{\theta} \dd{\theta} = a^2 \int \sec^3{\theta} \dd{\theta}
+   $$
+</li>
+<li>
+<p><strong>積分 $\sec^3{\theta}$</strong>：（詳見[[#^eq1-10|例題 1-10]]）</p>
+$$\int\sec^3{\theta}\dd{\theta}=\frac{1}{2} \Big(\sec{\theta} \tan{\theta} + \ln{\left|\sec{\theta} + \tan{\theta}\right|}\Big) + C.$$
+</li>
+<li>
+<p><strong>還原變數</strong>：代回 $\theta = \tan^{-1}{\frac{x}{a}}$。因為 $\sec{\theta} = \sqrt{1 + \tan^2{\theta}} = \sqrt{1 + \frac{x^2}{a^2}} = \frac{\sqrt{x^2 + a^2}}{a}$ 和 $\tan{\theta} = \frac{x}{a}$，所以我們得到 </p>
+$$\sec{\theta} \tan{\theta} = \frac{\sqrt{x^2 + a^2}}{a} \cdot \frac{x}{a} = \frac{x \sqrt{x^2 + a^2}}{a^2}$$
+<p>和</p>
+$$\ln{\left|\sec{\theta} + \tan{\theta}\right|}=\ln{\left| \frac{\sqrt{x^2 + a^2}}{a} + \frac{x}{a} \right|} = \ln{\left|\sqrt{x^2 + a^2} + x\right|} - \ln{|a|}.$$
+</li>
+<li>
+<p>結合以上結果，我們得到：</p>
+$$\int \sqrt{x^2 + a^2} \dd{x} = \frac{a^2}{2} \left( \frac{x \sqrt{x^2 + a^2}}{a^2} + \ln{\left|\sqrt{x^2 + a^2} + x\right|} \right) + C.$$
+<p>  ^eq2-6-ans</p>
+</li>
+<li>
+<p>[[#^eq3-1|例題 3-1]] 會用[[#^hyp-sub|雙曲代換法]]再證明另一種形式。</p>
+</li>
+</ol>
+<h3 id="24-積分表中的三角代換-2-4">2.4 積分表中的三角代換 ^2-4</h3>
+<ul>
+<li>以下是一些用到三角代換的基本積分公式： ^int-table-tri
+<ul>
+<li>$\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} , \dd{x}=\arcsin{\left( \frac{x}{a} \right)} + C$</li>
+<li>$\displaystyle \int \frac{1}{\sqrt{a^2 + x^2}} , \dd{x}=\ln{\left| x + \sqrt{x^2 + a^2} \right|} + C$</li>
+<li>$\displaystyle \int \frac{1}{\sqrt{x^2 - a^2}} , \dd{x}=\ln{\left| x + \sqrt{x^2 - a^2} \right|} + C$</li>
+<li>&hellip;</li>
+</ul>
+</li>
+</ul>
+<p>$\renewcommand{\dd}[1]{\operatorname{d}!{#1}}$
+$\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}!{#1}}}$</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>這些分別是 $\arcsin{x}$ 、 $\arctan{x}$ 、 $\operatorname{arcsec}{x}$ 的值域，其中 $\operatorname{arcsec}{x}$ 的值域沒有統一的約定，不過通常是被定義為 $\left[0, \frac{\pi}{2}\right)\cup \left(\frac{\pi}{2},\pi\right]$。![[tutor11-secx.png|250]]&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo svg,
+            #R-logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044">
+              <path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:1.03763;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.992837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" style="color:#000;fill:#282828;stroke-width:1.02352;-inkscape-stroke:none" transform="translate(-40.698 -95.175)"/>
+              <path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.991342;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+            </svg>Relearn
+          </a>
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723648765" defer></script>
+        <script src="/js/search.js?1723648765" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/mathp/untitled-folder/tutor-11/index.html" class="active"><a class="padding" href="/notebook/mathp/untitled-folder/tutor-11/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/notebook/mathp/untitled-folder/tutor-11/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-auto" value="zen-auto" selected>Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto">Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1723648765" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723648765" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723648765"></script>
+    <script src="/js/d3/d3-color.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723648765" defer></script>
+    <script src="/js/js-yaml.min.js?1723648765" defer></script>
+    <script src="/js/mermaid.min.js?1723648765" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="/js/js-yaml.min.js?1723648765" defer></script>
+    <script>window.noZensmooth = true;</script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723648765" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723648765" defer></script>
+    <script>
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723648765", cssInProject: true, assetsBuster: "?1723648765" };
+    </script>
+    <script src="/js/theme.js?1723648765" defer></script>
+  </body>
+</html>

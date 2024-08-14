@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.129.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
-    <meta name="description" content="目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#|雙曲函數]] 〔[[#|雙曲函數的定義]]、[[#|反雙曲函數的定義]]、[[#|雙曲恆等式]]、[[#|雙曲函數的導函數]]〕 3.2 [[#|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#|有理函數]] 4.2 [[#|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#|原理]] 5.2 [[#|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#|正切半角代換]]（Weierstrass 代換） 6.2 [[#|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3. 雙曲代換法 ^3 雙曲代換法（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 $\sqrt{a^2 \pm x^2}$ 或 $\sqrt{x^2 \pm a^2}$ 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="積分技巧 (2) 上課日期：[[2024-07-16]] 目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#^3-1|雙曲函數]] 〔[[#^3-1-1|雙曲函數的定義]]、[[#^3-1-2|反雙曲函數的定義]]、[[#^3-1-3|雙曲恆等式]]、[[#^3-1-4|雙曲函數的導函數]]〕 3.2 [[#^3-2|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#^3-3|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#^4-1|有理函數]] 4.2 [[#^4-2|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#^4-3|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#^5-1|原理]] 5.2 [[#^5-2|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#^6-1|正切半角代換]]（Weierstrass 代換） 6.2 [[#^6-2|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3.">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
-    <meta name="twitter:title" content="積分技巧 (2)">
-    <meta name="twitter:description" content="目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#|雙曲函數]] 〔[[#|雙曲函數的定義]]、[[#|反雙曲函數的定義]]、[[#|雙曲恆等式]]、[[#|雙曲函數的導函數]]〕 3.2 [[#|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#|有理函數]] 4.2 [[#|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#|原理]] 5.2 [[#|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#|正切半角代換]]（Weierstrass 代換） 6.2 [[#|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3. 雙曲代換法 ^3 雙曲代換法（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 $\sqrt{a^2 \pm x^2}$ 或 $\sqrt{x^2 \pm a^2}$ 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。">
-    <meta property="og:url" content="https://qavit.github.io/notebook/math/tutor-12/index.html">
-    <meta property="og:title" content="積分技巧 (2)">
-    <meta property="og:description" content="目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#|雙曲函數]] 〔[[#|雙曲函數的定義]]、[[#|反雙曲函數的定義]]、[[#|雙曲恆等式]]、[[#|雙曲函數的導函數]]〕 3.2 [[#|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#|有理函數]] 4.2 [[#|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#|原理]] 5.2 [[#|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#|正切半角代換]]（Weierstrass 代換） 6.2 [[#|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3. 雙曲代換法 ^3 雙曲代換法（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 $\sqrt{a^2 \pm x^2}$ 或 $\sqrt{x^2 \pm a^2}$ 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
+    <meta name="twitter:description" content="積分技巧 (2) 上課日期：[[2024-07-16]] 目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#^3-1|雙曲函數]] 〔[[#^3-1-1|雙曲函數的定義]]、[[#^3-1-2|反雙曲函數的定義]]、[[#^3-1-3|雙曲恆等式]]、[[#^3-1-4|雙曲函數的導函數]]〕 3.2 [[#^3-2|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#^3-3|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#^4-1|有理函數]] 4.2 [[#^4-2|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#^4-3|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#^5-1|原理]] 5.2 [[#^5-2|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#^6-1|正切半角代換]]（Weierstrass 代換） 6.2 [[#^6-2|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3.">
+    <meta property="og:url" content="http://localhost:1313/notebook/math/tutor-12/index.html">
+    <meta property="og:description" content="積分技巧 (2) 上課日期：[[2024-07-16]] 目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#^3-1|雙曲函數]] 〔[[#^3-1-1|雙曲函數的定義]]、[[#^3-1-2|反雙曲函數的定義]]、[[#^3-1-3|雙曲恆等式]]、[[#^3-1-4|雙曲函數的導函數]]〕 3.2 [[#^3-2|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#^3-3|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#^4-1|有理函數]] 4.2 [[#^4-2|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#^4-3|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#^5-1|原理]] 5.2 [[#^5-2|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#^6-1|正切半角代換]]（Weierstrass 代換） 6.2 [[#^6-2|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Notebook">
-    <meta property="article:published_time" content="2024-07-16T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-07-16T00:00:00+00:00">
-    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
-    <meta itemprop="name" content="積分技巧 (2)">
-    <meta itemprop="description" content="目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#|雙曲函數]] 〔[[#|雙曲函數的定義]]、[[#|反雙曲函數的定義]]、[[#|雙曲恆等式]]、[[#|雙曲函數的導函數]]〕 3.2 [[#|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#|有理函數]] 4.2 [[#|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#|原理]] 5.2 [[#|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#|正切半角代換]]（Weierstrass 代換） 6.2 [[#|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3. 雙曲代換法 ^3 雙曲代換法（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 $\sqrt{a^2 \pm x^2}$ 或 $\sqrt{x^2 \pm a^2}$ 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。">
-    <meta itemprop="datePublished" content="2024-07-16T00:00:00+00:00">
-    <meta itemprop="dateModified" content="2024-07-16T00:00:00+00:00">
-    <meta itemprop="wordCount" content="1714">
-    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
-    <title>積分技巧 (2)</title>
-    <link href="/images/favicon.png?1723213040" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723213040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723213040" rel="stylesheet">
-    <link href="/css/fonts.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723213040" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723213040" rel="stylesheet">
-    <link href="/css/print.css?1723213040" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723213040"></script>
+    <meta property="article:published_time" content="2024-07-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-30T00:00:00+00:00">
+    <meta property="article:tag" content="Calculus">
+    <meta property="article:tag" content="Integral">
+    <meta property="article:tag" content="Tutor">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="description" content="積分技巧 (2) 上課日期：[[2024-07-16]] 目錄 3. [[#^3|雙曲代換法]]（hyperbolic substitution） 3.1 [[#^3-1|雙曲函數]] 〔[[#^3-1-1|雙曲函數的定義]]、[[#^3-1-2|反雙曲函數的定義]]、[[#^3-1-3|雙曲恆等式]]、[[#^3-1-4|雙曲函數的導函數]]〕 3.2 [[#^3-2|常用的雙曲代換]]・[[#^hyp-sub|表格]] 3.3 [[#^3-3|例題]] 4. [[#^4|部分分式法]]（integration by partial fractions） 4.1 [[#^4-1|有理函數]] 4.2 [[#^4-2|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕 4.3 [[#^4-3|例題]] 5. [[#^5|降次積分法]]（integration by reduction formulae） 5.1 [[#^5-1|原理]] 5.2 [[#^5-2|例題]] 6. [[#^6|其他積分技巧 (1)]] 6.1 [[#^6-1|正切半角代換]]（Weierstrass 代換） 6.2 [[#^6-2|Euler 代換]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-13|積分技巧 (3)]] (2024-07-17) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) 3.">
+    <meta itemprop="datePublished" content="2024-07-30T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-30T00:00:00+00:00">
+    <meta itemprop="wordCount" content="1749">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="keywords" content="Calculus,Integral,Tutor">
+    <title></title>
+    <link href="/images/favicon.png?1723649390" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723649390" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723649390" rel="stylesheet">
+    <link href="/css/fonts.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723649390" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723649390" rel="stylesheet">
+    <link href="/css/print.css?1723649390" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723649390"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       // variant stuff
       window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
       // translations
@@ -72,28 +74,28 @@
   <ul>
     <li><a href="#3-雙曲代換法-3">3. 雙曲代換法 ^3</a>
       <ul>
-        <li><a href="#31-雙曲函數">3.1 雙曲函數</a></li>
-        <li><a href="#32-常用的雙曲代換">3.2 常用的雙曲代換</a></li>
-        <li><a href="#33-例題">3.3 例題</a></li>
+        <li><a href="#31-雙曲函數-3-1">3.1 雙曲函數 ^3-1</a></li>
+        <li><a href="#32-常用的雙曲代換-3-2">3.2 常用的雙曲代換 ^3-2</a></li>
+        <li><a href="#33-例題-3-3">3.3 例題 ^3-3</a></li>
       </ul>
     </li>
-    <li><a href="#4-部分分式法">4. 部分分式法</a>
+    <li><a href="#4-部分分式法-4">4. 部分分式法 ^4</a>
       <ul>
-        <li><a href="#41-有理函數">4.1 有理函數</a></li>
-        <li><a href="#42-部分分式分解">4.2 部分分式分解</a></li>
-        <li><a href="#43-例題">4.3 例題</a></li>
+        <li><a href="#41-有理函數-4-1">4.1 有理函數 ^4-1</a></li>
+        <li><a href="#42-部分分式分解-4-2">4.2 部分分式分解 ^4-2</a></li>
+        <li><a href="#43-例題-4-3">4.3 例題 ^4-3</a></li>
       </ul>
     </li>
     <li><a href="#5-降次積分法-5">5. 降次積分法 ^5</a>
       <ul>
-        <li><a href="#51-原理">5.1 原理</a></li>
-        <li><a href="#52-例題">5.2 例題</a></li>
+        <li><a href="#51-原理-5-1">5.1 原理 ^5-1</a></li>
+        <li><a href="#52-例題-5-2">5.2 例題 ^5-2</a></li>
       </ul>
     </li>
     <li><a href="#6-其他積分技巧-1-6">6. 其他積分技巧 (1) ^6</a>
       <ul>
-        <li><a href="#61-正切半角代換">6.1 正切半角代換</a></li>
-        <li><a href="#62-euler-代換">6.2 Euler 代換</a></li>
+        <li><a href="#61-正切半角代換-6-1">6.1 正切半角代換 ^6-1</a></li>
+        <li><a href="#62-euler-代換-6-2">6.2 Euler 代換 ^6-2</a></li>
       </ul>
     </li>
   </ul>
@@ -105,15 +107,14 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">基礎數學</span><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">積分技巧 (2)</span><meta itemprop="position" content="4"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/math/tutor-12.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Qavit&#39;s Notebook (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/index.html" title="基礎數學 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/math-models-and-ode/index.html" title="Mathematical model and ODE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -131,37 +132,46 @@
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/integral/index.html">Integral</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
             </header>
 
-<h1 id="積分技巧-2">積分技巧 (2)</h1>
+<h1 id=""></h1>
 
+<h1 id="積分技巧-2">積分技巧 (2)</h1>
 <ul>
+<li>上課日期：[[2024-07-16]]</li>
 <li><strong>目錄</strong>
 <ul>
 <li>3. <strong>[[#^3|雙曲代換法]]</strong>（hyperbolic substitution）
 <ul>
-<li>3.1 [[#|雙曲函數]] 〔[[#|雙曲函數的定義]]、[[#|反雙曲函數的定義]]、[[#|雙曲恆等式]]、[[#|雙曲函數的導函數]]〕</li>
-<li>3.2 [[#|常用的雙曲代換]]・[[#^hyp-sub|表格]]</li>
-<li>3.3 [[#|例題]]</li>
+<li>3.1 [[#^3-1|雙曲函數]] 〔[[#^3-1-1|雙曲函數的定義]]、[[#^3-1-2|反雙曲函數的定義]]、[[#^3-1-3|雙曲恆等式]]、[[#^3-1-4|雙曲函數的導函數]]〕</li>
+<li>3.2 [[#^3-2|常用的雙曲代換]]・[[#^hyp-sub|表格]]</li>
+<li>3.3 [[#^3-3|例題]]</li>
 </ul>
 </li>
 <li>4. <strong>[[#^4|部分分式法]]</strong>（integration by partial fractions）
 <ul>
-<li>4.1 [[#|有理函數]]</li>
-<li>4.2 [[#|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕</li>
-<li>4.3 [[#|例題]]</li>
+<li>4.1 [[#^4-1|有理函數]]</li>
+<li>4.2 [[#^4-2|部分分式分解]]〔[[#^part-case1|情況 I]]、[[#^part-case2|情況 II]]、[[#^part-case3|情況 III]]、[[#^part-case4|情況 IV]]〕</li>
+<li>4.3 [[#^4-3|例題]]</li>
 </ul>
 </li>
 <li>5. <strong>[[#^5|降次積分法]]</strong>（integration by reduction formulae）
 <ul>
-<li>5.1 [[#|原理]]</li>
-<li>5.2 [[#|例題]]</li>
+<li>5.1 [[#^5-1|原理]]</li>
+<li>5.2 [[#^5-2|例題]]</li>
 </ul>
 </li>
 <li>6. <strong>[[#^6|其他積分技巧 (1)]]</strong>
 <ul>
-<li>6.1 [[#|正切半角代換]]（Weierstrass 代換）</li>
-<li>6.2 [[#|Euler 代換]]</li>
+<li>6.1 [[#^6-1|正切半角代換]]（Weierstrass 代換）</li>
+<li>6.2 [[#^6-2|Euler 代換]]</li>
 </ul>
 </li>
 </ul>
@@ -176,16 +186,16 @@
 </li>
 </ul>
 <h2 id="3-雙曲代換法-3">3. 雙曲代換法 ^3</h2>
-<p><strong>雙曲代換法</strong>（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 $\sqrt{a^2 \pm x^2}$ 或 $\sqrt{x^2 \pm a^2}$ 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。</p>
-<h3 id="31-雙曲函數">3.1 雙曲函數</h3>
-<h4 id="311-雙曲函數的定義">3.1.1 雙曲函數的定義</h4>
+<p><strong>雙曲代換法</strong>（hyperbolic substitution）是類似於三角代換的一種技巧，常用於含有 \(\sqrt{a^2 \pm x^2}\) 或 \(\sqrt{x^2 \pm a^2}\) 類型的積分。它利用雙曲函數的特性，將複雜的被積函數轉化為簡單的代數表達式。</p>
+<h3 id="31-雙曲函數-3-1">3.1 雙曲函數 ^3-1</h3>
+<h4 id="311-雙曲函數的定義-3-1-1">3.1.1 雙曲函數的定義 ^3-1-1</h4>
 <ul>
-<li>雙曲正弦函數（sinh）：$$\sinh{x} = \frac{e^x - e^{-x}}{2}$$</li>
-<li>雙曲餘弦函數（cosh）：$$\cosh{x} = \frac{e^x + e^{-x}}{2}$$</li>
-<li>雙曲正切函數（tanh）：$$\tanh{x} = \frac{\sinh{x}}{\cosh{x}} = \frac{e^x - e^{-x}}{e^x + e^{-x}}$$</li>
-<li>雙曲餘切函數（sech）：$$\coth{x} = \frac{\cosh{x}}{\sinh{x}} = \frac{e^x + e^{-x}}{e^x - e^{-x}}, \quad x \neq 0$$</li>
-<li>雙曲正割函數（sech）：$$\operatorname{sech}{x} = \frac{1}{\cosh{x}} = \frac{2}{e^x + e^{-x}}$$</li>
-<li>雙曲餘割函數（csch）：$$\operatorname{csch}{x} = \frac{1}{\sinh{x}} = \frac{2}{e^x - e^{-x}}, \quad x \neq 0$$</li>
+<li>雙曲正弦函數（sinh）：\[\sinh{x} = \frac{e^x - e^{-x}}{2}\]</li>
+<li>雙曲餘弦函數（cosh）：\[\cosh{x} = \frac{e^x + e^{-x}}{2}\]</li>
+<li>雙曲正切函數（tanh）：\[\tanh{x} = \frac{\sinh{x}}{\cosh{x}} = \frac{e^x - e^{-x}}{e^x + e^{-x}}\]</li>
+<li>雙曲餘切函數（sech）：\[\coth{x} = \frac{\cosh{x}}{\sinh{x}} = \frac{e^x + e^{-x}}{e^x - e^{-x}}, \quad x \neq 0\]</li>
+<li>雙曲正割函數（sech）：\[\operatorname{sech}{x} = \frac{1}{\cosh{x}} = \frac{2}{e^x + e^{-x}}\]</li>
+<li>雙曲餘割函數（csch）：\[\operatorname{csch}{x} = \frac{1}{\sinh{x}} = \frac{2}{e^x - e^{-x}}, \quad x \neq 0\]</li>
 </ul>
 <p>雙曲函數也可以從複數來定義，詳見：</p>
 <ol>
@@ -194,22 +204,22 @@
 <li><a href="https://mathworld.wolfram.com/HyperbolicFunctions.html" rel="external" target="_self">Wolfram Mathworld - Hyperbolic functions</a></li>
 <li><a href="https://hepweb.ucsd.edu/ph110b/110b_notes/node48.html" rel="external" target="_self">Review of the Hyperbolic Functions</a></li>
 </ol>
-<h4 id="332-反雙曲函數的定義">3.3.2 反雙曲函數的定義</h4>
+<h4 id="332-反雙曲函數的定義-3-3-2">3.3.2 反雙曲函數的定義 ^3-3-2</h4>
 <ul>
-<li>反雙曲正弦函數（arsinh）：$$\operatorname{arsinh}{x} =\sinh^{-1}{x}= \ln(x + \sqrt{x^2 + 1})$$</li>
-<li>反雙曲餘弦函數（arcosh）：$$\operatorname{arcosh}{x} =\cosh^{-1}{x} = \ln(x + \sqrt{x^2 - 1}), \quad x \geq 1$$</li>
-<li>反雙曲正切函數（artanh）**：$$\operatorname{tanh}{x} =\tanh^{-1}{x} = \frac{1}{2} \ln\left(\frac{1 + x}{1 - x}\right), \quad |x| < 1$$</li>
-<li>反雙曲餘切函數（arcoth）：$$\operatorname{arcoth}{x} =\coth^{-1}{x} = \frac{1}{2} \ln\left(\frac{x + 1}{x - 1}\right), \quad |x| > 1$$</li>
-<li>反雙曲正割函數（arsech）：$$\operatorname{arsech}{x}=\operatorname{sech}^{-1}{x} = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right), \quad 0 < x \leq 1$$</li>
-<li>反雙曲餘割函數（arcsch）：$$\operatorname{arcsch}{x}=\operatorname{csch}^{-1}{x} = \ln\left(\frac{1 + \sqrt{1 + x^2}}{x}\right), \quad x \neq 0$$</li>
+<li>反雙曲正弦函數（arsinh）：\[\operatorname{arsinh}{x} =\sinh^{-1}{x}= \ln(x + \sqrt{x^2 + 1})\]</li>
+<li>反雙曲餘弦函數（arcosh）：\[\operatorname{arcosh}{x} =\cosh^{-1}{x} = \ln(x + \sqrt{x^2 - 1}), \quad x \geq 1\]</li>
+<li>反雙曲正切函數（artanh）**：\[\operatorname{tanh}{x} =\tanh^{-1}{x} = \frac{1}{2} \ln\left(\frac{1 + x}{1 - x}\right), \quad |x| < 1\]</li>
+<li>反雙曲餘切函數（arcoth）：\[\operatorname{arcoth}{x} =\coth^{-1}{x} = \frac{1}{2} \ln\left(\frac{x + 1}{x - 1}\right), \quad |x| > 1\]</li>
+<li>反雙曲正割函數（arsech）：\[\operatorname{arsech}{x}=\operatorname{sech}^{-1}{x} = \ln\left(\frac{1 + \sqrt{1 - x^2}}{x}\right), \quad 0 < x \leq 1\]</li>
+<li>反雙曲餘割函數（arcsch）：\[\operatorname{arcsch}{x}=\operatorname{csch}^{-1}{x} = \ln\left(\frac{1 + \sqrt{1 + x^2}}{x}\right), \quad x \neq 0\]</li>
 </ul>
-<h4 id="333-雙曲恆等式">3.3.3 雙曲恆等式</h4>
+<h4 id="333-雙曲恆等式-3-3-3">3.3.3 雙曲恆等式 ^3-3-3</h4>
 <p>以下僅列出最常見的（還有後面計算會用到的）<strong>雙曲恆等式</strong>（hyperbolic identities），</p>
 <ul>
-<li>平方差恆等式 1：$$\cosh^2{x} - \sinh^2{x} = 1$$</li>
-<li>平方差恆等式 2：$$\tanh^2{x} - \coth^2{x} = 1$$</li>
-<li>倍角公式 $$\begin{aligned}\sinh{2x}&=2\sinh{x}\cosh{x},\\\cosh{2x}&=\cosh^2{x}+\sinh^2{x}\\&=2\cosh^2{x}-1\\&=2\sinh^2{x}+1\\\end{aligned}$$^double</li>
-<li>半角公式 $$\begin{aligned}\sinh^2{\frac{x}{2}}&=\frac{\cosh{x}+1}{2}\\\cosh^2{\frac{x}{2}}&=\frac{\cosh{x}-1}{2}\end{aligned}$$^half</li>
+<li>平方差恆等式 1：\[\cosh^2{x} - \sinh^2{x} = 1\]</li>
+<li>平方差恆等式 2：\[\tanh^2{x} - \coth^2{x} = 1\]</li>
+<li>倍角公式 \[\begin{aligned}\sinh{2x}&=2\sinh{x}\cosh{x},\\\cosh{2x}&=\cosh^2{x}+\sinh^2{x}\\&=2\cosh^2{x}-1\\&=2\sinh^2{x}+1\\\end{aligned}\]^double</li>
+<li>半角公式 \[\begin{aligned}\sinh^2{\frac{x}{2}}&=\frac{\cosh{x}+1}{2}\\\cosh^2{\frac{x}{2}}&=\frac{\cosh{x}-1}{2}\end{aligned}\]^half</li>
 </ul>
 <p>完整可以參考</p>
 <ol>
@@ -217,19 +227,19 @@
 <li><a href="https://en.wikipedia.org/wiki/Hyperbolic_functions#Useful_relations" rel="external" target="_self">Wikipedia - Hyperbolic functions#Useful relations</a></li>
 <li><a href="https://hepweb.ucsd.edu/ph110b/110b_notes/node49.html" rel="external" target="_self">Hyperbolic Function Identities</a></li>
 </ol>
-<h4 id="314-雙曲函數的導函數">3.1.4 雙曲函數的導函數</h4>
+<h4 id="314-雙曲函數的導函數-3-1-4">3.1.4 雙曲函數的導函數 ^3-1-4</h4>
 <ul>
-<li>$\displaystyle \dv{x}{\sinh{x}}=\cosh{x}$</li>
-<li>$\displaystyle \dv{x}{\cosh{x}}=\sinh{x}$</li>
-<li>$\displaystyle \dv{x}{\tanh{x}}=1-\tanh^2{x}=\operatorname{sech}^2{x}=\frac{1}{\cosh^2{x}}$</li>
+<li>\(\displaystyle \dv{x}{\sinh{x}}=\cosh{x}\)</li>
+<li>\(\displaystyle \dv{x}{\cosh{x}}=\sinh{x}\)</li>
+<li>\(\displaystyle \dv{x}{\tanh{x}}=1-\tanh^2{x}=\operatorname{sech}^2{x}=\frac{1}{\cosh^2{x}}\)</li>
 </ul>
-<h3 id="32-常用的雙曲代換">3.2 常用的雙曲代換</h3>
+<h3 id="32-常用的雙曲代換-3-2">3.2 常用的雙曲代換 ^3-2</h3>
 <p>觀察恆等式 </p>
-$$\begin{split}\cosh^2{x} - \sinh^2{x} = 1\\\tanh^2{x} - \coth^2{x} = 1\end{split}$$
+\[\begin{split}\cosh^2{x} - \sinh^2{x} = 1\\\tanh^2{x} - \coth^2{x} = 1\end{split}\]
 <ol>
-<li>$x = a \sinh{t} \implies \sqrt{x^2 + a^2} = a \cosh{t}$</li>
-<li>$x = a\cosh{t} \implies \sqrt{x^2 - a^2} = a \sinh{t}$</li>
-<li>$x = a \tanh{t} \implies \sqrt{a^2 - x^2} = a \operatorname{sech}{t}$</li>
+<li>\(x = a \sinh{t} \implies \sqrt{x^2 + a^2} = a \cosh{t}\)</li>
+<li>\(x = a\cosh{t} \implies \sqrt{x^2 - a^2} = a \sinh{t}\)</li>
+<li>\(x = a \tanh{t} \implies \sqrt{a^2 - x^2} = a \operatorname{sech}{t}\)</li>
 </ol>
 <table>
 <thead>
@@ -240,16 +250,16 @@ $$\begin{split}\cosh^2{x} - \sinh^2{x} = 1\\\tanh^2{x} - \coth^2{x} = 1\end{spli
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">$\sqrt{x^2 + a^2}$</td>
-<td style="text-align:center">$x = a \sinh{t}$<!-- raw HTML omitted -->$\dd{x}=a\cosh{t}\dd{t}$</td>
+<td style="text-align:center">\(\sqrt{x^2 + a^2}\)</td>
+<td style="text-align:center">\(x = a \sinh{t}\)<!-- raw HTML omitted -->\(\dd{x}=a\cosh{t}\dd{t}\)</td>
 </tr>
 <tr>
-<td style="text-align:center">$\sqrt{x^2 - a^2}$</td>
-<td style="text-align:center">$x=a\cosh{\theta}$ <!-- raw HTML omitted --> $\dd{x}=a\sinh{t}\dd{t}$</td>
+<td style="text-align:center">\(\sqrt{x^2 - a^2}\)</td>
+<td style="text-align:center">\(x=a\cosh{\theta}\) <!-- raw HTML omitted --> \(\dd{x}=a\sinh{t}\dd{t}\)</td>
 </tr>
 <tr>
-<td style="text-align:center">$\sqrt{a^2 - x^2}$</td>
-<td style="text-align:center">$x = a \tanh{t}$<!-- raw HTML omitted --> $\dd{x}=a\operatorname{sech}^2{t}\dd{t}$</td>
+<td style="text-align:center">\(\sqrt{a^2 - x^2}\)</td>
+<td style="text-align:center">\(x = a \tanh{t}\)<!-- raw HTML omitted --> \(\dd{x}=a\operatorname{sech}^2{t}\dd{t}\)</td>
 </tr>
 <tr>
 <td style="text-align:center">^hyp-sub</td>
@@ -258,234 +268,241 @@ $$\begin{split}\cosh^2{x} - \sinh^2{x} = 1\\\tanh^2{x} - \coth^2{x} = 1\end{spli
 </tbody>
 </table>
 <p>比較[[tutor-11#^tri-sub|三角代換]]</p>
-<h3 id="33-例題">3.3 例題</h3>
-<h5 id="例題-3-1">例題 3-1</h5>
+<h3 id="33-例題-3-3">3.3 例題 ^3-3</h3>
+<h5 id="例題-3-1-eq3-1">例題 3-1 ^eq3-1</h5>
 <p>證明 </p>
-$$\int{\sqrt{x^2 + a^2} \dd{x}}=\frac{1}{2}\left[x\sqrt{x^2 + a^2} + a^2 \sinh^{-1}{\left(\frac{x}{a}\right)} \right] + C.$$
+\[\int{\sqrt{x^2 + a^2} \dd{x}}=\frac{1}{2}\left[x\sqrt{x^2 + a^2} + a^2 \sinh^{-1}{\left(\frac{x}{a}\right)} \right] + C.\]
 <p>
 <strong>證.</strong></p>
 <ol>
 <li>
-<p><strong>雙曲代換：</strong> 令 $x = a \sinh{t}$，則  $\dd{x} = a \cosh{t} \dd{t}$，且</p>
-$$
-\sqrt{x^2 + a^2} = \sqrt{a^2 \sinh^2{t} + a^2} = a \sqrt{\sinh^2{t} + 1} = a \cosh{t}.$$
+<p><strong>雙曲代換：</strong> 令 \(x = a \sinh{t}\)，則  \(\dd{x} = a \cosh{t} \dd{t}\)，且</p>
+\[
+\sqrt{x^2 + a^2} = \sqrt{a^2 \sinh^2{t} + a^2} = a \sqrt{\sinh^2{t} + 1} = a \cosh{t}.\]
 </li>
 <li>
 <p><strong>積分變換：</strong>
 </p>
-$$\int \sqrt{x^2 + a^2} \dd{x} = \int a \cosh{t} \cdot a \cosh{t} \dd{t} = a^2 \int \cosh^2{t} \dd{t}$$
+\[\int \sqrt{x^2 + a^2} \dd{x} = \int a \cosh{t} \cdot a \cosh{t} \dd{t} = a^2 \int \cosh^2{t} \dd{t}\]
 </li>
 <li>
-<p><strong>化簡積分：</strong> 利用[[#^half|雙曲半角恆等式]] $\cosh^2{t} = \frac{1}{2}(1 + \cosh{2t})$，得
+<p><strong>化簡積分：</strong> 利用[[#^half|雙曲半角恆等式]] \(\cosh^2{t} = \frac{1}{2}(1 + \cosh{2t})\)，得
 </p>
-$$
+\[
 a^2 \int \cosh^2{t} \dd{t} = a^2 \int \frac{1 + \cosh{2t}}{2} \dd{t} = \frac{a^2}{2} \int (1 + \cosh{2t}) \dd{t}
-$$
-$$
+\]
+\[
 = \frac{a^2}{2} \left( t + \frac{1}{2} \sinh{2t} \right) + C
-$$
+\]
 </li>
 <li>
 <p><strong>還原變數：</strong>
-由於 $x = a \sinh{t}$，因此 $t = \sinh^{-1}{\left(\frac{x}{a}\right)}$ ，然後利用[[#^double|雙曲倍角恆等式]] $\sinh{2t} = 2 \sinh{t} \cosh{t}$：
+由於 \(x = a \sinh{t}\)，因此 \(t = \sinh^{-1}{\left(\frac{x}{a}\right)}\) ，然後利用[[#^double|雙曲倍角恆等式]] \(\sinh{2t} = 2 \sinh{t} \cosh{t}\)：
 </p>
-$$
+\[
 \begin{aligned}
 \int{\sqrt{x^2 + a^2} \dd{x}}&= \frac{a^2}{2} \left( \sinh^{-1}{\left(\frac{x}{a}\right)} + \frac{1}{2} \cdot 2 \sinh{t} \cosh{t} \right) + C\\
 &= \frac{a^2}{2} \left( \sinh^{-1}{\left(\frac{x}{a}\right)} + \frac{x \sqrt{x^2 + a^2}}{a^2} \right) + C\\
 \end{aligned}
-$$
+\]
 </li>
 <li>
-<p>與例題 2-6 比較</p>
-</li>
-</ol>
-$$
+<p>與[[tutor-11#^eq2-6-ans|例題 2-6]] 比較
+</p>
+\[
 \begin{aligned}
 \int \sqrt{x^2 + a^2} \dd{x} 
 &= \frac{a^2}{2} \left( \frac{x \sqrt{x^2 + a^2}}{a^2} + \ln{|\sqrt{x^2 + a^2} + x|} \right) + C\\
 &= \frac{a^2}{2} \left(\frac{x \sqrt{x^2 + a^2}}{a^2} + \sinh^{-1}{\left(\frac{x}{a}\right)} \right) + C
 \end{aligned}
-$$
-<h5 id="例題-3-2">例題 3-2</h5>
+\]
+</li>
+</ol>
+<h5 id="例題-3-2-eq3-2">例題 3-2 ^eq3-2</h5>
 <hr>
-<h2 id="4-部分分式法">4. 部分分式法</h2>
-<h3 id="41-有理函數">4.1 有理函數</h3>
-<p><strong>有理函數</strong>（rational function）是兩個多項式函數的比值，形式為：</p>
-$$
+<h2 id="4-部分分式法-4">4. 部分分式法 ^4</h2>
+<h3 id="41-有理函數-4-1">4.1 有理函數 ^4-1</h3>
+<p><strong>有理函數</strong>（rational function）是兩個多項式函數的比值，形式為：
+</p>
+\[
 f(x) = \frac{P(x)}{Q(x)}
-$$
+\]
 <p>
-其中，$P(x)$ 和 $Q(x)$ 為多項式函數，且 $Q(x) \neq 0$。</p>
-<h3 id="42-部分分式分解">4.2 部分分式分解</h3>
-<p>對於有理函數 $f(x) = \frac{P(x)}{Q(x)}$，且 $\deg(P) < \deg(Q)$，可以將 $f(x)$ 分解為<strong>部分分式</strong>（partial fractions）的和</p>
-$$
+其中，\(P(x)\) 和 \(Q(x)\) 為多項式函數，且 \(Q(x) \neq 0\)。</p>
+<h3 id="42-部分分式分解-4-2">4.2 部分分式分解 ^4-2</h3>
+<p>對於有理函數 \(f(x) = \frac{P(x)}{Q(x)}\)，且 \(\deg(P) < \deg(Q)\)，可以將 \(f(x)\) 分解為<strong>部分分式</strong>（partial fractions）的和
+</p>
+\[
 \frac{P(x)}{Q(x)} = \sum_{i} \frac{A_i}{(x - \alpha_i)^{k_i}} + \sum_{j} \frac{B_j x + C_j}{(x^2 + d_j x + e_j)^{m_j}}。
-$$
+\]
 <p><strong>部分分式積分法</strong>（integration by partial fractions）就是將有理函數表示為若干部分分式的和，再對每一部分分式進行積分的方法。</p>
-<p>根據分母 $Q(x)$ 的不同形式，可以分為以下四種情況。</p>
-<h4 id="情況-iqx-是不同線性因子的乘積">情況 I：$Q(x)$ 是不同線性因子的乘積</h4>
-<p>當 $Q(x)$ 是不同線性因子的乘積時，可以將 $f(x)$ 分解為以下形式：</p>
-$$
+<p>根據分母 \(Q(x)\) 的不同形式，可以分為以下四種情況。</p>
+<h4 id="情況-iqx-是不同線性因子的乘積-part-case1">情況 I：\(Q(x)\) 是不同線性因子的乘積 ^part-case1</h4>
+<p>當 \(Q(x)\) 是不同線性因子的乘積時，可以將 \(f(x)\) 分解為以下形式：
+</p>
+\[
 \frac{P(x)}{Q(x)} = \frac{P(x)}{(x-a_1)(x-a_2)\cdots(x-a_n)} = \frac{A_1}{x-a_1} + \frac{A_2}{x-a_2} + \cdots + \frac{A_n}{x-a_n}
-$$
-<p>其中，$A_i$ 是常數，通過解聯立方程可以求出。</p>
-<h4 id="情況-iiqx-是線性因子的乘積其中某些因子重複">情況 II：$Q(x)$ 是線性因子的乘積，其中某些因子重複</h4>
-<p>當 $Q(x)$ 是線性因子的乘積，且某些因子重複時，可以將 $f(x)$ 分解為以下形式：</p>
-$$
+\]
+<p>
+其中，\(A_i\) 是常數，通過解聯立方程可以求出。</p>
+<h4 id="情況-iiqx-是線性因子的乘積其中某些因子重複-part-case2">情況 II：\(Q(x)\) 是線性因子的乘積，其中某些因子重複 ^part-case2</h4>
+<p>當 \(Q(x)\) 是線性因子的乘積，且某些因子重複時，可以將 \(f(x)\) 分解為以下形式：
+</p>
+\[
 \frac{P(x)}{Q(x)} = \frac{P(x)}{(x-a_1)^k (x-a_2)\cdots(x-a_n)} = \frac{A_1}{x-a_1} + \frac{A_2}{(x-a_1)^2} + \cdots + \frac{A_k}{(x-a_1)^k} + \frac{B_2}{x-a_2} + \cdots + \frac{B_n}{x-a_n}
-$$
-<p>其中，$A_i$ 和 $B_i$ 是常數，通過解聯立方程可以求出。</p>
-<h4 id="情況-iiiqx-包含不可約二次因子且每個因子不重複">情況 III：$Q(x)$ 包含不可約二次因子，且每個因子不重複</h4>
-<p>當 $Q(x)$ 包含不可約二次因子，且每個因子不重複時，可以將 $f(x)$ 分解為以下形式：</p>
-$$
+\]
+<p>
+其中，\(A_i\) 和 \(B_i\) 是常數，通過解聯立方程可以求出。</p>
+<h4 id="情況-iiiqx-包含不可約二次因子且每個因子不重複-part-case3">情況 III：\(Q(x)\) 包含不可約二次因子，且每個因子不重複 ^part-case3</h4>
+<p>當 \(Q(x)\) 包含不可約二次因子，且每個因子不重複時，可以將 \(f(x)\) 分解為以下形式：
+</p>
+\[
 \frac{P(x)}{Q(x)} = \frac{P(x)}{(x^2+bx+c)(x-a_1)\cdots(x-a_n)} = \frac{Ax+B}{x^2+bx+c} + \frac{C_1}{x-a_1} + \cdots + \frac{C_n}{x-a_n}
-$$
-<p>其中，$A$, $B$ 和 $C_i$ 是常數，通過解聯立方程可以求出。</p>
-<h4 id="情況-ivqx-包含重複的不可約二次因子">情況 IV：$Q(x)$ 包含重複的不可約二次因子</h4>
-<p>當 $Q(x)$ 包含重複的不可約二次因子時，可以將 $f(x)$ 分解為以下形式：</p>
-$$
+\]
+<p>
+其中，\(A\), \(B\) 和 \(C_i\) 是常數，通過解聯立方程可以求出。</p>
+<h4 id="情況-ivqx-包含重複的不可約二次因子-part-case4">情況 IV：\(Q(x)\) 包含重複的不可約二次因子 ^part-case4</h4>
+<p>當 \(Q(x)\) 包含重複的不可約二次因子時，可以將 \(f(x)\) 分解為以下形式：
+</p>
+\[
 \begin{align}
-\frac{P(x)}{Q(x)} 
-&= \frac{P(x)}{(x^2+bx+c)^k (x-a_1)\cdots(x-a_n)} \\
-&= \frac{A_1 x + B_1}{x^2 + bx + c} + 
-\frac{A_2 x + B_2}{(x^2 + bx + c)^2} + \cdots + 
-\frac{A_k x + B_k}{(x^2 + bx + c)^k} + 
-\frac{C_1}{x-a_1} + \cdots + \frac{C_n}{x-a_n}
+\frac{P(x)}{Q(x)} &= \frac{P(x)}{(x^2+bx+c)^k (x-a_1)\cdots(x-a_n)} \\
+&= \frac{A_1 x + B_1}{x^2 + bx + c} + \frac{A_2 x + B_2}{(x^2 + bx + c)^2} + \cdots + \frac{A_k x + B_k}{(x^2 + bx + c)^k} + \frac{C_1}{x-a_1} + \cdots + \frac{C_n}{x-a_n}
 \end{align}
-$$
-<p>其中，$A_i$, $B_i$ 和 $C_i$ 是常數，通過解聯立方程可以求出。</p>
-<h3 id="43-例題">4.3 例題</h3>
-<h5 id="例題-4-1情況-i">例題 4-1（情況 I）</h5>
-<p>求 $\displaystyle \int {\frac{3x + 5}{(x-1)(x+2)} \dd{x}}$。</p>
+\]
+<p>
+其中，\(A_i\), \(B_i\) 和 \(C_i\) 是常數，通過解聯立方程可以求出。</p>
+<h3 id="43-例題-4-3">4.3 例題 ^4-3</h3>
+<h5 id="例題-4-1情況-i-eq4-1">例題 4-1（情況 I） ^eq4-1</h5>
+<p>求 \(\displaystyle \int {\frac{3x + 5}{(x-1)(x+2)} \dd{x}}\)。</p>
 <p><strong>解.</strong></p>
 <ol>
 <li>
 <p>先對被積函數做部分分式分解。令 </p>
-$$\frac{3x + 5}{(x-1)(x+2)} = \frac{A}{x-1} + \frac{B}{x+2}$$
+\[\frac{3x + 5}{(x-1)(x+2)} = \frac{A}{x-1} + \frac{B}{x+2}\]
 <p>將兩邊的分母消去：</p>
-$$3x + 5 = A(x+2) + B(x-1)$$
-<p>選擇合適的 $x$ 值求解 $A$ 和 $B$：</p>
+\[3x + 5 = A(x+2) + B(x-1)\]
+<p>選擇合適的 \(x\) 值求解 \(A\) 和 \(B\)：</p>
 <ul>
-<li>當 $x = 1$ 時，$3\cdot1 + 5 = A\cdot(1+2) + B\cdot0$，$A = \frac{8}{3}$。</li>
-<li>當 $x = -2$ 時，$3\cdot(-2) + 5 = A\cdot0 + B\cdot(-2-1)$，$B = -\frac{1}{3}$。</li>
+<li>當 \(x = 1\) 時，\(3\cdot1 + 5 = A\cdot(1+2) + B\cdot0\)，\(A = \frac{8}{3}\)。</li>
+<li>當 \(x = -2\) 時，\(3\cdot(-2) + 5 = A\cdot0 + B\cdot(-2-1)\)，\(B = -\frac{1}{3}\)。</li>
 </ul>
 <p>所以：</p>
-$$\frac{3x + 5}{(x-1)(x+2)} = \frac{8/3}{x-1} - \frac{1/3}{x+2}$$
+\[\frac{3x + 5}{(x-1)(x+2)} = \frac{8/3}{x-1} - \frac{1/3}{x+2}\]
 </li>
 <li>
 <p>積分：
 </p>
-$$\int \frac{3x + 5}{(x-1)(x+2)} \dd{x} = \int \frac{8/3}{x-1} \dd{x} - \int \frac{1/3}{x+2} \dd{x} = \frac{8}{3} \ln{|x-1|} - \frac{1}{3}\ln{|x+2|} + C.$$
+\[\int \frac{3x + 5}{(x-1)(x+2)} \dd{x} = \int \frac{8/3}{x-1} \dd{x} - \int \frac{1/3}{x+2} \dd{x} = \frac{8}{3} \ln{|x-1|} - \frac{1}{3}\ln{|x+2|} + C.\]
 </li>
 </ol>
-<h5 id="例題-4-2情況-ii">例題 4-2（情況 II）</h5>
-<p>求 $\displaystyle \int \frac{x^2 + 1}{(x-1)^2(x+2)} \dd{x}$。</p>
+<h5 id="例題-4-2情況-ii-eq4-2">例題 4-2（情況 II） ^eq4-2</h5>
+<p>求 \(\displaystyle \int \frac{x^2 + 1}{(x-1)^2(x+2)} \dd{x}\)。</p>
 <p><strong>解.</strong></p>
 <ol>
 <li>
 <p>部分分式分解 </p>
-$$\frac{x^2 + 1}{(x-1)^2(x+2)} = \frac{4}{9(x-1)} + \frac{2}{3(x-1)^2} + \frac{5}{9(x+2)}.$$
+\[\frac{x^2 + 1}{(x-1)^2(x+2)} = \frac{4}{9(x-1)} + \frac{2}{3(x-1)^2} + \frac{5}{9(x+2)}.\]
 </li>
 <li>
 <p>積分： </p>
-$$\int \frac{x^2 + 1}{(x-1)^2(x+2)} \dd{x} = \frac{4}{9}\ln{|x-1|} - \frac{2}{3(x-1)} + \frac{5}{9}\ln{|x+2|} + C.$$
+\[\int \frac{x^2 + 1}{(x-1)^2(x+2)} \dd{x} = \frac{4}{9}\ln{|x-1|} - \frac{2}{3(x-1)} + \frac{5}{9}\ln{|x+2|} + C.\]
 </li>
 </ol>
 <p><a href="https://www.desmos.com/calculator/jz5ab1e1uq" rel="external" target="_self">Desmos link</a></p>
 <!-- raw HTML omitted -->
-<h5 id="例題-4-3情況-iii">例題 4-3（情況 III）</h5>
-<p>求 $\displaystyle\int {\frac{2x + 3}{x^2 + 4} \dd{x}}$。</p>
+<h5 id="例題-4-3情況-iii-eq4-3">例題 4-3（情況 III） ^eq4-3</h5>
+<p>求 \(\displaystyle\int {\frac{2x + 3}{x^2 + 4} \dd{x}}\)。</p>
 <p><strong>解.</strong>
 被積函數本身已經不可再簡化。所求積分等於 </p>
-$$\int \frac{2x}{x^2 + 4} \dd{x} + \int \frac{3}{x^2 + 4} \dd{x};$$
+\[\int \frac{2x}{x^2 + 4} \dd{x} + \int \frac{3}{x^2 + 4} \dd{x};\]
 <p>第一部分：</p>
-$$\int \frac{2x}{x^2 + 4} \dd{x} = \ln{|x^2 + 4|} + C_1;$$
+\[\int \frac{2x}{x^2 + 4} \dd{x} = \ln{|x^2 + 4|} + C_1;\]
 <p>第二部分：</p>
-$$\int \frac{3}{x^2 + 4} \dd{x} = \frac{3}{2} \int \frac{1}{(x/2)^2 + 1} \dd{x} = \frac{3}{2} \tan^{-1}{\left(\frac{x}{2}\right)} + C_2;$$
+\[\int \frac{3}{x^2 + 4} \dd{x} = \frac{3}{2} \int \frac{1}{(x/2)^2 + 1} \dd{x} = \frac{3}{2} \tan^{-1}{\left(\frac{x}{2}\right)} + C_2;\]
 <p>合併：
 </p>
-$$
+\[
 \int \frac{2x + 3}{x^2 + 4} \dd{x} = \ln{|x^2 + 4|} + \frac{3}{2} \tan^{-1}{\left(\frac{x}{2}\right)} + C.
-$$
-<h5 id="例題-4-4情況-iii">例題 4-4（情況 III）</h5>
-<p>計算 $\displaystyle\int \frac{2x + 3}{(x - 1)(x^2 + 1)} \, \dd{x}$。</p>
+\]
+<h5 id="例題-4-4情況-iii-eq4-4">例題 4-4（情況 III） ^eq4-4</h5>
+<p>計算 \(\displaystyle\int \frac{2x + 3}{(x - 1)(x^2 + 1)} \, \dd{x}\)。</p>
 <p><strong>解.</strong><br>
 首先，將分式分解為部分分式：
 </p>
-$$
+\[
 \frac{2x + 3}{(x - 1)(x^2 + 1)} = \frac{A}{x - 1} + \frac{Bx + C}{x^2 + 1}
-$$
+\]
 <p>
 通分後，得到：
 </p>
-$$
+\[
 2x + 3 = A(x^2 + 1) + (Bx + C)(x - 1)
-$$
+\]
 <p>
 展開並比較係數，得到方程組：
 </p>
-$$
+\[
 2x + 3 = Ax^2 + A + Bx^2 - Bx + Cx - C
-$$
+\]
 <p>
 整理後：
 </p>
-$$
+\[
 2x + 3 = (A + B)x^2 + (C - B)x + (A - C)
-$$
+\]
 <p>
 比較兩邊的係數：
 </p>
-$$
+\[
 \begin{cases}
 A + B = 0\\
 C - B = 2\\
 A - C = 3
 \end{cases}
-$$
+\]
 <p>
-解此方程組，得到 $A = \frac{5}{2}, B = -\frac{5}{2}, C = -\frac{1}{2}$，因此部分分式為：
+解此方程組，得到 \(A = \frac{5}{2}, B = -\frac{5}{2}, C = -\frac{1}{2}\)，因此部分分式為：
 </p>
-$$
+\[
 \frac{2x + 3}{(x - 1)(x^2 + 1)} = \frac{\frac{5}{2}}{x - 1} + \frac{-\frac{5}{2}x - \frac{1}{2}}{x^2 + 1}
-$$
+\]
 <p>
 積分變為：
 </p>
-$$
+\[
 \begin{align}
 \int{\frac{2x + 3}{(x - 1)(x^2 + 1)}\,\dd{x}} &=
 \int\left(\frac{\frac{5}{2}}{x - 1} + \frac{-\frac{5}{2}x - \frac{1}{2}}{x^2 + 1}\right)\dd{x} \\
 &= \frac{5}{2}\int{\frac{1}{x - 1} \, \dd{x}} - \frac{5}{2} \int{\frac{x}{x^2 + 1}\, \dd{x}} -\frac{1}{2} \int{\frac{3}{x^2 + 1} \, \dd{x}}
 \end{align}
-$$
+\]
 <p>
 每一項分別計算，就得到
 </p>
-$$
+\[
 \int{\frac{2x + 3}{(x - 1)(x^2 + 1)}\,\dd{x}} = \frac{5}{2}\ln|x - 1| + \frac{5}{4} \ln\left(x^2 + 1\right) + \frac{3}{2} \tan^{-1}{x} + C
-$$
-<h5 id="例題-4-5情況-iv">例題 4-5（情況 IV）</h5>
-<p>求 $\displaystyle\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2}\,\dd{x}}$。</p>
+\]
+<h5 id="例題-4-5情況-iv-eq4-5">例題 4-5（情況 IV） ^eq4-5</h5>
+<p>求 \(\displaystyle\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2}\,\dd{x}}\)。</p>
 <p><strong>解.</strong></p>
 <ol>
 <li>
 <p>部分分式分解
 </p>
-$$\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2}= \frac{1}{x^2+1} + \frac{2x}{\left(x^2+1\right)^2}.$$
+\[\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2}= \frac{1}{x^2+1} + \frac{2x}{\left(x^2+1\right)^2}.\]
 </li>
 <li>
 <p>積分：</p>
-$$\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2}\,\dd{x}} = \int{\frac{\dd{x}}{x^2+1}} + \int{\frac{2x}{\left(x^2+1\right)^2}\dd{x}};$$
-<p>第一部分：使用[[tutor-11#|例題 2-1]] 的結果 </p>
-$$\int{\frac{\dd{x}}{x^2+1}}=\arctan{x}+C_1;$$
+\[\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2}\,\dd{x}} = \int{\frac{\dd{x}}{x^2+1}} + \int{\frac{2x}{\left(x^2+1\right)^2}\dd{x}};\]
+<p>第一部分：使用[[tutor-11#^eq2-1|例題 2-1]] 的結果 </p>
+\[\int{\frac{\dd{x}}{x^2+1}}=\arctan{x}+C_1;\]
 <p>第二部分：使用變數變換法，得到 </p>
-$$\int{\frac{2x}{\left(x^2+1\right)^2}\dd{x}}=-\frac{1}{x^2+1}+C_2.$$
+\[\int{\frac{2x}{\left(x^2+1\right)^2}\dd{x}}=-\frac{1}{x^2+1}+C_2.\]
 </li>
 <li>
 <p>合併得到</p>
-$$\displaystyle\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2} \,\dd{x}}=\arctan{x}-\frac{1}{x^2+1}+C.$$
+\[\displaystyle\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2} \,\dd{x}}=\arctan{x}-\frac{1}{x^2+1}+C.\]
 </li>
 </ol>
 <p>%%</p>
@@ -500,18 +517,18 @@ $$\displaystyle\int{\frac{x^2 + 2x + 1}{\left(x^2+1\right)^2} \,\dd{x}}=\arctan{
 %%</li>
 </ol>
 <h2 id="5-降次積分法-5">5. 降次積分法 ^5</h2>
-<h3 id="51-原理">5.1 原理</h3>
+<h3 id="51-原理-5-1">5.1 原理 ^5-1</h3>
 <p>設 </p>
-$$I_n=\int f_n(x)\dd{x}$$
+\[I_n=\int f_n(x)\dd{x}\]
 <p>是==被積函數包含整數參數==（例如初等函數的冪次、或超越函數與任意次數的多項式的乘積）的積分。</p>
-<p>若 $I_n$ 存在遞迴關係（recurrence relation），也就是說，「如果  $I_n=\int f_n(x)\dd{x}$ 可以用 $I_m=\int f_m(x)\dd{x}$ 來表示（$n>m$），我們就可以重複執行這項動作，降低表達式中的整數參數，直到積分可以計算為止。這就是<strong>降次積分法</strong>（Integration by reduction formulae）。</p>
+<p>若 \(I_n\) 存在遞迴關係（recurrence relation），也就是說，「如果  \(I_n=\int f_n(x)\dd{x}\) 可以用 \(I_m=\int f_m(x)\dd{x}\) 來表示（\(n>m\)），我們就可以重複執行這項動作，降低表達式中的整數參數，直到積分可以計算為止。這就是<strong>降次積分法</strong>（Integration by reduction formulae）。</p>
 <p>有許多函數都可使用降次積分法，詳見 <a href="https://en.wikipedia.org/wiki/Integration_by_reduction_formulae" rel="external" target="_self">Tables of integral reduction formulas</a>。</p>
-<h3 id="52-例題">5.2 例題</h3>
-<h4 id="例題-5-1">例題 5-1</h4>
-<p>計算 $\int{\cos^n{x}\dd{x}}$。</p>
+<h3 id="52-例題-5-2">5.2 例題 ^5-2</h3>
+<h4 id="例題-5-1-eq5-1">例題 5-1 ^eq5-1</h4>
+<p>計算 \(\int{\cos^n{x}\dd{x}}\)。</p>
 <p><strong>解.</strong>
 </p>
-$$
+\[
 \begin{align}
 \int{{\color{blue}\cos^{n-1}{(x)}}\,{\color{green}\cos{(x)}\dd{x}}} 
 &= \int{\color{blue}\left(\cos^{n-1}{x}\right)}{\color{green}\,\dd{(\sin{x})}} \\
@@ -521,140 +538,140 @@ $$
 &= \cos^{n-1}{(x)}\sin{(x)} + (n-1)\int\cos^{n-2}{(x)}\dd{x}-(n-1)\int\cos^n{x}\dd{x}\\
 &= \cos^{n-1}{(x)}\sin{(x)} + (n-1)I_{n-2}-(n-1)I_n
 \end{align}
-$$
+\]
 <p>
-求解 $I_n$：
+求解 \(I_n\)：
 </p>
-$$
+\[
 \begin{align}
 I_n+(n-1)I_n &= \cos^{n-1}{(x)}\sin{(x)}+(n-1)I_{n-2} \\
 nI_n &= \cos^{n-1}{(x)}\sin{(x)}+(n-1)I_{n-2} \\
 I_n &= \frac{1}{n}\cos^{n-1}{(x)}\sin{(x)}+\frac{n-1}{n}I_{n-2}
 \end{align}
-$$
+\]
 <p>所以
 </p>
-$$\int{\cos^n{x}\dd{x}} = \frac{1}{n}\cos^{n-1}{x}\sin{x}+\frac{n-1}{n}\int{\cos^{n-2}{x}\dd{x}}$$
+\[\int{\cos^n{x}\dd{x}} = \frac{1}{n}\cos^{n-1}{x}\sin{x}+\frac{n-1}{n}\int{\cos^{n-2}{x}\dd{x}}\]
 <p>
-舉例來說， $n=5$ 時，
+舉例來說， \(n=5\) 時，
 </p>
-$$\int{\cos^5{x}\dd{x}} = \frac{1}{5}\cos^{4}{x}\sin{x}+\frac{4}{5}\int{\cos^{3}{x}\dd{x}}$$
-$$\int{\cos^3{x}\dd{x}} = \frac{1}{3}\cos^{2}{x}\sin{x}+\frac{2}{3}\int{\cos{x}\dd{x}}$$
+\[\int{\cos^5{x}\dd{x}} = \frac{1}{5}\cos^{4}{x}\sin{x}+\frac{4}{5}\int{\cos^{3}{x}\dd{x}}\]
+\[\int{\cos^3{x}\dd{x}} = \frac{1}{3}\cos^{2}{x}\sin{x}+\frac{2}{3}\int{\cos{x}\dd{x}}\]
 <p>
 所以
 </p>
-$$
+\[
 \int{\cos^5{x}\dd{x}} = \frac{1}{5}\cos^{4}{x}\sin{x}+\frac{4}{5}\left(\frac{1}{3}\cos^{2}{x}\sin{x}+\frac{2}{3}\sin{x}\right)+C
-$$
-<h4 id="例題-5-2">例題 5-2</h4>
-<p>計算 $\int x^n e^{ax} \dd{x}$。</p>
+\]
+<h4 id="例題-5-2-eq5-2">例題 5-2 ^eq5-2</h4>
+<p>計算 \(\int x^n e^{ax} \dd{x}\)。</p>
 <p><strong>解.</strong></p>
-<h4 id="例題-5-3">例題 5-3</h4>
-<p>計算 $\int{\sin^n{x}\dd{x}}$。 %% §7.1, Example 6, p.489 %%</p>
+<h4 id="例題-5-3-eq5-3">例題 5-3 ^eq5-3</h4>
+<p>計算 \(\int{\sin^n{x}\dd{x}}\)。 %% §7.1, Example 6, p.489 %%</p>
 <p><strong>解.</strong>
 </p>
-$$\int{\sin^n{x}\dd{x}} = -\frac{1}{n}\sin^{n-1}{x}\cos{x}+\frac{n-1}{n}\int{\sin^{n-2}{x}\dd{x}}$$
+\[\int{\sin^n{x}\dd{x}} = -\frac{1}{n}\sin^{n-1}{x}\cos{x}+\frac{n-1}{n}\int{\sin^{n-2}{x}\dd{x}}\]
 <h2 id="6-其他積分技巧-1-6">6. 其他積分技巧 (1) ^6</h2>
-<h3 id="61-正切半角代換">6.1 正切半角代換</h3>
-<p>正切半角代換（<a href="https://en.wikipedia.org/wiki/Tangent_half-angle_substitution" rel="external" target="_self">Tangent half-angle substitution</a>），有時稱為 Weierstrass 代換（Weierstrass substitution），是將變數 $t$ 替換為 $t = \tan{\frac{\theta}{2}}$，用以簡化含有三角函數的積分。</p>
+<h3 id="61-正切半角代換-6-1">6.1 正切半角代換 ^6-1</h3>
+<p>正切半角代換（<a href="https://en.wikipedia.org/wiki/Tangent_half-angle_substitution" rel="external" target="_self">Tangent half-angle substitution</a>），有時稱為 Weierstrass 代換（Weierstrass substitution），是將變數 \(t\) 替換為 \(t = \tan{\frac{\theta}{2}}\)，用以簡化含有三角函數的積分。</p>
 <p>%% <a href="https://www.youtube.com/watch?v=u9KGuzWpUHw&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=5" rel="external" target="_self">https://www.youtube.com/watch?v=u9KGuzWpUHw&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=5</a> %%</p>
 <h4 id="代換規則">代換規則</h4>
-<p>設 $t = \tan{\frac{\theta}{2}}$，則：
+<p>設 \(t = \tan{\frac{\theta}{2}}\)，則：
 </p>
-$$
+\[
 \sin{\theta} = \frac{2t}{1 + t^2}，\quad \cos{\theta} = \frac{1 - t^2}{1 + t^2}，\quad \dd{\theta} = \frac{2 \, \dd{t}}{1 + t^2}。
-$$
-$$
+\]
+\[
 \sin{\frac{\theta}{2}}=\frac{t}{\sqrt{1+t^2}},\quad\cos{\frac{\theta}{2}}=\frac{1}{\sqrt{1+t^2}}
-$$
+\]
 <p><strong>推導.</strong>
 由二倍角公式
 </p>
-$$
+\[
 \sin{2\theta} = 2\sin{\theta}\cos{\theta},\quad\cos{2\theta} = \cos^2{\theta} - \sin^2{\theta}
-$$
+\]
 <p>
 得到
 </p>
-$$
+\[
 \sin{\theta} = 2\sin{\tfrac{\theta}{2}}\cos{\tfrac{\theta}{2}},\quad\cos{\theta} = \cos^2{\tfrac{\theta}{2}} - \sin^2{\tfrac{\theta}{2}}
-$$
+\]
 <p>
-先將兩式除以 $1 = \cos^2{\tfrac{\theta}{2}} + \sin^2{\tfrac{\theta}{2}}$，再讓分子、分母同除以 $\cos^2{\tfrac{\theta}{2}}$，然後代入 $t = \tan{\frac{\theta}{2}}$，得到
+先將兩式除以 \(1 = \cos^2{\tfrac{\theta}{2}} + \sin^2{\tfrac{\theta}{2}}\)，再讓分子、分母同除以 \(\cos^2{\tfrac{\theta}{2}}\)，然後代入 \(t = \tan{\frac{\theta}{2}}\)，得到
 </p>
-$$
+\[
 \sin{\theta} = \frac{2\sin{\tfrac{\theta}{2}}\cos{\tfrac{\theta}{2}}}{\cos^2{\tfrac{\theta}{2}} + \sin^2{\tfrac{\theta}{2}}} = \frac{2\tan{\tfrac{\theta}{2}}}{1 + \tan^2{\tfrac{\theta}{2}}} = \frac{2t}{1+t^2}
-$$
-$$
+\]
+\[
 \cos{\theta} = \frac{\cos^2{\tfrac{\theta}{2}} - \sin^2{\tfrac{\theta}{2}}}{\cos^2{\tfrac{\theta}{2}} + \sin^2{\tfrac{\theta}{2}}} = \frac{1 - \tan^2{\tfrac{\theta}{2}}}{1 + \tan^2{\tfrac{\theta}{2}}} = \frac{1-t^2}{1+t^2} 
-$$
+\]
 <p>
-由於 $t = \tan{\frac{\theta}{2}}$，微分的關係式為
+由於 \(t = \tan{\frac{\theta}{2}}\)，微分的關係式為
 </p>
-$$\dd{t}=\dv{\theta}\left(\tan{\tfrac{\theta}{2}}\right)\dd{\theta} = \frac{1}{2}\left(1+\tan^2{\frac{\theta}{2}}\right)\dd{\theta}=\frac{1+t^2}{2}\dd{\theta}$$
-<p>$\theta$ 和 $t$ 的幾何關係可以參考下圖（將 $\varphi$ 換成 $\theta$）。
-<a href="#R-image-936d6a26fd6508232e8af45b3904b71c" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Weierstrass_substitution.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-936d6a26fd6508232e8af45b3904b71c"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Weierstrass_substitution.svg"></a></p>
-<h4 id="例題-6-1">例題 6-1</h4>
-<p>計算 $\displaystyle \int{\frac{\dd{\theta}}{1 + \sin{\theta}}}$。</p>
+\[\dd{t}=\dv{\theta}\left(\tan{\tfrac{\theta}{2}}\right)\dd{\theta} = \frac{1}{2}\left(1+\tan^2{\frac{\theta}{2}}\right)\dd{\theta}=\frac{1+t^2}{2}\dd{\theta}\]
+<p>\(\theta\) 和 \(t\) 的幾何關係可以參考下圖（將 \(\varphi\) 換成 \(\theta\)）。
+<a href="#R-image-9c086149f9c4cb6a9deedfea014e5e8b" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Weierstrass_substitution.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c086149f9c4cb6a9deedfea014e5e8b"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Weierstrass_substitution.svg"></a></p>
+<h4 id="例題-6-1-eq6-1">例題 6-1 ^eq6-1</h4>
+<p>計算 \(\displaystyle \int{\frac{\dd{\theta}}{1 + \sin{\theta}}}\)。</p>
 <p><strong>解.</strong><br>
-使用 Weierstrass 代換，設 $t = \tan{\frac{\theta}{2}}$，則 $\sin{\theta} = \frac{2t}{1 + t^2}$，$\dd{\theta} = \frac{2 \, \dd{t}}{1 + t^2}$。積分變為：
+使用 Weierstrass 代換，設 \(t = \tan{\frac{\theta}{2}}\)，則 \(\sin{\theta} = \frac{2t}{1 + t^2}\)，\(\dd{\theta} = \frac{2 \, \dd{t}}{1 + t^2}\)。積分變為：
 </p>
-$$
+\[
 \int{\frac{\frac{2}{1 + t^2}}{1 + \frac{2t}{1 + t^2}}\dd{t}} = \int \frac{2 \, \dd{t}}{1 + t^2 + 2t} = \int \frac{2 \, \dd{t}}{(1 + t)^2}
-$$
+\]
 <p>
-進行變數代換，設 $u = 1 + t$，則 $\dd{u} = \dd{t}$。積分變為：
+進行變數代換，設 \(u = 1 + t\)，則 \(\dd{u} = \dd{t}\)。積分變為：
 </p>
-$$
+\[
 \int \frac{2 \, \dd{u}}{u^2} = 2 \int u^{-2} \, \dd{u} = -2u^{-1} + C = -\frac{2}{1 + t} + C
-$$
+\]
 <p>
-將 $t$ 代回，得到：
+將 \(t\) 代回，得到：
 </p>
-$$
+\[
 \int{\frac{\dd{\theta}}{1 + \sin{\theta}}} = -\frac{2}{1 + \tan{\frac{\theta}{2}}} + C
-$$
-<h4 id="例題-6-2">例題 6-2</h4>
-<p>計算 $\displaystyle \int{\csc{x}\dd{x}}$。</p>
+\]
+<h4 id="例題-6-2-eq6-2">例題 6-2 ^eq6-2</h4>
+<p>計算 \(\displaystyle \int{\csc{x}\dd{x}}\)。</p>
 <p><strong>解.</strong><br>
 </p>
-$$
+\[
 \begin{aligned}
 \int{ \csc{x}\dd{x} } 
 &= \int{ \frac{\dd{x}}{\sin{x}} } \\
 &= \int{ \left(\frac{1 + t^2}{2t}\right) \left(\frac{2}{1 + t^2}\right) \dd{t} }, \quad \text{with } t = \tan{\tfrac{x}{2}} \\
 &= \int{ \frac{\dd{t}}{t} } = \ln{|t|}+ C = \ln{\left|\tan{\tfrac{x}{2}} \right|} + C
 \end{aligned}
-$$
+\]
 <p>更多例題：Stewart (9ed), §7.4, Exercises 64–67, p.516</p>
-<h3 id="62-euler-代換">6.2 Euler 代換</h3>
-<p>Euler 代換（<a href="https://en.wikipedia.org/wiki/Euler_substitution" rel="external" target="_self">Euler substitution</a>）是針對含有 $\sqrt{ax^2 + bx + c}$ 的積分，將變數進行代換來簡化積分的方法。
+<h3 id="62-euler-代換-6-2">6.2 Euler 代換 ^6-2</h3>
+<p>Euler 代換（<a href="https://en.wikipedia.org/wiki/Euler_substitution" rel="external" target="_self">Euler substitution</a>）是針對含有 \(\sqrt{ax^2 + bx + c}\) 的積分，將變數進行代換來簡化積分的方法。
 %%
-針對 $\sqrt{ax^2 + bx + c}$，歐拉提出了三種代換：</p>
+針對 \(\sqrt{ax^2 + bx + c}\)，歐拉提出了三種代換：</p>
 <ol>
-<li><del>若 $a > 0$，設 $x + \frac{b}{2a} = \sqrt{a} \tan{t}$。</del></li>
-<li><del>若 $c > 0$，設 $x = \sqrt{c} \cot{t}$。</del></li>
-<li><del>若 $ax^2 + bx + c = 0$ 有實根，設 $x = u + v$，其中 $u$ 和 $v$ 是方程的兩根。</del>
+<li><del>若 \(a > 0\)，設 \(x + \frac{b}{2a} = \sqrt{a} \tan{t}\)。</del></li>
+<li><del>若 \(c > 0\)，設 \(x = \sqrt{c} \cot{t}\)。</del></li>
+<li><del>若 \(ax^2 + bx + c = 0\) 有實根，設 \(x = u + v\)，其中 \(u\) 和 \(v\) 是方程的兩根。</del>
 %%
-%% #### 例題 6-3
-計算 $\displaystyle\int \frac{\dd{x}}{\sqrt{x^2 + 2x + 5}}$。</li>
+%% #### 例題 6-3 ^eq6-3
+計算 \(\displaystyle\int \frac{\dd{x}}{\sqrt{x^2 + 2x + 5}}\)。</li>
 </ol>
 <p><strong>解.</strong><br>
-使用 Euler 代換法，設 $x + 1 = 2\tan{t}$，則 $\dd{x} = 2 \sec^2{t} \, \dd{t}$，並且 $\sqrt{x^2 + 2x + 5} = 2 \sec{t}$。積分變為：
+使用 Euler 代換法，設 \(x + 1 = 2\tan{t}\)，則 \(\dd{x} = 2 \sec^2{t} \, \dd{t}\)，並且 \(\sqrt{x^2 + 2x + 5} = 2 \sec{t}\)。積分變為：
 </p>
-$$
+\[
 \int \frac{2 \sec^2{t} \, \dd{t}}{2 \sec{t}} = \int \sec{t} \, \dd{t} = \ln|\sec{t} + \tan{t}| + C。
-$$
+\]
 <p>
-將 $t$ 代回，得到：
+將 \(t\) 代回，得到：
 </p>
-$$
+\[
 \int \frac{\dd{x}}{\sqrt{x^2 + 2x + 5}} =\ln \left| \frac{x + 1}{2} + \sqrt{1 + \left(\frac{x + 1}{2}\right)^2} \right| + C。
-$$
+\]
 <p> %%</p>
-<p>$\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}$
-$\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
+<p>\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
+\(\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}\)</p>
 
             <footer class="footline">
             </footer>
@@ -730,12 +747,12 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723213040" defer></script>
-        <script src="/js/search.js?1723213040" defer></script>
+        <script src="/js/auto-complete.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723649390" defer></script>
+        <script src="/js/search.js?1723649390" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -746,7 +763,25 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/notebook/index.html" class=""><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/tutor-12/index.html" class="active"><a class="padding" href="/notebook/math/tutor-12/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/math-models-and-ode/index.html" class=""><a class="padding" href="/notebook/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/double-integral/index.html" class=""><a class="padding" href="/notebook/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
@@ -811,8 +846,8 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723213040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723213040" defer></script>
+    <script src="/js/clipboard.min.js?1723649390" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723649390" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -827,28 +862,28 @@ $\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}$</p>
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723213040"></script>
-    <script src="/js/d3/d3-color.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723213040" defer></script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
-    <script src="/js/mermaid.min.js?1723213040" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723649390"></script>
+    <script src="/js/d3/d3-color.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723649390" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
+    <script src="/js/mermaid.min.js?1723649390" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723213040" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723213040" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723649390" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723649390" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723213040", cssInProject: true, assetsBuster: "?1723213040" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723649390", cssInProject: true, assetsBuster: "?1723649390" };
     </script>
-    <script src="/js/theme.js?1723213040" defer></script>
+    <script src="/js/theme.js?1723649390" defer></script>
   </body>
 </html>

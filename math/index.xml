@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematics</title>
+    <link>https://qavit.github.io/math/index.html</link>
+    <description> 微積分 線性代數 微分方程式 </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://qavit.github.io/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>\(\mathbb{R}\) 上的函數</title>
+      <link>https://qavit.github.io/math/function-on-r/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/function-on-r/index.html</guid>
+      <description> 映射（map）或函數（function）\(\ f:X\to Y\) 〔值的〕映射，\(\ f:x\mapsto x^2\) 相當於 \(\ f(x)=x^2\) 定義域（domain） \(\ X=\operatorname{dom}f\) 對應域（codomain）、像（image）\(\ f(X)=\{y\in Y\mid y=f(x),x\in X\}\) 值域（range）\(\ Y\) 三種映射 單射／嵌射（injection）、一對一函數（one-to-one function） 滿射／蓋射（surjection）、映成（onto function） 對射／雙射（bijection）、一對一且映成函數（one-to-one and onto function） 水平線測試 奇偶性（oddness）——奇函數（odd function）、偶函數（even function） 初等函數(一) 常數函數、冪函數 \(\ y=x^a\), \(\ x^2\), \(\ x^{1/2}=\pm\sqrt{x}\) 多項式函數 \(\ p(x)=a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n\) 有理函數 \(\ f(x) = \frac{p(x)}{q(x)}\)，其中\(\ p(x)\)、\(\ q(x)\) 為多項式 </description>
+    </item>
+    <item>
+      <title>Mathematical model and ODE</title>
+      <link>https://qavit.github.io/math/math-models-and-ode/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/math-models-and-ode/index.html</guid>
+      <description>Materials W.E. Boyce and R.C. DiPrima. Elementary Differential Equations and Boundary Value Problems. 10th edition. John Wiley &amp; Sons. Chapter 1 (pp.1–19) 翁秉仁（2015）。微積分乙。臺北市：臺大出版中心。 第七章 數學模型與微分方程 王懷權（2013）。數學分析基礎。新竹市：國立清華大學出版社。ISBN [!quote] A differential equation that describes some physical process is often called a mathematical model of the process, and many such models are discussed throughout this book.&#xA;First glance at mathematical models Example 1 Physical law—Newton’s 2nd law\[F=ma=m\frac{\text{d}v}{\text{d}t}=m\dot{v}\] Physical model (falling in the atmophere) \[\begin{aligned}F=m\dot{v}&amp;=mg-\gamma v\\\dot{v}&amp;=g-\beta v\end{aligned}\] \(g\) = gravitational constant 重力常數 mag.</description>
+    </item>
+    <item>
+      <title>二重積分</title>
+      <link>https://qavit.github.io/math/double-integral/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/double-integral/index.html</guid>
+      <description>多重積分 1. 矩形區域上的二重積分 例題： 計算&#xA;(a) \(\int_{0}^{3}{\int_{1}^{2}{x^{2}y \dd{y} \dd{x}}}\) (b) \(\int_{1}^{2}{\int_{0}^{3}{x^{2}y \dd{x}\dd{y}}}\) 富比尼定理（Fubini’s Theorem）說明在某些條件下，二重積分的順序可以交換。&#xA;1.4 富比尼定理的初步形式 如果 \(f\) 在矩形 \(R = [a,b] \times [c,d] = \left\{ (x,y) \in \mathbb{R}^{2} \mid a \leq x \leq b, c \leq y \leq d \right\}\) 上連續，則&#xA;\[ \iint_R f(x, y) \dd{x} \dd{y} = \int_c^d \left( \int_a^b f(x, y) \dd{x} \right) \dd{y} = \int_a^b \left( \int_c^d f(x, y) \dd{y} \right) \dd{x} \] 此定理適用於被積函數在積分區域上連續或可積的情況。一般來說，Fubini 定理成立的條件如下：&#xA;\(f\) 在 \(R\) 上有界， \(f\) 只在「有限多條光滑曲線上」不連續， 迭代積分存在。 Fubini 定理的證明非常複雜。</description>
+    </item>
+    <item>
+      <title>實數的拓撲</title>
+      <link>https://qavit.github.io/math/topology-on-r/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/topology-on-r/index.html</guid>
+      <description> 區間（interval） 有界區間 開區間 \((a,b)\) 不包含端點 閉區間 \([a,b]\) 包含端點 半開區間 \((a,b]\), \([a,b)\) 無界區間 開區間 \((a,\infty)\), \((- \infty,b)\) 閉區間 \([a,\infty)\), \((- \infty,b]\) \((- \infty,\infty) = \mathbb{R}\) 既開又閉 內點、邊界點、外點、極限點、聚點 開集、閉集、閉包、非開非閉集 有界集、緊緻集 </description>
+    </item>
+    <item>
+      <title>極限與連續</title>
+      <link>https://qavit.github.io/math/limit-and-continuity-on-r/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/limit-and-continuity-on-r/index.html</guid>
+      <description>函數極限的定義 【定義】函數的極限，使用 ε-δ 語言 （王 p.45） 設 \(f:[a,b]\to \mathbb{R}\)，\(c\in(a,b)\) 和 \(A\in\mathbb{R}\)。 則 \[\begin{split}(\forall \varepsilon &gt; 0)(\exists\delta &gt; 0)(\forall x\in[a,b])\Big(0&lt;|x-c|&lt;\delta\implies |f(x)-A|&lt;\varepsilon\Big)\\ \iff \lim_{x\to c}f(x)=A\end{split} \] 補充. 翻譯：「對任一正數 \(\varepsilon\)，都存在一個正數 \(\delta\)，使得所有區間 \([a,b]\) 內的 \(x\) 都滿足以下陳述，即「只要 \(x\) 和 \(c\) 的距離小於 \(\delta\)（且 \(x\neq c\)），則 \(f(x)\) 和 \(A\) 的距離小於 \(\varepsilon\)」。以上這句話等價於「函數 \(f\) 在點 \(c\) 的極限為 \(A\)」，或稍微說得精確一點，等價於「當 \(x\) 趨近於 \(c\) 時，函數 \(f\) 的極限為 \(A\)」 幾何意義：「若點 \(x\) 在 \(c\) 的附近（但不包含 \(c\)），則函數值 \(f(x)\) 在 \(A\) 的附近」（參考翁 p.24） 日常用語「附近」在數學上用鄰域（neighborhood）來表述。其中 \(0&lt;|x-c|&lt;\delta\) 是 \(c\) 的一個去心鄰域（deleted neighborhood）。 !</description>
+    </item>
+    <item>
+      <title>量詞邏輯</title>
+      <link>https://qavit.github.io/math/logical-quantifier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/logical-quantifier/index.html</guid>
+      <description> 全稱量化（universal quantification）——「對所有」、「任何」、「所有⋯⋯都」 例：\(\forall n\in\mathbb{N}\ \big(2n&gt;2+n\big)\) ——「對所有正整數 \(n\)，使得 \(2n &gt; 2+n\)」（假） 存在量化（existential quantification）——「存在」、「某些」、「有⋯⋯」 例：\(\exists n\in\mathbb{N}\ \big(5n&gt;20\big)\) ——「存在正整數 \(n\)，使得 \(5n&gt;20\)」（真） 組合運用 * 例：\((\forall n\in \mathbb{N})(\exists k\in\mathbb{N})\ \big(k=n+1\big)\)——「對所有正整數 \(n\)，都存在一個正整數 \(k\)，使得 \(k=n+1\)」（真） 條件句 \(P\implies Q\) （若 \(P\) 則 \(Q\)）（If \(P\) then \(Q\)） \(P\Longleftarrow Q\) （唯若 \(P\) 則 \(Q\)）（Only if \(P\) then \(Q\)） \(P\iff Q\) （若且唯若 \(P\) 則 \(Q\)）（If and only if \(P\) then \(Q\)） 充分條件、必要條件、充分必要條件 </description>
+    </item>
+    <item>
+      <title>集合論與數系</title>
+      <link>https://qavit.github.io/math/set-theory/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/math/set-theory/index.html</guid>
+      <description>量詞 \(\forall\) for all… 對所有⋯⋯ \(\forall x \in \mathbb{R}\) \(\exists\) there exists 存在（只要有一個） \(\exists x \in \mathbb{R}\) \(\exists !\) there exists unique 存在唯一 \(\exists! x \in \mathbb{R}\) 集合（set）、元素（element） \(\ x\in S\), \(\ x\notin S\), \(\ S=\{1,2,3\}\), \(\ 2\in S\) \(\ S=\{a,b,c,\ldots\}\) \(\ S=\{x\mid x \text{ 滿足的條件}\}\) \(\ S=\{x\mid |x|\leq3\text{ and }x\in\mathbb{Z}\}=\{-3,-2,-1,0,1,2,3\}\) 子集（subset） \(\ A\subset S\), \(\ A\subseteq S\)&#xA;真子集（proper subset） \(\ A\subsetneq S\) \(\{1\}\subseteq\{1,2\}\), \(\{1,2\}\subseteq\{1,2\}\) \(\ \mathbb{N}\subseteq\mathbb{Z}\) 空集（empty set） \(\ A=\varnothing=\{\}=\emptyset\)</description>
+    </item>
+  </channel>
+</rss>

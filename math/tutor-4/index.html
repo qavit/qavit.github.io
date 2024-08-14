@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="微積分 2024-06-11 1. 習題 對於以下函數，求 \(f&#39;(x)\)。 (a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2&#43;x&#43;1}}\) (b) \(f(x)=(2x&#43;1)^5\left(x^3-x&#43;1\right)^4\) (c) \(f(x)=\sin(\cos(\tan{x}))\) (d) \(f(x)=\ln{(\sec{x^3})}\) 對於以下隱函數，求 \(y&#39;\)。 (a) \(\sin(x&#43;y)=y^2\cos{x}\) (b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\) 判斷以下函數的可微性。（如：在哪一點不可微？） ![[calculus-problems-2024-06-24_set1.png]] ![[calculus-problems-2024-06-24_set2.png]] 下圖顯示 \(f\)、\(f&#39;\)、\(f&#39;&#39;\)、\(f&#39;&#39;&#39;\) 的圖形。請做配對。（如：a ↔︎ \(f&#39;\)） ![[calculus-problems-2024-06-24_set3.png]] 試著用導數的定義證明 \((\sin{x})&#39; = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。 2. 序理論與點集拓撲基礎 參考：
+王 pp.30–33 【定義】下界、上界、最小元素、最大元素 設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。
+\(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個下界（lower bound）， 若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。 \(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個上界（upper bound）， 若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。 若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) 有界（bounded）；否則稱 \(S\) 無界（unbounded）。 \(\exists!">
+    <meta name="author" content="Sin-iu Ho">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
+    <meta name="twitter:description" content="微積分 2024-06-11 1. 習題 對於以下函數，求 \(f&#39;(x)\)。 (a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2&#43;x&#43;1}}\) (b) \(f(x)=(2x&#43;1)^5\left(x^3-x&#43;1\right)^4\) (c) \(f(x)=\sin(\cos(\tan{x}))\) (d) \(f(x)=\ln{(\sec{x^3})}\) 對於以下隱函數，求 \(y&#39;\)。 (a) \(\sin(x&#43;y)=y^2\cos{x}\) (b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\) 判斷以下函數的可微性。（如：在哪一點不可微？） ![[calculus-problems-2024-06-24_set1.png]] ![[calculus-problems-2024-06-24_set2.png]] 下圖顯示 \(f\)、\(f&#39;\)、\(f&#39;&#39;\)、\(f&#39;&#39;&#39;\) 的圖形。請做配對。（如：a ↔︎ \(f&#39;\)） ![[calculus-problems-2024-06-24_set3.png]] 試著用導數的定義證明 \((\sin{x})&#39; = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。 2. 序理論與點集拓撲基礎 參考：
+王 pp.30–33 【定義】下界、上界、最小元素、最大元素 設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。
+\(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個下界（lower bound）， 若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。 \(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個上界（upper bound）， 若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。 若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) 有界（bounded）；否則稱 \(S\) 無界（unbounded）。 \(\exists!">
+    <meta property="og:url" content="https://qavit.github.io/math/tutor-4/index.html">
+    <meta property="og:description" content="微積分 2024-06-11 1. 習題 對於以下函數，求 \(f&#39;(x)\)。 (a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2&#43;x&#43;1}}\) (b) \(f(x)=(2x&#43;1)^5\left(x^3-x&#43;1\right)^4\) (c) \(f(x)=\sin(\cos(\tan{x}))\) (d) \(f(x)=\ln{(\sec{x^3})}\) 對於以下隱函數，求 \(y&#39;\)。 (a) \(\sin(x&#43;y)=y^2\cos{x}\) (b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\) 判斷以下函數的可微性。（如：在哪一點不可微？） ![[calculus-problems-2024-06-24_set1.png]] ![[calculus-problems-2024-06-24_set2.png]] 下圖顯示 \(f\)、\(f&#39;\)、\(f&#39;&#39;\)、\(f&#39;&#39;&#39;\) 的圖形。請做配對。（如：a ↔︎ \(f&#39;\)） ![[calculus-problems-2024-06-24_set3.png]] 試著用導數的定義證明 \((\sin{x})&#39; = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。 2. 序理論與點集拓撲基礎 參考：
+王 pp.30–33 【定義】下界、上界、最小元素、最大元素 設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。
+\(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個下界（lower bound）， 若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。 \(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個上界（upper bound）， 若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。 若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) 有界（bounded）；否則稱 \(S\) 無界（unbounded）。 \(\exists!">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Mathematics">
+    <meta property="article:published_time" content="2024-06-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-11T00:00:00+00:00">
+    <meta property="article:tag" content="Tutor">
+    <meta property="article:tag" content="Calculus">
+    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
+    <meta itemprop="description" content="微積分 2024-06-11 1. 習題 對於以下函數，求 \(f&#39;(x)\)。 (a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2&#43;x&#43;1}}\) (b) \(f(x)=(2x&#43;1)^5\left(x^3-x&#43;1\right)^4\) (c) \(f(x)=\sin(\cos(\tan{x}))\) (d) \(f(x)=\ln{(\sec{x^3})}\) 對於以下隱函數，求 \(y&#39;\)。 (a) \(\sin(x&#43;y)=y^2\cos{x}\) (b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\) 判斷以下函數的可微性。（如：在哪一點不可微？） ![[calculus-problems-2024-06-24_set1.png]] ![[calculus-problems-2024-06-24_set2.png]] 下圖顯示 \(f\)、\(f&#39;\)、\(f&#39;&#39;\)、\(f&#39;&#39;&#39;\) 的圖形。請做配對。（如：a ↔︎ \(f&#39;\)） ![[calculus-problems-2024-06-24_set3.png]] 試著用導數的定義證明 \((\sin{x})&#39; = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。 2. 序理論與點集拓撲基礎 參考：
+王 pp.30–33 【定義】下界、上界、最小元素、最大元素 設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。
+\(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個下界（lower bound）， 若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。 \(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個上界（upper bound）， 若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。 若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) 有界（bounded）；否則稱 \(S\) 無界（unbounded）。 \(\exists!">
+    <meta itemprop="datePublished" content="2024-06-11T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-06-11T00:00:00+00:00">
+    <meta itemprop="wordCount" content="375">
+    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
+    <meta itemprop="keywords" content="Tutor,Calculus">
+    <title></title>
+    <link href="/images/favicon.png?1723650527" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723650527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723650527" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723650527" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723650527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723650527" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723650527" rel="stylesheet">
+    <link href="/css/fonts.css?1723650527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723650527" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723650527" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723650527" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723650527" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723650527" rel="stylesheet">
+    <link href="/css/print.css?1723650527" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723650527"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      // variant stuff
+      window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/math/tutor-4/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#1-習題">1. 習題</a></li>
+    <li><a href="#2-序理論與點集拓撲基礎">2. 序理論與點集拓撲基礎</a>
+      <ul>
+        <li></li>
+        <li><a href="#定義鄰域">【定義】鄰域</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-導函數的應用一">3. 導函數的應用（一）</a>
+      <ul>
+        <li><a href="#31-切線">3.1 切線</a></li>
+        <li><a href="#32--增減">3.2  增減</a></li>
+        <li><a href="#33--極值">3.3  極值</a></li>
+        <li><a href="#34-凹凸性">3.4 凹凸性</a></li>
+        <li><a href="#35-漸近線">3.5 漸近線</a></li>
+        <li><a href="#36-函數作圖">3.6 函數作圖</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/math/index.html"><span itemprop="name">Mathematics</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/math/tutor-4.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math/index.html" title="Mathematics (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math/function-on-r/index.html" title="\(\mathbb{R}\) 上的函數 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id=""></h1>
+
+<h1 id="微積分-2024-06-11">微積分 2024-06-11</h1>
+<h2 id="1-習題">1. 習題</h2>
+<ol>
+<li>對於以下函數，求 \(f'(x)\)。
+<ul>
+<li>(a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2+x+1}}\)</li>
+<li>(b) \(f(x)=(2x+1)^5\left(x^3-x+1\right)^4\)</li>
+<li>(c) \(f(x)=\sin(\cos(\tan{x}))\)</li>
+<li>(d) \(f(x)=\ln{(\sec{x^3})}\)</li>
+</ul>
+</li>
+<li>對於以下隱函數，求 \(y'\)。
+<ul>
+<li>(a) \(\sin(x+y)=y^2\cos{x}\)</li>
+<li>(b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\)</li>
+</ul>
+</li>
+<li>判斷以下函數的可微性。（如：在哪一點不可微？）
+![[calculus-problems-2024-06-24_set1.png]]
+![[calculus-problems-2024-06-24_set2.png]]</li>
+<li>下圖顯示 \(f\)、\(f'\)、\(f''\)、\(f'''\) 的圖形。請做配對。（如：a ↔︎ \(f'\)）
+![[calculus-problems-2024-06-24_set3.png]]</li>
+<li>試著用導數的定義證明 \((\sin{x})' = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。</li>
+</ol>
+<h2 id="2-序理論與點集拓撲基礎">2. 序理論與點集拓撲基礎</h2>
+<p>參考：</p>
+<ul>
+<li>王 pp.30–33</li>
+</ul>
+<h4 id="定義下界上界最小元素最大元素">【定義】下界、上界、最小元素、最大元素</h4>
+<p>設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。</p>
+<ol>
+<li>\(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個<strong>下界</strong>（lower bound），
+<ul>
+<li>若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。</li>
+</ul>
+</li>
+<li>\(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個<strong>上界</strong>（upper bound），
+<ul>
+<li>若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。</li>
+</ul>
+</li>
+<li>若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) <strong>有界</strong>（bounded）；否則稱 \(S\) <strong>無界</strong>（unbounded）。</li>
+<li>\(\exists!\, a\in S,\ \forall x\in S,\ x\geq a\iff\) \(a\) 是 \(S\) 的<strong>最小元素</strong>（least element），記作 \(a=\min{S}\)。</li>
+<li>\(\exists!\, b\in S,\ \forall x\in S,\ x\leq b\iff\)  \(b\) 是 \(S\) 的<strong>最大元素</strong>（greatest element），記作 \(b=\max{S}\)。</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ol>
+<li>\(S\) 的上（下）界不一定是 \(S\) 的元素。</li>
+<li>\(S\) 的最大（小）元素一定是 \(S\) 的元素。</li>
+<li>\(S\) 的最大（小）元素必定是 \(S\) 的上（下）界。</li>
+<li>\(S\) 不一定有最大（小）元素，也不一定有上（小）界。</li>
+</ol>
+<h4 id="例題">例題</h4>
+<ol>
+<li>下列哪些是集合 \(\{2,4,-3,0,3.4\}\) 的上界？(A) \(3\) (B) \(4\) (C) \(5\) (D) \(-3\)。</li>
+<li>下列哪些是區間 \((-5,7)\) 的上界？(A) \(7\) (B) \(6.9999\) (C) \(8\) (D) \(7.0001\)。</li>
+<li>探討下列集合是有上界、有下界、還是無界，並求其最大元素、最小元素。
+<ul>
+<li>(a) \(\mathbb{N}\) — 有下界，沒有上界，沒有最大元素，最小元素為 \(1\)</li>
+<li>(b) \(\mathbb{Z}\) — 無界，沒有最大元素，沒有最小元素</li>
+<li>(c) \(\mathbb{R}^+\) — 有下界，沒有上界，沒有最大元素，沒有最小元素</li>
+<li>(c) \((1,\pi]\) — 有下界，有上界，最大元素為 \(\pi\) ，沒有最小元素</li>
+<li>(d) \([-1,0)\cup(1,2]\) —  有下界，有上界，最大元素為 \(2\) ，最小元素為 \(-1\)</li>
+<li>(e) \((-1,0]\cup[1,2)\) — 有下界，有上界，沒有最大元素，沒有最小元素</li>
+<li>(f) \((0,\pi]\cap \mathbb{Q}\) — 有下界，有上界，沒有最大元素，沒有最小元素</li>
+</ul>
+</li>
+</ol>
+<h4 id="定義下確界上確界">【定義】下確界、上確界</h4>
+<p>設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。</p>
+<ol>
+<li>
+<p>設 \(\alpha\in\mathbb{R}\)。若且唯若</p>
+<ul>
+<li>(a) \(\forall\, x\in S,\ x\geq \alpha\) （即 \(\alpha\) 為 \(S\) 的下界）且</li>
+<li>(b) \(\forall\, \varepsilon >0,\ \exists\, x_\varepsilon \in S,\ a + \varepsilon > x_\varepsilon\)，</li>
+</ul>
+<p>則稱 \(\alpha\) 是 \(S\) 的<strong>最大下界</strong>（greatest lower bound，簡稱 GLB）或 \(S\) 的<strong>下確界</strong>（infimum），記作 \(\alpha=\inf{S}\)。</p>
+</li>
+<li>
+<p>若 \(S\) 無下界，則定義 \(\inf{S}=-\infty\)。</p>
+</li>
+<li>
+<p>設 \(\beta\in\mathbb{R}\)。若且唯若</p>
+<ul>
+<li>(a) \(\forall\, x\in S,\ x\leq \beta\) （即 \(\beta\) 為 \(S\) 的上界）且</li>
+<li>(b) \(\forall\, \varepsilon >0,\ \exists\, x_\varepsilon \in S,\ b-\varepsilon < x_\varepsilon\)，</li>
+</ul>
+<p>則稱 \(\beta\) 是 \(S\) 的<strong>最小上界</strong>（least upper bound，簡稱 LUB）或 \(S\) 的<strong>上確界</strong>（supremum），記作 \(\beta=\sup{S}\)。</p>
+</li>
+<li>
+<p>若 \(S\) 無上界，則定義 \(\sup{S}=\infty\)。</p>
+</li>
+</ol>
+<p><a href="#R-image-94ec15eb9aeba21454b6d43d36b1bb28" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Illustration_of_supremum.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-94ec15eb9aeba21454b6d43d36b1bb28"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Illustration_of_supremum.svg"></a></p>
+<p><strong>註</strong>：</p>
+<ul>
+<li>對於以上兩定義，雖然我們規定 \(S\) 是非空實數子集，但其實所有敘述對於<a href="https://zh.wikipedia.org/wiki/%E5%81%8F%E5%BA%8F%E5%85%B3%E7%B3%BB" rel="external" target="_self">偏序集合</a>（partially ordered set）成立。而且實數不只是一種偏序集合，更是<a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BA%8F%E5%85%B3%E7%B3%BB" rel="external" target="_self">全序集合</a>（total ordered set）。</li>
+</ul>
+<h4 id="例題-1">例題</h4>
+<ol>
+<li>求下列集合的下確界、上確界。
+<ul>
+<li>(a) \(\mathbb{N}\) — 下確界為 \(1\)</li>
+<li>(b) \(\mathbb{Z}\) — 沒有</li>
+<li>(c) \(\mathbb{R}^+\) — 下確界為 \(0\)</li>
+<li>(c) \((1,\pi]\) — 下確界為 \(1\)，上確界為 \(\pi\)</li>
+<li>(d) \([-1,0)\cup(1,2]\) — 下確界為 \(-1\)，上確界為 \(2\)</li>
+<li>(e) \((-1,0]\cup[1,2)\) — 下確界為 \(-1\)，上確界為 \(2\)</li>
+<li>(f) \((0,\pi]\cap \mathbb{Q}\) —下確界為 \(0\)，上確界為 \(\pi\)</li>
+<li>(g) \(\{1,\frac{1}{2},\frac{1}{3},\ldots\}\) —下確界為 \(0\)，上確界為 \(1\)</li>
+<li>(h) \(\{1,\frac{1}{2},\frac{1}{3},\ldots\}\cup\{3-1,3-\frac{1}{2},3-\frac{1}{3},\ldots\}\) —下確界為 \(0\)，上確界為 \(3\)</li>
+</ul>
+</li>
+</ol>
+<h4 id="公理實數的完備性公理-completeness">【公理】實數的完備性公理 ^completeness</h4>
+<p>設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。</p>
+<ol>
+<li>若 \(S\) 有下界，則 \(S\) 有下確界；</li>
+<li>若 \(S\) 有上界，則 \(S\) 有上確界。</li>
+</ol>
+<p><strong>註</strong>：<a href="https://zh.wikipedia.org/wiki/%E5%AE%9E%E6%95%B0%E5%AE%8C%E5%A4%87%E6%80%A7" rel="external" target="_self">實數的完備性</a>是實數的構造之一。</p>
+<h3 id="定義鄰域">【定義】鄰域</h3>
+<p>設 \(c\in\mathbb{R}\) 為一固定點，和 \(r>0\) 是任意正數。則</p>
+<ol>
+<li>集合 \(\{x\in\mathbb{R}\mid |x-c|<r\}=(c-r,c+r)\) 是點 \(c\) 的一個鄰域（neighborhood），或稱為 \(r\)-鄰域，記作 \(U_r(c)\)。 ^neigh</li>
+<li>集合 \(\{x\in\mathbb{R}\mid 0<|x-c|<r\}=(c-r,c)\cup(c,c+r)=(c-r,c+r)\setminus\{c\}\) 是點 \(c\) 的一個去心鄰域（deleted neighborhood 或 punctured neighborhood）。 ^del-neigh</li>
+<li>集合 \(\{x\in\mathbb{R}\mid c-r<x\leq c\}=(c-r,c]\) 是點 \(c\) 的一個左鄰域。</li>
+<li>集合 \(\{x\in\mathbb{R}\mid c-r<x<c\}=(c-r,c)\) 是點 \(c\) 的一個左去心鄰域。</li>
+<li>集合 \(\{x\in\mathbb{R}\mid c \leq x < c+r\}=[c,c+r)\) 是點 \(c\) 的一個右鄰域。</li>
+<li>集合 \(\{x\in\mathbb{R}\mid c < x < c+r\}=(c,c+r)\) 是點 \(c\) 的一個右去心鄰域。</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考：王 p.405</li>
+<li>以上定義的是 \(\mathbb{R}\) 上的鄰域。一般而言，鄰域 \(U(c)\) 是一個包含以 \(c\) 為中心的<a href="https://zh.wikipedia.org/wiki/%E7%90%83_(%E6%95%B0%E5%AD%A6)#%E9%96%8B%E9%9B%86" rel="external" target="_self">開球</a>的任意集合。按照這個定義，左鄰域或右鄰域不屬於嚴格意義上的鄰域。</li>
+</ul>
+<p>點集拓撲</p>
+<h2 id="3-導函數的應用一">3. 導函數的應用（一）</h2>
+<p>參考：</p>
+<ul>
+<li>王 第五章</li>
+<li>翁 §2.2–2.5</li>
+</ul>
+<h3 id="31-切線">3.1 切線</h3>
+<h4 id="定理切線與法線">【定理】切線與法線</h4>
+<p>設 \(f:D\to\mathbb{R}\) 為一函數，\(c\in D\)，且 \(f'(c)\) 存在，則</p>
+<ol>
+<li>\(f\) 的函數圖形上過點 \((c,f(c))\) 的切線斜率為 \(f'(c)\)。</li>
+<li>\(f\) 的函數圖形上過點 \((c,f(c))\) 的切線方程式為 \(y=f(c)+f'(c)(x-c)\)。</li>
+<li>\(f\) 的函數圖形上過點 \((c,f(c))\) 的法線方程式為 \[\left\{\begin{array}{ll}y=f(c)-\frac{1}{f'(c)}(x-c)&\mbox{若 }f'(c)\neq 0,\\x=c&\mbox{若 }f'(c)= 0.\end{array}\right.\]
+![[tutor-4-fig-tangent-normal.png|500]]</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ol>
+<li>若隱函數的導數存在，則上述定理也可用於一般曲線。</li>
+<li>法線（normal line）與切線（tangent line）垂直。</li>
+</ol>
+<h4 id="例題-2">例題</h4>
+<ol>
+<li>求 \(f(x)=\sqrt{x^2+5}\) 之函數圖形過 \((1,\sqrt{6})\) 之切線斜率、切線方程式與法線方程式。</li>
+<li>求曲線 \(x^2+4y^2=4\) 在點 \(\left(\sqrt{2},-\frac{1}{\sqrt{2}}\right)\) 之切線斜率、切線方程式與法線方程式。</li>
+</ol>
+<h3 id="32--增減">3.2  增減</h3>
+<p>參考</p>
+<ul>
+<li>王 §2.4.2 p.59</li>
+<li>王 §5.3.1 p.166</li>
+<li>翁 §2.4.1 p.62</li>
+</ul>
+<h4 id="定義函數的單調性">【定義】函數的單調性</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一函數，且 \(S\) 是 \(D\) 的一個子開區間。</p>
+<ol>
+<li>\(\big(\forall\, x,y\in S,\ x<y\implies f(x)\leq f(y)\big) \iff f\) 在 \(S\) 上<strong>遞增</strong>（increasing）。</li>
+<li>\(\big(\forall\, x,y\in S,\ x<y\implies f(x) < f(y)\big) \iff f\) 在 \(S\) 上<strong>嚴格遞增</strong>（strictly increasing）。</li>
+<li>\(\big(\forall\, x,y\in S,\ x<y\implies f(x)\geq f(y)\big) \iff f\) 在 \(S\) 上<strong>遞減</strong>（decreasing）。</li>
+<li>\(\big(\forall\, x,y\in S,\ x<y\implies f(x) > f(y)\big) \iff f\) 在 \(S\) 上<strong>嚴格遞減</strong>（strictly decreasing）。</li>
+<li>\(f\) 在 \(S\) 上遞增或遞減 \(\iff\)  \(f\) 在 \(S\) 上<strong>單調</strong>（monotonic）。</li>
+<li>\(f\) 在 \(S\) 上嚴格遞增或嚴格遞減 \(\iff\)  \(f\) 在 \(S\) 上<strong>嚴格單調</strong>（strictly monotonic）。</li>
+<li>以上性質稱為函數的 <strong><a href="https://zh.wikipedia.org/wiki/%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0" rel="external" target="_self">單調性</a></strong>（monotonicity）。</li>
+</ol>
+<h4 id="定理單調性測試">【定理】單調性測試</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一可微函數，\(S\) 是 \(D\) 的一個子開區間。</p>
+<ol>
+<li>若 \(\forall\, x\in S,\ f'(x)\geq 0\)，則 \(f\) 在 \(S\) 上<strong>遞增</strong>。</li>
+<li>若 \(\forall\, x\in S,\ f'(x)> 0\)，則 \(f\) 在 \(S\) 上<strong>嚴格遞增</strong>。</li>
+<li>若 \(\forall\, x\in S,\ f'(x)\leq 0\)，則 \(f\) 在 \(S\) 上<strong>遞減</strong>。</li>
+<li>若 \(\forall\, x\in S,\ f'(x) < 0\)，則 \(f\) 在 \(S\) 上<strong>嚴格遞減</strong>。</li>
+</ol>
+<h4 id="例題-3">例題</h4>
+<p>探討下列函數的單調性。</p>
+<ol>
+<li>\(f(x)=x^2\) 在 \(x<0\) 嚴格遞減，在 \(x>0\) 嚴格遞增。</li>
+<li>\(f(x)=\sqrt{x}\) 在 \(x>0\) 嚴格遞增。</li>
+<li>\(f(x)=\ln{x}\) 在 \(x>0\) 嚴格遞增。</li>
+<li>\(f(x)=e^x\) 在 \(\mathbb{R}\) 嚴格遞增。</li>
+<li>\(f(x)=|x|\) 在 \(x<0\) 嚴格遞減，在 \(x>0\) 嚴格遞增。</li>
+<li>\(f(x)=(x-1)(x-2)(x-3)\)
+<ul>
+<li>\(x>3\) 嚴格遞增。</li>
+<li>\(x<1\) 嚴格遞減。</li>
+<li>⋯⋯</li>
+</ul>
+</li>
+</ol>
+<h3 id="33--極值">3.3  極值</h3>
+<p>參考：</p>
+<ul>
+<li>王 §5.3.2 (p.168)</li>
+<li>翁 §2.4.1 (p.62)</li>
+<li>Stewart 9ed, §4.1</li>
+</ul>
+<h4 id="定義絕對極值">【定義】絕對極值</h4>
+<p>設 \(f:D\to\mathbb{R}\) 為一函數。</p>
+<ol>
+<li>\(\exists\, c\in D,\ \forall x\in D,\ f(x)\leq f(c)\iff f\) 在 \(c\) 有<strong>絕對極大值</strong> \(f(c)\)；</li>
+<li>\(\exists\,c\in D,\ \forall x\in D,\ f(x)\geq f(c)\iff f\) 在 \(c\) 有<strong>絕對極小值</strong> \(f(c)\)；</li>
+<li>\(f\) 在 \(c\) 有絕對極大值或絕對極小值 \(\iff\) \(f\) 在 \(c\) 有<strong>絕對極值</strong>。</li>
+</ol>
+<h4 id="定義相對極值">【定義】相對極值</h4>
+<p>設 \(f:D\to\mathbb{R}\) 為一函數。</p>
+<ol>
+<li>\(\exists\, c\in D,\ \forall x\in \{c \mbox{ 的鄰域}\},\ f(x)\leq f(c) \iff f\) 在 \(c\) 有<strong>相對極大值</strong> \(f(c)\)；</li>
+<li>\(\exists\, c\in D,\ \forall x\in \{c \mbox{ 的鄰域}\},\ f(x)\geq f(c)\iff f\) 在 \(c\) 有<strong>相對極小值</strong> \(f(c)\)；</li>
+<li>\(f\) 在 \(c\) 有相對極大值或相對極小值 \(\iff\) \(f\) 在 \(c\) 有<strong>相對極值</strong>。
+在上述定義中，</li>
+<li>若 \(c=\max{D}\) ，則量詞採用左鄰域的定義，例如 \(\forall\,r>0,\ \forall x\in \{x\in\mathbb{R}\mid c-r<x\leq c\}\)。；</li>
+<li>若 \(c=\min{D}\) ，則量詞採用右鄰域的定義，例如 \(\forall\,r>0,\ \forall x\in \{x\in\mathbb{R}\mid c\leq x< c+r\}\)。；</li>
+<li>否則，量詞使用一般鄰域的定義，例如 \(\forall\,r>0,\ \forall x\in U_r(c) = \{x\in\mathbb{R}\mid |x-c|<r\}\)。</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ul>
+<li>別名
+<ul>
+<li>極值（extreme value, extremum）
+<ul>
+<li>極大值（maximal value, maximum）</li>
+<li>極小值（minimal value, minimum）</li>
+</ul>
+</li>
+<li>絕對極值（absolute extrema）= 全域極值（global extrema）
+<ul>
+<li>絕對極大值（absolute maximum）= 全域極大值（global maximum）</li>
+<li>絕對對極小值（absolute minimum）= 全域對極小值（global minimum）</li>
+</ul>
+</li>
+<li>相對極值（relative extrema）= 局部極值（local extrema）
+<ul>
+<li>相對極大值（relative maximum）= 局部極大值（local maximum）</li>
+<li>相對極小值（relative minimum）= 局部極小值（local minimum）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有些教科書將「絕對極大（小）值」稱為<strong>最大（小）值</strong>，將「相對極大（小）值」簡稱為<strong>極大（小）值</strong>。</li>
+</ul>
+<h4 id="定理極值定理-evt">【定理】極值定理 ^evt</h4>
+<p>設 \(f:[a,b]\to\mathbb{R}\) 為一連續函數，則 </p>
+\[\exists\ c,d\in[a,b],\ \forall\, x\in[a,b], f(c)\leq f(x)\leq f(d);\]
+<p>
+亦即，\(f\) 在 \([a,b]\) 上存在絕對極小值 \(f(c)\) 和絕對極大值 \(f(d)\)。</p>
+<blockquote>
+<p>[!NOTE]
+在閉區間上連續的函數必有絕對極值。</p>
+</blockquote>
+<p><strong>註</strong>：</p>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%9E%81%E5%80%BC%E5%AE%9A%E7%90%86" rel="external" target="_self">極值定理</a>（Extreme Vlue Theorem，EVT）。</li>
+<li>參考：
+<ul>
+<li>王 定理 3.3-6 (p.101)</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定理 4.1.9 (p.46)</li>
+<li>Stewart 9ed, §4.1, Theorem 3 (p.281)</li>
+</ul>
+</li>
+<li>此定理的證明需要好幾個引理，故證明略，直觀理解即可。
+![[tutor-4-evt-examples.png|900]]
+![[tutor-4-fig-evt-counterexamples.png|700]]</li>
+</ul>
+<h4 id="定理費馬定理">【定理】費馬定理</h4>
+<p>設 \(f:D\to\mathbb{R}\) ，且 \(c\) 為 \(D\) 的一個內點。若 \(f\) 在 \(c\) 有相對極值，且 \(f'(c)\) 存在，則 \(f'(c)=0\)。</p>
+<p><strong>註</strong>：</p>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E8%B4%B9%E9%A9%AC%E5%BC%95%E7%90%86" rel="external" target="_self">費馬定理</a>（Fermat&rsquo;s theorem）</li>
+<li>參考
+<ul>
+<li>翁 性質 2.4.1 (p.62)</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定理 4.1.2 (p.46)</li>
+<li>Stewart 9ed, §4.1, Theorem 4 (p.283)</li>
+</ul>
+</li>
+<li>費馬定理的逆命題（converse）一般而言<strong>不</strong>成立！
+<ul>
+<li>例如 \(f(x)=x^3\) 在 \(x=0\) 時沒有相對極值。（但是有「反曲點」！詳見後文）</li>
+</ul>
+</li>
+<li>即使 \(f'(c)\) 不存在，依然可能有相對極值。
+<ul>
+<li>例如 \(f(x)=|x|\) 在 \(x=0\) 時不可微（\(f'(0)\) 不存在），但是它在 \(x=0\) 時有相對極值。</li>
+</ul>
+</li>
+</ul>
+<h4 id="定義臨界點">【定義】臨界點</h4>
+<p>設 \(f:D\to\mathbb{R}\)，且 \(c\) 為 \(D\) 的一個內點。則 </p>
+\[ c\mbox{ 是 }f \mbox{ 的臨界點（critical point）}\iff f'(c)=0\mbox{ 或 }f'(c) \mbox{ 不存在}。\]
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li>翁稱為候選點 (p.63)。</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定義 4.1.3 (p.46)</li>
+<li>Stewart 9ed, §4.1, Theorem 4 (p.283)</li>
+</ul>
+</li>
+<li>函數的相對極值必發生在臨界點<strong>或</strong>定義域的邊界點。（朱 註 4.1.4）</li>
+</ul>
+<h4 id="方法閉區間法">【方法】閉區間法</h4>
+<p>如果要求<!-- raw HTML omitted -->連續函數<!-- raw HTML omitted --> \(f\) 在<!-- raw HTML omitted -->閉區間<!-- raw HTML omitted --> \([a,b]\) 上的<!-- raw HTML omitted -->絕對極值<!-- raw HTML omitted -->，可以使用以下方法：</p>
+<ol>
+<li>求 \(f\) 在 \((a,b)\) 內的臨界點上的函數值。</li>
+<li>求 \(f\) 在區間端點 \(a\)、\(b\) 上的函數值，即 \(f(a)\)、\(f(b)\)。</li>
+<li>在以上兩步驟所找到的函數值中，
+<ul>
+<li>數值最大者為 \(f\) 在 \([a,b]\) 上的絕對極大值，</li>
+<li>數值最小者為 \(f\) 在 \([a,b]\) 上的絕對極小值。</li>
+</ul>
+</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考：Stewart 9ed, §4.1, Closed Interval Method (p.284)</li>
+</ul>
+<h4 id="定理一階導數測試-1test">【定理】一階導數測試 ^1test</h4>
+<p>設 \(f:D\to\mathbb{R}\) 為一可微函數，且 \(c\) 為 \(D\) 的一個內點。</p>
+<ol>
+<li>\(\exists\,\delta >0,\ \forall x\in U_\delta(c),\ f'(x)(x-c)>0 \implies f\) 在 \(c\) 有相對極小值；</li>
+<li>\(\exists\,\delta >0,\ \forall x\in U_\delta(c),\ f'(x)(x-c)<0 \implies f\) 在 \(c\) 有相對極大值。</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li>翁 性質 2.4.2 (p.63)</li>
+<li>王 定理 5.3-5 (p.168)</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定理 4.5.1 (p.49)</li>
+<li>Stewart 9ed, §4.3, First Derivative Test (p.298)</li>
+</ul>
+</li>
+<li>\(\exists\,\delta >0,\ \forall x\in U_\delta(c)\) 即是點 \(c\) 的任意 \(\delta\)-鄰域，即是「附近」。</li>
+<li>當 \(x\) 從 \(c\) 的左側移到 \(c\) 的右側, \(f'(x)\) 從<em>負變為正</em> \(\iff\) \[f'(x)(x-c)>0\iff\left\{\begin{array}{ll}f'(x)>0&\mbox{當} x>c,\\f'(x)<0&\mbox{當} x<c.\end{array}\right.\]</li>
+<li>當 \(x\) 從 \(c\) 的左側移到 \(c\) 的右側, \(f'(x)\) 從<em>正變為負</em> \(\iff\) \[f'(x)(x-c)<0\iff\left\{\begin{array}{ll}f'(x)<0&\mbox{當} x>c,\\f'(x)>0&\mbox{當} x<c.\end{array}\right.\]</li>
+</ul>
+<h4 id="例題-4">例題</h4>
+<p>用「一階導數測試」求 \(f(x)=3x^4-4x^3-12x^2+5\) 的相對極值，並分析其單調性（在哪個子區間遞增或遞減）。</p>
+<p>\(f'(x)=12x^3-12x^2-24x=0\implies x(x^2-x-2)=0\implies x(x-2)(x+1)=0\)</p>
+<h3 id="34-凹凸性">3.4 凹凸性</h3>
+<p>參考：</p>
+<ul>
+<li>王 §5.3.3 (pp.172–178)</li>
+<li>翁 (p.65)</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> §4.4 (p.49)</li>
+</ul>
+<h4 id="定義函數的凹凸性">【定義】函數的凹凸性</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一函數，\(S\) 是 \(D\) 的一個子開區間，\(\Gamma\) 為 \(f\) 在 \(S\) 上的圖形。</p>
+<ul>
+<li>\(\forall\, c\in S\)，\(\Gamma\) 過 \(c\) 點之切線恆在 \(\Gamma\) 的下方 \(\implies\)  \(f\) 在 \(S\) 上的<strong>凹向上</strong>（concave upward），或稱 \(f\) 在 \(S\) 上為<strong>凸函數</strong>（convex function）。</li>
+<li>\(\forall\, c\in S\)，\(\Gamma\) 過 \(c\) 點之切線恆在 \(\Gamma\) 的上方 \(\implies\) 稱 \(f\) 在 \(S\) 上的<strong>凹向下</strong>（concave downward），或稱 \(f\) 在 \(S\) 上為<strong>凹函數</strong>（concave function）。</li>
+<li>以上性質稱為函數的<strong>凹凸性</strong>（concavity）。</li>
+</ul>
+<p>![[tutor-4-cu-cd.png]]</p>
+<p><strong>註</strong>：</p>
+<ul>
+<li>此處僅給出直觀定義，可對照
+<ul>
+<li>王 定理 §5.3-17 (p.176)</li>
+<li>王 定理 §5.3-24 (p.178)</li>
+<li>Stewart 9ed, §4.3 (p.300)</li>
+<li>翁 (p.65)</li>
+</ul>
+</li>
+<li>形式定義請參考王 §5.3.3 (pp.172–178)。</li>
+<li>也可以直接從 \(f'\) 的單調性來定義，參考<a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定理 4.4.1 (p.49)。</li>
+</ul>
+<h4 id="定理凹凸性測試">【定理】凹凸性測試</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一二次可微函數，\(S\) 是 \(D\) 的一個子開區間。</p>
+<ol>
+<li>若 \(\forall\, x\in S,\ f''(x)> 0\)，則 \(f\) 在 \(S\) 上<strong>凹向上</strong>。</li>
+<li>若 \(\forall\, x\in S,\ f''(x)<0\)，則 \(f\) 在 \(S\) 上<strong>凹向下</strong>。</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定理 4.4.3 (p.49)</li>
+<li>Stewart 9ed, §4.3, Concavity Test (p.300)</li>
+</ul>
+</li>
+</ul>
+<h4 id="定義反曲點">【定義】反曲點</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一函數，且 \(c\) 為 \(D\) 的一個內點。若 \(f\) 在 \(c\) 連續，且 \(f\) 在 \(c\) 的凹凸性改變，則稱 \(c\) 是 \(f\) 的<strong>反曲點</strong>（inflection point）  。</p>
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li>王 定義 §5.3-25 (p.178)</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定義 4.4.5 (p.49)</li>
+<li>Stewart 9ed, §4.3, Definition (p.300)</li>
+</ul>
+</li>
+<li>如果 \(f\) 在 \(c\) 二次可微，則「\(f\) 凹凸性改變」可以定義為 \[\forall\, r>0,\ \forall\,x\in\{x\in\mathbb{R}\mid 0<|x-c|<r\}, f''(x)(x-c)\neq 0,\] 可參考王 定義 §5.3-27 (p.179)</li>
+</ul>
+<h4 id="定理二階導數測試-2test">【定理】二階導數測試 ^2test</h4>
+<p>設 \(f:D\to\mathbb{R}\) 為一函數， \(c\) 為 \(D\) 的一個內點，且 \(f\) 在 \(c\) 二次可微。</p>
+<ol>
+<li>\(f'(c)=0\mbox{ 且 }f''(c)>0 \implies f\) 在 \(c\) 有相對極小值；</li>
+<li>\(f'(c)=0\mbox{ 且 }f''(c)<0\implies f\) 在 \(c\) 有相對極大值。</li>
+</ol>
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li>翁 性質 2.4.3 (p.63)</li>
+<li>王 定理 5.3-6 (p.169)</li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 定理 4.5.2 (p.49)</li>
+<li>Stewart 9ed, §4.3, Second Derivative Test (p.302)</li>
+</ul>
+</li>
+</ul>
+<h4 id="定理三階導數反曲點定理">【定理】三階導數反曲點定理</h4>
+<p>設 \(f:D\to\mathbb{R}\) 為一函數， \(c\) 為 \(D\) 的一個內點，且 \(f\) 在 \(c\) 三次可微。若 \(f''(c)=0\) 且 \(f'''(c)\neq 0\)，則 \(c\) 為 \(f\) 的反曲點。</p>
+<p><strong>註</strong>：參考王 定理 5.3-32 (p.181)</p>
+<h4 id="例題-5">例題</h4>
+<p>求以下函數的臨界點、反曲點、相對極值，並分析其單調性、凹凸性。</p>
+<ol>
+<li>\(f(x)=3x^4-4x^3-12x^2+5\)</li>
+<li>\(f(x)=\ln{\left(x^2+1\right)}\)</li>
+<li>\(f(x)=x(x-1)(x+1)\)</li>
+<li>\(f(x)=\dfrac{x(x-2)}{x-1}\)</li>
+<li>\(f(x)=\sin{x^2}\)</li>
+</ol>
+<h3 id="35-漸近線">3.5 漸近線</h3>
+<h4 id="定義水平漸近線">【定義】水平漸近線</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一函數，又設 \(L\in\mathbb{R}\)。則 \(y=L\) 為 \(f\) 的函數圖形的<strong>水平漸近線</strong>（horizontal asymptote）若且唯若 </p>
+\[\lim_{x\to\infty}f(x)=L\quad\mbox{或}\quad\lim_{x\to-\infty}f(x)=L \]
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li>王 定理 5.3-34 (p.183)</li>
+<li>Stewart 9ed, §2.6, Definition 3 (p.129)</li>
+</ul>
+</li>
+<li>對於<a href="https://zh.wikipedia.org/zh-tw/%E5%87%BD%E6%95%B8%E6%A5%B5%E9%99%90#%E8%87%AA%E8%AE%8A%E9%87%8F%E8%B6%A8%E6%96%BC%E7%84%A1%E7%AA%AE%E5%A4%A7%E6%99%82%E5%87%BD%E6%95%B8%E7%9A%84%E6%A5%B5%E9%99%90" rel="external" target="_self">函數在無窮遠處的極限</a>，可先直觀理解。</li>
+</ul>
+<h4 id="定義鉛直漸近線">【定義】鉛直漸近線</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一函數，又設 \(c\in D\)。則 \(x=c\) 為 \(f\) 的函數圖形的<strong>鉛直漸近線</strong>（horizontal asymptote）若且唯若 \(f\) 滿足下列任一條件： </p>
+\[\begin{array}{ll}\displaystyle\lim_{x\to c^-}f(x)=\infty,&\displaystyle\lim_{x\to c^-}f(x)=-\infty,\\\displaystyle\lim_{x\to c^+}f(x)=\infty,&\displaystyle\lim_{x\to c^+}f(x)=-\infty.\end{array}\]
+<p><strong>註</strong>：</p>
+<ul>
+<li>參考
+<ul>
+<li>王 定理 5.3-35 (p.184)</li>
+</ul>
+</li>
+<li>對於函數在 \(c\) 的極限發散，先直觀理解。</li>
+</ul>
+<h4 id="定義傾斜漸近線">【定義】傾斜漸近線</h4>
+<p>設 \(f:D\to \mathbb{R}\) 為一函數，\(y=mx+b\) 為一直線，其中 \(m\neq 0\)。則 \(y=mx+b\) 為 \(f\) 的函數圖形的<strong>斜漸近線</strong>（horizontal asymptote）若且唯若 </p>
+\[\lim_{x\to\infty}{\big[f(x)-(mx+b)\big]}=0\quad\mbox{或}\quad\lim_{x\to-\infty}{\big[f(x)-(mx+b)\big]}=0.\]
+<p><strong>註</strong>：參考王 定理 5.3-36 (p.185)</p>
+<h3 id="36-函數作圖">3.6 函數作圖</h3>
+<ul>
+<li>求定義域</li>
+<li>分析奇偶性</li>
+<li>分析週期性
+<ul>
+<li>【定義】\(\exists\,p\in \mathbb{R},\ \forall\,x\in D,\ f(x + p) = f(x) \iff f\) 為<strong>週期函數</strong>（periodic function），其週期為 \(p\)。</li>
+<li>通常出現在帶有三角函數的函數。</li>
+</ul>
+</li>
+<li>求截距
+<ul>
+<li>求 \(x\) 截距（求 \(f(0)\)）</li>
+<li>求 \(y\) 截距（解 \(f(x)=0\)）</li>
+</ul>
+</li>
+<li>求漸近線
+<ul>
+<li>通常出現在有理函數。</li>
+</ul>
+</li>
+<li>解 \(f'(x)=0\)、\(f''(x) = 0\)。
+<ul>
+<li>製表——取上述方程式的根，作為定義域的分割（partition），然後判斷各個子區間中導函數的正負號</li>
+<li>求局部極值、反曲點</li>
+<li>分析單調性、 凹凸性</li>
+</ul>
+</li>
+</ul>
+<p>參考：</p>
+<ul>
+<li><a href="http://www.math.ntu.edu.tw/~mathcal/download/precal/PPT/Chapter%2004_05.pdf" rel="external" target="_self">http://www.math.ntu.edu.tw/~mathcal/download/precal/PPT/Chapter%2004_05.pdf</a></li>
+<li><a href="http://www.math.ntu.edu.tw/~hchu/Calculus/Calculus%5b104%5d-04.pdf" rel="external" target="_self">朱</a> 4.6.1 (p.50)</li>
+</ul>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo svg,
+            #R-logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044">
+              <path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:1.03763;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.992837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" style="color:#000;fill:#282828;stroke-width:1.02352;-inkscape-stroke:none" transform="translate(-40.698 -95.175)"/>
+              <path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.991342;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+            </svg>Relearn
+          </a>
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723650527" defer></script>
+        <script src="/js/search.js?1723650527" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class=""><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681"><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/math/index.html" class="parent "><input type="checkbox" id="R-section-03a0920548fa01b2150c8e44bf45f903" aria-controls="R-subsections-03a0920548fa01b2150c8e44bf45f903" checked><label for="R-section-03a0920548fa01b2150c8e44bf45f903"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Mathematics</span></label><a class="padding" href="/math/index.html">Mathematics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03a0920548fa01b2150c8e44bf45f903" class="morespace collapsible-menu">
+          <li data-nav-id="/math/tutor-4/index.html" class="active"><a class="padding" href="/math/tutor-4/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/function-on-r/index.html" class=""><a class="padding" href="/math/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/math-models-and-ode/index.html" class=""><a class="padding" href="/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/double-integral/index.html" class=""><a class="padding" href="/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/topology-on-r/index.html" class=""><a class="padding" href="/math/topology-on-r/index.html">實數的拓撲<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/logical-quantifier/index.html" class=""><a class="padding" href="/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/set-theory/index.html" class=""><a class="padding" href="/math/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/math/tutor-4/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-auto" value="zen-auto" selected>Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto">Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1723650527" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723650527" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723650527"></script>
+    <script src="/js/d3/d3-color.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723650527" defer></script>
+    <script src="/js/js-yaml.min.js?1723650527" defer></script>
+    <script src="/js/mermaid.min.js?1723650527" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="/js/js-yaml.min.js?1723650527" defer></script>
+    <script>window.noZensmooth = true;</script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723650527" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723650527" defer></script>
+    <script>
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723650527", cssInProject: true, assetsBuster: "?1723650527" };
+    </script>
+    <script src="/js/theme.js?1723650527" defer></script>
+  </body>
+</html>

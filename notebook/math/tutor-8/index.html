@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.129.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
-    <meta name="description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 $$ \sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0) $$ 滿足條件 (i) 對所有 $n$ 都有 $b_{n&#43;1}\leq b_n$ (ii) $\displaystyle\lim_{n\to\infty}{b_n}=0$ 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 $\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$ （交錯調和級數。答： 是 。 $\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}$。答： 否 。 【定義】絕對收斂 設 $\sum a_n$ 為一級數。 若 $\sum a_n$ 各項的絕對值所構成的級數 $\sum |a_n|$ 收斂，則稱 $\sum a_n$ 為絕對收斂（absolutley convergent）。 若 $\sum a_n$ 收斂但 $\sum |a_n|$ 不收斂，則稱 $\sum a_n$ 為條件收斂（conditionally convergent）。 【定理】 若一級數 $\sum a_n$ 絕對收斂，則 $\sum a_n$ 收斂。">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 \[\sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0)\] 滿足條件 (i) 對所有 \(n\) 都有 \(b_{n&#43;1}\leq b_n\) (ii) \(\displaystyle\lim_{n\to\infty}{b_n}=0\) 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 \(\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}\) （交錯調和級數。答： 是 。 \(\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}\)。答： 否 。 【定義】絕對收斂 設 \(\sum a_n\) 為一級數。 若 \(\sum a_n\) 各項的絕對值所構成的級數 \(\sum |a_n|\) 收斂，則稱 \(\sum a_n\) 為絕對收斂（absolutley convergent）。 若 \(\sum a_n\) 收斂但 \(\sum |a_n|\) 不收斂，則稱 \(\sum a_n\) 為條件收斂（conditionally convergent）。 【定理】 若一級數 \(\sum a_n\) 絕對收斂，則 \(\sum a_n\) 收斂。">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
-    <meta name="twitter:title" content="數列與級數 (2)">
-    <meta name="twitter:description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 $$ \sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0) $$ 滿足條件 (i) 對所有 $n$ 都有 $b_{n&#43;1}\leq b_n$ (ii) $\displaystyle\lim_{n\to\infty}{b_n}=0$ 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 $\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$ （交錯調和級數。答： 是 。 $\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}$。答： 否 。 【定義】絕對收斂 設 $\sum a_n$ 為一級數。 若 $\sum a_n$ 各項的絕對值所構成的級數 $\sum |a_n|$ 收斂，則稱 $\sum a_n$ 為絕對收斂（absolutley convergent）。 若 $\sum a_n$ 收斂但 $\sum |a_n|$ 不收斂，則稱 $\sum a_n$ 為條件收斂（conditionally convergent）。 【定理】 若一級數 $\sum a_n$ 絕對收斂，則 $\sum a_n$ 收斂。">
-    <meta property="og:url" content="https://qavit.github.io/notebook/math/tutor-8/index.html">
-    <meta property="og:title" content="數列與級數 (2)">
-    <meta property="og:description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 $$ \sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0) $$ 滿足條件 (i) 對所有 $n$ 都有 $b_{n&#43;1}\leq b_n$ (ii) $\displaystyle\lim_{n\to\infty}{b_n}=0$ 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 $\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$ （交錯調和級數。答： 是 。 $\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}$。答： 否 。 【定義】絕對收斂 設 $\sum a_n$ 為一級數。 若 $\sum a_n$ 各項的絕對值所構成的級數 $\sum |a_n|$ 收斂，則稱 $\sum a_n$ 為絕對收斂（absolutley convergent）。 若 $\sum a_n$ 收斂但 $\sum |a_n|$ 不收斂，則稱 $\sum a_n$ 為條件收斂（conditionally convergent）。 【定理】 若一級數 $\sum a_n$ 絕對收斂，則 $\sum a_n$ 收斂。">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
+    <meta name="twitter:description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 \[\sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0)\] 滿足條件 (i) 對所有 \(n\) 都有 \(b_{n&#43;1}\leq b_n\) (ii) \(\displaystyle\lim_{n\to\infty}{b_n}=0\) 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 \(\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}\) （交錯調和級數。答： 是 。 \(\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}\)。答： 否 。 【定義】絕對收斂 設 \(\sum a_n\) 為一級數。 若 \(\sum a_n\) 各項的絕對值所構成的級數 \(\sum |a_n|\) 收斂，則稱 \(\sum a_n\) 為絕對收斂（absolutley convergent）。 若 \(\sum a_n\) 收斂但 \(\sum |a_n|\) 不收斂，則稱 \(\sum a_n\) 為條件收斂（conditionally convergent）。 【定理】 若一級數 \(\sum a_n\) 絕對收斂，則 \(\sum a_n\) 收斂。">
+    <meta property="og:url" content="http://localhost:1313/notebook/math/tutor-8/index.html">
+    <meta property="og:description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 \[\sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0)\] 滿足條件 (i) 對所有 \(n\) 都有 \(b_{n&#43;1}\leq b_n\) (ii) \(\displaystyle\lim_{n\to\infty}{b_n}=0\) 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 \(\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}\) （交錯調和級數。答： 是 。 \(\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}\)。答： 否 。 【定義】絕對收斂 設 \(\sum a_n\) 為一級數。 若 \(\sum a_n\) 各項的絕對值所構成的級數 \(\sum |a_n|\) 收斂，則稱 \(\sum a_n\) 為絕對收斂（absolutley convergent）。 若 \(\sum a_n\) 收斂但 \(\sum |a_n|\) 不收斂，則稱 \(\sum a_n\) 為條件收斂（conditionally convergent）。 【定理】 若一級數 \(\sum a_n\) 絕對收斂，則 \(\sum a_n\) 收斂。">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Notebook">
-    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
-    <meta itemprop="name" content="數列與級數 (2)">
-    <meta itemprop="description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 $$ \sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0) $$ 滿足條件 (i) 對所有 $n$ 都有 $b_{n&#43;1}\leq b_n$ (ii) $\displaystyle\lim_{n\to\infty}{b_n}=0$ 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 $\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$ （交錯調和級數。答： 是 。 $\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}$。答： 否 。 【定義】絕對收斂 設 $\sum a_n$ 為一級數。 若 $\sum a_n$ 各項的絕對值所構成的級數 $\sum |a_n|$ 收斂，則稱 $\sum a_n$ 為絕對收斂（absolutley convergent）。 若 $\sum a_n$ 收斂但 $\sum |a_n|$ 不收斂，則稱 $\sum a_n$ 為條件收斂（conditionally convergent）。 【定理】 若一級數 $\sum a_n$ 絕對收斂，則 $\sum a_n$ 收斂。">
-    <meta itemprop="wordCount" content="126">
-    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
-    <title>數列與級數 (2)</title>
-    <link href="/images/favicon.png?1723213040" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723213040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723213040" rel="stylesheet">
-    <link href="/css/fonts.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723213040" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723213040" rel="stylesheet">
-    <link href="/css/print.css?1723213040" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723213040"></script>
+    <meta property="article:published_time" content="2024-07-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-02T00:00:00+00:00">
+    <meta property="article:tag" content="Tutor">
+    <meta property="article:tag" content="Calculus">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="description" content="1. 級數 1.1 審斂法 (下) 【定理】交錯級數審斂法 ^alt-series-test 如果交錯級數 \[\sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 &#43; b_3 - b_4 - b_5 - b_6 &#43; \cdots\quad(b_n&gt;0)\] 滿足條件 (i) 對所有 \(n\) 都有 \(b_{n&#43;1}\leq b_n\) (ii) \(\displaystyle\lim_{n\to\infty}{b_n}=0\) 則該級數收斂。 %% Alternating Series Test p.766 %% ![[tutor8-alt-series-conv.png]] 例題 判斷以下級數是否收斂。 \(\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}\) （交錯調和級數。答： 是 。 \(\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}\)。答： 否 。 【定義】絕對收斂 設 \(\sum a_n\) 為一級數。 若 \(\sum a_n\) 各項的絕對值所構成的級數 \(\sum |a_n|\) 收斂，則稱 \(\sum a_n\) 為絕對收斂（absolutley convergent）。 若 \(\sum a_n\) 收斂但 \(\sum |a_n|\) 不收斂，則稱 \(\sum a_n\) 為條件收斂（conditionally convergent）。 【定理】 若一級數 \(\sum a_n\) 絕對收斂，則 \(\sum a_n\) 收斂。">
+    <meta itemprop="datePublished" content="2024-07-02T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-02T00:00:00+00:00">
+    <meta itemprop="wordCount" content="124">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="keywords" content="Tutor,Calculus">
+    <title></title>
+    <link href="/images/favicon.png?1723649390" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723649390" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723649390" rel="stylesheet">
+    <link href="/css/fonts.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723649390" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723649390" rel="stylesheet">
+    <link href="/css/print.css?1723649390" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723649390"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       // variant stuff
       window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
       // translations
@@ -82,15 +87,14 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">基礎數學</span><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">數列與級數 (2)</span><meta itemprop="position" content="4"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/math/tutor-8.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Qavit&#39;s Notebook (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/index.html" title="基礎數學 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/math-models-and-ode/index.html" title="Mathematical model and ODE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -108,147 +112,149 @@
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
             </header>
 
-<h1 id="數列與級數-2">數列與級數 (2)</h1>
+<h1 id=""></h1>
 
 <h2 id="1-級數">1. 級數</h2>
 <h3 id="11-審斂法-下">1.1 審斂法 (下)</h3>
 <h4 id="定理交錯級數審斂法-alt-series-test">【定理】交錯級數審斂法 ^alt-series-test</h4>
-<p>如果交錯級數
-</p>
-$$
-\sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 + b_3 - b_4 - b_5 - b_6 + \cdots\quad(b_n>0)
-$$
-<p>
-滿足條件</p>
+<p>如果交錯級數 </p>
+\[\sum^\infty_{n=1}(-1)^{n-1}b_n = b_1 - b_2 + b_3 - b_4 - b_5 - b_6 + \cdots\quad(b_n>0)\]
+<p>滿足條件</p>
 <ul>
-<li>(i) 對所有 $n$ 都有 $b_{n+1}\leq b_n$</li>
-<li>(ii) $\displaystyle\lim_{n\to\infty}{b_n}=0$
-則該級數收斂。</li>
+<li>(i) 對所有 \(n\) 都有 \(b_{n+1}\leq b_n\)</li>
+<li>(ii) \(\displaystyle\lim_{n\to\infty}{b_n}=0\)
+則該級數收斂。
+%% Alternating Series Test p.766 %%
+![[tutor8-alt-series-conv.png]]</li>
 </ul>
-<p>%% Alternating Series Test p.766 %%
-![[tutor8-alt-series-conv.png]]</p>
 <h5 id="例題">例題</h5>
 <p>判斷以下級數是否收斂。</p>
 <ol>
-<li>$\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$ （<a href="https://zh.wikipedia.org/zh-tw/%E8%B0%83%E5%92%8C%E7%BA%A7%E6%95%B0#%E4%BA%A4%E9%94%99%E8%B0%83%E5%92%8C%E7%BA%A7%E6%95%B0" rel="external" target="_self">交錯調和級數</a>。答： 是 。</li>
-<li>$\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}$。答： 否 。</li>
+<li>\(\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}\) （<a href="https://zh.wikipedia.org/zh-tw/%E8%B0%83%E5%92%8C%E7%BA%A7%E6%95%B0#%E4%BA%A4%E9%94%99%E8%B0%83%E5%92%8C%E7%BA%A7%E6%95%B0" rel="external" target="_self">交錯調和級數</a>。答：<!-- raw HTML omitted --> 是 <!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}\frac{(-1)^n3n}{4n-1}\)。答：<!-- raw HTML omitted --> 否 <!-- raw HTML omitted -->。</li>
 </ol>
 <h4 id="定義絕對收斂">【定義】絕對收斂</h4>
-<p>設 $\sum a_n$ 為一級數。</p>
+<p>設 \(\sum a_n\) 為一級數。</p>
 <ol>
-<li>若  $\sum a_n$ 各項的絕對值所構成的級數 $\sum |a_n|$ 收斂，則稱 $\sum a_n$ 為<strong>絕對收斂</strong>（absolutley convergent）。</li>
-<li>若  $\sum a_n$ 收斂但 $\sum |a_n|$ 不收斂，則稱 $\sum a_n$ 為<strong>條件收斂</strong>（conditionally convergent）。</li>
+<li>若  \(\sum a_n\) 各項的絕對值所構成的級數 \(\sum |a_n|\) 收斂，則稱 \(\sum a_n\) 為<strong>絕對收斂</strong>（absolutley convergent）。</li>
+<li>若  \(\sum a_n\) 收斂但 \(\sum |a_n|\) 不收斂，則稱 \(\sum a_n\) 為<strong>條件收斂</strong>（conditionally convergent）。</li>
 </ol>
 <h4 id="定理">【定理】</h4>
-<p>若一級數  $\sum a_n$ 絕對收斂，則  $\sum a_n$ 收斂。</p>
+<p>若一級數  \(\sum a_n\) 絕對收斂，則  \(\sum a_n\) 收斂。</p>
 <h5 id="例題-1">例題</h5>
 <p>判斷以下級數是絕對收斂、條件收斂、還是發散。</p>
 <ol>
-<li>$\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}$。答： 條件收斂。</li>
-<li>$\sum^\infty_{n=0}\frac{(-1)^n}{2n+1}$。答：條件收斂（<a href="https://zh.wikipedia.org/wiki/%CE%A0%E7%9A%84%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8%E5%85%AC%E5%BC%8F" rel="external" target="_self">π 的萊布尼茲公式</a>）。</li>
-<li>$\sum^\infty_{n=1}{\frac{\cos{n}}{n^2}}$。答：絕對收斂。</li>
-<li>$\sum^\infty_{n=1}{\frac{(-1)^n}{n^3}}$。答：絕對收斂。</li>
-<li>$\sum^\infty_{n=1}{\frac{(-1)^n}{\sqrt[3]{n}}}$。答：條件收斂。</li>
-<li>$\sum^\infty_{n=1}{(-1)^n\frac{n}{2n+1}}$ 。答：　 發散 　。</li>
+<li>\(\sum^\infty_{n=1}{\frac{(-1)^{n-1}}{n}}\)。答： <!-- raw HTML omitted -->條件收斂<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=0}\frac{(-1)^n}{2n+1}\)。答：<!-- raw HTML omitted -->條件收斂<!-- raw HTML omitted -->（<a href="https://zh.wikipedia.org/wiki/%CE%A0%E7%9A%84%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8%E5%85%AC%E5%BC%8F" rel="external" target="_self">π 的萊布尼茲公式</a>）。</li>
+<li>\(\sum^\infty_{n=1}{\frac{\cos{n}}{n^2}}\)。答：<!-- raw HTML omitted -->絕對收斂<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{(-1)^n}{n^3}}\)。答：<!-- raw HTML omitted -->絕對收斂<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{(-1)^n}{\sqrt[3]{n}}}\)。答：<!-- raw HTML omitted -->條件收斂<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{(-1)^n\frac{n}{2n+1}}\) 。答：<!-- raw HTML omitted -->　 發散 　<!-- raw HTML omitted -->。</li>
 </ol>
 <h4 id="定理比值審斂法-ratio-test">【定理】比值審斂法 ^ratio-test</h4>
 <ol>
-<li>如果 $\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L<1$，則級數 $\displaystyle\sum^\infty_{n=1}a_n$ 絕對收斂。</li>
-<li>如果 $\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L>1$，則級數 $\displaystyle\sum^\infty_{n=1}a_n$ 發散。</li>
-<li>如果 $\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L=1$，則比值審斂法無法給出結論。
+<li>如果 \(\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L<1\)，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\) 絕對收斂。</li>
+<li>如果 \(\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L>1\)，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\) 發散。</li>
+<li>如果 \(\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L=1\)，則比值審斂法無法給出結論。
 %% Stewart 11.6 %%</li>
 </ol>
 <p><strong>證.</strong></p>
 <ul>
 <li>概念：與收斂的等比級數比較</li>
-<li>(i) 因為 $L<1$，選擇一實數 $r$ 使得 $L<r<1$。
+<li>(i) 因為 \(L<1\)，選擇一實數 \(r\) 使得 \(L<r<1\)。
 <ul>
-<li>以及 $\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L<r<1$。</li>
-<li>也就是說，存在一整數 $N$ ，使得 $$n\geq N\implies|a_{n+1}/a_n|<r$$或者 $$n\geq N\implies|a_{n+1}|<|a_n|r.$$</li>
-<li>令 $n$ 依序等於 $N,N+1,N+2,\ldots$，得 $$\begin{aligned}|a_{N+1}|&<|a_N|r\\|a_{N+2}|&<|a_{N+1}|r<|a_N|r^2\\|a_{N+3}|&<|a_{N+2}|r<|a_N|r^3\end{aligned}$$</li>
-<li>可用數學歸納法證明，對所有 $k\geq 1$，都有 $$|a_{N+k}|<|a_N|r^k.\tag{1}$$</li>
-<li>又因為 $0<r<1$ ，所以等比級數 $\sum^\infty_{k=1}|a_N|r^k$ 收斂。</li>
-<li>由不等式 (1) 和[[tutor-7#^dir-comp-test|直接比較審斂法]]，可證明 $$\sum^\infty_{n=N+1}|a_n|=\sum^\infty_{k=1}|a_{N+k}|=|a_{N+1}|+|a_{N+2}|+|a_{N+3}|+\cdots$$ 收斂。</li>
-<li>級數的有限項不影響收斂性，所以 $\sum^\infty_{n=1}|a_n|$ 收斂。</li>
-<li>因此， $\sum^\infty_{n=1}a_n$ 絕對收斂。</li>
+<li>以及 \(\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L<r<1\)。</li>
+<li>也就是說，存在一整數 \(N\) ，使得 \[n\geq N\implies|a_{n+1}/a_n|<r\]或者 \[n\geq N\implies|a_{n+1}|<|a_n|r.\]</li>
+<li>令 \(n\) 依序等於 \(N,N+1,N+2,\ldots\)，得 \[\begin{aligned}|a_{N+1}|&<|a_N|r\\|a_{N+2}|&<|a_{N+1}|r<|a_N|r^2\\|a_{N+3}|&<|a_{N+2}|r<|a_N|r^3\end{aligned}\]</li>
+<li>可用數學歸納法證明，對所有 \(k\geq 1\)，都有 \[|a_{N+k}|<|a_N|r^k.\tag{1}\]</li>
+<li>又因為 \(0<r<1\) ，所以等比級數 \(\sum^\infty_{k=1}|a_N|r^k\) 收斂。</li>
+<li>由不等式 (1) 和[[tutor-7#^dir-comp-test|直接比較審斂法]]，可證明 \[\sum^\infty_{n=N+1}|a_n|=\sum^\infty_{k=1}|a_{N+k}|=|a_{N+1}|+|a_{N+2}|+|a_{N+3}|+\cdots\] 收斂。</li>
+<li>級數的有限項不影響收斂性，所以 \(\sum^\infty_{n=1}|a_n|\) 收斂。</li>
+<li>因此， \(\sum^\infty_{n=1}a_n\) 絕對收斂。</li>
 </ul>
 </li>
-<li>(ii) 反之，若 $|a_{n+1}/a_n|\to L > 1$ 或 $|a_{n+1}/a_n|\to\infty$，則存在一整數 $$n\geq N\implies|a_{n+1}/a_n|>1$$
+<li>(ii) 反之，若 \(|a_{n+1}/a_n|\to L > 1\) 或 \(|a_{n+1}/a_n|\to\infty\)，則存在一整數 \[n\geq N\implies|a_{n+1}/a_n|>1\]
 <ul>
-<li>所以 $\lim_{n\to\infty}a_n \neq 0$。</li>
-<li>依據[[tutor-7#^div-test|級數發散測試]]，可證明  $\sum^\infty_{n=1}a_n$ 發散。</li>
+<li>所以 \(\lim_{n\to\infty}a_n \neq 0\)。</li>
+<li>依據[[tutor-7#^div-test|級數發散測試]]，可證明  \(\sum^\infty_{n=1}a_n\) 發散。</li>
 </ul>
 </li>
 </ul>
 <h5 id="例題-2">例題</h5>
 <p>判斷以下級數是否收斂？</p>
 <ol>
-<li>$\sum^\infty_{n=1}{(-1)^n\frac{n^3}{3^n}}$。答： 是 。</li>
-<li>$\sum^\infty_{n=1}{\frac{n^n}{n!}}$。答： 否 。</li>
-<li>$\sum^\infty_{n=1}{\frac{1}{n}}$。答： 否 。</li>
-<li>$\sum^\infty_{n=1}{\frac{1}{n^2}}$。答： 是 。</li>
+<li>\(\sum^\infty_{n=1}{(-1)^n\frac{n^3}{3^n}}\)。答：<!-- raw HTML omitted --> 是 <!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{n^n}{n!}}\)。答：<!-- raw HTML omitted --> 否 <!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{1}{n}}\)。答：<!-- raw HTML omitted --> 否 <!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{1}{n^2}}\)。答：<!-- raw HTML omitted --> 是 <!-- raw HTML omitted -->。</li>
 </ol>
 <h4 id="定理根式審斂法-root-test">【定理】根式審斂法 ^root-test</h4>
 <ul>
-<li>(i) 如果 $\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=L<1$ ，則級數 $\displaystyle\sum^\infty_{n=1}a_n$ 絕對收斂。</li>
-<li>(ii) 如果 $\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=L>1$ 或 $\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=\infty$，則級數 $\displaystyle\sum^\infty_{n=1}a_n$ 發散。</li>
-<li>(iii) 如果 $\displaystyle\lim_{n\to\infty}\sqrt[n]{|a_n|}=L=1$，則根式審斂法無法給出結論。</li>
+<li>(i) 如果 \(\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=L<1\) ，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\) 絕對收斂。</li>
+<li>(ii) 如果 \(\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=L>1\) 或 \(\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=\infty\)，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\) 發散。</li>
+<li>(iii) 如果 \(\displaystyle\lim_{n\to\infty}\sqrt[n]{|a_n|}=L=1\)，則根式審斂法無法給出結論。</li>
 </ul>
 <h4 id="總結審斂法">總結：審斂法</h4>
 <ol>
-<li>[[tutor-7#^div-test|級數發散測試]]：若 $\displaystyle\lim_{n\to\infty}a_n$ 不存在或不等於零，則 $\displaystyle\sum^\infty_{n=1}a_n$ 發散。</li>
-<li>[[tutor-7#^p-series-conv|p-級數]]：形如 $\boxed{\sum^\infty_{n=1}{\frac{1}{n^p}}}$ 的級數稱為 $p$-級數。
+<li>[[tutor-7#^div-test|級數發散測試]]：若 \(\displaystyle\lim_{n\to\infty}a_n\) 不存在或不等於零，則 \(\displaystyle\sum^\infty_{n=1}a_n\) 發散。</li>
+<li>[[tutor-7#^p-series-conv|p-級數]]：形如 \(\boxed{\sum^\infty_{n=1}{\frac{1}{n^p}}}\) 的級數稱為 \(p\)-級數。
 <ul>
-<li>若 $p>1$，則 $p$-級數收斂。</li>
-<li>若 $p\leq 1$，則 $p$-級數發散</li>
+<li>若 \(p>1\)，則 \(p\)-級數收斂。</li>
+<li>若 \(p\leq 1\)，則 \(p\)-級數發散</li>
 </ul>
 </li>
-<li>[[tutor-7#^geom|等比級數]]：形如  $\boxed{\sum^\infty_{n=1}ar^{n-1}}$ 的級數稱為等比級數（幾何級數）。
+<li>[[tutor-7#^geom|等比級數]]：形如  \(\boxed{\sum^\infty_{n=1}ar^{n-1}}\) 的級數稱為等比級數（幾何級數）。
 <ul>
-<li>若 $r < 1$，則等比級數收斂。</li>
-<li>若 $r \leq 1$，則等比級數發散。</li>
+<li>若 \(r < 1\)，則等比級數收斂。</li>
+<li>若 \(r \leq 1\)，則等比級數發散。</li>
 </ul>
 </li>
 <li>[[tutor-7#^comp-test|比較審斂法]]
 <ul>
-<li>直接比較：兩正項級數  $\sum^\infty_{n=1}a_n$、 $\sum^\infty_{n=1}b_n$ 。如果總是有 $a_n\leq b_n$ ，則
+<li>直接比較：兩正項級數  \(\sum^\infty_{n=1}a_n\)、 \(\sum^\infty_{n=1}b_n\) 。如果總是有 \(a_n\leq b_n\) ，則
 <ul>
-<li>若 $\sum^\infty_{n=1}b_n$ 收斂，則 $\sum^\infty_{n=1}a_n$ 收斂。</li>
-<li>若 $\sum^\infty_{n=1}a_n$ 發散，則 $\sum^\infty_{n=1}b_n$ 發散。</li>
+<li>若 \(\sum^\infty_{n=1}b_n\) 收斂，則 \(\sum^\infty_{n=1}a_n\) 收斂。</li>
+<li>若 \(\sum^\infty_{n=1}a_n\) 發散，則 \(\sum^\infty_{n=1}b_n\) 發散。</li>
 </ul>
 </li>
-<li>極限值比較：若 $\sum^\infty_{n=1}\frac{b_n}{a_n}$  若存在，則：
+<li>極限值比較：若 \(\sum^\infty_{n=1}\frac{b_n}{a_n}\)  若存在，則：
 <ul>
-<li>$\sum^\infty_{n=1}b_n$ 收斂 $\implies$ $\sum^\infty_{n=1}a_n$ 收斂</li>
-<li>若 $A\neq 0$，則  $\sum^\infty_{n=1}a_n$ 收斂 $\iff$ $\sum^\infty_{n=1}b_n$ 收斂</li>
+<li>\(\sum^\infty_{n=1}b_n\) 收斂 \(\implies\) \(\sum^\infty_{n=1}a_n\) 收斂</li>
+<li>若 \(A\neq 0\)，則  \(\sum^\infty_{n=1}a_n\) 收斂 \(\iff\) \(\sum^\infty_{n=1}b_n\) 收斂</li>
 </ul>
 </li>
-<li>特別是，如果 $a_n$ 是有理函數或 $n$ 的代數函數（涉及多項式的根），則該級數應與 $p$-級數進行比較。</li>
-<li>這只適用正項級數，如果有負項，以對 $|a_n|$ 應用比較測試並測試絕對收斂性。</li>
+<li>特別是，如果 \(a_n\) 是有理函數或 \(n\) 的代數函數（涉及多項式的根），則該級數應與 \(p\)-級數進行比較。</li>
+<li>這只適用正項級數，如果有負項，以對 \(|a_n|\) 應用比較測試並測試絕對收斂性。</li>
 </ul>
 </li>
 <li>[[#^alt-series-test|交錯級數測試]]
 <ul>
-<li>形如 $\boxed{\sum^\infty_{n=1}(-1)^{n-1}b_n}$ （$b>0$）的級數稱為交錯級數。</li>
-<li>如果總是有 $b_n>b_{n+1}$，而且 $\displaystyle\lim_{n\to\infty}{b_n}=0$ ，則級數收斂。</li>
-<li>若一級數  $\sum a_n$ 絕對收斂，則  $\sum a_n$ 收斂。‘</li>
-<li>$$\sum^\infty_{n=N+1}|a_n|=\sum^\infty_{k=1}|a_{N+k}|=|a_{N+1}|+|a_{N+2}|+|a_{N+3}|+\cdots$$</li>
+<li>形如 \(\boxed{\sum^\infty_{n=1}(-1)^{n-1}b_n}\) （\(b>0\)）的級數稱為交錯級數。</li>
+<li>如果總是有 \(b_n>b_{n+1}\)，而且 \(\displaystyle\lim_{n\to\infty}{b_n}=0\) ，則級數收斂。</li>
+<li>若一級數  \(\sum a_n\) 絕對收斂，則  \(\sum a_n\) 收斂。‘</li>
+<li>\[\sum^\infty_{n=N+1}|a_n|=\sum^\infty_{k=1}|a_{N+k}|=|a_{N+1}|+|a_{N+2}|+|a_{N+3}|+\cdots\]</li>
 </ul>
 </li>
 <li>[[#^ratio-test|比值審斂法]]
 <ul>
 <li>包含階乘和其他乘積的級數，常常使用比值審斂法。</li>
-<li>如果 $\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L<1$，則級數 $\displaystyle\sum^\infty_{n=1}a_n$ 絕對收斂。</li>
-<li>如果 $\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L>1$，則級數 $\displaystyle\sum^\infty_{n=1}a_n$發散。</li>
+<li>如果 \(\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L<1\)，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\) 絕對收斂。</li>
+<li>如果 \(\displaystyle \lim_{n\to\infty}{\left|\frac{a_{n+1}}{a_n}\right|}=L>1\)，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\)發散。</li>
 </ul>
 </li>
 <li>[[#^root-test|根式審斂法]]
 <ul>
-<li>級數若有形如 $(b_n)^n$  的項，則適合用根式審斂法</li>
-<li>如果 $\displaystyle\lim_{n\to\infty}\sqrt[n]{|a_n|}=L<1$ ，則 $\displaystyle\sum^\infty_{n=1}a_n$ 絕對收斂；</li>
-<li>如果 $\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=L>1$ 或 $\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=\infty$，則級數 $\displaystyle\sum^\infty_{n=1}a_n$ 發散。</li>
+<li>級數若有形如 \((b_n)^n\)  的項，則適合用根式審斂法</li>
+<li>如果 \(\displaystyle\lim_{n\to\infty}\sqrt[n]{|a_n|}=L<1\) ，則 \(\displaystyle\sum^\infty_{n=1}a_n\) 絕對收斂；</li>
+<li>如果 \(\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=L>1\) 或 \(\displaystyle \lim_{n\to\infty}\sqrt[n]{|a_n|}=\infty\)，則級數 \(\displaystyle\sum^\infty_{n=1}a_n\) 發散。</li>
 </ul>
 </li>
 </ol>
@@ -258,70 +264,70 @@ $$
 <li>[[tutor-7#^int-test|積分審斂法]]</li>
 </ol>
 <ul>
-<li>若 $f(a)  a_n$ 且積分 $\int^\infty_1 f(x)\text{d}x$ 易於計算，則適合用積分審斂法。</li>
+<li>若 \(f(a)  a_n\) 且積分 \(\int^\infty_1 f(x)\text{d}x\) 易於計算，則適合用積分審斂法。</li>
 </ul>
 </li>
 </ul>
 <h5 id="例題-3">例題</h5>
 <p>判斷以下級數是否收斂？並寫出用於判斷的方法。</p>
 <ol>
-<li>$\sum^\infty_{n=1}\frac{n-1}{2n+1}$ 。答： 否（使用級數發散測試） 。</li>
-<li>$\sum^\infty_{n=1}\frac{\sqrt{n^3+1}}{3n^3+4n^2+2}$ 。答： 是（直接比較審斂法）。</li>
-<li>$\sum^\infty_{n=1}{ne^{-n^2}}$ 。答： 是（比值審斂法、積分審斂法）。</li>
-<li>$\sum^\infty_{n=1}{\frac{2^n}{n!}}$ 。答： 是（比值審斂法）。</li>
-<li>$\sum^\infty_{n=1}{\frac{1}{2+3^n}}$ 。答： 是（直接比較審斂法）。</li>
+<li>\(\sum^\infty_{n=1}\frac{n-1}{2n+1}\) 。答：<!-- raw HTML omitted --> 否（使用級數發散測試） <!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}\frac{\sqrt{n^3+1}}{3n^3+4n^2+2}\) 。答：<!-- raw HTML omitted --> 是（直接比較審斂法）<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{ne^{-n^2}}\) 。答：<!-- raw HTML omitted --> 是（比值審斂法、積分審斂法）<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{2^n}{n!}}\) 。答：<!-- raw HTML omitted --> 是（比值審斂法）<!-- raw HTML omitted -->。</li>
+<li>\(\sum^\infty_{n=1}{\frac{1}{2+3^n}}\) 。答：<!-- raw HTML omitted --> 是（直接比較審斂法）<!-- raw HTML omitted -->。</li>
 </ol>
 <h3 id="12-冪級數-power-series">1.2 冪級數 ^power-series</h3>
 <h4 id="定義冪級數">【定義】冪級數</h4>
 <p><strong>冪級數</strong>（power series）是形如
 </p>
-$$f(x)=\sum^{\infty}_{n=0}c_nx^n=c_0+c_1x+c_2x^2+c_3x^3+\cdots\tag{2}$$
+\[f(x)=\sum^{\infty}_{n=0}c_nx^n=c_0+c_1x+c_2x^2+c_3x^3+\cdots\tag{2}\]
 <p>的級數。</p>
 <ul>
-<li>其中 $x$ 是變數，$c_n$ 是係數（有無窮多個）。</li>
+<li>其中 \(x\) 是變數，\(c_n\) 是係數（有無窮多個）。</li>
 <li>類似多項式，但有無窮多項。</li>
-<li>當冪級數對於某個 $x$ 的區間收斂時，成為 $x$ 的函數，即 $f(x)$。</li>
-<li>若指定了所有的 $c_n$ ，就唯一確定了函數。</li>
+<li>當冪級數對於某個 \(x\) 的區間收斂時，成為 \(x\) 的函數，即 \(f(x)\)。</li>
+<li>若指定了所有的 \(c_n\) ，就唯一確定了函數。</li>
 <li>補充：
 <ul>
-<li><strong>傅立葉級數</strong>（Fourier series）$$a_0+\sum^\infty_{n=1}\left(a_n\cos{nx}+b_n\sin{nx}\right)$$</li>
+<li><strong>傅立葉級數</strong>（Fourier series）\[a_0+\sum^\infty_{n=1}\left(a_n\cos{nx}+b_n\sin{nx}\right)\]</li>
 </ul>
 </li>
 </ul>
 <h5 id="例題-4">例題</h5>
-<p>在式 (2) 中，對所有 $n$ 都指定 $c_n=1$，得到 </p>
-$$f(x)=\sum^\infty_{n=0}x^n=1+x+x^2+\cdots=\frac{1}{1-x}$$
-<p> 此級數對於哪個 $x$ 的區間收斂？</p>
-<h4 id="定義關於-a-點的冪級數">【定義】關於 $a$ 點的冪級數</h4>
-$$f(x)=\sum^{\infty}_{n=0}c_n(x-a)^n=c_0+c_1(x-a)+c_2(x-a)^2+\cdots\tag{3}$$
+<p>在式 (2) 中，對所有 \(n\) 都指定 \(c_n=1\)，得到 </p>
+\[f(x)=\sum^\infty_{n=0}x^n=1+x+x^2+\cdots=\frac{1}{1-x}\]
+<p> 此級數對於哪個 \(x\) 的區間收斂？</p>
+<h4 id="定義關於-a-點的冪級數">【定義】關於 \(a\) 點的冪級數</h4>
+\[f(x)=\sum^{\infty}_{n=0}c_n(x-a)^n=c_0+c_1(x-a)+c_2(x-a)^2+\cdots\tag{3}\]
 <p>
-稱為<strong>關於 $a$ 點的冪級數</strong>（power series about $a$）。</p>
+稱為<strong>關於 \(a\) 點的冪級數</strong>（power series about \(a\)）。</p>
 <h5 id="例題-5">例題</h5>
-<p>$x$ 值是多少時，級數 $\displaystyle\sum^\infty_{n=0}\frac{(x-3)^n}{n}$ 會收斂？
+<p>\(x\) 值是多少時，級數 \(\displaystyle\sum^\infty_{n=0}\frac{(x-3)^n}{n}\) 會收斂？
 <strong>解.</strong> 假設級數絕對收斂。則根據比值審斂法，應該有</p>
-$$\begin{aligned}\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|&=\lim_{n\to\infty}\left|\frac{(x-3)^{n+1}}{n+1}\cdot\frac{n}{(x-3)^{n}}\right|\\&=|x-3|\cdot\underbrace{\lim_{n\to\infty}\left|\frac{1}{1+n^{-1}}\right|}_{=1}=|x-3|<1\end{aligned}$$
+\[\begin{aligned}\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|&=\lim_{n\to\infty}\left|\frac{(x-3)^{n+1}}{n+1}\cdot\frac{n}{(x-3)^{n}}\right|\\&=|x-3|\cdot\underbrace{\lim_{n\to\infty}\left|\frac{1}{1+n^{-1}}\right|}_{=1}=|x-3|<1\end{aligned}\]
 <p>
-故得知，當 $|x-3|<1$，也就是 $2<x<4$ 時，級數會絕對收斂，也會收斂。</p>
-<p>另外，比值審斂法無法給出 $|x-3|=1$ ，也就是 $x=2$ 或 $x=4$ 時的收斂性。所以必須分開討論。</p>
+故得知，當 \(|x-3|<1\)，也就是 \(2<x<4\) 時，級數會絕對收斂，也會收斂。</p>
+<p>另外，比值審斂法無法給出 \(|x-3|=1\) ，也就是 \(x=2\) 或 \(x=4\) 時的收斂性。所以必須分開討論。</p>
 <ul>
-<li>當 $x=2$，級數成為 $\sum^\infty_{n=0}{\frac{(-1)^n}{n}}$（交錯調和級數），會收斂。</li>
-<li>當 $x=4$，級數成為 $\sum^\infty_{n=0}{\frac{1}{n}}$（調和級數），會發散。</li>
+<li>當 \(x=2\)，級數成為 \(\sum^\infty_{n=0}{\frac{(-1)^n}{n}}\)（交錯調和級數），會收斂。</li>
+<li>當 \(x=4\)，級數成為 \(\sum^\infty_{n=0}{\frac{1}{n}}\)（調和級數），會發散。</li>
 </ul>
-<p>因此，級數 $\displaystyle\sum^\infty_{n=0}\frac{(x-3)^n}{n}$ 在區間 $2\leq x < 4$ 內會收斂。$\square$</p>
+<p>因此，級數 \(\displaystyle\sum^\infty_{n=0}\frac{(x-3)^n}{n}\) 在區間 \(2\leq x < 4\) 內會收斂。\(\square\)</p>
 <h4 id="定義收斂區間">【定義】收斂區間</h4>
-<p>級數 $\displaystyle\sum^{\infty}_{n=0}c_n(x-a)^n$ 的收斂性分成三種情形：</p>
+<p>級數 \(\displaystyle\sum^{\infty}_{n=0}c_n(x-a)^n\) 的收斂性分成三種情形：</p>
 <ul>
-<li>(i) 只有當 $x=a$ 時，級數才收斂。</li>
-<li>(ii) 級數對所有 $x$ 都收斂。</li>
-<li>(iii) 存在一個正數 $R$ ，使得級數
+<li>(i) 只有當 \(x=a\) 時，級數才收斂。</li>
+<li>(ii) 級數對所有 \(x\) 都收斂。</li>
+<li>(iii) 存在一個正數 \(R\) ，使得級數
 <ul>
-<li>在區間 $|x-a|<R$ 內收斂，</li>
-<li>在區間 $|x-a|>R$ 內發散。</li>
+<li>在區間 \(|x-a|<R\) 內收斂，</li>
+<li>在區間 \(|x-a|>R\) 內發散。</li>
 </ul>
 </li>
 </ul>
-<p>情況 (iii) 中的 $R$ 稱為<strong>收斂半徑</strong>（radius of convergence）。
-$|x-a|<R$ 稱為<strong>收斂區間</strong>（interval of convergence）。</p>
+<p>情況 (iii) 中的 \(R\) 稱為<strong>收斂半徑</strong>（radius of convergence）。
+\(|x-a|<R\) 稱為<strong>收斂區間</strong>（interval of convergence）。</p>
 <table>
 <thead>
 <tr>
@@ -333,122 +339,94 @@ $|x-a|<R$ 稱為<strong>收斂區間</strong>（interval of convergence）。</p
 <tbody>
 <tr>
 <td style="text-align:center">(i)</td>
-<td>$R=0$</td>
-<td>$x=a$</td>
+<td>\(R=0\)</td>
+<td>\(x=a\)</td>
 </tr>
 <tr>
 <td style="text-align:center">(ii)</td>
-<td>$R=\infty$</td>
-<td>$x\in(-\infty,\infty)$</td>
+<td>\(R=\infty\)</td>
+<td>\(x\in(-\infty,\infty)\)</td>
 </tr>
 <tr>
 <td style="text-align:center">(iii)</td>
-<td>$R\in(0,\infty)$</td>
-<td>$x\in(a-R,a+R)$</td>
+<td>\(R\in(0,\infty)\)</td>
+<td>\(x\in(a-R,a+R)\)</td>
 </tr>
 </tbody>
 </table>
-<p>級數在收斂區間的端點（$x=a\pm R$）可能發散，也可能收斂。</p>
+<p>級數在收斂區間的端點（\(x=a\pm R\)）可能發散，也可能收斂。</p>
 <p>![[tutor8-interval-conv.png|900]]![[tutor8-interval-conv-ex.png|900]]</p>
 <h5 id="例題-6">例題</h5>
-<p>找出級數 $\displaystyle \sum^\infty_{n=0}\frac{(-3)^nx^n}{\sqrt{n+1}}$ 的收斂半徑和收斂區間。</p>
-<p>答：收斂半徑 $=\frac{1}{3}$；收斂區間 $=\left(-\frac{1}{3},\frac{1}{3}\right]$。</p>
+<p>找出級數 \(\displaystyle \sum^\infty_{n=0}\frac{(-3)^nx^n}{\sqrt{n+1}}\) 的收斂半徑和收斂區間。</p>
+<p>答：<!-- raw HTML omitted -->收斂半徑 \(=\frac{1}{3}\)；收斂區間 \(=\left(-\frac{1}{3},\frac{1}{3}\right]\)<!-- raw HTML omitted -->。</p>
 <h4 id="用冪級數表示函數">用冪級數表示函數</h4>
 <p>如何將一些熟悉的函數表示為冪級數和——函數的<strong>冪級數表示</strong>（power series representations）。
 範例：
 </p>
-$$1+x+x^2+\cdots=\frac{1}{1-x}\quad\mbox{對於 }|x|<1$$
+\[1+x+x^2+\cdots=\frac{1}{1-x}\quad\mbox{對於 }|x|<1\]
 <h4 id="例題-7">例題</h4>
 <p>找出下列函數的冪級數表示及其收斂區間。</p>
 <ol>
-<li>$f(x)=\dfrac{1}{x+2}$。
-答：$\displaystyle\frac{1}{x+2}=\sum^\infty_{n=0}{\frac{(-1)^n}{2^{n+1}}x^n}=\frac{1}{2}-\frac{1}{4}x+\frac{1}{8}x^2-\frac{1}{16}x^3+\cdots,\quad -2<x<2$</li>
-<li>$f(x)=\dfrac{x^3}{x+2}$。
-答：$\displaystyle\frac{x^3}{x+2}=\sum^\infty_{n=3}{\frac{(-1)^{n-1}}{2^{n-2}}x^n}=\frac{1}{2}x^3-\frac{1}{4}x^4+\frac{1}{8}x^5-\frac{1}{16}x^6+\cdots,\quad -2<x<2$</li>
+<li>\(f(x)=\dfrac{1}{x+2}\)。
+答：<!-- raw HTML omitted -->\(\displaystyle\frac{1}{x+2}=\sum^\infty_{n=0}{\frac{(-1)^n}{2^{n+1}}x^n}=\frac{1}{2}-\frac{1}{4}x+\frac{1}{8}x^2-\frac{1}{16}x^3+\cdots,\quad -2<x<2\)<!-- raw HTML omitted --></li>
+<li>\(f(x)=\dfrac{x^3}{x+2}\)。
+答：<!-- raw HTML omitted -->\(\displaystyle\frac{x^3}{x+2}=\sum^\infty_{n=3}{\frac{(-1)^{n-1}}{2^{n-2}}x^n}=\frac{1}{2}x^3-\frac{1}{4}x^4+\frac{1}{8}x^5-\frac{1}{16}x^6+\cdots,\quad -2<x<2\)<!-- raw HTML omitted --></li>
 </ol>
 <h4 id="定理逐項微分積分">【定理】逐項微分、積分</h4>
-<p>若冪級數 $\sum^\infty_{n=0}c_n(x-a)^n$ 有收斂半徑 $R$，則函數 </p>
-$$f(x)=\sum^\infty_{n=0}c_n(x-a)^n=c_0+c_1(x-a)+c_2(x-a)^2+\cdots$$
-<p>在區間 $x\in(a-R,a+R)$ 內可微 、可積（因此也連續），而且 </p>
-$$f'(x)=\sum^\infty_{n=1}{nc_n(x-a)^{n-1}}=c_1+2c_2(x-a)+3c_3(x-a)^2+\cdots\tag{4}$$
+<p>若冪級數 \(\sum^\infty_{n=0}c_n(x-a)^n\) 有收斂半徑 \(R\)，則函數 </p>
+\[f(x)=\sum^\infty_{n=0}c_n(x-a)^n=c_0+c_1(x-a)+c_2(x-a)^2+\cdots\]
+<p>在區間 \(x\in(a-R,a+R)\) 內可微 、可積（因此也連續），而且 </p>
+\[f'(x)=\sum^\infty_{n=1}{nc_n(x-a)^{n-1}}=c_1+2c_2(x-a)+3c_3(x-a)^2+\cdots\tag{4}\]
 <p>
-和</p>
-$$
-\begin{aligned}
-\int f(x)\operatorname{d}\!x& = C+c_0(x-a)+c_1\frac{(x-a)^2}{2} + c_3\frac{(x-a)^3}{3} + \cdots \\
-&= C + \sum^\infty_{n=0}{c_n\frac{(x-a)^{n+1}}{n+1}} 
-\end{aligned}\tag{5}
-$$
-<p>也可以寫成</p>
-$$
-\frac{\text{d}}{\text{d}x} \left[\sum^\infty_{n=0}c_n(x-a)^n\right] = 
-\sum^\infty_{n=0}\frac{\text{d}}{\text{d}x}\left[c_n(x-a)^n\right] \tag{4$'$}
-$$
-<p>和</p>
-$$
-\int\left[\sum^\infty_{n=0}c_n(x-a)^n\right]\!\operatorname{d}\!x=\sum^\infty_{n=0}\int{c_n(x-a)^n\operatorname{d}\!x}\tag{5$'$}
-$$
-<p>這些冪級數的收斂半徑仍為 $R$。</p>
+和
+</p>
+\[\begin{aligned}\int f(x)\operatorname{d}\!x&=C+c_0(x-a)+c_1\frac{(x-a)^2}{2}+c_3\frac{(x-a)^3}{3}+\cdots\\&=C+\sum^\infty_{n=0}{c_n\frac{(x-a)^{n+1}}{n+1}}\end{aligned}\tag{5}\]
+<p>
+也可以寫成 </p>
+\[\frac{\text{d}}{\text{d}x}\left[\sum^\infty_{n=0}c_n(x-a)^n\right]=\sum^\infty_{n=0}\frac{\text{d}}{\text{d}x}\left[c_n(x-a)^n\right]\tag{4\('\)}\]
+<p>
+和
+</p>
+\[\int\left[\sum^\infty_{n=0}c_n(x-a)^n\right]\!\operatorname{d}\!x=\sum^\infty_{n=0}\int{c_n(x-a)^n\operatorname{d}\!x}\tag{5\('\)}\]
+<p>這些冪級數的收斂半徑仍為 \(R\)。</p>
 <h5 id="例題-8">例題</h5>
-<p>對 $1+x+x^2+\cdots=\dfrac{1}{1-x}$ 做微分，以找出 $\dfrac{1}{(1-x)^2}$ 的冪級數表示。
-答：$\displaystyle\frac{1}{(1-x)^2}=-\sum^\infty_{n=0}{(n+1)x^n}$</p>
+<p>對 \(1+x+x^2+\cdots=\dfrac{1}{1-x}\) 做微分，以找出 \(\dfrac{1}{(1-x)^2}\) 的冪級數表示。
+答：<!-- raw HTML omitted -->\(\displaystyle\frac{1}{(1-x)^2}=-\sum^\infty_{n=0}{(n+1)x^n}\)<!-- raw HTML omitted --></p>
 <h3 id="13-泰勒級數">1.3 泰勒級數</h3>
 <p>哪些函數有冪級數表示法？怎麼找冪級數表示法？
-觀察：</p>
-$$\begin{array}{rclcrcl}
-f(x) & = & c_0 + c_1(x-a) + c_2(x-a)^2 + \cdots, & \quad & f(a) & = & c_0, \\
-f'(x) & = & c_1 + 2c_2(x-a) + 3c_3(x-a)^2 + \cdots, & \quad & f'(a) & = & c_1, \\
-f''(x) & = & 2c_2 + 6c_3(x-a) + 12c_4(x-a)^2 + \cdots, & \quad & f''(a) & = & 2c_2, \\
-f'''(x) & = & 6c_3 + 24c_4(x-a) + 60c_5(x-a)^2 + \cdots, & \quad & f'''(a) & = & 6c_3, \\
-& \vdots & & & & \vdots & 
-\end{array}
-$$
-<p>得到</p>
-$$
-c_0 = f(a), \quad
-c_1 = f'(a), \quad 
-c_2 = \frac{f''(a)}{2}, \quad 
-c_3 = \frac{f'''(a)}{6}, \ldots
-$$
-<p>其實可以證明，對於光滑函數（無限可微函數） $f$ 和任意 $n\in\mathbb{N}$ ，可以找到</p>
-$$
-c_n=\frac{f^{(n)}(a)}{n!}
-$$
+觀察：
+</p>
+\[\begin{array}{rclcrcl}f(x)&=&c_0+c_1(x-a)+c_2(x-a)^2+\cdots ,&\quad&f(a)&=&c_0,\\f'(x)&=&c_1+2c_2(x-a)+3c_3(x-a)^2+\cdots,&\quad&f'(a)&=&c_1,\\f''(x)&=&2c_2+6c_3(x-a)+12c_4(x-a)^2+\cdots,&\quad&f''(a)&=&2c_2,\\f'''(x)&=&6c_3+24c_4(x-a)+60c_5(x-a)^2+\cdots,&\quad&f'''(a)&=&6c_3,\\&\vdots&&&&\vdots&\end{array}\]
+<p>
+得到 </p>
+\[c_0=f(a),\quad c_1=f'(a),\quad c_2=\frac{f''(a)}{2},\quad c_3=\frac{f'''(a)}{6},\ldots\]
+<p>其實可以證明，對於光滑函數（無限可微函數） \(f\) 和任意 \(n\in\mathbb{N}\) ，可以找到</p>
+\[c_n=\frac{f^{(n)}(a)}{n!}\]
 <h4 id="定理-1">【定理】</h4>
-<p>若函數 $f$ 在點 $a$ 有一個冪級數表示，也就是說，如果</p>
-$$
-f(x) = \sum^{\infty}_{n=0}{c_n(x-a)^n}, \quad |x-a|<R,
-$$
-<p>則冪級數的係數由公式</p>
-$$c_n=\frac{f^{(n)}(a)}{n!}$$
+<p>若函數 \(f\) 在點 \(a\) 有一個冪級數表示，也就是說，如果 </p>
+\[f(x)=\sum^\infty_{n=0}c_n(x-a)^n,\quad|x-a|<R,\]
+<p>
+則冪級數的係數由公式 </p>
+\[c_n=\frac{f^{(n)}(a)}{n!}\]
 <p>給出。</p>
 <h4 id="定義泰勒級數">【定義】泰勒級數</h4>
-<p>函數 $f$ 在點 $a$ 的<strong>泰勒級數</strong>（Taylor series）為</p>
-$$
-\begin{aligned}
-f(x) &= \sum^\infty_{n=0} \frac{f^{(n)}(a)}{n!}(x-a)^n \\ 
-&= f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + 
-\frac{f'''(a)}{3!}(x-a)^3 + \cdots,
-\end{aligned}\tag{6}
-$$
-<p>又稱<strong>泰勒展開式</strong>（Taylor expansion）。級數前 $n$ 項稱為函數 $f$ 在點 $a$ 的 $n$ 階<strong>泰勒多項式</strong>（Taylor polynomial）。</p>
+<p>函數 \(f\) 在點 \(a\) 的<strong>泰勒級數</strong>（Taylor series）為
+</p>
+\[\begin{aligned}f(x)&=\sum^\infty_{n=0}\frac{f^{(n)}(a)}{n!}(x-a)^n\\&=f(a)+\frac{f'(a)}{1!}(x-a)+\frac{f''(a)}{2!}(x-a)^2+\frac{f'''(a)}{3!}(x-a)^3+\cdots,\end{aligned}\tag{6}\]
+<p>又稱<strong>泰勒展開式</strong>（Taylor expansion）。級數前 \(n\) 項稱為函數 \(f\) 在點 \(a\) 的 \(n\) 階<strong>泰勒多項式</strong>（Taylor polynomial）。</p>
 <h4 id="定義馬克勞林級數">【定義】馬克勞林級數</h4>
-<p>函數 $f$ 在點 $0$ 的泰勒級數</p>
-$$
-\begin{aligned}
-f(x) &= \sum^\infty_{n=0}\frac{f^{(n)}(0)}{n!}x^n \\ 
-&= f(0) + \frac{f'(0)}{1!} x + \frac{f''(0)}{2!} x^2 + 
-\frac{f'''(0)}{3!} x^3 + \cdots,
-\end{aligned}\tag{7}
-$$
-<p>稱為<strong>馬克勞林級數</strong>（Maclaurin series）。</p>
+<p>函數 \(f\) 在點 \(0\) 的泰勒級數
+</p>
+\[\begin{aligned}f(x)&=\sum^\infty_{n=0}\frac{f^{(n)}(0)}{n!}x^n\\&=f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\frac{f'''(0)}{3!}x^3+\cdots,\end{aligned}\tag{7}\]
+<p>
+稱為<strong>馬克勞林級數</strong>（Maclaurin series）。</p>
 <h4 id="重要的馬克勞林級數">重要的馬克勞林級數</h4>
 <ol>
-<li>$\displaystyle \frac{1}{1-x}=\sum^\infty_{n=0}\frac{x^n}{n!}=1+x+x^2+x^3+\cdots,\qquad |x|<1$</li>
-<li>$\displaystyle \frac{1}{1+x}=\sum^\infty_{n=0}\frac{(-1)^nx^n}{n!}=1-x+x^2-x^3+\cdots,\qquad |x|<1$</li>
-<li>$\displaystyle e^x=\sum^\infty_{n=0}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots,\qquad x\in\mathbb{R}$</li>
-<li>$\displaystyle\sin{x}=\sum^\infty_{n=0}(-1)^n\frac{x^{2n+1}}{(2n+1)!}=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\cdots,\quad x\in\mathbb{R}$</li>
-<li>$\displaystyle\cos{x}=\sum^\infty_{n=0}(-1)^n\frac{x^{2n}}{(2n)!}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\cdots,\quad x\in\mathbb{R}$</li>
+<li>\(\displaystyle \frac{1}{1-x}=\sum^\infty_{n=0}\frac{x^n}{n!}=1+x+x^2+x^3+\cdots,\qquad |x|<1\)</li>
+<li>\(\displaystyle \frac{1}{1+x}=\sum^\infty_{n=0}\frac{(-1)^nx^n}{n!}=1-x+x^2-x^3+\cdots,\qquad |x|<1\)</li>
+<li>\(\displaystyle e^x=\sum^\infty_{n=0}\frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots,\qquad x\in\mathbb{R}\)</li>
+<li>\(\displaystyle\sin{x}=\sum^\infty_{n=0}(-1)^n\frac{x^{2n+1}}{(2n+1)!}=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\cdots,\quad x\in\mathbb{R}\)</li>
+<li>\(\displaystyle\cos{x}=\sum^\infty_{n=0}(-1)^n\frac{x^{2n}}{(2n)!}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\cdots,\quad x\in\mathbb{R}\)</li>
 </ol>
 
             <footer class="footline">
@@ -525,12 +503,12 @@ $$
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723213040" defer></script>
-        <script src="/js/search.js?1723213040" defer></script>
+        <script src="/js/auto-complete.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723649390" defer></script>
+        <script src="/js/search.js?1723649390" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -541,7 +519,25 @@ $$
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/notebook/index.html" class=""><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/tutor-8/index.html" class="active"><a class="padding" href="/notebook/math/tutor-8/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/math-models-and-ode/index.html" class=""><a class="padding" href="/notebook/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/double-integral/index.html" class=""><a class="padding" href="/notebook/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
@@ -606,8 +602,8 @@ $$
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723213040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723213040" defer></script>
+    <script src="/js/clipboard.min.js?1723649390" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723649390" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -622,28 +618,28 @@ $$
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723213040"></script>
-    <script src="/js/d3/d3-color.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723213040" defer></script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
-    <script src="/js/mermaid.min.js?1723213040" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723649390"></script>
+    <script src="/js/d3/d3-color.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723649390" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
+    <script src="/js/mermaid.min.js?1723649390" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723213040" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723213040" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723649390" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723649390" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723213040", cssInProject: true, assetsBuster: "?1723213040" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723649390", cssInProject: true, assetsBuster: "?1723649390" };
     </script>
-    <script src="/js/theme.js?1723213040" defer></script>
+    <script src="/js/theme.js?1723649390" defer></script>
   </body>
 </html>

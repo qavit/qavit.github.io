@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
+    <meta name="author" content="Sin-iu Ho">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
+    <meta name="twitter:description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
+    <meta property="og:url" content="https://qavit.github.io/math/tutor-14/index.html">
+    <meta property="og:description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Mathematics">
+    <meta property="article:published_time" content="2024-07-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-29T00:00:00+00:00">
+    <meta property="article:tag" content="Tutor">
+    <meta property="article:tag" content="Calculus">
+    <meta property="article:tag" content="Integral">
+    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
+    <meta itemprop="description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
+    <meta itemprop="datePublished" content="2024-07-29T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-29T00:00:00+00:00">
+    <meta itemprop="wordCount" content="898">
+    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
+    <meta itemprop="keywords" content="Tutor,Calculus,Integral">
+    <title></title>
+    <link href="/images/favicon.png?1723650527" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723650527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723650527" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723650527" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723650527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723650527" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723650527" rel="stylesheet">
+    <link href="/css/fonts.css?1723650527" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723650527" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723650527" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723650527" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723650527" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723650527" rel="stylesheet">
+    <link href="/css/print.css?1723650527" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723650527"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      // variant stuff
+      window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/math/tutor-14/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#10-瑕積分-10">10. 瑕積分 ^10</a>
+      <ul>
+        <li><a href="#101-第一類積分端點在無窮遠-10-1">10.1 第一類：積分端點在無窮遠 ^10-1</a></li>
+        <li><a href="#102-第二類不連續的被積函數-10-2">10.2 第二類：不連續的被積函數 ^10-2</a></li>
+        <li><a href="#103-gamma-函數-10-3">10.3 Gamma 函數 ^10-3</a></li>
+        <li><a href="#104-beta-函數-10-4">10.4 Beta 函數 ^10-4</a></li>
+        <li><a href="#105-gabriels-horn-10-5">10.5 Gabriel&rsquo;s Horn ^10-5</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-其他積分技巧-3-6">6. 其他積分技巧 (3) ^6</a>
+      <ul>
+        <li><a href="#64-關於根式分式的其他技巧-6-4">6.4 關於根式、分式的其他技巧 ^6-4</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/math/index.html"><span itemprop="name">Mathematics</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/math/tutor-14.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math/index.html" title="Mathematics (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math/function-on-r/index.html" title="\(\mathbb{R}\) 上的函數 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/integral/index.html">Integral</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id=""></h1>
+
+<h1 id="積分技巧-4">積分技巧 (4)</h1>
+<ul>
+<li>上課日期：[[2024-07-30]]</li>
+<li><strong>目錄</strong>
+<ul>
+<li>10. <strong>[[#^10|瑕積分]]</strong>（improper integral）
+<ul>
+<li>10.1 [[#^10-1|第一類：積分端點在無窮遠]]</li>
+<li>10.2 [[#^10-2|第二類：不連續的被積函數]]</li>
+<li>10.3 [[#^10-3|Gamma 函數]]</li>
+<li>10.4 [[#^10-4|Beta 函數]]</li>
+<li>10.5 [[#^10-5|Gabriel&rsquo;s Horn]]</li>
+</ul>
+</li>
+<li>6. <strong>[[#^6|其他積分技巧 (3)]]</strong>
+<ul>
+<li>6.4 [[#^6-4|關於根式、分式的其他技巧]]
+<ul>
+<li>6.4.1 [[#^6-4-1|ⁿ√(ax+b) 型根式]]</li>
+<li>6.4.2 [[#^6-4-2|√(x²+ax+b) 型根式]]</li>
+<li>6.4.3 [[#^6-4-3|對分母配方]]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>[[tutor-int-tech|本章]]其他部分</strong>
+<ul>
+<li>[[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法</li>
+<li>[[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法</li>
+<li>[[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1)</li>
+<li>[[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="10-瑕積分-10">10. 瑕積分 ^10</h2>
+<p><strong>瑕積分</strong>（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。</p>
+<h3 id="101-第一類積分端點在無窮遠-10-1">10.1 第一類：積分端點在無窮遠 ^10-1</h3>
+<ol>
+<li>假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。
+<ul>
+<li>若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分<strong>收斂</strong>。</li>
+<li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
+</ul>
+</li>
+<li>假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。
+<ul>
+<li>若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分<strong>收斂</strong>。</li>
+<li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
+</ul>
+</li>
+<li>如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}+\int^a_{-\infty}{f(x)\dd{x}}\]</li>
+</ol>
+<h5 id="例題-10-1-ex10-1">例題 10-1 ^ex10-1</h5>
+<p>計算 \(\int^\infty_0{x e^x \dd{x}}\)。</p>
+<p><strong>解.</strong></p>
+<h5 id="例題-10-2-ex10-2">例題 10-2 ^ex10-2</h5>
+<p>計算 \(\displaystyle\int^\infty_{-\infty}{\frac{1}{1+x^2}\dd{x}}\)。</p>
+<h4 id="例題-10-3-ex10-3">例題 10-3 ^ex10-3</h4>
+<ol>
+<li>檢查 \(\int^\infty_0(1/x)\dd{x}\) 是發散還是收斂。</li>
+<li>檢查 \(\int^\infty_0\left(1/x^2\right)\dd{x}\) 是發散還是收斂。</li>
+<li>\(p\) 的值是多少，才能使 \(\int^\infty_0\left(1/x^p\right)\dd{x}\) 收斂？</li>
+</ol>
+<h3 id="102-第二類不連續的被積函數-10-2">10.2 第二類：不連續的被積函數 ^10-2</h3>
+<ol>
+<li>假設 \(f(x)\) 在 \([a,b)\) 上連續，又在 \(b\) 點不連續。
+<ul>
+<li>若左極限 \(\lim_{t\to b^-}{\int_a^t{f(x)\dd{x}}}\) 存在，則定義瑕積分  \[\int_a^b{f(x)\dd{x}}=\lim_{t\to b^-}{\int_a^t{f(x)\dd{x}}}\] 並稱瑕積分<strong>收斂</strong>。</li>
+<li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
+</ul>
+</li>
+<li>假設 \(f(x)\) 在 \((a,b]\) 上連續，又在 \(a\) 點不連續。
+<ul>
+<li>若右極限 \(\lim_{t\to a^+}{\int_t^b{f(x)\dd{x}}}\) 存在，則定義瑕積分  \[\int_a^b{f(x)\dd{x}}=\lim_{t\to a^+}{\int_t^b{f(x)\dd{x}}}\] 並稱瑕積分<strong>收斂</strong>。</li>
+<li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
+</ul>
+</li>
+<li>如果 \(f\) 在 \(c\) 有一個不連續點，且 \(c\in[a,b]\)，而且 \(\int_a^c{f(x)\dd{x}}\) 和 \(\int_c^b{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int_a^b{f(x)\dd{x}}=\int_a^c{f(x)\dd{x}}+\int_c^b{f(x)\dd{x}}\]</li>
+</ol>
+<h4 id="例題-10-4-ex10-4">例題 10-4 ^ex10-4</h4>
+<p>求 \(\displaystyle \int_2^5{\frac{1}{\sqrt{x-2}}\dd{x}}\)</p>
+<h4 id="例題-10-5-ex10-5">例題 10-5 ^ex10-5</h4>
+<p>\(\int^{\pi/2}_0{\sec{x}\dd{x}}\) 是否收斂？如果是的話，請計算積分。</p>
+<h4 id="例題-10-6-ex10-6">例題 10-6 ^ex10-6</h4>
+<p>\(\displaystyle \int_0^3{\frac{1}{x-1}\dd{x}}\) 是否收斂？如果是的話，請計算積分。</p>
+<h4 id="例題-10-7-ex10-7">例題 10-7 ^ex10-7</h4>
+<p>求 \(\int^1_0{\ln{x}\dd{x}}\)。</p>
+<h3 id="103-gamma-函數-10-3">10.3 Gamma 函數 ^10-3</h3>
+<p>Gamma 函數與 Beta 函數是兩個涉及瑕積分的<strong>特殊函數</strong>（<a href="https://en.wikipedia.org/wiki/Special_functions" rel="external" target="_self">special functions</a>）。</p>
+<h4 id="1031-定義-10-3-1">10.3.1 定義 ^10-3-1</h4>
+<p>\(\Gamma\) 函數是一個在複數平面上延拓的特殊函數，它廣泛應用於數學、物理學和工程學等領域。\(\Gamma\) 函數 \(\Gamma(z)\) 定義如下：</p>
+\[
+\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt
+\]
+<p>其中，\(z\) 是一個複數變數，實部大於零 (\(\Re(z) > 0\))。
+\(\Gamma\) 函數又稱歐拉第二類積分（Euler integral of the second kind）
+<a href="#R-image-a1e2dc22052e23259a94dc6dd09d1707" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a1e2dc22052e23259a94dc6dd09d1707"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg"></a><a href="#R-image-c25257fcb9ad096327060b81c36748ba" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c25257fcb9ad096327060b81c36748ba"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png"></a></p>
+<h4 id="1032-性質-10-3-2">10.3.2 性質 ^10-3-2</h4>
+<p>\(\Gamma\) 函數有許多重要的性質和特徵，其中一些包括：</p>
+<ol>
+<li>
+<p><strong>遞推關係</strong>：
+</p>
+\[ \Gamma(z+1) = z\Gamma(z) \]
+<p>
+特別地，當 \(z\) 為正整數時，\(\Gamma\) 函數與階乘函數有關：
+</p>
+\[ \Gamma(n) = (n-1)! \]
+</li>
+<li>
+<p><strong>\(\Gamma\) 函數的值</strong>：
+</p>
+\[ \Gamma\left(\frac{1}{2}\right) = \sqrt{\pi} \]
+</li>
+<li>
+<p><strong>歐拉反射公式</strong>（Euler&rsquo;s reflection formula）：
+</p>
+\[ \Gamma(z) \Gamma(1-z) = \frac{\pi}{\sin(\pi z)},\quad z\notin\mathbb{Z}\]
+</li>
+<li>
+<p><strong>斯特林公式</strong>（近似公式）：
+當 \(|z| \rightarrow \infty\) 時，\(\Gamma\) 函數可以近似為：
+</p>
+\[ \Gamma(z) \sim \sqrt{2\pi} z^{z-\frac{1}{2}} e^{-z} \]
+</li>
+</ol>
+<h4 id="1033-函數的應用-10-3-3">10.3.3 函數的應用 ^10-3-3</h4>
+<p>\(\Gamma\) 函數在多個數學和科學領域中有廣泛的應用。以下是一些具體的應用：</p>
+<ol>
+<li>
+<p><strong>階乘計算</strong>：
+\(\Gamma\) 函數可以用來計算非整數階乘。例如，\(3.5! = \Gamma(4.5)\)。</p>
+</li>
+<li>
+<p><strong>機率論與統計學</strong>：
+Gamma 分佈和卡方分佈等分佈中均涉及 \(\Gamma\) 函數。Gamma 分佈是一個連續機率分佈，常用於模型化等待時間等現象。</p>
+</li>
+<li>
+<p><strong>複變函數論</strong>：
+\(\Gamma\) 函數在解析延拓和複變函數論中有重要應用。它可以延拓至整個複平面，除了非正整數點外。</p>
+</li>
+<li>
+<p><strong>物理學中的應用</strong>：
+\(\Gamma\) 函數在量子物理和統計力學中也有應用，例如在玻色子和費米子的統計描述中。</p>
+</li>
+</ol>
+<p>這些性質和應用展示了 \(\Gamma\) 函數在數學和其他科學領域的重要性和廣泛應用。學習和理解 \(\Gamma\) 函數能夠幫助我們更好地解決許多複雜的數學問題。</p>
+<h4 id="1034-例題-10-3-4">10.3.4. 例題 ^10-3-4</h4>
+<h5 id="例題-10-8-ex10-8">例題 10-8 ^ex10-8</h5>
+<ol>
+<li>\(\Gamma(6)=\)<!-- raw HTML omitted -->\(5!=120\)<!-- raw HTML omitted --></li>
+<li>\(\Gamma\left(\frac{9}{2}\right)=\)<!-- raw HTML omitted -->\(\Gamma\left(\frac{1}{2}\right)\cdot\frac{1}{2}\cdot\frac{3}{2}\cdot\frac{5}{2}\cdot\frac{7}{2}=\frac{105}{16}\sqrt{\pi}\)<!-- raw HTML omitted --></li>
+</ol>
+<h5 id="例題-10-9-ex10-9">例題 10-9 ^ex10-9</h5>
+<ol>
+<li>\(\displaystyle\int^\infty_0 x^3e^{-x}\dd{x} =\) <!-- raw HTML omitted -->\(\displaystyle\Gamma(4)=3!=6\)<!-- raw HTML omitted --></li>
+<li>\(\displaystyle\int^\infty_0 x^{7/2}e^{-x}\dd{x}=\) <!-- raw HTML omitted -->\(\Gamma\left(\frac{9}{2}\right)=\frac{105}{16}\sqrt{\pi}\)<!-- raw HTML omitted --></li>
+</ol>
+<h5 id="例題-10-10-ex10-10">例題 10-10 ^ex10-10</h5>
+<ol>
+<li>\(\displaystyle\int^\infty_0 x^3e^{-2x}\dd{x} =\)<!-- raw HTML omitted -->\(\displaystyle\int^\infty_0\left(\frac{u}{2}\right)^3 e^{-u} \frac{\dd{u}}{2} = \frac{1}{16}\int^\infty_0 u^3e^{-u}\dd{u} = \frac{1}{16}\Gamma(4) = \frac{3}{8}\)<!-- raw HTML omitted --></li>
+<li>（實用公式）\(\displaystyle\int^\infty_0 x^{\alpha -1}e^{-x/\beta}\dd{x} =\)<!-- raw HTML omitted -->\(\beta^\alpha \cdot\Gamma(\alpha)\)<!-- raw HTML omitted --></li>
+<li>\(\displaystyle\int^\infty_0 x^2e^{-x/3}\dd{x} =\)<!-- raw HTML omitted -->\(3^3 \cdot\Gamma(3) = 27 \cdot 2! = 54\)<!-- raw HTML omitted --></li>
+</ol>
+<h3 id="104-beta-函數-10-4">10.4 Beta 函數 ^10-4</h3>
+<h4 id="1041-定義-10-4-1">10.4.1 定義 ^10-4-1</h4>
+<p>Beta 函數是一個特殊函數，廣泛應用於數學和物理學中。Beta 函數 \(B(x, y)\) 定義為：</p>
+\[
+\operatorname{B}(x, y) := \int_0^1 t^{x-1} (1-t)^{y-1} \, dt
+\]
+<p>其中 \(x\) 和 \(y\) 是大於 \(0\) 的實數。</p>
+<h4 id="1042-性質-10-4-2">10.4.2 性質 ^10-4-2</h4>
+<p>Beta 函數具有許多重要的性質：</p>
+<ol>
+<li>
+<p><strong>對稱性</strong>：
+</p>
+\[\operatorname{B}(x, y) = \operatorname{B}(y, x) \]
+</li>
+<li>
+<p><strong>與 Gamma 函數的關係</strong>：
+Beta 函數也可以通過 Gamma 函數來表示：（[[#^ex10-13|例題 10-13]]）</p>
+</li>
+</ol>
+\[
+\operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}
+\]
+<ol start="3">
+<li>
+<p><strong>積分表示</strong>：
+Beta 函數的另一種表示方法是：
+</p>
+\[ \operatorname{B}(x, y) = 2 \int_0^{\frac{\pi}{2}} (\sin \theta)^{2x-1} (\cos \theta)^{2y-1} \, d\theta \]
+</li>
+<li>
+<p><strong>遞推關係</strong>：
+</p>
+\[ \operatorname{B}(x, y+1) = \frac{y}{x+y} \operatorname{B}(x, y) \]
+</li>
+<li>
+<p><strong>常數值</strong>：
+</p>
+\[ \operatorname{B}(1, y) = \frac{1}{y} \]
+</li>
+</ol>
+<h4 id="1043-應用-10-4-3">10.4.3 應用 ^10-4-3</h4>
+<p>Beta 函數在數學和科學中有廣泛的應用，包括：</p>
+<ol>
+<li>
+<p><strong>機率與統計</strong>：
+在機率論中，Beta 分佈的機率密度函數使用 Beta 函數來規範化。Beta 分佈在貝葉斯統計中也有重要應用。</p>
+</li>
+<li>
+<p><strong>分析數學</strong>：
+Beta 函數在計算某些類型的積分時非常有用，特別是那些涉及有理函數和冪函數的積分。</p>
+</li>
+<li>
+<p><strong>物理學</strong>：
+Beta 函數在流體力學、熱力學和量子物理學中都有應用。例如，它們在求解某些微分方程和模型物理現象的機率分佈時很有用。</p>
+</li>
+</ol>
+<h4 id="1044-例題-10-4-4">10.4.4 例題 ^10-4-4</h4>
+<h5 id="例題-10-11-ex10-11">例題 10-11 ^ex10-11</h5>
+<p>計算 \(\int_0^1 x(1-x)^2 \dd{x}\)。</p>
+<p><strong>解 1.</strong>
+</p>
+\[
+\begin{aligned}
+\int_0^1 x (1-x)^2 \dd{x} &= \int_0^1 (x - 2x^2 + x^3) \dd{x}\\
+&= \left[ \frac{x^2}{2} - \frac{2x^3}{3} + \frac{x^4}{4}\right]_0^1 = \frac{1}{12}
+\end{aligned}
+\]
+<p><strong>解 2.</strong>
+根據 Beta 函數的定義，我們有：</p>
+\[
+\int_0^1 x (1-x)^2 \dd{x} =  \int_0^1 x^{2-1} (1-x)^{3-1} \dd{x} = \operatorname{B}(2, 3)
+\]
+<p>
+使用 Beta 函數和 Gamma 函數的關係。
+</p>
+\[
+\operatorname{B}(2, 3) = \frac{\Gamma(2) \Gamma(3)}{\Gamma(5)}=\frac{1!\cdot2!}{4!}=\frac{1}{12}
+\]
+<h5 id="例題-10-12-ex10-12">例題 10-12 ^ex10-12</h5>
+<p>計算 \(\int_0^1 x^4(1-x)^6 \dd{x}\)。</p>
+<p>![[definte_integral_20240729.png|500]]</p>
+<p><strong>解.</strong>
+\(\displaystyle \int_0^1 x^4(1-x)^6 \dd{x} = \operatorname{B}(5,7) =\frac{\Gamma(5)\Gamma(7)}{\Gamma(5+7)} = \frac{4! \cdot 6!}{11!} \approx 4.33\times10^{-4}\)</p>
+<h5 id="例題-10-13-ex10-13">例題 10-13* ^ex10-13</h5>
+<p>驗證 \(\displaystyle \operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\) 的關係。</p>
+<p>先備知識：重積分的變數變換、雅可比行列式
+<strong>解答</strong>：
+使用 Gamma 函數的積分定義，對於 \(x,y\in\mathbb{C}\) ，我們有：</p>
+\[
+\begin{aligned}
+\Gamma(x) &= \int_0^\infty u^{x-1} e^{-u} \dd{u} \\
+\Gamma(y) &= \int_0^\infty v^{y-1} e^{-v} \dd{v} \\
+\end{aligned}
+\]
+<p>我們將這兩個積分相乘，得到</p>
+\[
+\Gamma(x) \cdot \Gamma(y) = \int_{t=0}^\infty \int_{s=0}^\infty u^{x-1} v^{y-1} e^{-(u+v)} \dd{u}\dd{v}
+\]
+<p>使用變數變換 \(u=st\) 和 \(v=s(1-t)\)，我們有 </p>
+\[u+v=s \qquad\mbox{和}\qquad \frac{u}{u+v}=t \qquad\mbox{和}\qquad \dd{u}\dd{v}=|J|\dd{s}\dd{t}\]
+<p>
+其中
+</p>
+\[
+J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatrix} =\begin{vmatrix}t & s \\ 1-t & -s\end{vmatrix} = -s
+\]
+<p>是<strong>雅可比行列式</strong>（<a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant#Jacobian_determinant" rel="external" target="_self">Jacobian determinant</a>），所以 \(\dd{u}\dd{v} = {\color{red}s}\dd{t}\dd{s}\)。於是得到</p>
+\[
+\begin{aligned}
+	\Gamma(x)\cdot \Gamma(y) &= \int_{t=0}^1 \int_{s=0}^\infty (st)^{x-1} (s(1-t))^{y-1} e^{-s}\cdot{\color{red}s}\dd{t}\dd{s} \\
+	&= \left[\int_{t=0}^1 t^{x-1}(1-t)^{y-1}\dd{t}\right] \cdot \left[\int_{s=0}^\infty e^{-s}s^{x+y-1}\dd{s}\right] \\
+	&= \operatorname{B}(x,y) \cdot \Gamma(x+y)
+\end{aligned}
+\]
+<p>即相當於</p>
+\[
+\operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
+\]
+<h3 id="105-gabriels-horn-10-5">10.5 Gabriel&rsquo;s Horn ^10-5</h3>
+<p><a href="#R-image-4f0910919b10422c12f596c96001e767" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4f0910919b10422c12f596c96001e767"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png"></a><a href="#R-image-a6df122ce71a4994acb75da99740f257" class="lightbox-link"><img alt="|500" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a6df122ce71a4994acb75da99740f257"><img alt="|500" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg"></a></p>
+<ul>
+<li>體積
+<ul>
+<li>\(\dd{V} = \pi y^2 \dd{x}\)</li>
+<li>\(\displaystyle V = \int^\infty_1 \pi y^2\dd{x} = \pi\int^\infty_1  \frac{1}{x^2}\dd{x} =\lim_{M\to\infty}\left[-\frac{\pi}{x}\right]^M_1 = \pi\) （收斂）</li>
+</ul>
+</li>
+<li>表面積
+<ul>
+<li>\((\dd{s})^2 = (\dd{x})^2 + (\dd{y})^2 \implies \dd{s} = \sqrt{1+\big(\dv{y}{x}\big)^2}\dd{x}\)</li>
+<li>\(\dd{A} = 2\pi y \dd{s}\)</li>
+<li>\(\displaystyle S = \int^\infty_1 \frac{2\pi}{x} \sqrt{1+x^{-4}}\dd{x} = 2\pi\int^\infty_1 \frac{\sqrt{x^4+1}}{x^3}\dd{x} > 2\pi \int^\infty_1 \frac{1}{x} \dd{x}\)</li>
+<li>\(\because\int^\infty_1 \frac{1}{x}\dd{x}\) 發散，\(\therefore S=\int^\infty_1 2\pi x^{-1} \sqrt{1+x^{-4}}\dd{x}\) 發散</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-其他積分技巧-3-6">6. 其他積分技巧 (3) ^6</h2>
+<h3 id="64-關於根式分式的其他技巧-6-4">6.4 關於根式、分式的其他技巧 ^6-4</h3>
+<h4 id="641-sqrtnaxb-型根式-6-4-1">6.4.1 \(\sqrt[n]{ax+b}\) 型根式 ^6-4-1</h4>
+<blockquote>
+<p>[!tip]
+被積函數出現 \(\sqrt[n]{ax+b}\) 時，令 \(ax+b= u^n\)。</p>
+</blockquote>
+<h5 id="例題-6-5-ex6-5">例題 6-5 ^ex6-5</h5>
+<p>求 \(\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}}\)。</p>
+<p><strong>解.</strong>
+令 \(x+2=u^2\) ，得 \(\dd{x} = 2u\dd{u}\)。變數變換後，原積分變成
+</p>
+\[\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \int\frac{2u\dd{u}}{\left(u^2-4\right)\cdot u}=\int\frac{2}{u^2-4}\dd{u}\]
+<p>然後 </p>
+\[\int\frac{2}{u^2-4}\dd{u} = \frac{1}{2}\int\left(\frac{1}{u-2}-\frac{1}{u+2}\right)\dd{u}=\frac{1}{2}\left(\ln{|u-2|}-\ln{|u+2|}\right)+C\]
+<p>因此 </p>
+\[\int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \frac{1}{2}\ln\left|\frac{\sqrt{x+2}-2}{\sqrt{x+2}+2}\right|+C\]
+<p>%% <a href="https://www.youtube.com/watch?v=OnhEFRvYRF4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=3" rel="external" target="_self">https://www.youtube.com/watch?v=OnhEFRvYRF4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=3</a>  %%</p>
+<h4 id="642-sqrtx2axb-型根式-6-4-2">6.4.2 \(\sqrt{x^2+ax+b}\) 型根式 ^6-4-2</h4>
+<blockquote>
+<p>[!tip]
+被積函數出現 \(\sqrt{x^2+ax+b}\) 時，令 \(x^2+ax+b = (u-x)^2\)。</p>
+</blockquote>
+<p>另類方法：[[tutor-12#^6-2|§Euler 代換]]</p>
+<h5 id="例題-6-6-ex6-6">例題 6-6 ^ex6-6</h5>
+<p>求 \(\displaystyle \int\frac{\dd{x}}{x\sqrt{x^2+x+2}}\)。</p>
+<p><strong>解.</strong>
+令 \(x^2+x+2 = (u-x)^2\)，得到 </p>
+\[\cancel{x^2}+x+2=u^2 -2ux + \cancel{x^2}\]
+<p>
+解 \(x\)，得到 </p>
+\[x=\frac{u^2-2}{1+2u},\quad u=x+\sqrt{x^2+x+2}\]
+<p> 和 </p>
+\[\dd{x}=\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}\]
+<p>
+於是 </p>
+\[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)(u-x)}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)\left(\frac{u^2+u+4}{1+2u}\right)}=\int\frac{2}{u^2-2}\dd{u}\]
+<p>然後 </p>
+\[\int\frac{2}{u^2-2}\dd{u} = \frac{1}{\sqrt{2}}\int\left(\frac{1}{u-\sqrt{2}}-\frac{1}{u+\sqrt{2}}\right)\dd{u} = \frac{1}{\sqrt{2}} \ln{\left|\frac{u-\sqrt{2}}{u+\sqrt{2}}\right|} +C\]
+<p>因此 </p>
+\[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}} = \frac{1}{\sqrt{2}}\ln\left|\frac{x+\sqrt{x^2+x+2}-\sqrt{2}}{x+\sqrt{x^2+x+2}+\sqrt{2}}\right|+C\]
+<blockquote>
+<p>[!NOTE]</p>
+<ol>
+<li>\(\displaystyle \int\frac{1}{x^2+1}\dd{x} = \arctan{x} + C\)</li>
+<li>\(\displaystyle \int\frac{x}{x^2+1}\dd{x} = \frac{1}{2}\ln{\left(x^2+1\right)} + C\)</li>
+</ol>
+</blockquote>
+<h4 id="643-配方法-6-4-3">6.4.3 配方法 ^6-4-3</h4>
+<p>當被積函數出現 \(x^2+2ax+b\) （特別是出現在分式的分母時），做配方法（completing the square），得到 \((x+a)^2+b'\)，其中 \(b' = b-a^2\)；然後令 \(u = x + a\)。</p>
+<h5 id="例題-6-7-ex6-7">例題 6-7 ^ex6-7</h5>
+<p>求 \(\displaystyle \int\frac{3x+1}{x^2+6x+10}\dd{x}\)。</p>
+<p><strong>解.</strong>
+先對分母 \(x^2+6x+10\) 做配方法（completing the square），得到 </p>
+\[\int\frac{3x+1}{x^2+6x+10}\dd{x}=\int\frac{3x+1}{(x+3)^2+1}\dd{x}\]
+<p>
+令 \(u = x + 3\)，得 \(\dd{u}=\dd{x}\) ；代入積分，得 </p>
+\[\int{\frac{3(u-3)+1}{u^2+1}\dd{u}} = \int{\frac{3u-8}{u^2+1}\dd{u}} = 3\int{\frac{u}{u^2+1}\dd{u}} - 8\int\frac{\dd{u}}{u^2+1}=\frac{3}{2}\ln{\left(u^2+1\right)}-8\arctan{u}+C\]
+<p>
+因此 </p>
+\[\int\frac{3x+1}{x^2+6x+10}\dd{x}=\frac{3}{2}\ln{\left(x^2+6x+10\right)}-8\arctan{(x+3)}+C\]
+<p>%% <a href="https://www.youtube.com/watch?v=hZn2qvsi8J4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=2" rel="external" target="_self">https://www.youtube.com/watch?v=hZn2qvsi8J4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=2</a>  %%</p>
+<hr>
+<p>%% BEGIN 自定義 LaTeX %%
+\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
+\(\renewcommand{\dv}[2]{\frac{\operatorname{d}\!{#1}}{\operatorname{d}\!{#2}}}\)
+\(\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}\)</p>
+<p>%% END 自定義 LaTeX %%</p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo svg,
+            #R-logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044">
+              <path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:1.03763;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.992837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" style="color:#000;fill:#282828;stroke-width:1.02352;-inkscape-stroke:none" transform="translate(-40.698 -95.175)"/>
+              <path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.991342;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+            </svg>Relearn
+          </a>
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723650527" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723650527" defer></script>
+        <script src="/js/search.js?1723650527" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class=""><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681"><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/math/index.html" class="parent "><input type="checkbox" id="R-section-03a0920548fa01b2150c8e44bf45f903" aria-controls="R-subsections-03a0920548fa01b2150c8e44bf45f903" checked><label for="R-section-03a0920548fa01b2150c8e44bf45f903"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Mathematics</span></label><a class="padding" href="/math/index.html">Mathematics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03a0920548fa01b2150c8e44bf45f903" class="morespace collapsible-menu">
+          <li data-nav-id="/math/tutor-14/index.html" class="active"><a class="padding" href="/math/tutor-14/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/function-on-r/index.html" class=""><a class="padding" href="/math/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/math-models-and-ode/index.html" class=""><a class="padding" href="/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/double-integral/index.html" class=""><a class="padding" href="/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/topology-on-r/index.html" class=""><a class="padding" href="/math/topology-on-r/index.html">實數的拓撲<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/logical-quantifier/index.html" class=""><a class="padding" href="/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/math/set-theory/index.html" class=""><a class="padding" href="/math/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/math/tutor-14/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-auto" value="zen-auto" selected>Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto">Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1723650527" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723650527" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723650527"></script>
+    <script src="/js/d3/d3-color.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723650527" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723650527" defer></script>
+    <script src="/js/js-yaml.min.js?1723650527" defer></script>
+    <script src="/js/mermaid.min.js?1723650527" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="/js/js-yaml.min.js?1723650527" defer></script>
+    <script>window.noZensmooth = true;</script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723650527" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723650527" defer></script>
+    <script>
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723650527", cssInProject: true, assetsBuster: "?1723650527" };
+    </script>
+    <script src="/js/theme.js?1723650527" defer></script>
+  </body>
+</html>

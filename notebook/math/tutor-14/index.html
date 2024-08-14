@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.129.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
-10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 $t\geq a$，$\int^t_a{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 $t\leq b$，$\int^b_t{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 $a\in\mathbb{R}$ ，瑕積分 $\int^\infty_a{f(x)\dd{x}}$ 和 $\int^a_{-\infty}{f(x)\dd{x}}$ 都存在，則定義瑕積分 $$\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}$$ 例題 10-1 ^ex10-1 計算 $\int^\infty_0{x e^x \dd{x}}$。">
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://qavit.github.io/images/qavit.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
     <meta name="twitter:description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
-10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 $t\geq a$，$\int^t_a{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 $t\leq b$，$\int^b_t{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 $a\in\mathbb{R}$ ，瑕積分 $\int^\infty_a{f(x)\dd{x}}$ 和 $\int^a_{-\infty}{f(x)\dd{x}}$ 都存在，則定義瑕積分 $$\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}$$ 例題 10-1 ^ex10-1 計算 $\int^\infty_0{x e^x \dd{x}}$。">
-    <meta property="og:url" content="https://qavit.github.io/notebook/math/tutor-14/index.html">
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
+    <meta property="og:url" content="http://localhost:1313/notebook/math/tutor-14/index.html">
     <meta property="og:description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
-10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 $t\geq a$，$\int^t_a{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 $t\leq b$，$\int^b_t{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 $a\in\mathbb{R}$ ，瑕積分 $\int^\infty_a{f(x)\dd{x}}$ 和 $\int^a_{-\infty}{f(x)\dd{x}}$ 都存在，則定義瑕積分 $$\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}$$ 例題 10-1 ^ex10-1 計算 $\int^\infty_0{x e^x \dd{x}}$。">
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Notebook">
@@ -24,32 +24,32 @@
     <meta property="article:tag" content="Tutor">
     <meta property="article:tag" content="Calculus">
     <meta property="article:tag" content="Integral">
-    <meta property="og:image" content="https://qavit.github.io/images/qavit.png">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="description" content="積分技巧 (4) 上課日期：[[2024-07-30]] 目錄 10. [[#^10|瑕積分]]（improper integral） 10.1 [[#^10-1|第一類：積分端點在無窮遠]] 10.2 [[#^10-2|第二類：不連續的被積函數]] 10.3 [[#^10-3|Gamma 函數]] 10.4 [[#^10-4|Beta 函數]] 10.5 [[#^10-5|Gabriel’s Horn]] 6. [[#^6|其他積分技巧 (3)]] 6.4 [[#^6-4|關於根式、分式的其他技巧]] 6.4.1 [[#^6-4-1|ⁿ√(ax&#43;b) 型根式]] 6.4.2 [[#^6-4-2|√(x²&#43;ax&#43;b) 型根式]] 6.4.3 [[#^6-4-3|對分母配方]] [[tutor-int-tech|本章]]其他部分 [[tutor-10|積分技巧 (0)]] (2024-07-09) — 基本積分公式、變數變換法、分部積分法 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 10. 瑕積分 ^10 瑕積分（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。
-10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 $t\geq a$，$\int^t_a{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 $t\leq b$，$\int^b_t{f(x)\dd{x}}$ 都存在。 若極限 $\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$$並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 $a\in\mathbb{R}$ ，瑕積分 $\int^\infty_a{f(x)\dd{x}}$ 和 $\int^a_{-\infty}{f(x)\dd{x}}$ 都存在，則定義瑕積分 $$\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}$$ 例題 10-1 ^ex10-1 計算 $\int^\infty_0{x e^x \dd{x}}$。">
+10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
     <meta itemprop="datePublished" content="2024-07-29T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-07-29T00:00:00+00:00">
     <meta itemprop="wordCount" content="898">
-    <meta itemprop="image" content="https://qavit.github.io/images/qavit.png">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Tutor,Calculus,Integral">
     <title></title>
-    <link href="/images/favicon.png?1723213040" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723213040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723213040" rel="stylesheet">
-    <link href="/css/fonts.css?1723213040" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723213040" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723213040" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723213040" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723213040" rel="stylesheet">
-    <link href="/css/print.css?1723213040" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723213040"></script>
+    <link href="/images/favicon.png?1723649390" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723649390" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723649390" rel="stylesheet">
+    <link href="/css/fonts.css?1723649390" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723649390" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723649390" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723649390" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723649390" rel="stylesheet">
+    <link href="/css/print.css?1723649390" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723649390"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/qavit.github.io';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       // variant stuff
       window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
       // translations
@@ -99,14 +99,14 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">基礎數學</span><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/math/tutor-14.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Qavit&#39;s Notebook (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/index.html" title="基礎數學 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/math/math-models-and-ode/index.html" title="Mathematical model and ODE (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -176,173 +176,173 @@
 <p><strong>瑕積分</strong>（improper integral）是指積分區間內或積分端點處有無窮大或不連續點的積分。</p>
 <h3 id="101-第一類積分端點在無窮遠-10-1">10.1 第一類：積分端點在無窮遠 ^10-1</h3>
 <ol>
-<li>假設對所有 $t\geq a$，$\int^t_a{f(x)\dd{x}}$ 都存在。
+<li>假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。
 <ul>
-<li>若極限 $\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}$$並稱瑕積分<strong>收斂</strong>。</li>
+<li>若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分<strong>收斂</strong>。</li>
 <li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
 </ul>
 </li>
-<li>假設對所有 $t\leq b$，$\int^b_t{f(x)\dd{x}}$ 都存在。
+<li>假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。
 <ul>
-<li>若極限 $\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$ 存在，則定義瑕積分 $$\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}$$並稱瑕積分<strong>收斂</strong>。</li>
+<li>若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分<strong>收斂</strong>。</li>
 <li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
 </ul>
 </li>
-<li>如果對任意 $a\in\mathbb{R}$ ，瑕積分 $\int^\infty_a{f(x)\dd{x}}$ 和 $\int^a_{-\infty}{f(x)\dd{x}}$ 都存在，則定義瑕積分 $$\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}+\int^a_{-\infty}{f(x)\dd{x}}$$</li>
+<li>如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}+\int^a_{-\infty}{f(x)\dd{x}}\]</li>
 </ol>
 <h5 id="例題-10-1-ex10-1">例題 10-1 ^ex10-1</h5>
-<p>計算 $\int^\infty_0{x e^x \dd{x}}$。</p>
+<p>計算 \(\int^\infty_0{x e^x \dd{x}}\)。</p>
 <p><strong>解.</strong></p>
 <h5 id="例題-10-2-ex10-2">例題 10-2 ^ex10-2</h5>
-<p>計算 $\displaystyle\int^\infty_{-\infty}{\frac{1}{1+x^2}\dd{x}}$。</p>
+<p>計算 \(\displaystyle\int^\infty_{-\infty}{\frac{1}{1+x^2}\dd{x}}\)。</p>
 <h4 id="例題-10-3-ex10-3">例題 10-3 ^ex10-3</h4>
 <ol>
-<li>檢查 $\int^\infty_0(1/x)\dd{x}$ 是發散還是收斂。</li>
-<li>檢查 $\int^\infty_0\left(1/x^2\right)\dd{x}$ 是發散還是收斂。</li>
-<li>$p$ 的值是多少，才能使 $\int^\infty_0\left(1/x^p\right)\dd{x}$ 收斂？</li>
+<li>檢查 \(\int^\infty_0(1/x)\dd{x}\) 是發散還是收斂。</li>
+<li>檢查 \(\int^\infty_0\left(1/x^2\right)\dd{x}\) 是發散還是收斂。</li>
+<li>\(p\) 的值是多少，才能使 \(\int^\infty_0\left(1/x^p\right)\dd{x}\) 收斂？</li>
 </ol>
 <h3 id="102-第二類不連續的被積函數-10-2">10.2 第二類：不連續的被積函數 ^10-2</h3>
 <ol>
-<li>假設 $f(x)$ 在 $[a,b)$ 上連續，又在 $b$ 點不連續。
+<li>假設 \(f(x)\) 在 \([a,b)\) 上連續，又在 \(b\) 點不連續。
 <ul>
-<li>若左極限 $\lim_{t\to b^-}{\int_a^t{f(x)\dd{x}}}$ 存在，則定義瑕積分  $$\int_a^b{f(x)\dd{x}}=\lim_{t\to b^-}{\int_a^t{f(x)\dd{x}}}$$ 並稱瑕積分<strong>收斂</strong>。</li>
+<li>若左極限 \(\lim_{t\to b^-}{\int_a^t{f(x)\dd{x}}}\) 存在，則定義瑕積分  \[\int_a^b{f(x)\dd{x}}=\lim_{t\to b^-}{\int_a^t{f(x)\dd{x}}}\] 並稱瑕積分<strong>收斂</strong>。</li>
 <li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
 </ul>
 </li>
-<li>假設 $f(x)$ 在 $(a,b]$ 上連續，又在 $a$ 點不連續。
+<li>假設 \(f(x)\) 在 \((a,b]\) 上連續，又在 \(a\) 點不連續。
 <ul>
-<li>若右極限 $\lim_{t\to a^+}{\int_t^b{f(x)\dd{x}}}$ 存在，則定義瑕積分  $$\int_a^b{f(x)\dd{x}}=\lim_{t\to a^+}{\int_t^b{f(x)\dd{x}}}$$ 並稱瑕積分<strong>收斂</strong>。</li>
+<li>若右極限 \(\lim_{t\to a^+}{\int_t^b{f(x)\dd{x}}}\) 存在，則定義瑕積分  \[\int_a^b{f(x)\dd{x}}=\lim_{t\to a^+}{\int_t^b{f(x)\dd{x}}}\] 並稱瑕積分<strong>收斂</strong>。</li>
 <li>反之，若該極限不存在，則稱瑕積分<strong>發散</strong>。</li>
 </ul>
 </li>
-<li>如果 $f$ 在 $c$ 有一個不連續點，且 $c\in[a,b]$，而且 $\int_a^c{f(x)\dd{x}}$ 和 $\int_c^b{f(x)\dd{x}}$ 都存在，則定義瑕積分 $$\int_a^b{f(x)\dd{x}}=\int_a^c{f(x)\dd{x}}+\int_c^b{f(x)\dd{x}}$$</li>
+<li>如果 \(f\) 在 \(c\) 有一個不連續點，且 \(c\in[a,b]\)，而且 \(\int_a^c{f(x)\dd{x}}\) 和 \(\int_c^b{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int_a^b{f(x)\dd{x}}=\int_a^c{f(x)\dd{x}}+\int_c^b{f(x)\dd{x}}\]</li>
 </ol>
 <h4 id="例題-10-4-ex10-4">例題 10-4 ^ex10-4</h4>
-<p>求 $\displaystyle \int_2^5{\frac{1}{\sqrt{x-2}}\dd{x}}$</p>
+<p>求 \(\displaystyle \int_2^5{\frac{1}{\sqrt{x-2}}\dd{x}}\)</p>
 <h4 id="例題-10-5-ex10-5">例題 10-5 ^ex10-5</h4>
-<p>$\int^{\pi/2}_0{\sec{x}\dd{x}}$ 是否收斂？如果是的話，請計算積分。</p>
+<p>\(\int^{\pi/2}_0{\sec{x}\dd{x}}\) 是否收斂？如果是的話，請計算積分。</p>
 <h4 id="例題-10-6-ex10-6">例題 10-6 ^ex10-6</h4>
-<p>$\displaystyle \int_0^3{\frac{1}{x-1}\dd{x}}$ 是否收斂？如果是的話，請計算積分。</p>
+<p>\(\displaystyle \int_0^3{\frac{1}{x-1}\dd{x}}\) 是否收斂？如果是的話，請計算積分。</p>
 <h4 id="例題-10-7-ex10-7">例題 10-7 ^ex10-7</h4>
-<p>求 $\int^1_0{\ln{x}\dd{x}}$。</p>
+<p>求 \(\int^1_0{\ln{x}\dd{x}}\)。</p>
 <h3 id="103-gamma-函數-10-3">10.3 Gamma 函數 ^10-3</h3>
 <p>Gamma 函數與 Beta 函數是兩個涉及瑕積分的<strong>特殊函數</strong>（<a href="https://en.wikipedia.org/wiki/Special_functions" rel="external" target="_self">special functions</a>）。</p>
 <h4 id="1031-定義-10-3-1">10.3.1 定義 ^10-3-1</h4>
-<p>$\Gamma$ 函數是一個在複數平面上延拓的特殊函數，它廣泛應用於數學、物理學和工程學等領域。$\Gamma$ 函數 $\Gamma(z)$ 定義如下：</p>
-$$
+<p>\(\Gamma\) 函數是一個在複數平面上延拓的特殊函數，它廣泛應用於數學、物理學和工程學等領域。\(\Gamma\) 函數 \(\Gamma(z)\) 定義如下：</p>
+\[
 \Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt
-$$
-<p>其中，$z$ 是一個複數變數，實部大於零 ($\Re(z) > 0$)。
-$\Gamma$ 函數又稱歐拉第二類積分（Euler integral of the second kind）
-<a href="#R-image-f41e15b96dcc177fcb310f4311a01cc7" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f41e15b96dcc177fcb310f4311a01cc7"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg"></a><a href="#R-image-92fb69cc00f95cfe90951b40a850b7a4" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-92fb69cc00f95cfe90951b40a850b7a4"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png"></a></p>
+\]
+<p>其中，\(z\) 是一個複數變數，實部大於零 (\(\Re(z) > 0\))。
+\(\Gamma\) 函數又稱歐拉第二類積分（Euler integral of the second kind）
+<a href="#R-image-0fccbcc7d59502811913d727bb5eeffc" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0fccbcc7d59502811913d727bb5eeffc"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg"></a><a href="#R-image-f831ec14b70dd42f477f5780afc0bd58" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f831ec14b70dd42f477f5780afc0bd58"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png"></a></p>
 <h4 id="1032-性質-10-3-2">10.3.2 性質 ^10-3-2</h4>
-<p>$\Gamma$ 函數有許多重要的性質和特徵，其中一些包括：</p>
+<p>\(\Gamma\) 函數有許多重要的性質和特徵，其中一些包括：</p>
 <ol>
 <li>
 <p><strong>遞推關係</strong>：
 </p>
-$$ \Gamma(z+1) = z\Gamma(z) $$
+\[ \Gamma(z+1) = z\Gamma(z) \]
 <p>
-特別地，當 $z$ 為正整數時，$\Gamma$ 函數與階乘函數有關：
+特別地，當 \(z\) 為正整數時，\(\Gamma\) 函數與階乘函數有關：
 </p>
-$$ \Gamma(n) = (n-1)! $$
+\[ \Gamma(n) = (n-1)! \]
 </li>
 <li>
-<p><strong>$\Gamma$ 函數的值</strong>：
+<p><strong>\(\Gamma\) 函數的值</strong>：
 </p>
-$$ \Gamma\left(\frac{1}{2}\right) = \sqrt{\pi} $$
+\[ \Gamma\left(\frac{1}{2}\right) = \sqrt{\pi} \]
 </li>
 <li>
 <p><strong>歐拉反射公式</strong>（Euler&rsquo;s reflection formula）：
 </p>
-$$ \Gamma(z) \Gamma(1-z) = \frac{\pi}{\sin(\pi z)},\quad z\notin\mathbb{Z}$$
+\[ \Gamma(z) \Gamma(1-z) = \frac{\pi}{\sin(\pi z)},\quad z\notin\mathbb{Z}\]
 </li>
 <li>
 <p><strong>斯特林公式</strong>（近似公式）：
-當 $|z| \rightarrow \infty$ 時，$\Gamma$ 函數可以近似為：
+當 \(|z| \rightarrow \infty\) 時，\(\Gamma\) 函數可以近似為：
 </p>
-$$ \Gamma(z) \sim \sqrt{2\pi} z^{z-\frac{1}{2}} e^{-z} $$
+\[ \Gamma(z) \sim \sqrt{2\pi} z^{z-\frac{1}{2}} e^{-z} \]
 </li>
 </ol>
 <h4 id="1033-函數的應用-10-3-3">10.3.3 函數的應用 ^10-3-3</h4>
-<p>$\Gamma$ 函數在多個數學和科學領域中有廣泛的應用。以下是一些具體的應用：</p>
+<p>\(\Gamma\) 函數在多個數學和科學領域中有廣泛的應用。以下是一些具體的應用：</p>
 <ol>
 <li>
 <p><strong>階乘計算</strong>：
-$\Gamma$ 函數可以用來計算非整數階乘。例如，$3.5! = \Gamma(4.5)$。</p>
+\(\Gamma\) 函數可以用來計算非整數階乘。例如，\(3.5! = \Gamma(4.5)\)。</p>
 </li>
 <li>
 <p><strong>機率論與統計學</strong>：
-Gamma 分佈和卡方分佈等分佈中均涉及 $\Gamma$ 函數。Gamma 分佈是一個連續機率分佈，常用於模型化等待時間等現象。</p>
+Gamma 分佈和卡方分佈等分佈中均涉及 \(\Gamma\) 函數。Gamma 分佈是一個連續機率分佈，常用於模型化等待時間等現象。</p>
 </li>
 <li>
 <p><strong>複變函數論</strong>：
-$\Gamma$ 函數在解析延拓和複變函數論中有重要應用。它可以延拓至整個複平面，除了非正整數點外。</p>
+\(\Gamma\) 函數在解析延拓和複變函數論中有重要應用。它可以延拓至整個複平面，除了非正整數點外。</p>
 </li>
 <li>
 <p><strong>物理學中的應用</strong>：
-$\Gamma$ 函數在量子物理和統計力學中也有應用，例如在玻色子和費米子的統計描述中。</p>
+\(\Gamma\) 函數在量子物理和統計力學中也有應用，例如在玻色子和費米子的統計描述中。</p>
 </li>
 </ol>
-<p>這些性質和應用展示了 $\Gamma$ 函數在數學和其他科學領域的重要性和廣泛應用。學習和理解 $\Gamma$ 函數能夠幫助我們更好地解決許多複雜的數學問題。</p>
+<p>這些性質和應用展示了 \(\Gamma\) 函數在數學和其他科學領域的重要性和廣泛應用。學習和理解 \(\Gamma\) 函數能夠幫助我們更好地解決許多複雜的數學問題。</p>
 <h4 id="1034-例題-10-3-4">10.3.4. 例題 ^10-3-4</h4>
 <h5 id="例題-10-8-ex10-8">例題 10-8 ^ex10-8</h5>
 <ol>
-<li>$\Gamma(6)=$<!-- raw HTML omitted -->$5!=120$<!-- raw HTML omitted --></li>
-<li>$\Gamma\left(\frac{9}{2}\right)=$<!-- raw HTML omitted -->$\Gamma\left(\frac{1}{2}\right)\cdot\frac{1}{2}\cdot\frac{3}{2}\cdot\frac{5}{2}\cdot\frac{7}{2}=\frac{105}{16}\sqrt{\pi}$<!-- raw HTML omitted --></li>
+<li>\(\Gamma(6)=\)<!-- raw HTML omitted -->\(5!=120\)<!-- raw HTML omitted --></li>
+<li>\(\Gamma\left(\frac{9}{2}\right)=\)<!-- raw HTML omitted -->\(\Gamma\left(\frac{1}{2}\right)\cdot\frac{1}{2}\cdot\frac{3}{2}\cdot\frac{5}{2}\cdot\frac{7}{2}=\frac{105}{16}\sqrt{\pi}\)<!-- raw HTML omitted --></li>
 </ol>
 <h5 id="例題-10-9-ex10-9">例題 10-9 ^ex10-9</h5>
 <ol>
-<li>$\displaystyle\int^\infty_0 x^3e^{-x}\dd{x} =$ <!-- raw HTML omitted -->$\displaystyle\Gamma(4)=3!=6$<!-- raw HTML omitted --></li>
-<li>$\displaystyle\int^\infty_0 x^{7/2}e^{-x}\dd{x}=$ <!-- raw HTML omitted -->$\Gamma\left(\frac{9}{2}\right)=\frac{105}{16}\sqrt{\pi}$<!-- raw HTML omitted --></li>
+<li>\(\displaystyle\int^\infty_0 x^3e^{-x}\dd{x} =\) <!-- raw HTML omitted -->\(\displaystyle\Gamma(4)=3!=6\)<!-- raw HTML omitted --></li>
+<li>\(\displaystyle\int^\infty_0 x^{7/2}e^{-x}\dd{x}=\) <!-- raw HTML omitted -->\(\Gamma\left(\frac{9}{2}\right)=\frac{105}{16}\sqrt{\pi}\)<!-- raw HTML omitted --></li>
 </ol>
 <h5 id="例題-10-10-ex10-10">例題 10-10 ^ex10-10</h5>
 <ol>
-<li>$\displaystyle\int^\infty_0 x^3e^{-2x}\dd{x} =$<!-- raw HTML omitted -->$\displaystyle\int^\infty_0\left(\frac{u}{2}\right)^3 e^{-u} \frac{\dd{u}}{2} = \frac{1}{16}\int^\infty_0 u^3e^{-u}\dd{u} = \frac{1}{16}\Gamma(4) = \frac{3}{8}$<!-- raw HTML omitted --></li>
-<li>（實用公式）$\displaystyle\int^\infty_0 x^{\alpha -1}e^{-x/\beta}\dd{x} =$<!-- raw HTML omitted -->$\beta^\alpha \cdot\Gamma(\alpha)$<!-- raw HTML omitted --></li>
-<li>$\displaystyle\int^\infty_0 x^2e^{-x/3}\dd{x} =$<!-- raw HTML omitted -->$3^3 \cdot\Gamma(3) = 27 \cdot 2! = 54$<!-- raw HTML omitted --></li>
+<li>\(\displaystyle\int^\infty_0 x^3e^{-2x}\dd{x} =\)<!-- raw HTML omitted -->\(\displaystyle\int^\infty_0\left(\frac{u}{2}\right)^3 e^{-u} \frac{\dd{u}}{2} = \frac{1}{16}\int^\infty_0 u^3e^{-u}\dd{u} = \frac{1}{16}\Gamma(4) = \frac{3}{8}\)<!-- raw HTML omitted --></li>
+<li>（實用公式）\(\displaystyle\int^\infty_0 x^{\alpha -1}e^{-x/\beta}\dd{x} =\)<!-- raw HTML omitted -->\(\beta^\alpha \cdot\Gamma(\alpha)\)<!-- raw HTML omitted --></li>
+<li>\(\displaystyle\int^\infty_0 x^2e^{-x/3}\dd{x} =\)<!-- raw HTML omitted -->\(3^3 \cdot\Gamma(3) = 27 \cdot 2! = 54\)<!-- raw HTML omitted --></li>
 </ol>
 <h3 id="104-beta-函數-10-4">10.4 Beta 函數 ^10-4</h3>
 <h4 id="1041-定義-10-4-1">10.4.1 定義 ^10-4-1</h4>
-<p>Beta 函數是一個特殊函數，廣泛應用於數學和物理學中。Beta 函數 $B(x, y)$ 定義為：</p>
-$$
+<p>Beta 函數是一個特殊函數，廣泛應用於數學和物理學中。Beta 函數 \(B(x, y)\) 定義為：</p>
+\[
 \operatorname{B}(x, y) := \int_0^1 t^{x-1} (1-t)^{y-1} \, dt
-$$
-<p>其中 $x$ 和 $y$ 是大於 $0$ 的實數。</p>
+\]
+<p>其中 \(x\) 和 \(y\) 是大於 \(0\) 的實數。</p>
 <h4 id="1042-性質-10-4-2">10.4.2 性質 ^10-4-2</h4>
 <p>Beta 函數具有許多重要的性質：</p>
 <ol>
 <li>
 <p><strong>對稱性</strong>：
 </p>
-$$\operatorname{B}(x, y) = \operatorname{B}(y, x) $$
+\[\operatorname{B}(x, y) = \operatorname{B}(y, x) \]
 </li>
 <li>
 <p><strong>與 Gamma 函數的關係</strong>：
 Beta 函數也可以通過 Gamma 函數來表示：（[[#^ex10-13|例題 10-13]]）</p>
 </li>
 </ol>
-$$
+\[
 \operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}
-$$
+\]
 <ol start="3">
 <li>
 <p><strong>積分表示</strong>：
 Beta 函數的另一種表示方法是：
 </p>
-$$ \operatorname{B}(x, y) = 2 \int_0^{\frac{\pi}{2}} (\sin \theta)^{2x-1} (\cos \theta)^{2y-1} \, d\theta $$
+\[ \operatorname{B}(x, y) = 2 \int_0^{\frac{\pi}{2}} (\sin \theta)^{2x-1} (\cos \theta)^{2y-1} \, d\theta \]
 </li>
 <li>
 <p><strong>遞推關係</strong>：
 </p>
-$$ \operatorname{B}(x, y+1) = \frac{y}{x+y} \operatorname{B}(x, y) $$
+\[ \operatorname{B}(x, y+1) = \frac{y}{x+y} \operatorname{B}(x, y) \]
 </li>
 <li>
 <p><strong>常數值</strong>：
 </p>
-$$ \operatorname{B}(1, y) = \frac{1}{y} $$
+\[ \operatorname{B}(1, y) = \frac{1}{y} \]
 </li>
 </ol>
 <h4 id="1043-應用-10-4-3">10.4.3 應用 ^10-4-3</h4>
@@ -363,154 +363,154 @@ Beta 函數在流體力學、熱力學和量子物理學中都有應用。例如
 </ol>
 <h4 id="1044-例題-10-4-4">10.4.4 例題 ^10-4-4</h4>
 <h5 id="例題-10-11-ex10-11">例題 10-11 ^ex10-11</h5>
-<p>計算 $\int_0^1 x(1-x)^2 \dd{x}$。</p>
+<p>計算 \(\int_0^1 x(1-x)^2 \dd{x}\)。</p>
 <p><strong>解 1.</strong>
 </p>
-$$
+\[
 \begin{aligned}
 \int_0^1 x (1-x)^2 \dd{x} &= \int_0^1 (x - 2x^2 + x^3) \dd{x}\\
 &= \left[ \frac{x^2}{2} - \frac{2x^3}{3} + \frac{x^4}{4}\right]_0^1 = \frac{1}{12}
 \end{aligned}
-$$
+\]
 <p><strong>解 2.</strong>
 根據 Beta 函數的定義，我們有：</p>
-$$
+\[
 \int_0^1 x (1-x)^2 \dd{x} =  \int_0^1 x^{2-1} (1-x)^{3-1} \dd{x} = \operatorname{B}(2, 3)
-$$
+\]
 <p>
 使用 Beta 函數和 Gamma 函數的關係。
 </p>
-$$
+\[
 \operatorname{B}(2, 3) = \frac{\Gamma(2) \Gamma(3)}{\Gamma(5)}=\frac{1!\cdot2!}{4!}=\frac{1}{12}
-$$
+\]
 <h5 id="例題-10-12-ex10-12">例題 10-12 ^ex10-12</h5>
-<p>計算 $\int_0^1 x^4(1-x)^6 \dd{x}$。</p>
+<p>計算 \(\int_0^1 x^4(1-x)^6 \dd{x}\)。</p>
 <p>![[definte_integral_20240729.png|500]]</p>
 <p><strong>解.</strong>
-$\displaystyle \int_0^1 x^4(1-x)^6 \dd{x} = \operatorname{B}(5,7) =\frac{\Gamma(5)\Gamma(7)}{\Gamma(5+7)} = \frac{4! \cdot 6!}{11!} \approx 4.33\times10^{-4}$</p>
+\(\displaystyle \int_0^1 x^4(1-x)^6 \dd{x} = \operatorname{B}(5,7) =\frac{\Gamma(5)\Gamma(7)}{\Gamma(5+7)} = \frac{4! \cdot 6!}{11!} \approx 4.33\times10^{-4}\)</p>
 <h5 id="例題-10-13-ex10-13">例題 10-13* ^ex10-13</h5>
-<p>驗證 $\displaystyle \operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}$ 的關係。</p>
+<p>驗證 \(\displaystyle \operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\) 的關係。</p>
 <p>先備知識：重積分的變數變換、雅可比行列式
 <strong>解答</strong>：
-使用 Gamma 函數的積分定義，對於 $x,y\in\mathbb{C}$ ，我們有：</p>
-$$
+使用 Gamma 函數的積分定義，對於 \(x,y\in\mathbb{C}\) ，我們有：</p>
+\[
 \begin{aligned}
 \Gamma(x) &= \int_0^\infty u^{x-1} e^{-u} \dd{u} \\
 \Gamma(y) &= \int_0^\infty v^{y-1} e^{-v} \dd{v} \\
 \end{aligned}
-$$
+\]
 <p>我們將這兩個積分相乘，得到</p>
-$$
+\[
 \Gamma(x) \cdot \Gamma(y) = \int_{t=0}^\infty \int_{s=0}^\infty u^{x-1} v^{y-1} e^{-(u+v)} \dd{u}\dd{v}
-$$
-<p>使用變數變換 $u=st$ 和 $v=s(1-t)$，我們有 </p>
-$$u+v=s \qquad\mbox{和}\qquad \frac{u}{u+v}=t \qquad\mbox{和}\qquad \dd{u}\dd{v}=|J|\dd{s}\dd{t}$$
+\]
+<p>使用變數變換 \(u=st\) 和 \(v=s(1-t)\)，我們有 </p>
+\[u+v=s \qquad\mbox{和}\qquad \frac{u}{u+v}=t \qquad\mbox{和}\qquad \dd{u}\dd{v}=|J|\dd{s}\dd{t}\]
 <p>
 其中
 </p>
-$$
+\[
 J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatrix} =\begin{vmatrix}t & s \\ 1-t & -s\end{vmatrix} = -s
-$$
-<p>是<strong>雅可比行列式</strong>（<a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant#Jacobian_determinant" rel="external" target="_self">Jacobian determinant</a>），所以 $\dd{u}\dd{v} = {\color{red}s}\dd{t}\dd{s}$。於是得到</p>
-$$
+\]
+<p>是<strong>雅可比行列式</strong>（<a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant#Jacobian_determinant" rel="external" target="_self">Jacobian determinant</a>），所以 \(\dd{u}\dd{v} = {\color{red}s}\dd{t}\dd{s}\)。於是得到</p>
+\[
 \begin{aligned}
 	\Gamma(x)\cdot \Gamma(y) &= \int_{t=0}^1 \int_{s=0}^\infty (st)^{x-1} (s(1-t))^{y-1} e^{-s}\cdot{\color{red}s}\dd{t}\dd{s} \\
 	&= \left[\int_{t=0}^1 t^{x-1}(1-t)^{y-1}\dd{t}\right] \cdot \left[\int_{s=0}^\infty e^{-s}s^{x+y-1}\dd{s}\right] \\
 	&= \operatorname{B}(x,y) \cdot \Gamma(x+y)
 \end{aligned}
-$$
+\]
 <p>即相當於</p>
-$$
+\[
 \operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
-$$
+\]
 <h3 id="105-gabriels-horn-10-5">10.5 Gabriel&rsquo;s Horn ^10-5</h3>
-<p><a href="#R-image-b607b84998724705f2750f1206e30d72" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b607b84998724705f2750f1206e30d72"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png"></a><a href="#R-image-d3742d0cdcef6ffea3e4b32c0829517b" class="lightbox-link"><img alt="|500" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d3742d0cdcef6ffea3e4b32c0829517b"><img alt="|500" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg"></a></p>
+<p><a href="#R-image-3f2f3b53d1055d83618f9e4c263d5f51" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f2f3b53d1055d83618f9e4c263d5f51"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png"></a><a href="#R-image-265ed31d167f79e44684a075ec6f27c3" class="lightbox-link"><img alt="|500" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-265ed31d167f79e44684a075ec6f27c3"><img alt="|500" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg"></a></p>
 <ul>
 <li>體積
 <ul>
-<li>$\dd{V} = \pi y^2 \dd{x}$</li>
-<li>$\displaystyle V = \int^\infty_1 \pi y^2\dd{x} = \pi\int^\infty_1  \frac{1}{x^2}\dd{x} =\lim_{M\to\infty}\left[-\frac{\pi}{x}\right]^M_1 = \pi$ （收斂）</li>
+<li>\(\dd{V} = \pi y^2 \dd{x}\)</li>
+<li>\(\displaystyle V = \int^\infty_1 \pi y^2\dd{x} = \pi\int^\infty_1  \frac{1}{x^2}\dd{x} =\lim_{M\to\infty}\left[-\frac{\pi}{x}\right]^M_1 = \pi\) （收斂）</li>
 </ul>
 </li>
 <li>表面積
 <ul>
-<li>$(\dd{s})^2 = (\dd{x})^2 + (\dd{y})^2 \implies \dd{s} = \sqrt{1+\big(\dv{y}{x}\big)^2}\dd{x}$</li>
-<li>$\dd{A} = 2\pi y \dd{s}$</li>
-<li>$\displaystyle S = \int^\infty_1 \frac{2\pi}{x} \sqrt{1+x^{-4}}\dd{x} = 2\pi\int^\infty_1 \frac{\sqrt{x^4+1}}{x^3}\dd{x} > 2\pi \int^\infty_1 \frac{1}{x} \dd{x}$</li>
-<li>$\because\int^\infty_1 \frac{1}{x}\dd{x}$ 發散，$\therefore S=\int^\infty_1 2\pi x^{-1} \sqrt{1+x^{-4}}\dd{x}$ 發散</li>
+<li>\((\dd{s})^2 = (\dd{x})^2 + (\dd{y})^2 \implies \dd{s} = \sqrt{1+\big(\dv{y}{x}\big)^2}\dd{x}\)</li>
+<li>\(\dd{A} = 2\pi y \dd{s}\)</li>
+<li>\(\displaystyle S = \int^\infty_1 \frac{2\pi}{x} \sqrt{1+x^{-4}}\dd{x} = 2\pi\int^\infty_1 \frac{\sqrt{x^4+1}}{x^3}\dd{x} > 2\pi \int^\infty_1 \frac{1}{x} \dd{x}\)</li>
+<li>\(\because\int^\infty_1 \frac{1}{x}\dd{x}\) 發散，\(\therefore S=\int^\infty_1 2\pi x^{-1} \sqrt{1+x^{-4}}\dd{x}\) 發散</li>
 </ul>
 </li>
 </ul>
 <hr>
 <h2 id="6-其他積分技巧-3-6">6. 其他積分技巧 (3) ^6</h2>
 <h3 id="64-關於根式分式的其他技巧-6-4">6.4 關於根式、分式的其他技巧 ^6-4</h3>
-<h4 id="641-sqrtnaxb-型根式-6-4-1">6.4.1 $\sqrt[n]{ax+b}$ 型根式 ^6-4-1</h4>
+<h4 id="641-sqrtnaxb-型根式-6-4-1">6.4.1 \(\sqrt[n]{ax+b}\) 型根式 ^6-4-1</h4>
 <blockquote>
 <p>[!tip]
-被積函數出現 $\sqrt[n]{ax+b}$ 時，令 $ax+b= u^n$。</p>
+被積函數出現 \(\sqrt[n]{ax+b}\) 時，令 \(ax+b= u^n\)。</p>
 </blockquote>
 <h5 id="例題-6-5-ex6-5">例題 6-5 ^ex6-5</h5>
-<p>求 $\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}}$。</p>
+<p>求 \(\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}}\)。</p>
 <p><strong>解.</strong>
-令 $x+2=u^2$ ，得 $\dd{x} = 2u\dd{u}$。變數變換後，原積分變成
+令 \(x+2=u^2\) ，得 \(\dd{x} = 2u\dd{u}\)。變數變換後，原積分變成
 </p>
-$$\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \int\frac{2u\dd{u}}{\left(u^2-4\right)\cdot u}=\int\frac{2}{u^2-4}\dd{u}$$
+\[\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \int\frac{2u\dd{u}}{\left(u^2-4\right)\cdot u}=\int\frac{2}{u^2-4}\dd{u}\]
 <p>然後 </p>
-$$\int\frac{2}{u^2-4}\dd{u} = \frac{1}{2}\int\left(\frac{1}{u-2}-\frac{1}{u+2}\right)\dd{u}=\frac{1}{2}\left(\ln{|u-2|}-\ln{|u+2|}\right)+C$$
+\[\int\frac{2}{u^2-4}\dd{u} = \frac{1}{2}\int\left(\frac{1}{u-2}-\frac{1}{u+2}\right)\dd{u}=\frac{1}{2}\left(\ln{|u-2|}-\ln{|u+2|}\right)+C\]
 <p>因此 </p>
-$$\int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \frac{1}{2}\ln\left|\frac{\sqrt{x+2}-2}{\sqrt{x+2}+2}\right|+C$$
+\[\int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \frac{1}{2}\ln\left|\frac{\sqrt{x+2}-2}{\sqrt{x+2}+2}\right|+C\]
 <p>%% <a href="https://www.youtube.com/watch?v=OnhEFRvYRF4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=3" rel="external" target="_self">https://www.youtube.com/watch?v=OnhEFRvYRF4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=3</a>  %%</p>
-<h4 id="642-sqrtx2axb-型根式-6-4-2">6.4.2 $\sqrt{x^2+ax+b}$ 型根式 ^6-4-2</h4>
+<h4 id="642-sqrtx2axb-型根式-6-4-2">6.4.2 \(\sqrt{x^2+ax+b}\) 型根式 ^6-4-2</h4>
 <blockquote>
 <p>[!tip]
-被積函數出現 $\sqrt{x^2+ax+b}$ 時，令 $x^2+ax+b = (u-x)^2$。</p>
+被積函數出現 \(\sqrt{x^2+ax+b}\) 時，令 \(x^2+ax+b = (u-x)^2\)。</p>
 </blockquote>
 <p>另類方法：[[tutor-12#^6-2|§Euler 代換]]</p>
 <h5 id="例題-6-6-ex6-6">例題 6-6 ^ex6-6</h5>
-<p>求 $\displaystyle \int\frac{\dd{x}}{x\sqrt{x^2+x+2}}$。</p>
+<p>求 \(\displaystyle \int\frac{\dd{x}}{x\sqrt{x^2+x+2}}\)。</p>
 <p><strong>解.</strong>
-令 $x^2+x+2 = (u-x)^2$，得到 </p>
-$$\cancel{x^2}+x+2=u^2 -2ux + \cancel{x^2}$$
+令 \(x^2+x+2 = (u-x)^2\)，得到 </p>
+\[\cancel{x^2}+x+2=u^2 -2ux + \cancel{x^2}\]
 <p>
-解 $x$，得到 </p>
-$$x=\frac{u^2-2}{1+2u},\quad u=x+\sqrt{x^2+x+2}$$
+解 \(x\)，得到 </p>
+\[x=\frac{u^2-2}{1+2u},\quad u=x+\sqrt{x^2+x+2}\]
 <p> 和 </p>
-$$\dd{x}=\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}$$
+\[\dd{x}=\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}\]
 <p>
 於是 </p>
-$$\int\frac{\dd{x}}{x\sqrt{x^2+x+2}}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)(u-x)}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)\left(\frac{u^2+u+4}{1+2u}\right)}=\int\frac{2}{u^2-2}\dd{u}$$
+\[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)(u-x)}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)\left(\frac{u^2+u+4}{1+2u}\right)}=\int\frac{2}{u^2-2}\dd{u}\]
 <p>然後 </p>
-$$\int\frac{2}{u^2-2}\dd{u} = \frac{1}{\sqrt{2}}\int\left(\frac{1}{u-\sqrt{2}}-\frac{1}{u+\sqrt{2}}\right)\dd{u} = \frac{1}{\sqrt{2}} \ln{\left|\frac{u-\sqrt{2}}{u+\sqrt{2}}\right|} +C$$
+\[\int\frac{2}{u^2-2}\dd{u} = \frac{1}{\sqrt{2}}\int\left(\frac{1}{u-\sqrt{2}}-\frac{1}{u+\sqrt{2}}\right)\dd{u} = \frac{1}{\sqrt{2}} \ln{\left|\frac{u-\sqrt{2}}{u+\sqrt{2}}\right|} +C\]
 <p>因此 </p>
-$$\int\frac{\dd{x}}{x\sqrt{x^2+x+2}} = \frac{1}{\sqrt{2}}\ln\left|\frac{x+\sqrt{x^2+x+2}-\sqrt{2}}{x+\sqrt{x^2+x+2}+\sqrt{2}}\right|+C$$
+\[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}} = \frac{1}{\sqrt{2}}\ln\left|\frac{x+\sqrt{x^2+x+2}-\sqrt{2}}{x+\sqrt{x^2+x+2}+\sqrt{2}}\right|+C\]
 <blockquote>
 <p>[!NOTE]</p>
 <ol>
-<li>$\displaystyle \int\frac{1}{x^2+1}\dd{x} = \arctan{x} + C$</li>
-<li>$\displaystyle \int\frac{x}{x^2+1}\dd{x} = \frac{1}{2}\ln{\left(x^2+1\right)} + C$</li>
+<li>\(\displaystyle \int\frac{1}{x^2+1}\dd{x} = \arctan{x} + C\)</li>
+<li>\(\displaystyle \int\frac{x}{x^2+1}\dd{x} = \frac{1}{2}\ln{\left(x^2+1\right)} + C\)</li>
 </ol>
 </blockquote>
 <h4 id="643-配方法-6-4-3">6.4.3 配方法 ^6-4-3</h4>
-<p>當被積函數出現 $x^2+2ax+b$ （特別是出現在分式的分母時），做配方法（completing the square），得到 $(x+a)^2+b'$，其中 $b' = b-a^2$；然後令 $u = x + a$。</p>
+<p>當被積函數出現 \(x^2+2ax+b\) （特別是出現在分式的分母時），做配方法（completing the square），得到 \((x+a)^2+b'\)，其中 \(b' = b-a^2\)；然後令 \(u = x + a\)。</p>
 <h5 id="例題-6-7-ex6-7">例題 6-7 ^ex6-7</h5>
-<p>求 $\displaystyle \int\frac{3x+1}{x^2+6x+10}\dd{x}$。</p>
+<p>求 \(\displaystyle \int\frac{3x+1}{x^2+6x+10}\dd{x}\)。</p>
 <p><strong>解.</strong>
-先對分母 $x^2+6x+10$ 做配方法（completing the square），得到 </p>
-$$\int\frac{3x+1}{x^2+6x+10}\dd{x}=\int\frac{3x+1}{(x+3)^2+1}\dd{x}$$
+先對分母 \(x^2+6x+10\) 做配方法（completing the square），得到 </p>
+\[\int\frac{3x+1}{x^2+6x+10}\dd{x}=\int\frac{3x+1}{(x+3)^2+1}\dd{x}\]
 <p>
-令 $u = x + 3$，得 $\dd{u}=\dd{x}$ ；代入積分，得 </p>
-$$\int{\frac{3(u-3)+1}{u^2+1}\dd{u}} = \int{\frac{3u-8}{u^2+1}\dd{u}} = 3\int{\frac{u}{u^2+1}\dd{u}} - 8\int\frac{\dd{u}}{u^2+1}=\frac{3}{2}\ln{\left(u^2+1\right)}-8\arctan{u}+C$$
+令 \(u = x + 3\)，得 \(\dd{u}=\dd{x}\) ；代入積分，得 </p>
+\[\int{\frac{3(u-3)+1}{u^2+1}\dd{u}} = \int{\frac{3u-8}{u^2+1}\dd{u}} = 3\int{\frac{u}{u^2+1}\dd{u}} - 8\int\frac{\dd{u}}{u^2+1}=\frac{3}{2}\ln{\left(u^2+1\right)}-8\arctan{u}+C\]
 <p>
 因此 </p>
-$$\int\frac{3x+1}{x^2+6x+10}\dd{x}=\frac{3}{2}\ln{\left(x^2+6x+10\right)}-8\arctan{(x+3)}+C$$
+\[\int\frac{3x+1}{x^2+6x+10}\dd{x}=\frac{3}{2}\ln{\left(x^2+6x+10\right)}-8\arctan{(x+3)}+C\]
 <p>%% <a href="https://www.youtube.com/watch?v=hZn2qvsi8J4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=2" rel="external" target="_self">https://www.youtube.com/watch?v=hZn2qvsi8J4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=2</a>  %%</p>
 <hr>
 <p>%% BEGIN 自定義 LaTeX %%
-$\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}$
-$\renewcommand{\dv}[2]{\frac{\operatorname{d}\!{#1}}{\operatorname{d}\!{#2}}}$
-$\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}$</p>
+\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
+\(\renewcommand{\dv}[2]{\frac{\operatorname{d}\!{#1}}{\operatorname{d}\!{#2}}}\)
+\(\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}\)</p>
 <p>%% END 自定義 LaTeX %%</p>
 
             <footer class="footline">
@@ -587,12 +587,12 @@ $\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}$</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723213040" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723213040" defer></script>
-        <script src="/js/search.js?1723213040" defer></script>
+        <script src="/js/auto-complete.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723649390" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723649390" defer></script>
+        <script src="/js/search.js?1723649390" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -603,7 +603,25 @@ $\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}$</p>
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
-          <li data-nav-id="/notebook/index.html" class=""><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/physics/index.html" class=""><input type="checkbox" id="R-section-41691c8b1275223e966d033e7d293538" aria-controls="R-subsections-41691c8b1275223e966d033e7d293538"><label for="R-section-41691c8b1275223e966d033e7d293538"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Physics</span></label><a class="padding" href="/physics/index.html">Physics<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-41691c8b1275223e966d033e7d293538" class="morespace collapsible-menu">
+          <li data-nav-id="/physics/qm/index.html" class=""><a class="padding" href="/physics/qm/index.html">量子力學<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="parent alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/tutor-14/index.html" class="active"><a class="padding" href="/notebook/math/tutor-14/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/math-models-and-ode/index.html" class=""><a class="padding" href="/notebook/math/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/double-integral/index.html" class=""><a class="padding" href="/notebook/math/double-integral/index.html">二重積分<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
@@ -668,8 +686,8 @@ $\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}$</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723213040" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723213040" defer></script>
+    <script src="/js/clipboard.min.js?1723649390" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723649390" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -684,28 +702,28 @@ $\renewcommand{\pdv}[2]{\frac{\partial{#1}}{\partial{#2}}}$</p>
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723213040"></script>
-    <script src="/js/d3/d3-color.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723213040" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723213040" defer></script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
-    <script src="/js/mermaid.min.js?1723213040" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723649390"></script>
+    <script src="/js/d3/d3-color.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723649390" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723649390" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
+    <script src="/js/mermaid.min.js?1723649390" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723213040" defer></script>
+    <script src="/js/js-yaml.min.js?1723649390" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723213040" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723213040" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723649390" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723649390" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723213040", cssInProject: true, assetsBuster: "?1723213040" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723649390", cssInProject: true, assetsBuster: "?1723649390" };
     </script>
-    <script src="/js/theme.js?1723213040" defer></script>
+    <script src="/js/theme.js?1723649390" defer></script>
   </body>
 </html>

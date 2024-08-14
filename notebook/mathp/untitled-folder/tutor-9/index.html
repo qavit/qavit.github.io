@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Relearn 6.1.1+tip">
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+    <meta name="description" content="$\renewcommand{\dd}[1]{\operatorname{d}!{#1}}$
+1. 定積分 求 $y=x^2$ 底下、從 $x=0$ 到 $x=1$ 的面積？ ![[tutor9-sum1.png|300]]
+將區間 $[a,b]$ 分為 $n$ 個閉區間 $$[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i&#43;1}],\ldots,[x_{n-1},x_n],$$其中 $x_0=a$，$x_n=b$，且 $x_0&lt;x_1&lt;x_2&lt;\cdots&lt;x_n$。這些閉區間稱為 $[a,b]$ 的子區間 （subintervals）。 這些子區間端點的數列 $$\{x_0,x_1,x_2,\ldots,x_n\}$$稱為 $[a,b]$ 的分割（partition）。 也可以平均分割區間，使得子區間端點等距。 在曲線 $y=f(x)$ 和 $x$ 軸所夾區域做出 $n$ 個逼近矩形（approximating rectangles）。 子區間長度 $\Delta x_i=|x_{i&#43;1}-x_i|$ 作為矩形的寬 取函數值 $f(x_i^)$ 作為矩形的高，其中 $x_i^\in[x_i,x_{i&#43;1}]$。 如果平均分割區間，則子區間長度一致為 $\Delta x=(b-a)/n$ 求矩形面積和。 ![[tutor9-sum3.png|1000]] 使用子區間右端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}R_{n}&amp;=\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\frac{1}{n}f\left(\frac{3}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\frac{1}{n}\left(\frac{3}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n}{n}\right)^2\\&amp;=\frac{1}{n^3}\left(1^2&#43;2^2&#43;3^2&#43;\cdots&#43;n^2\right)\\&amp;=\frac{1}{n^3}\cdot\frac{n(n&#43;1)(2n&#43;1)}{6}\\&amp;=\frac{(n&#43;1)(2n&#43;1)}{6n^2}\end{aligned}$$使用子區間左端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}L_{n}&amp;=\frac{1}{n}f\left(\frac{0}{n}\right)&#43;\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n-1}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{0}{n}\right)^2&#43;\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n-1}{n}\right)^2\\&amp;=\frac{1}{n^3}\left[0^2&#43;1^2&#43;2^2&#43;\cdots&#43;(n-1)^2\right]\\&amp;=\frac{1}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}\\&amp;=\frac{(n-1)(2n-1)}{6n^2}\end{aligned}$$ 可以（用函數 $y=x^2$ 的單調性）證明：對於任意子區間數量 $n$，面積 $S$ 總是介於 $L_n$ 和 $R_n$ 之間，也就是 $$L_n\leq S\leq R_n$$ 當 $n\to\infty$ 時， $$\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n&#43;1)(2n&#43;1)}{6n^2}}=\frac{1}{3}$$ $$\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}$$ 根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 $S=\frac{1}{3}$。">
+    <meta name="author" content="Sin-iu Ho">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
+    <meta name="twitter:description" content="$\renewcommand{\dd}[1]{\operatorname{d}!{#1}}$
+1. 定積分 求 $y=x^2$ 底下、從 $x=0$ 到 $x=1$ 的面積？ ![[tutor9-sum1.png|300]]
+將區間 $[a,b]$ 分為 $n$ 個閉區間 $$[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i&#43;1}],\ldots,[x_{n-1},x_n],$$其中 $x_0=a$，$x_n=b$，且 $x_0&lt;x_1&lt;x_2&lt;\cdots&lt;x_n$。這些閉區間稱為 $[a,b]$ 的子區間 （subintervals）。 這些子區間端點的數列 $$\{x_0,x_1,x_2,\ldots,x_n\}$$稱為 $[a,b]$ 的分割（partition）。 也可以平均分割區間，使得子區間端點等距。 在曲線 $y=f(x)$ 和 $x$ 軸所夾區域做出 $n$ 個逼近矩形（approximating rectangles）。 子區間長度 $\Delta x_i=|x_{i&#43;1}-x_i|$ 作為矩形的寬 取函數值 $f(x_i^)$ 作為矩形的高，其中 $x_i^\in[x_i,x_{i&#43;1}]$。 如果平均分割區間，則子區間長度一致為 $\Delta x=(b-a)/n$ 求矩形面積和。 ![[tutor9-sum3.png|1000]] 使用子區間右端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}R_{n}&amp;=\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\frac{1}{n}f\left(\frac{3}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\frac{1}{n}\left(\frac{3}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n}{n}\right)^2\\&amp;=\frac{1}{n^3}\left(1^2&#43;2^2&#43;3^2&#43;\cdots&#43;n^2\right)\\&amp;=\frac{1}{n^3}\cdot\frac{n(n&#43;1)(2n&#43;1)}{6}\\&amp;=\frac{(n&#43;1)(2n&#43;1)}{6n^2}\end{aligned}$$使用子區間左端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}L_{n}&amp;=\frac{1}{n}f\left(\frac{0}{n}\right)&#43;\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n-1}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{0}{n}\right)^2&#43;\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n-1}{n}\right)^2\\&amp;=\frac{1}{n^3}\left[0^2&#43;1^2&#43;2^2&#43;\cdots&#43;(n-1)^2\right]\\&amp;=\frac{1}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}\\&amp;=\frac{(n-1)(2n-1)}{6n^2}\end{aligned}$$ 可以（用函數 $y=x^2$ 的單調性）證明：對於任意子區間數量 $n$，面積 $S$ 總是介於 $L_n$ 和 $R_n$ 之間，也就是 $$L_n\leq S\leq R_n$$ 當 $n\to\infty$ 時， $$\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n&#43;1)(2n&#43;1)}{6n^2}}=\frac{1}{3}$$ $$\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}$$ 根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 $S=\frac{1}{3}$。">
+    <meta property="og:url" content="http://localhost:1313/notebook/mathp/untitled-folder/tutor-9/index.html">
+    <meta property="og:description" content="$\renewcommand{\dd}[1]{\operatorname{d}!{#1}}$
+1. 定積分 求 $y=x^2$ 底下、從 $x=0$ 到 $x=1$ 的面積？ ![[tutor9-sum1.png|300]]
+將區間 $[a,b]$ 分為 $n$ 個閉區間 $$[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i&#43;1}],\ldots,[x_{n-1},x_n],$$其中 $x_0=a$，$x_n=b$，且 $x_0&lt;x_1&lt;x_2&lt;\cdots&lt;x_n$。這些閉區間稱為 $[a,b]$ 的子區間 （subintervals）。 這些子區間端點的數列 $$\{x_0,x_1,x_2,\ldots,x_n\}$$稱為 $[a,b]$ 的分割（partition）。 也可以平均分割區間，使得子區間端點等距。 在曲線 $y=f(x)$ 和 $x$ 軸所夾區域做出 $n$ 個逼近矩形（approximating rectangles）。 子區間長度 $\Delta x_i=|x_{i&#43;1}-x_i|$ 作為矩形的寬 取函數值 $f(x_i^)$ 作為矩形的高，其中 $x_i^\in[x_i,x_{i&#43;1}]$。 如果平均分割區間，則子區間長度一致為 $\Delta x=(b-a)/n$ 求矩形面積和。 ![[tutor9-sum3.png|1000]] 使用子區間右端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}R_{n}&amp;=\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\frac{1}{n}f\left(\frac{3}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\frac{1}{n}\left(\frac{3}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n}{n}\right)^2\\&amp;=\frac{1}{n^3}\left(1^2&#43;2^2&#43;3^2&#43;\cdots&#43;n^2\right)\\&amp;=\frac{1}{n^3}\cdot\frac{n(n&#43;1)(2n&#43;1)}{6}\\&amp;=\frac{(n&#43;1)(2n&#43;1)}{6n^2}\end{aligned}$$使用子區間左端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}L_{n}&amp;=\frac{1}{n}f\left(\frac{0}{n}\right)&#43;\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n-1}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{0}{n}\right)^2&#43;\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n-1}{n}\right)^2\\&amp;=\frac{1}{n^3}\left[0^2&#43;1^2&#43;2^2&#43;\cdots&#43;(n-1)^2\right]\\&amp;=\frac{1}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}\\&amp;=\frac{(n-1)(2n-1)}{6n^2}\end{aligned}$$ 可以（用函數 $y=x^2$ 的單調性）證明：對於任意子區間數量 $n$，面積 $S$ 總是介於 $L_n$ 和 $R_n$ 之間，也就是 $$L_n\leq S\leq R_n$$ 當 $n\to\infty$ 時， $$\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n&#43;1)(2n&#43;1)}{6n^2}}=\frac{1}{3}$$ $$\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}$$ 根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 $S=\frac{1}{3}$。">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Notebook">
+    <meta property="article:published_time" content="2024-07-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-03T00:00:00+00:00">
+    <meta property="article:tag" content="Calculus">
+    <meta property="article:tag" content="Tutor">
+    <meta property="article:tag" content="Integral">
+    <meta property="og:image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="description" content="$\renewcommand{\dd}[1]{\operatorname{d}!{#1}}$
+1. 定積分 求 $y=x^2$ 底下、從 $x=0$ 到 $x=1$ 的面積？ ![[tutor9-sum1.png|300]]
+將區間 $[a,b]$ 分為 $n$ 個閉區間 $$[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i&#43;1}],\ldots,[x_{n-1},x_n],$$其中 $x_0=a$，$x_n=b$，且 $x_0&lt;x_1&lt;x_2&lt;\cdots&lt;x_n$。這些閉區間稱為 $[a,b]$ 的子區間 （subintervals）。 這些子區間端點的數列 $$\{x_0,x_1,x_2,\ldots,x_n\}$$稱為 $[a,b]$ 的分割（partition）。 也可以平均分割區間，使得子區間端點等距。 在曲線 $y=f(x)$ 和 $x$ 軸所夾區域做出 $n$ 個逼近矩形（approximating rectangles）。 子區間長度 $\Delta x_i=|x_{i&#43;1}-x_i|$ 作為矩形的寬 取函數值 $f(x_i^)$ 作為矩形的高，其中 $x_i^\in[x_i,x_{i&#43;1}]$。 如果平均分割區間，則子區間長度一致為 $\Delta x=(b-a)/n$ 求矩形面積和。 ![[tutor9-sum3.png|1000]] 使用子區間右端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}R_{n}&amp;=\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\frac{1}{n}f\left(\frac{3}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\frac{1}{n}\left(\frac{3}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n}{n}\right)^2\\&amp;=\frac{1}{n^3}\left(1^2&#43;2^2&#43;3^2&#43;\cdots&#43;n^2\right)\\&amp;=\frac{1}{n^3}\cdot\frac{n(n&#43;1)(2n&#43;1)}{6}\\&amp;=\frac{(n&#43;1)(2n&#43;1)}{6n^2}\end{aligned}$$使用子區間左端點的函數值作為矩形的高。則矩形面積和為 $$\begin{aligned}L_{n}&amp;=\frac{1}{n}f\left(\frac{0}{n}\right)&#43;\frac{1}{n}f\left(\frac{1}{n}\right)&#43;\frac{1}{n}f\left(\frac{2}{n}\right)&#43;\cdots&#43;\frac{1}{n}f\left(\frac{n-1}{n}\right)\\&amp;=\frac{1}{n}\left(\frac{0}{n}\right)^2&#43;\frac{1}{n}\left(\frac{1}{n}\right)^2&#43;\frac{1}{n}\left(\frac{2}{n}\right)^2&#43;\cdots&#43;\frac{1}{n}\left(\frac{n-1}{n}\right)^2\\&amp;=\frac{1}{n^3}\left[0^2&#43;1^2&#43;2^2&#43;\cdots&#43;(n-1)^2\right]\\&amp;=\frac{1}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}\\&amp;=\frac{(n-1)(2n-1)}{6n^2}\end{aligned}$$ 可以（用函數 $y=x^2$ 的單調性）證明：對於任意子區間數量 $n$，面積 $S$ 總是介於 $L_n$ 和 $R_n$ 之間，也就是 $$L_n\leq S\leq R_n$$ 當 $n\to\infty$ 時， $$\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n&#43;1)(2n&#43;1)}{6n^2}}=\frac{1}{3}$$ $$\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}$$ 根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 $S=\frac{1}{3}$。">
+    <meta itemprop="datePublished" content="2024-07-03T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2024-07-03T00:00:00+00:00">
+    <meta itemprop="wordCount" content="1151">
+    <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
+    <meta itemprop="keywords" content="Calculus,Tutor,Integral">
+    <title></title>
+    <link href="/images/favicon.png?1723648765" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1723648765" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723648765" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1723648765" rel="stylesheet">
+    <link href="/css/auto-complete.css?1723648765" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723648765" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1723648765" rel="stylesheet">
+    <link href="/css/fonts.css?1723648765" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723648765" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1723648765" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1723648765" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1723648765" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1723648765" rel="stylesheet">
+    <link href="/css/print.css?1723648765" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1723648765"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      // variant stuff
+      window.variants && variants.init( [ 'zen-auto', 'zen-light', 'zen-dark', 'relearn-auto', 'relearn-light', 'relearn-dark', 'relearn-bright', 'retro-auto', 'neon', 'learn', 'blue', 'green', 'red' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/notebook/mathp/untitled-folder/tutor-9/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#1-定積分">1. 定積分</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#目錄">目錄</a></li>
+    <li><a href="#黎曼積分的定義">黎曼積分的定義</a>
+      <ul>
+        <li><a href="#例題與解答">例題與解答</a></li>
+      </ul>
+    </li>
+    <li><a href="#勒貝格積分簡介與比較">勒貝格積分簡介與比較</a>
+      <ul>
+        <li><a href="#測度簡介">測度簡介</a></li>
+        <li><a href="#勒貝格積分的可積性條件">勒貝格積分的可積性條件</a></li>
+      </ul>
+    </li>
+    <li><a href="#定積分的定義">定積分的定義</a></li>
+    <li><a href="#可積函數的定義">可積函數的定義</a>
+      <ul>
+        <li><a href="#可積性與連續性">可積性與連續性</a></li>
+      </ul>
+    </li>
+    <li><a href="#積分的運算性質">積分的運算性質</a>
+      <ul>
+        <li><a href="#1-線性法則">1. 線性法則</a></li>
+        <li><a href="#2-子區間法則">2. 子區間法則</a></li>
+        <li><a href="#3-正法則">3. 正法則</a></li>
+        <li><a href="#4-合成法則">4. 合成法則</a></li>
+        <li><a href="#5-絕對值法則">5. 絕對值法則</a></li>
+      </ul>
+    </li>
+    <li><a href="#積分的比較性質">積分的比較性質</a>
+      <ul>
+        <li><a href="#例題與解答-1">例題與解答</a></li>
+      </ul>
+    </li>
+    <li><a href="#微積分基本定理">微積分基本定理</a>
+      <ul>
+        <li><a href="#例題與解答-2">例題與解答</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/index.html"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/notebook/math/index.html"><span itemprop="name">基礎數學</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/notebook/mathp/untitled%20folder/tutor-9.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/notebook/cs/shell-var/index.html" title="Shell 變數操作 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/calculus/index.html">Calculus</a></li>
+    <li><a class="term-link" href="/tags/integral/index.html">Integral</a></li>
+    <li><a class="term-link" href="/tags/tutor/index.html">Tutor</a></li>
+  </ul>
+</div>
+            </header>
+
+<h1 id=""></h1>
+
+<p>$\renewcommand{\dd}[1]{\operatorname{d}!{#1}}$</p>
+<h2 id="1-定積分">1. 定積分</h2>
+<p>求 $y=x^2$ 底下、從 $x=0$ 到 $x=1$ 的面積？
+![[tutor9-sum1.png|300]]</p>
+<ul>
+<li>將區間 $[a,b]$ 分為 $n$ 個閉區間 $$[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i+1}],\ldots,[x_{n-1},x_n],$$其中 $x_0=a$，$x_n=b$，且 $x_0&lt;x_1&lt;x_2&lt;\cdots&lt;x_n$。這些閉區間稱為 $[a,b]$ 的<strong>子區間</strong> （subintervals）。
+<ul>
+<li>這些子區間端點的數列 $$\{x_0,x_1,x_2,\ldots,x_n\}$$稱為 $[a,b]$ 的<strong>分割</strong>（partition）。</li>
+<li>也可以平均分割區間，使得子區間端點等距。</li>
+</ul>
+</li>
+<li>在曲線 $y=f(x)$ 和 $x$ 軸所夾區域做出 $n$ 個<strong>逼近矩形</strong>（approximating rectangles）。
+<ul>
+<li>子區間長度 $\Delta x_i=|x_{i+1}-x_i|$ 作為矩形的寬</li>
+<li>取函數值 $f(x_i^<em>)$ 作為矩形的高，其中 $x_i^</em>\in[x_i,x_{i+1}]$。</li>
+<li>如果平均分割區間，則子區間長度一致為 $\Delta x=(b-a)/n$</li>
+</ul>
+</li>
+<li>求矩形面積和。
+![[tutor9-sum3.png|1000]]
+使用子區間<strong>右端點</strong>的函數值作為矩形的高。則矩形面積和為
+$$\begin{aligned}R_{n}&=\frac{1}{n}f\left(\frac{1}{n}\right)+\frac{1}{n}f\left(\frac{2}{n}\right)+\frac{1}{n}f\left(\frac{3}{n}\right)+\cdots+\frac{1}{n}f\left(\frac{n}{n}\right)\\&=\frac{1}{n}\left(\frac{1}{n}\right)^2+\frac{1}{n}\left(\frac{2}{n}\right)^2+\frac{1}{n}\left(\frac{3}{n}\right)^2+\cdots+\frac{1}{n}\left(\frac{n}{n}\right)^2\\&=\frac{1}{n^3}\left(1^2+2^2+3^2+\cdots+n^2\right)\\&=\frac{1}{n^3}\cdot\frac{n(n+1)(2n+1)}{6}\\&=\frac{(n+1)(2n+1)}{6n^2}\end{aligned}$$使用子區間<strong>左端點</strong>的函數值作為矩形的高。則矩形面積和為
+$$\begin{aligned}L_{n}&=\frac{1}{n}f\left(\frac{0}{n}\right)+\frac{1}{n}f\left(\frac{1}{n}\right)+\frac{1}{n}f\left(\frac{2}{n}\right)+\cdots+\frac{1}{n}f\left(\frac{n-1}{n}\right)\\&=\frac{1}{n}\left(\frac{0}{n}\right)^2+\frac{1}{n}\left(\frac{1}{n}\right)^2+\frac{1}{n}\left(\frac{2}{n}\right)^2+\cdots+\frac{1}{n}\left(\frac{n-1}{n}\right)^2\\&=\frac{1}{n^3}\left[0^2+1^2+2^2+\cdots+(n-1)^2\right]\\&=\frac{1}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}\\&=\frac{(n-1)(2n-1)}{6n^2}\end{aligned}$$</li>
+</ul>
+<p>可以（用函數 $y=x^2$ 的單調性）證明：對於任意子區間數量 $n$，面積 $S$ 總是介於 $L_n$ 和 $R_n$ 之間，也就是 </p>
+$$L_n\leq S\leq R_n$$
+<p>
+當 $n\to\infty$ 時，
+</p>
+$$\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n+1)(2n+1)}{6n^2}}=\frac{1}{3}$$
+$$\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}$$
+<p>根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 $S=\frac{1}{3}$。</p>
+<p>一般來說，可以取第 $i$ 子區間內的任意數 $x_i^<em>\in[x_{i-1},x_1]$ 作為樣本點（sample points），取函數值 $f(x_i^</em>)$ 作為矩形的高。</p>
+<p>![[tutot9-riemann-sum.png|800]]</p>
+<p>對所有 $i=1,2,\ldots,n$ ，可以選取第 $i$ 子區間內的樣本點 $x_i^<em>$ ，使得矩形高度 $f(x_i^</em>)$ 在該子區間內有<strong>極小值</strong>或<strong>極大值</strong>。（只要函數 $f$ 在第 $i$ 子區間內連續，根據[[tutor-4#^evt|極值定理]]，這樣的極值存在。）</p>
+<p>如此得到的矩形面積和，分別稱為<strong>下和</strong>（lower sum）和<strong>上和</strong>（upper sum），或<strong>下達布和</strong>（lower Darboux sum）和<strong>上達布和</strong>（upper Darboux sum）。
+![[tutor9-lower-upper-sums.png|900]]</p>
+<h4 id="定義黎曼和">【定義】黎曼和</h4>
+<p>設 $f:[a,b]\to\mathbb{R}$ 為一連續函數，且 $a=x_0&lt;x_1&lt;\ldots&lt;x_n=b$ 為 $[a,b]$ 的一個分割。則 $f$ 關於分割的<strong>黎曼和</strong>（Riemann sum）為
+</p>
+$$\sum^{n}_{i=1}{f(x_i^*)\Delta x_i},\tag{1}$$
+<p>
+其中對於 $i=1,2,\ldots,n$ ，定義 $\Delta x_i=x_{i-1}-x_i$ 和 $x_i^*\in[x_{i-1},x_i]$。</p>
+<p>隨著分割的精細化（refinement，直觀上來說就是子區間數量變多、長度變短），如果黎曼和趨於一個極限值，則稱函數 $f$ 是<strong>黎曼可積</strong>（Riemann-integrable）的，所得的極限值稱為 <strong><a href="https://zh.wikipedia.org/wiki/%E9%BB%8E%E6%9B%BC%E7%A7%AF%E5%88%86" rel="external" target="_self">黎曼積分</a></strong> （Riemann integral）。</p>
+<p><a href="#R-image-50d8117dbd86ba36464a11ead755352c" class="lightbox-link"><img class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Riemann.gif" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-50d8117dbd86ba36464a11ead755352c"><img class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Riemann.gif"></a></p>
+<p>另一種與黎曼積分等價的表述是 <strong><a href="https://zh.wikipedia.org/zh-tw/%E8%BE%BE%E5%B8%83%E7%A7%AF%E5%88%86" rel="external" target="_self">達布積分</a></strong>（Darboux integral）。</p>
+<hr>
+<blockquote>
+<p>[!Warning] 聲明
+以下內容主要由 ChatGPT 生成。</p>
+</blockquote>
+<h1 id="微積分教案定積分與黎曼積分">微積分教案：定積分與黎曼積分</h1>
+<h2 id="目錄">目錄</h2>
+<ol>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#黎曼積分的定義">黎曼積分的定義</a></li>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#勒貝格積分簡介與比較">勒貝格積分簡介與比較</a></li>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#定積分的定義">定積分的定義</a></li>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#可積函數的定義">可積函數的定義</a></li>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#積分的運算性質">積分的運算性質</a></li>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#積分的比較性質">積分的比較性質</a></li>
+<li><a href="/notebook/mathp/untitled-folder/tutor-9/index.html#微積分基本定理">微積分基本定理</a></li>
+</ol>
+<hr>
+<h2 id="黎曼積分的定義">黎曼積分的定義</h2>
+<p>黎曼積分是一種將曲線下面積數值化的方法。給定一個區間 $[a, b]$ 和在該區間上的函數 $f(x)$，我們將這個區間分割成 $n$ 個子區間，每個子區間的寬度為 $\Delta x_i$，然後對每個子區間選擇一個點 $x_i^<em>$，計算函數在這些點的值 $f(x_i^</em>)$，最後求和：</p>
+$$
+S = \sum_{i=1}^{n} f(x_i^*) \Delta x_i
+$$
+<p>當 $n \to \infty$ 且每個 $\Delta x_i \to 0$ 時，若這個和的極限存在，則稱此極限為 $f(x)$ 在 $[a, b]$ 上的黎曼積分，記為：</p>
+$$
+\int_a^b f(x) \dd{x}
+$$
+<h3 id="例題與解答">例題與解答</h3>
+<p><strong>例題 1：</strong>
+計算函數 $f(x) = x$ 在區間 $[0, 1]$ 上的黎曼積分。</p>
+<p><strong>解答：</strong>
+將區間 $[0, 1]$ 分成 $n$ 等份，每個子區間的寬度為 $\Delta x = \frac{1}{n}$。選取子區間的右端點，則有：</p>
+$$
+x_i^* = \frac{i}{n}
+$$
+<p>黎曼和為：</p>
+$$
+S_n = \sum_{i=1}^{n} f(x_i^*) \Delta x = \sum_{i=1}^{n} \frac{i}{n} \cdot \frac{1}{n} = \frac{1}{n^2} \sum_{i=1}^{n} i
+$$
+<p>已知：</p>
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+<p>因此：</p>
+$$
+S_n = \frac{1}{n^2} \cdot \frac{n(n+1)}{2} = \frac{n+1}{2n}
+$$
+<p>當 $n \to \infty$ 時，$S_n \to \frac{1}{2}$，所以：</p>
+$$
+\int_0^1 x \dd{x} = \frac{1}{2}
+$$
+<hr>
+<h2 id="勒貝格積分簡介與比較">勒貝格積分簡介與比較</h2>
+<p>勒貝格積分是一種更廣泛的積分方法，適用於更複雜的函數。在勒貝格積分中，我們不僅考慮函數的定義域的分割，也考慮函數值域的分割。勒貝格積分對於某些函數可以提供比黎曼積分更強的積分條件。</p>
+<p><strong>比較：</strong></p>
+<ul>
+<li><strong>黎曼積分：</strong> 主要適用於連續或分段連續函數。分割區間（定義域），計算區間內函數值的和。</li>
+<li><strong>勒貝格積分：</strong> 適用於更廣泛的函數，包括一些無法用黎曼積分處理的函數。分割值域，計算函數值在各個區間上的 <strong><a href="https://zh.wikipedia.org/wiki/%E6%B5%8B%E5%BA%A6" rel="external" target="_self">測度</a></strong>（measure）。</li>
+</ul>
+<h3 id="測度簡介">測度簡介</h3>
+<h4 id="1-測度">1. 測度</h4>
+<p><strong>測度</strong>是一種用來給集合分配「大小」的方法。它本身是一種映射 </p>
+$$\mu:\Sigma\to[0,\infty)$$
+<ul>
+<li>$\Sigma$ 是某個集合 $X$ 的 <strong><a href="https://zh.wikipedia.org/wiki/%CE%A3-%E4%BB%A3%E6%95%B0" rel="external" target="_self">σ-代數</a></strong> （σ-algebra），它本質上是 $X$ 的子集合，並且滿足某種特殊的運算性質（如：對於補集運算和可數個聯集運算具有封閉性）。</li>
+<li>有序對 $(X,\Sigma)$ 稱為 <strong><a href="https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%B5%8B%E7%A9%BA%E9%97%B4" rel="external" target="_self">可測空間</a></strong>（measurable space）。</li>
+</ul>
+<h4 id="2-勒貝格測度">2. 勒貝格測度</h4>
+<p><strong>勒貝格測度</strong>是一種特殊的測度，專門用來處理實數集合。
+勒貝格測度具有以下基本性質：</p>
+<ul>
+<li><strong>非負性：</strong> 對於任何集合 $A$，$\mu(A) \geq 0$。</li>
+<li><strong>零測度：</strong> 空集的測度為零，即 $\mu(\emptyset) = 0$。</li>
+<li><strong>可數可加性：</strong> 如果 $A_1, A_2, A_3, \ldots$ 是一個可數列的集合，且它們兩兩不相交，則：
+$$
+  \mu\left(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty \mu(A_i)
+  $$</li>
+</ul>
+<h4 id="3-可數集的性質">3. 可數集的性質</h4>
+<p><strong><a href="https://zh.wikipedia.org/zh-tw/%E5%8F%AF%E6%95%B8%E9%9B%86" rel="external" target="_self">可數集</a></strong>（coutable set）是一個包含有限個或可數無限個元素的集合。例如，==有理數集 $\mathbb{Q}$ 是可數無限集==。可數集可以表示為一個元素的序列。</p>
+<h4 id="4-可數集的測度為零的證明">4. 可數集的測度為零的證明</h4>
+<p>設 $A$ 是一個可數集，則我們可以將 $A$ 表示為 $A = {a_1, a_2, a_3, \ldots}$。</p>
+<p>對於每個 $a_i \in A$，我們可以用一個開區間 $I_i$ 包含它，使得 $\mu(I_i) = \epsilon_i$，其中 $\epsilon_i$ 是一個任意小的正數。例如，取 $I_i = \left(a_i - \frac{\epsilon_i}{2^i}, a_i + \frac{\epsilon_i}{2^i}\right)$。</p>
+<p>因為 $\mu(I_i) = \epsilon_i$，我們有：</p>
+$$
+\mu(A) \leq \mu\left(\bigcup_{i=1}^\infty I_i\right) \leq \sum_{i=1}^\infty \mu(I_i) = \sum_{i=1}^\infty \epsilon_i
+$$
+<p>由於 $\epsilon_i$ 是任意小的，我們可以選擇 $\epsilon_i = \frac{\epsilon}{2^i}$，其中 $\epsilon$ 是一個任意小的正數。這樣一來：</p>
+$$
+\sum_{i=1}^\infty \epsilon_i = \sum_{i=1}^\infty \frac{\epsilon}{2^i} = \epsilon \sum_{i=1}^\infty \frac{1}{2^i} = \epsilon \cdot 1 = \epsilon
+$$
+<p>由於 $\epsilon$ 可以任意小，所以 $\mu(A) \leq \epsilon$ 對於任何正數 $\epsilon$ 成立。因此：</p>
+$$
+\mu(A) = 0
+$$
+<p>結論：==可數集的測度為零==，因為可以將可數集的每個點包含在一個任意小的區間內，這些區間的測度總和可以任意接近於零。根據勒貝格測度的定義，這樣的集合的測度即為零。</p>
+<h4 id="案例狄利克雷函數">案例：狄利克雷函數</h4>
+<p><strong>狄利克雷函數</strong> (Dirichlet function) 是在 $[0, 1]$ 區間上的一個典型案例，常用於展示某些函數==不適合用黎曼積分==的方法進行積分。這個函數定義如下：</p>
+$$
+D(x) =
+\begin{cases}
+1 & \text{若 } x \text{ 是有理數} \\
+0 & \text{若 } x \text{ 是無理數}
+\end{cases}
+$$
+<p>狄利克雷函數在 $[0, 1]$ 區間上是黎曼不可積的，因為無論怎麼分割區間，都無法使上下黎曼和的差距變得足夠小。然而，它是勒貝格可積的。這是因為勒貝格積分主要關注函數值的測度。</p>
+<h3 id="勒貝格積分的可積性條件">勒貝格積分的可積性條件</h3>
+<p>一個函數 $f$ 在區間 $[a, b]$ 上<strong>勒貝格可積</strong>，如果其絕對值的勒貝格積分有限，即：</p>
+$$
+\int_a^b |f(x)| \dd{x} < \infty
+$$
+<h4 id="狄利克雷函數的勒貝格積分">狄利克雷函數的勒貝格積分</h4>
+<p>在 $[0, 1]$ 上，狄利克雷函數 $D(x)$ 的絕對值仍為 $D(x)$ 自身。對於狄利克雷函數，我們來計算它的勒貝格積分。</p>
+<p>勒貝格積分基於集合的測度。在 $[0, 1]$ 區間內，有理數的集合是可數集，測度為 0；無理數的集合是不可數集，測度為 1。因此，狄利克雷函數在 $[0, 1]$ 上的勒貝格積分為：</p>
+$$
+\int_0^1 D(x) \dd{x} = \int_0^1 1 \cdot \chi_{\mathbb{Q} \cap [0, 1]}(x) \dd{x} + \int_0^1 0 \cdot \chi_{\mathbb{R} \setminus \mathbb{Q} \cap [0, 1]}(x) \dd{x}
+$$
+<p>其中 $\chi_{\mathbb{Q} \cap [0, 1]}(x)$ 是有理數的指示函數，當 $x$ 是有理數，值為 1 ，否則為 0。因為有理數在 $[0, 1]$ 上的測度為 0，所以：</p>
+$$
+\int_0^1 1 \cdot \chi_{\mathbb{Q} \cap [0, 1]}(x) \dd{x} = 0
+$$
+<p>因此：</p>
+$$
+\int_0^1 D(x) \dd{x} = 0
+$$
+<p>狄利克雷函數在 $[0, 1]$ 上是勒貝格可積的，且其勒貝格積分為 0。這個結果展示了勒貝格積分的強大，能處理一些黎曼積分無法處理的函數。</p>
+<hr>
+<h2 id="定積分的定義">定積分的定義</h2>
+<p><strong>定積分</strong>（definite integral）表示為 $\int_a^b f(x) \dd{x}$，代表函數 $f(x)$ 在區間 $[a, b]$ 上的累積面積。定積分可以通過求==黎曼和的極限==來計算：</p>
+$$
+\int_a^b f(x) \dd{x} = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x_i
+$$
+<hr>
+<h2 id="可積函數的定義">可積函數的定義</h2>
+<p>一個函數 $f(x)$ 在區間 $[a, b]$ 上是<strong>可積的</strong>（integrable），如果其黎曼積分存在，即：</p>
+$$
+\int_a^b f(x) \dd{x} = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x_i
+$$
+<p>這表示當分割區間變得越來越細時，黎曼和趨近於一個有限值。</p>
+<h3 id="可積性與連續性">可積性與連續性</h3>
+<p>可積性和連續性是微積分中的兩個重要概念。了解這兩者之間的關係有助於更好地理解函數的行為及其積分性質。以下是它們之間的主要關係：</p>
+<h4 id="1-連續函數一定可積">1. ==連續函數一定可積==</h4>
+<p><strong>定理：</strong> 若 $f$ 是在區間 $[a, b]$ 上連續的函數，則 $f$ 在 $[a, b]$ 上是黎曼可積的。</p>
+<p>這是因為連續函數在有限區間上的圖形沒有「跳躍」或「不規則」的部分，因此可以將區間分割得足夠細，使得每一小段上的函數變化很小，從而上下黎曼和趨於一致。</p>
+<h4 id="2-可積函數不一定連續">2. ==可積函數不一定連續==</h4>
+<p><strong>反例：</strong> 一個函數可以是黎曼可積的但不連續，例如：</p>
+<ul>
+<li><strong>分段連續函數：</strong> 如分段定義的函數，在每個子區間上是連續的，但在分段點處可能不連續。</li>
+<li><strong>狄利克雷函數的變種：</strong> 如函數 $f(x) = 1$ 當 $x$ 是有理數且 $f(x) = 0$ 當 $x$ 是無理數，這個函數在 $[0,1]$ 上不連續，但黎曼不可積。然而，其他類似變種在適當的條件下可能是可積的。</li>
+</ul>
+<h4 id="3-可積性與幾乎處處連續">3. 可積性與幾乎處處連續</h4>
+<p><strong>定理：</strong> 若 $f$ 是在區間 $[a, b]$ 上勒貝格可積的函數，則 $f$ <a href="https://zh.wikipedia.org/zh-tw/%E5%B9%BE%E4%B9%8E%E8%99%95%E8%99%95" rel="external" target="_self">幾乎處處</a>連續（continuous almost everywhere），即 $f$ 的不連續點集合的勒貝格測度為零。</p>
+<p>這意味著即使 $f$ 不是處處連續，只要不連續點的數量相對於區間的總長度來說「夠少」，它仍然是可積的。</p>
+<h4 id="4-連續函數與均勻連續">4. 連續函數與均勻連續</h4>
+<p>在某些情況下，連續函數的均勻連續性也會影響其積分性質：</p>
+<p><strong>定理：</strong> 若 $f$ 是在區間 $[a, b]$ 上 <strong><a href="https://zh.wikipedia.org/zh-tw/%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD" rel="external" target="_self">均勻連續</a></strong>（uniformly continuous）的函數，則 $f$ 在 $[a, b]$ 上是黎曼可積的。</p>
+<p>均勻連續函數在整個區間上的變化速度是受控的，即無論區間多麼細小，都可以保證函數值的變化不會超過某一個固定範圍。</p>
+<h4 id="5-可積性與有界性">5. 可積性與有界性</h4>
+<p><strong>定理：</strong> 若 $f$ 在區間 $[a, b]$ 上黎曼可積，則 $f$ 在 $[a, b]$ 上幾乎處處有界。</p>
+<p>這是因為黎曼可積要求函數在大部分區間內的值不會「無限大」。</p>
+<h4 id="總結">總結</h4>
+<ul>
+<li><strong>連續性</strong>保證了黎曼可積性，但黎曼可積性不保證連續性。</li>
+<li><strong>勒貝格可積</strong>函數允許更多的不連續點，只要這些不連續點的測度為零。</li>
+<li><strong>均勻連續</strong>的函數一定是黎曼可積的，這強調了在整個區間上的受控變化。</li>
+</ul>
+<p>這些定理和性質有助於我們理解函數在不同條件下的行為，特別是在處理積分問題時。</p>
+<hr>
+<h2 id="積分的運算性質">積分的運算性質</h2>
+<p>積分具有以下運算性質：</p>
+<h3 id="1-線性法則">1. 線性法則</h3>
+<p>設 $f,g:[a,b]\to\mathbb{R}$ 是兩個可積函數，且 $c_1,c_2\in\mathbb{R}$ 是兩個任意常數。則
+</p>
+$$\int_a^b (c_1 f(x) + c_2 g(x)) \dd{x} = c_1 \int_a^b f(x) \dd{x} + c_2 \int_a^b g(x) \dd{x}$$
+<h3 id="2-子區間法則">2. 子區間法則</h3>
+<p>設 $f:[a,b]\to\mathbb{R}$ 是一個可積函數，且 $c\in(a,b)$ 是任一點。則
+</p>
+$$\int_a^b f(x) \dd{x} = \int_a^c f(x) \dd{x} + \int_c^b f(x) \dd{x}$$
+<h3 id="3-正法則">3. 正法則</h3>
+<p>積分的正法則（positivity rule）表明，如果一個函數在區間內非負，則它的定積分也是非負的。</p>
+<p><strong>定理：</strong> 若 $f(x) \geq 0$ 在區間 $[a, b]$ 上，則：
+</p>
+$$
+\int_a^b f(x) \dd{x} \geq 0
+$$
+<p><strong>例題：</strong>
+計算 $\int_0^2 x^2 \dd{x}$。</p>
+<p><strong>解答：</strong>
+因為 $x^2 \geq 0$ 在 $[0, 2]$ 上，所以 $\int_0^2 x^2 \dd{x} \geq 0$。</p>
+<p>實際計算：
+</p>
+$$
+\int_0^2 x^2 \dd{x} = \left[ \frac{x^3}{3} \right]_0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3} \geq 0
+$$
+<h3 id="4-合成法則">4. 合成法則</h3>
+<p>積分的合成法則（composition rule）是積分==變數變換==的一種方法，類似於微分的鏈法則。這種方法通過變數變換，使積分變得更容易計算。</p>
+<p><strong>定理：</strong>
+設 $g:[a, b]\to[c,d]$ 是一個連續可微（continuously differentiable）函數，$f:[c, d]\to\mathbb{R}$ 是一個連續函數。則</p>
+<ol>
+<li>（積分的合成法則） $f$ 和 $g$ 的合成函數 $f\circ g:[a,b]\to\mathbb{R}$ （可令 $h(x)=(f\circ g)(x)=f(g(x))$ ）也是可積函數。</li>
+<li>（變數變換積分法）$$
+\int^d_cf(u)\dd{u}=\int^b_af(g(x))g'(x)\dd{x}
+$$其中 $g:x\mapsto u$（即 $u=g(x)$），$g(a)=c$ 且 $g(b)=d$ 。</li>
+</ol>
+<p><strong>例題：</strong>
+計算 $\int_0^1 2x e^{x^2} \dd{x}$。</p>
+<p><strong>解答</strong>：
+設 $u = x^2$，則 $\dd{u} = 2x\dd{x}$。</p>
+<p>積分上下限也需改變：
+當 $x = 0$ 時，$u = 0$；
+當 $x = 1$ 時，$u = 1$。</p>
+<p>所以，
+</p>
+$$
+\int_0^1 2x e^{x^2} \dd{x} = \int_0^1 e^u \, du = \left[ e^u \right]_0^1 = e^1 - e^0 = e - 1
+$$
+<h3 id="5-絕對值法則">5. 絕對值法則</h3>
+<p>積分絕對值法則（absolute value inequality）表明，==函數的定積分的絕對值小於等於該函數絕對值的定積分==。</p>
+<p><strong>定理：</strong> 對於任何可積函數 $f(x)$，有：
+</p>
+$$
+\left| \int_a^b f(x) \dd{x} \right| \leq \int_a^b |f(x)| \dd{x}
+$$
+<h4 id="例題">例題</h4>
+<p>計算 $\int_0^2 (3x^2 + 2x) \dd{x}$。</p>
+<p><strong>解.</strong>
+利用線性性質，我們可以分別計算兩個積分：</p>
+$$
+\int_0^2 (3x^2 + 2x) \dd{x} = \int_0^2 3x^2 \dd{x} + \int_0^2 2x \dd{x}
+$$
+<p>計算第一個積分：</p>
+$$
+\int_0^2 3x^2 \dd{x} = 3 \int_0^2 x^2 \dd{x} = 3 \left[ \frac{x^3}{3} \right]_0^2 = \left[ x^3 \right]_0^2 = 8 - 0 = 8
+$$
+<p>計算第二個積分：</p>
+$$
+\int_0^2 2x \dd{x} = 2 \int_0^2 x \dd{x} = 2 \left[ \frac{x^2}{2} \right]_0^2 = \left[ x^2 \right]_0^2 = 4 - 0 = 4
+$$
+<p>所以：</p>
+$$
+\int_0^2 (3x^2 + 2x) \dd{x} = 8 + 4 = 12
+$$
+<hr>
+<h2 id="積分的比較性質">積分的比較性質</h2>
+<p>積分也有一些比較性質，有助於判斷函數積分的性質：</p>
+<ol>
+<li>
+<p><strong>單調性：</strong>
+如果 $f(x) \leq g(x)$ 對於 $[a, b]$ 上的所有 $x$ 成立，則：
+</p>
+$$\int_a^b f(x) \dd{x} \leq \int_a^b g(x) \dd{x}$$
+</li>
+<li>
+<p><strong>夾擠性質：</strong>
+如果 $f(x) \leq h(x) \leq g(x)$ 對於 $[a, b]$ 上的所有 $x$ 成立，且：
+</p>
+$$\int_a^b f(x) \dd{x} = \int_a^b g(x) \dd{x} = L$$
+<p>
+那麼：
+</p>
+$$\int_a^b h(x) \dd{x} = L$$
+</li>
+</ol>
+<h3 id="例題與解答-1">例題與解答</h3>
+<p><strong>例題 3：</strong>
+已知 $0 \leq \sin(x) \leq 1$ 對於 $[0, \pi]$ 上的所有 $x$ 成立，證明 $\int_0^\pi \sin(x) \dd{x} \leq \pi$。</p>
+<p><strong>解答：</strong>
+由於 $0 \leq \sin(x) \leq 1$：</p>
+$$
+\int_0^\pi 0 \dd{x} \leq \int_0^\pi \sin(x) \dd{x} \leq \int_0^\pi 1 \dd{x}
+$$
+<p>所以：</p>
+$$
+0 \leq \int_0^\pi \sin(x) \dd{x} \leq \pi
+$$
+<hr>
+<h2 id="微積分基本定理">微積分基本定理</h2>
+<p>微積分基本定理將微分與積分聯繫起來，分為兩部分：</p>
+<ol>
+<li>
+<p><strong>基本定理第一部分：</strong>
+如果 $f$ 是在 $[a, b]$ 上連續的函數，且 $F$ 是 $f$ 的不定積分，即 $F&rsquo;(x) = f(x)$，則：
+</p>
+$$\int_a^b f(x) \dd{x} = F(b) - F(a)$$
+</li>
+<li>
+<p><strong>基本定理第二部分：</strong>
+如果 $f$ 是在 $[a, b]$ 上連續的函數，則函數 $F$ 定義為：
+</p>
+$$F(x) = \int_a^x f(t) \, dt$$
+<p>
+那麼 $F$ 在 $[a, b]$ 上是可微的，且 $F&rsquo;(x) = f(x)$。</p>
+</li>
+</ol>
+<h3 id="例題與解答-2">例題與解答</h3>
+<p><strong>例題 4：</strong>
+計算 $\int_1^4 \frac{1}{x} \dd{x}$。</p>
+<p><strong>解答：</strong>
+設 $f(x) = \frac{1}{x}$，則 $F(x) = \ln|x|$ 是 $f(x)$ 的一個不定積分。所以：</p>
+$$
+\int_1^4 \frac{1}{x} \dd{x} = \left[ \ln|x| \right]_1^4 = \ln(4) - \ln(1) = \ln(4)
+$$
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <style>
+            #R-logo svg,
+            #R-logo svg * {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              fill: #282828 !important;
+              fill: var(--MENU-SECTIONS-BG-color) !important;
+              opacity: .945;
+            }
+            a#R-logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#R-logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #R-logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              margin-inline-end: .5rem;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 59.999rem) {
+              a#R-logo {
+                font-size: 1.5625rem;
+                margin-top: -.1875rem;
+              }
+              #R-logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+                margin-inline-end: .5rem;
+              }
+            }
+          </style>
+          <a id="R-logo" href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.044 64.044">
+              <path d="M46.103 136.34c-.642-.394-1.222-2.242-1.98-2.358-.76-.117-1.353.506-1.618 1.519-.266 1.012-.446 4.188.173 5.538.213.435.482.787 1.03.845.547.057.967-.504 1.45-1.027.482-.523.437-.9 1.142-.612.705.289 1.051.4 1.586 1.229.535.828 1.085 4.043.868 5.598-.241 1.458-.531 2.8-.59 4.088.26.075.517.148.772.217 2.68.724 5.373 1.037 7.873.02.001-.028.01-.105.008-.11-.048-.165-.18-.41-.36-.698-.18-.29-.414-.645-.586-1.114a3.212 3.212 0 0 1-.125-1.735c.056-.21.153-.342.249-.475 1.237-1.193 2.932-1.373 4.244-1.384.557-.004 1.389.016 2.198.255.809.239 1.706.724 2.068 1.843.187.578.114 1.17-.043 1.623-.153.438-.369.783-.545 1.091-.178.31-.329.6-.401.821-.007.02-.003.071-.005.094 2.256 1.008 4.716.91 7.189.398.55-.114 1.11-.247 1.673-.377.344-1.085.678-2.145.852-3.208.124-.752.158-2.311-.078-3.538-.118-.613-.306-1.15-.52-1.489-.221-.349-.413-.501-.747-.538-.243-.027-.51.013-.796.098-.67.223-1.33.606-1.966.76l-.008.002-.109.032c-.556.152-1.233.158-1.797-.36-.556-.51-.89-1.367-1.117-2.596-.283-1.528-.075-3.279.89-4.518l.071-.09h.07c.65-.71 1.485-.802 2.16-.599.706.213 1.333.629 1.772.84.736.354 1.185.319 1.475.171.291-.148.5-.439.668-.955.332-1.017.301-2.819.022-4.106-.148-.684-.13-1.292-.13-1.883-1.558-.463-3.067-.982-4.574-1.208-1.128-.169-2.263-.173-3.298.164-.13.046-.256.095-.38.15-.373.164-.633.342-.805.52-.077.098-.081.105-.087.21-.004.068.031.289.13.571.1.282.256.634.467 1.03.279.524.448 1.063.431 1.618a2.12 2.12 0 0 1-.499 1.309 1.757 1.757 0 0 1-.62.51h-.002c-.515.291-1.107.404-1.723.464-.86.083-1.787.026-2.598-.097-.806-.123-1.47-.28-1.948-.555-.444-.256-.79-.547-1.037-.925a2.273 2.273 0 0 1-.356-1.301c.029-.837.403-1.437.625-1.897.111-.23.191-.433.236-.583.045-.15.044-.25.046-.24-.005-.029-.127-.355-1.015-.741-1.138-.495-2.322-.673-3.533-.668h-.015a9.711 9.711 0 0 0-.521.016h-.002c-1.163.057-2.35.308-3.541.569.383 1.531.79 2.753.818 4.502-.096 1.297.158 2.114-1.03 2.935-.85.588-1.508.729-2.15.335" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:1.03763;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M61.472 101.34v.002c-.3-.003-.603.01-.894.04-.544.055-1.39.165-1.778.306-1.238.364.13 2.344.41 2.913.28.569.285 2.03.14 2.134-.144.103-.375.261-.934.345-.56.084.03-.037-1.589.086-1.62.122-5.506.29-8.265.248-.022.26-.036.521-.097.808-.309 1.442-.63 3.163-.494 4.074.071.473.168.65.414.8.23.14.737.235 1.62-.004.834-.227 1.3-.442 1.887-.456.595-.016 1.555.472 1.965.717.411.245-.03-.008.002 0s.128.05.176.102c.049.053-.276-.523.104.199.379.721.72 3.256.002 4.68-.46.913-1.01 1.49-1.64 1.711-.63.22-1.229.067-1.734-.135-.881-.353-1.584-.7-2.205-.647-1.199 1.94-1.186 4.17-.6 6.602.097.397.212.814.327 1.23 2.68-.556 5.542-1.016 8.337.132 1.064.437 1.73 1.015 1.902 1.857.169.831-.193 1.508-.438 1.986-.122.238-.23.46-.307.642-.07.164-.096.28-.104.324.069.429.309.723.686.945.385.227.89.355 1.35.423.723.104 1.567.152 2.287.086.693-.064 1.032-.338 1.241-.544a2.447 2.447 0 0 0 .303-.437.175.175 0 0 0 .013-.035c-.004-.066-.037-.246-.195-.527-.46-.816-.87-1.595-.817-2.51.028-.476.218-.938.529-1.288.304-.343.698-.586 1.186-.79 1.442-.606 2.96-.609 4.372-.409 1.525.216 2.963.679 4.378 1.083.226-2.09.784-3.9.592-5.77-.058-.565-.287-1.333-.598-1.827-.32-.508-.59-.717-1.036-.642-.648.11-1.472.935-2.707 1.078-.791.092-1.494-.267-1.95-.86-.45-.583-.678-1.335-.78-2.101-.202-1.525.031-3.229.89-4.27.615-.747 1.45-.887 2.15-.74.687.145 1.307.492 1.857.745v-.002c.546.252 1.033.388 1.281.344a.547.547 0 0 0 .353-.188c.113-.124.242-.35.384-.75.604-1.712.206-3.68-.303-5.654-.667.145-1.336.293-2.018.413-1.341.236-2.73.392-4.136.273-.656-.055-1.695-.085-2.58-.476-.442-.195-.903-.514-1.157-1.093-.259-.591-.205-1.313.08-2.014.223-.64 1.082-2.178.692-2.585-.391-.407-1.651-.56-2.554-.571z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.992837;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+              <path d="M83.128 98.116c-.484 1.875-1.057 3.757-2.486 5.033-.638.57-1.13.666-1.483.548-.401-.134-.715-.506-1.058-.973-.338-.461-.655-.97-1.076-1.332-.192-.165-.404-.315-.683-.38-.279-.066-.599-.02-.9.102-.489.196-.89.58-1.28 1.047a6.1 6.1 0 0 0-.985 1.632c-.234.591-.356 1.174-.277 1.713.072.487.392.977.905 1.185.463.187.926.156 1.36.154.433 0 .843.01 1.242.147.55.189.79.736.822 1.368.034.66-.145 1.412-.393 1.988l-.008.021c-.74 1.705-1.946 2.893-3.004 4.349l-.664.915.979.099c.924.092 1.788.26 2.468.675.46.281 1.806 1.205 2.794 2.222.497.513.888 1.031 1.047 1.502.078.231.095.422.05.6a.93.93 0 0 1-.345.474c-.301.223-.606.395-.864.532l-.354.186c-.107.058-.189.087-.345.228a.637.637 0 0 1 .062-.045l-.064.041-.209.236-.103.343s.003.126.007.152c.003.017.003.007.004.015v.002c.016.195.061.307.133.476a4.1 4.1 0 0 0 .32.596 5.7 5.7 0 0 0 2.8 2.258c.284.108.908.321 1.548.36.33.02.59.015.912-.13h.002c.08-.037.228-.095.382-.281.153-.186.19-.355.212-.445l.019-.075.003-.078c.023-.585-.037-1.296.072-1.899.153-.657.435-.956 1.009-.909 2.771.239 4.74 1.955 6.693 3.83l.742.714.279-1.155c.55-2.29 1.093-4.464 2.928-5.977.692-.57 1.184-.642 1.527-.509.39.151.676.536.996.995.319.458.605.926 1.07 1.212.194.119.464.232.784.209.32-.024.638-.163.988-.384 1.022-.645 1.778-1.756 2.086-2.942.136-.522.102-.991-.046-1.301-.158-.334-.433-.553-.754-.707-.653-.314-1.468-.373-2.094-.486-.825-.15-1.22-.475-1.345-.878-.13-.417 0-.953.335-1.61.6-1.173 1.887-2.602 3.13-3.911l.498-.526-.449-.432c-1.545-1.49-3.163-3.01-5.252-3.715h-.002c-.473-.16-1.097-.413-1.73-.424h-.003c-.311-.004-.596.04-.883.24v.002c-.22.155-.483.537-.583.937l-.008.036-.006.038c-.116.773-.06 1.467-.217 1.995-.063.212-.198.418-.359.507-.202.111-.492.153-.976.072-.582-.097-1.978-.69-3.021-1.503-.523-.407-.934-.85-1.117-1.3a1.153 1.153 0 0 1-.083-.63c.03-.184.1-.477.308-.593.21-.116.941-.32 1.377-.642h.002c.192-.141.403-.367.518-.64.114-.275.127-.526.123-.774-.006-.142-.036-.192-.08-.3a8.417 8.417 0 0 0-3-3.027c-1.226-.725-2.585-1.135-3.927-1.539-.434-.12-.844-.111-1.02.466zm.912.947c1.186.364 2.357.718 3.345 1.303 1.035.612 1.864 1.488 2.507 2.528-.514.263-1.095.5-1.44.79-.345.29-.729.914-.815 1.434-.084.509 0 .968.155 1.347.301.74.85 1.276 1.44 1.735 1.18.92 2.554 1.545 3.47 1.698.604.1 1.186.088 1.739-.216.594-.327.935-.911 1.088-1.427.264-.884.193-1.664.262-2.17h.1c.3.006.926.206 1.417.371 1.646.554 3.044 1.773 4.431 3.089-1.102 1.174-2.222 2.423-2.888 3.73-.42.823-.73 1.789-.453 2.687.283.913 1.1 1.415 2.138 1.603.691.126 1.472.226 1.84.403.19.091.258.182.278.223.03.064.058.075-.023.387-.21.804-.761 1.598-1.413 2.01-.247.155-.365.183-.407.187-.042.003-.061.002-.172-.066-.144-.088-.455-.473-.772-.929-.317-.454-.714-1.07-1.452-1.356-.783-.304-1.776-.022-2.713.75-1.942 1.6-2.626 3.764-3.146 5.8-1.802-1.676-3.772-3.138-6.589-3.517h-.002c-.346-.095-1.013-.031-1.293.143-.735.501-1.005 1.132-1.168 2.007-.125.69-.082 1.216-.074 1.659-.055.006-.046.01-.104.006-.42-.026-1.035-.215-1.244-.295-.947-.361-1.774-1.006-2.314-1.857-.054-.085-.072-.132-.109-.2l.027-.016c.284-.15.656-.36 1.045-.648.44-.327.789-.798.93-1.35a2.4 2.4 0 0 0-.068-1.379c-.254-.751-.753-1.353-1.295-1.911-1.09-1.124-2.452-2.049-2.99-2.378-.609-.372-1.303-.44-1.981-.56.875-1.094 1.878-2.251 2.596-3.921.294-.823.543-1.907.513-2.658-.049-.97-.489-2.013-1.52-2.367-.579-.2-1.131-.204-1.58-.203-.45.002-.786-.006-.97-.08h-.002c-.264-.107-.236-.108-.268-.33-.025-.17.021-.553.183-.962a4.67 4.67 0 0 1 .725-1.192c.29-.348.617-.59.705-.626.142-.057.176-.05.22-.04.045.011.127.052.263.17.235.201.56.671.92 1.161.354.484.791 1.08 1.543 1.33.8.267 1.784-.052 2.671-.846 1.594-1.424 2.235-3.317 2.714-5.051zm11.705 7.023c-.02.014.042-.002.042 0l-.008.035c.05-.2-.028-.04-.034-.035zM79.472 122.45a.198.198 0 0 1 .005.023v.014c-.002-.01-.003-.03-.005-.037zm-.29.732-.006.01-.044.027c.016-.01.033-.024.05-.036z" style="color:#000;fill:#282828;stroke-width:1.02352;-inkscape-stroke:none" transform="translate(-40.698 -95.175)"/>
+              <path d="M76.694 128.845c-.85-.012-1.668.253-2.434.67-.01.592-.015 1.17.109 1.772.323 1.573.422 3.553-.07 5.147-.247.804-.684 1.535-1.347 1.891-.663.356-1.467.296-2.362-.159-.522-.266-1.059-.62-1.487-.757-.223-.072-.392-.096-.522-.069-.13.027-.232.094-.362.27-.53.719-.681 1.823-.497 2.876.177 1.012.418 1.438.543 1.56.143.137.26.154.604.055.548-.158 1.523-.857 2.573-.972l.02-.002.5.058c.686.081 1.247.562 1.622 1.19.372.62.591 1.37.73 2.136.279 1.532.25 3.16.083 4.232-.14.91-.394 1.72-.632 2.53 1.719-.385 3.485-.692 5.307-.36 1.174.214 2.749.574 3.762 1.977l.088.122.046.159c.162.551.16 1.114.024 1.578-.13.45-.348.772-.533 1.023-.181.246-.336.444-.437.606-.102.16-.141.275-.145.336-.01.17 0 .197.07.315.057.1.186.242.39.366.408.246 1.106.414 1.843.45a7.842 7.842 0 0 0 2.174-.21 4.28 4.28 0 0 0 .822-.296c.218-.106.385-.242.377-.233l.029-.031c.025-.035.05-.072.05-.068 0-.004 0-.017-.003-.05a2.733 2.733 0 0 0-.21-.579c-.26-.548-.839-1.333-.822-2.46.01-.657.27-1.21.598-1.576.32-.357.696-.575 1.074-.736.759-.323 1.57-.418 2.054-.458 1.653-.136 3.252.296 4.755.765.457.142.905.29 1.352.434.325-2.258.902-4.247.598-6.217-.071-.46-.25-1.169-.486-1.684-.238-.518-.495-.762-.675-.779-.351-.032-.716.14-1.174.418-.457.277-1.005.665-1.695.742-.745.082-1.406-.291-1.84-.908-.428-.608-.653-1.394-.754-2.196-.203-1.596.016-3.377.794-4.493.568-.813 1.358-.984 2.024-.835.65.146 1.243.51 1.769.779.524.267.99.413 1.237.365a.527.527 0 0 0 .346-.2c.11-.132.235-.373.37-.798.612-1.918.27-3.894-.246-6.054-2.815-.851-5.49-1.534-8.089-.267a.727.727 0 0 0-.223.148c-.024.028-.018.021-.026.056.001-.003-.01.178.07.44.162.522.611 1.29.911 1.978l.004.009.029.063.024.084V133c.162.635.016 1.297-.274 1.727-.272.404-.618.636-.952.81-.675.353-1.399.484-1.724.533a5.888 5.888 0 0 1-3.973-.795c-.512-.311-.876-.594-1.133-1.02-.282-.466-.318-1.084-.172-1.557.252-.814.715-1.266.971-1.89a.663.663 0 0 0 .047-.14c.001-.013 0-.006-.007-.037a.761.761 0 0 0-.184-.268c-.264-.267-.865-.595-1.54-.826-1.356-.462-3.07-.659-3.583-.686-.062-.002-.121-.006-.178-.006z" style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:.991342;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-40.698 -95.175)"/>
+            </svg>Relearn
+          </a>
+        </div>
+
+        <search>
+          <div class="searchbox default-animation">
+            <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.min.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1723648765" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1723648765" defer></script>
+        <script src="/js/search.js?1723648765" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/notebook/index.html" class="parent "><input type="checkbox" id="R-section-06f3f520815ba1d8fc5ad88ea2a56681" aria-controls="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" checked><label for="R-section-06f3f520815ba1d8fc5ad88ea2a56681"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Notebook</span></label><a class="padding" href="/notebook/index.html">Notebook<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-06f3f520815ba1d8fc5ad88ea2a56681" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/index.html" class="alwaysopen"><input type="checkbox" id="R-section-eb3317a0f25e3a4de17280fb951fc86a" aria-controls="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" checked><label for="R-section-eb3317a0f25e3a4de17280fb951fc86a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 機器學習</span></label><a class="padding" href="/notebook/ml/index.html">機器學習<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-eb3317a0f25e3a4de17280fb951fc86a" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/ml/b-buduma-1/index.html" class=""><a class="padding" href="/notebook/ml/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/hugging-face/index.html" class=""><a class="padding" href="/notebook/ml/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/ml/relu/index.html" class=""><a class="padding" href="/notebook/ml/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/hum/index.html" class="alwaysopen"><input type="checkbox" id="R-section-7fd29c2f838de85bf2a2a949cdfaeb49" aria-controls="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" checked><label for="R-section-7fd29c2f838de85bf2a2a949cdfaeb49"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/notebook/hum/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-7fd29c2f838de85bf2a2a949cdfaeb49" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/notebook/hum/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/math/index.html" class="alwaysopen"><input type="checkbox" id="R-section-267983772c961ac6abb8915b75c72b5b" aria-controls="R-subsections-267983772c961ac6abb8915b75c72b5b" checked><label for="R-section-267983772c961ac6abb8915b75c72b5b"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 基礎數學</span></label><a class="padding" href="/notebook/math/index.html">基礎數學<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-267983772c961ac6abb8915b75c72b5b" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/math/logical-quantifier/index.html" class=""><a class="padding" href="/notebook/math/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/math/set-theory/index.html" class=""><a class="padding" href="/notebook/math/set-theory/index.html">集合論與函數<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/cs/index.html" class="alwaysopen"><input type="checkbox" id="R-section-6535793951ef70b10eaa82de4f5aebf7" aria-controls="R-subsections-6535793951ef70b10eaa82de4f5aebf7" checked><label for="R-section-6535793951ef70b10eaa82de4f5aebf7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 技術</span></label><a class="padding" href="/notebook/cs/index.html">技術<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-6535793951ef70b10eaa82de4f5aebf7" class="morespace collapsible-menu">
+          <li data-nav-id="/notebook/cs/git/index.html" class=""><a class="padding" href="/notebook/cs/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/b-python-da/index.html" class=""><a class="padding" href="/notebook/cs/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/notebook/cs/shell-var/index.html" class=""><a class="padding" href="/notebook/cs/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/notebook/mathp/untitled-folder/tutor-9/index.html" class="active"><a class="padding" href="/notebook/mathp/untitled-folder/tutor-9/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/notebook/mathp/untitled-folder/tutor-9/index.html" lang="en" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-zen-auto" value="zen-auto" selected>Zen Light/Dark</option>
+                      <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                      <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="R-select-variant-relearn-auto" value="relearn-auto">Relearn Light/Dark</option>
+                      <option id="R-select-variant-relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="R-select-variant-relearn-dark" value="relearn-dark">Relearn Dark</option>
+                      <option id="R-select-variant-relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="R-select-variant-retro-auto" value="retro-auto">Retro Learn/Neon</option>
+                      <option id="R-select-variant-neon" value="neon">Neon</option>
+                      <option id="R-select-variant-learn" value="learn">Learn</option>
+                      <option id="R-select-variant-blue" value="blue">Blue</option>
+                      <option id="R-select-variant-green" value="green">Green</option>
+                      <option id="R-select-variant-red" value="red">Red</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks showVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1723648765" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1723648765" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723648765"></script>
+    <script src="/js/d3/d3-color.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1723648765" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1723648765" defer></script>
+    <script src="/js/js-yaml.min.js?1723648765" defer></script>
+    <script src="/js/mermaid.min.js?1723648765" defer></script>
+    <script>
+      window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
+    </script>
+    <script src="/js/js-yaml.min.js?1723648765" defer></script>
+    <script>window.noZensmooth = true;</script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723648765" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723648765" defer></script>
+    <script>
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723648765", cssInProject: true, assetsBuster: "?1723648765" };
+    </script>
+    <script src="/js/theme.js?1723648765" defer></script>
+  </body>
+</html>

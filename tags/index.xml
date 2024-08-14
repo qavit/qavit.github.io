@@ -6,8 +6,22 @@
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://qavit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag :: Mutiple_integral</title>
+      <link>https://qavit.github.io/tags/mutiple_integral/index.html</link>
+      <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/mutiple_integral/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Tutor</title>
+      <link>https://qavit.github.io/tags/tutor/index.html</link>
+      <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/tutor/index.html</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tag :: Calculus</title>
       <link>https://qavit.github.io/tags/calculus/index.html</link>
@@ -16,17 +30,24 @@
       <description></description>
     </item>
     <item>
-      <title>Tag :: Tutor</title>
-      <link>https://qavit.github.io/tags/tutor/index.html</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/tutor/index.html</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Tag :: Integral</title>
       <link>https://qavit.github.io/tags/integral/index.html</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://qavit.github.io/tags/integral/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Sequence</title>
+      <link>https://qavit.github.io/tags/sequence/index.html</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/sequence/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Series</title>
+      <link>https://qavit.github.io/tags/series/index.html</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/series/index.html</guid>
       <description></description>
     </item>
     <item>
@@ -41,6 +62,34 @@
       <link>https://qavit.github.io/tags/partial_derivative/index.html</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://qavit.github.io/tags/partial_derivative/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Logic</title>
+      <link>https://qavit.github.io/tags/logic/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/logic/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: ODE</title>
+      <link>https://qavit.github.io/tags/ode/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/ode/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Set Theory</title>
+      <link>https://qavit.github.io/tags/set-theory/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/set-theory/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Set_theory</title>
+      <link>https://qavit.github.io/tags/set_theory/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tags/set_theory/index.html</guid>
       <description></description>
     </item>
   </channel>
