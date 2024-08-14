@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChatGPT :: Tag</title>
+    <link>https://qavit.github.io/tags/chatgpt/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://qavit.github.io/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to add new line to YAML file</title>
+      <link>https://qavit.github.io/tech/how-to-add-new-line-to-yaml-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/how-to-add-new-line-to-yaml-file/index.html</guid>
+      <description>Question How to use command line to add a new line to a yaml file?&#xA;ChatGPT’s Answer To add a new line to a YAML file from the command line, you can use various tools available in Unix-like systems such as echo, sed, awk, or perl. Here are a few methods to append a new line to a YAML file:&#xA;1. Using echo and tee If you want to append a new line to the end of the YAML file, you can use echo combined with tee:</description>
+    </item>
+    <item>
+      <title>How to install ipykernel in conda environments</title>
+      <link>https://qavit.github.io/tech/how-to-install-ipykernel-in-conda-environments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/how-to-install-ipykernel-in-conda-environments/index.html</guid>
+      <description>Question What does these commands do?&#xA;conda install -n myenv ipykernel python -m ipykernel install --user --name myenvChatGPT’s answer The commands you’ve provided relate to setting up a Python environment with Conda and configuring a Jupyter Notebook kernel to use this environment. Here’s a detailed breakdown of each command and its function:&#xA;1. conda install -n myenv ipykernel conda: This is the package and environment management system used with Anaconda and Miniconda.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phys &amp; Astro</title>
+    <link>https://qavit.github.io/phys-astro/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://qavit.github.io/phys-astro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>弗里德曼方程式</title>
+      <link>https://qavit.github.io/phys-astro/friedmann-equation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/phys-astro/friedmann-equation/index.html</guid>
+      <description>3.1 簡介 我們心中的目標是了解宇宙的演化。為了描述宇宙的過去、現在和未來及其動力學，我們需要知道標度因子如何依賴於時間——即 \(R(t)\)。為此，我們必須選擇一個理論模型。標準現代相對論宇宙學的基本成分是：&#xA;愛因斯坦場方程式 宇宙學原理 狀態方程式 首先，我們在廣義相對論的框架下假設愛因斯坦場方程式來描述時空在宇宙場的存在下是如何變化的：&#xA;\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \] 其中包含：&#xA;愛因斯坦張量 \(G_{\mu \nu}\) 度量張量 \(g_{\mu\nu}\) Ricci 張量 \(R_{\mu\nu}\) Ricci 純量 \(R\) 能量應力張量 \(T_{\mu \nu}\) 宇宙學常數 \(\Lambda\) 然後，我們假設宇宙是各向同性的和均勻的，所以宇宙學原理成立。&#xA;這樣的粒子分佈（例如星系分佈）顯得像一種完美的、無摩擦的流體。所以我們可以擬定一個狀態方程式。&#xA;在我們開始廣義相對論的論述之前，值得一提的是，只用牛頓式表述（Newtonian formalism）就可以計算出宇宙的膨脹和不同的世界模型。使用膨脹球體模型，可以推導出一個類似於所謂的弗里德曼方程式（Friedmann equation）的方程式。這在附錄 A 中完成。牛頓動力學可以幫助我們理解宇宙演化的某些方面。但是，牛頓式模型存在嚴重的局限性：&#xA;模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。</description>
+    </item>
+  </channel>
+</rss>

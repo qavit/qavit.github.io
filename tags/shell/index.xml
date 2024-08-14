@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell :: Tag</title>
+    <link>http://localhost:1313/tags/shell/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell 變數操作</title>
+      <link>http://localhost:1313/tech/shell-var/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/shell-var/index.html</guid>
+      <description> 變數是用來儲存數值或字串的實體。 在 Shell 中宣告變數時，等號左右不能有空格。 使用變數時，要加上 $ 符號。 變數可分為區域變數（使用 local）、環境變數（使用 export 或 local） 列出所有變數用 set，列出環境變數用 env 建立檔案 test.sh&#xA;#!/bin/bash hello=&#34;Hello world&#34; echo $Hello執行 test.sh&#xA;&gt; sh Hello world Hello world Shell 的變數沒有分類型 </description>
+    </item>
+  </channel>
+</rss>

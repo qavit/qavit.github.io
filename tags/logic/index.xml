@@ -9,9 +9,9 @@
     <atom:link href="https://qavit.github.io/tags/logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>量詞邏輯</title>
-      <link>https://qavit.github.io/math/logical-quantifier/index.html</link>
+      <link>https://qavit.github.io/math-cs/logical-quantifier/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math/logical-quantifier/index.html</guid>
+      <guid>https://qavit.github.io/math-cs/logical-quantifier/index.html</guid>
       <description> 全稱量化（universal quantification）——「對所有」、「任何」、「所有⋯⋯都」 例：\(\forall n\in\mathbb{N}\ \big(2n&gt;2+n\big)\) ——「對所有正整數 \(n\)，使得 \(2n &gt; 2+n\)」（假） 存在量化（existential quantification）——「存在」、「某些」、「有⋯⋯」 例：\(\exists n\in\mathbb{N}\ \big(5n&gt;20\big)\) ——「存在正整數 \(n\)，使得 \(5n&gt;20\)」（真） 組合運用 * 例：\((\forall n\in \mathbb{N})(\exists k\in\mathbb{N})\ \big(k=n+1\big)\)——「對所有正整數 \(n\)，都存在一個正整數 \(k\)，使得 \(k=n+1\)」（真） 條件句 \(P\implies Q\) （若 \(P\) 則 \(Q\)）（If \(P\) then \(Q\)） \(P\Longleftarrow Q\) （唯若 \(P\) 則 \(Q\)）（Only if \(P\) then \(Q\)） \(P\iff Q\) （若且唯若 \(P\) 則 \(Q\)）（If and only if \(P\) then \(Q\)） 充分條件、必要條件、充分必要條件 </description>
     </item>
   </channel>

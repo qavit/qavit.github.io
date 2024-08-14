@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Techniques</title>
+    <link>https://qavit.github.io/tech/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://qavit.github.io/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conda</title>
+      <link>https://qavit.github.io/tech/conda/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/conda/index.html</guid>
+      <description>Conda is an open-source, cross-platform, language-agnostic package manager and environment management system.</description>
+    </item>
+    <item>
+      <title>days_between</title>
+      <link>https://qavit.github.io/tech/days-between/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/days-between/index.html</guid>
+      <description>#!/usr/bin/env python3 import argparse from datetime import datetime, timedelta def calculate_days(date1, date2, business_days=False): date_format = &#34;%Y-%m-%d&#34; today_str = datetime.now().strftime(date_format) # Convert &#39;today&#39; to the current date if date1.lower() == &#34;today&#34;: date1 = today_str if date2.lower() == &#34;today&#34;: date2 = today_str try: start_date = datetime.strptime(date1, date_format) end_date = datetime.strptime(date2, date_format) except ValueError as e: print(f&#34;Date format error: {e}&#34;) return if business_days: days_diff = 0 current_date = start_date while current_date &lt;= end_date: if current_date.</description>
+    </item>
+    <item>
+      <title>How to add new line to YAML file</title>
+      <link>https://qavit.github.io/tech/how-to-add-new-line-to-yaml-file/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/how-to-add-new-line-to-yaml-file/index.html</guid>
+      <description>Question How to use command line to add a new line to a yaml file?&#xA;ChatGPT’s Answer To add a new line to a YAML file from the command line, you can use various tools available in Unix-like systems such as echo, sed, awk, or perl. Here are a few methods to append a new line to a YAML file:&#xA;1. Using echo and tee If you want to append a new line to the end of the YAML file, you can use echo combined with tee:</description>
+    </item>
+    <item>
+      <title>How to install ipykernel in conda environments</title>
+      <link>https://qavit.github.io/tech/how-to-install-ipykernel-in-conda-environments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/how-to-install-ipykernel-in-conda-environments/index.html</guid>
+      <description>Question What does these commands do?&#xA;conda install -n myenv ipykernel python -m ipykernel install --user --name myenvChatGPT’s answer The commands you’ve provided relate to setting up a Python environment with Conda and configuring a Jupyter Notebook kernel to use this environment. Here’s a detailed breakdown of each command and its function:&#xA;1. conda install -n myenv ipykernel conda: This is the package and environment management system used with Anaconda and Miniconda.</description>
+    </item>
+    <item>
+      <title>My Conda cheatsheet</title>
+      <link>https://qavit.github.io/tech/conda-cheatsheet/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://qavit.github.io/tech/conda-cheatsheet/index.html</guid>
+      <description>This is my [conda] cheatsheet.&#xA;Package management List installed packages conda list conda list --show-channel-urlsInstall a package conda install PKGNAME conda install PKGNAME=3.1.4 conda install CHANNELNAME::PKGNAMEUpdate a package conda update --all conda update PKGNAME conda upgrade PKGNAMEUninstall a package conda uninstall PKGNAME conda remove PKGNAMEVirtual environment Create a new environment conda create --name myenv python=3.8Activate/deactivate an environment Activate an environment on Windows (this also works on MacOS)&#xA;conda activate myenvActivate an environment on Linux/MacOS</description>
+    </item>
+  </channel>
+</rss>

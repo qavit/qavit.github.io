@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChatGPT, HowTo :: Tag</title>
+    <link>http://localhost:1313/tags/chatgpt-howto/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/chatgpt-howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hot to add new line to YAML file</title>
+      <link>http://localhost:1313/tech/add-new-line-to-yaml/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/add-new-line-to-yaml/index.html</guid>
+      <description>Question How to use command line to add a new line to a yaml file?&#xA;ChatGPT’s Answer To add a new line to a YAML file from the command line, you can use various tools available in Unix-like systems such as echo, sed, awk, or perl. Here are a few methods to append a new line to a YAML file:&#xA;1. Using echo and tee If you want to append a new line to the end of the YAML file, you can use echo combined with tee:</description>
+    </item>
+  </channel>
+</rss>
