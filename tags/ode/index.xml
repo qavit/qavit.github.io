@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ODE :: Tag</title>
-    <link>https://qavit.github.io/tags/ode/index.html</link>
+    <link>http://localhost:1313/tags/ode/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://qavit.github.io/tags/ode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mathematical model and ODE</title>
-      <link>https://qavit.github.io/math-cs/math-models-and-ode/index.html</link>
+      <link>http://localhost:1313/math-cs/math-models-and-ode/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math-cs/math-models-and-ode/index.html</guid>
+      <guid>http://localhost:1313/math-cs/math-models-and-ode/index.html</guid>
       <description>Materials W.E. Boyce and R.C. DiPrima. Elementary Differential Equations and Boundary Value Problems. 10th edition. John Wiley &amp; Sons. Chapter 1 (pp.1–19) 翁秉仁（2015）。微積分乙。臺北市：臺大出版中心。 第七章 數學模型與微分方程 王懷權（2013）。數學分析基礎。新竹市：國立清華大學出版社。ISBN [!quote] A differential equation that describes some physical process is often called a mathematical model of the process, and many such models are discussed throughout this book.&#xA;First glance at mathematical models Example 1 Physical law—Newton’s 2nd law\[F=ma=m\frac{\text{d}v}{\text{d}t}=m\dot{v}\] Physical model (falling in the atmophere) \[\begin{aligned}F=m\dot{v}&amp;=mg-\gamma v\\\dot{v}&amp;=g-\beta v\end{aligned}\] \(g\) = gravitational constant 重力常數 mag.</description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conda :: Tag</title>
-    <link>https://qavit.github.io/tags/conda/index.html</link>
+    <link>http://localhost:1313/tags/conda/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://qavit.github.io/tags/conda/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/conda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Conda cheatsheet</title>
-      <link>https://qavit.github.io/tech/conda-cheatsheet/index.html</link>
+      <link>http://localhost:1313/tech/conda-cheatsheet/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tech/conda-cheatsheet/index.html</guid>
+      <guid>http://localhost:1313/tech/conda-cheatsheet/index.html</guid>
       <description>This is my [conda] cheatsheet.&#xA;Package management List installed packages conda list conda list --show-channel-urlsInstall a package conda install PKGNAME conda install PKGNAME=3.1.4 conda install CHANNELNAME::PKGNAMEUpdate a package conda update --all conda update PKGNAME conda upgrade PKGNAMEUninstall a package conda uninstall PKGNAME conda remove PKGNAMEVirtual environment Create a new environment conda create --name myenv python=3.8Activate/deactivate an environment Activate an environment on Windows (this also works on MacOS)&#xA;conda activate myenvActivate an environment on Linux/MacOS</description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Qavit&#39;s Notebook</title>
-    <link>https://qavit.github.io/index.html</link>
+    <link>http://localhost:1313/index.html</link>
     <description>This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。&#xA;Che sī góa ê phō͘-á-chóa.&#xA;Get Hugo </description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 09 Aug 2024 15:42:09 +0800</lastBuildDate>
-    <atom:link href="https://qavit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Techniques</title>
-      <link>https://qavit.github.io/tech/index.html</link>
+      <link>http://localhost:1313/tech/index.html</link>
       <pubDate>Fri, 09 Aug 2024 15:42:09 +0800</pubDate>
-      <guid>https://qavit.github.io/tech/index.html</guid>
+      <guid>http://localhost:1313/tech/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Math &amp; CS</title>
-      <link>https://qavit.github.io/math-cs/index.html</link>
+      <link>http://localhost:1313/math-cs/index.html</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math-cs/index.html</guid>
+      <guid>http://localhost:1313/math-cs/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>人文社會</title>
-      <link>https://qavit.github.io/hum-ss/index.html</link>
+      <link>http://localhost:1313/hum-ss/index.html</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/hum-ss/index.html</guid>
+      <guid>http://localhost:1313/hum-ss/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Phys &amp; Astro</title>
-      <link>https://qavit.github.io/phys-astro/index.html</link>
+      <link>http://localhost:1313/phys-astro/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/phys-astro/index.html</guid>
+      <guid>http://localhost:1313/phys-astro/index.html</guid>
       <description></description>
     </item>
   </channel>

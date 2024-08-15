@@ -1,133 +1,179 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://qavit.github.io/tags/mutiple_integral/index.html</loc>
+    <loc>http://localhost:1313/tags/mutiple_integral/index.html</loc>
     <lastmod>2024-08-13T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/index.html</loc>
+    <loc>http://localhost:1313/tags/index.html</loc>
     <lastmod>2024-08-13T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/tutor/index.html</loc>
+    <loc>http://localhost:1313/tags/tutor/index.html</loc>
     <lastmod>2024-08-13T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/index.html</loc>
+    <loc>http://localhost:1313/index.html</loc>
     <lastmod>2024-08-09T15:42:09+08:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tech/index.html</loc>
+    <loc>http://localhost:1313/tech/index.html</loc>
     <lastmod>2024-08-09T15:42:09+08:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/index.html</loc>
+    <loc>http://localhost:1313/math-cs/index.html</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/hum-ss/index.html</loc>
+    <loc>http://localhost:1313/hum-ss/index.html</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/calculus/index.html</loc>
+    <loc>http://localhost:1313/tech/b-buduma-1/index.html</loc>
+    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/calculus/index.html</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/integral/index.html</loc>
+    <loc>http://localhost:1313/tags/integral/index.html</loc>
     <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/sequence/index.html</loc>
+    <loc>http://localhost:1313/tags/sequence/index.html</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/series/index.html</loc>
+    <loc>http://localhost:1313/tags/series/index.html</loc>
     <lastmod>2024-06-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/gradient/index.html</loc>
+    <loc>http://localhost:1313/tags/gradient/index.html</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/partial_derivative/index.html</loc>
+    <loc>http://localhost:1313/tags/partial_derivative/index.html</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/function-on-r/index.html</loc>
+    <loc>http://localhost:1313/math-cs/function-on-r/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/categories/index.html</loc>
+    <loc>http://localhost:1313/categories/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/chatgpt/index.html</loc>
+    <loc>http://localhost:1313/tags/chatgpt/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/conda/index.html</loc>
+    <loc>http://localhost:1313/tags/conda/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tech/conda/index.html</loc>
+    <loc>http://localhost:1313/tech/conda/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/cosmology/index.html</loc>
+    <loc>http://localhost:1313/tags/cosmology/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tech/days-between/index.html</loc>
+    <loc>http://localhost:1313/tech/days-between/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/hum-ss/the-origins-of-totalitarianism-ch10/index.html</loc>
+    <loc>http://localhost:1313/tech/git/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tech/how-to-add-new-line-to-yaml-file/index.html</loc>
+    <loc>http://localhost:1313/hum-ss/the-origins-of-totalitarianism-ch10/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tech/how-to-install-ipykernel-in-conda-environments/index.html</loc>
+    <loc>http://localhost:1313/tech/how-to-add-new-line-to-yaml-file/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/howto/index.html</loc>
+    <loc>http://localhost:1313/tech/how-to-install-ipykernel-in-conda-environments/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/logic/index.html</loc>
+    <loc>http://localhost:1313/tags/howto/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/math-models-and-ode/index.html</loc>
+    <loc>http://localhost:1313/tech/hugging-face/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tech/conda-cheatsheet/index.html</loc>
+    <loc>http://localhost:1313/phys-astro/hydrogen-wavefunction/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/ode/index.html</loc>
+    <loc>http://localhost:1313/tags/logic/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/phys-astro/index.html</loc>
+    <loc>http://localhost:1313/math-cs/math-models-and-ode/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/set-theory/index.html</loc>
+    <loc>http://localhost:1313/tech/conda-cheatsheet/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/tags/set_theory/index.html</loc>
+    <loc>http://localhost:1313/tags/neural_network/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/double-integral/index.html</loc>
+    <loc>http://localhost:1313/tags/obsidian/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/topology-on-r/index.html</loc>
+    <loc>http://localhost:1313/tags/ode/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/derivative-applications/index.html</loc>
+    <loc>http://localhost:1313/phys-astro/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/derivative/index.html</loc>
+    <loc>http://localhost:1313/tech/b-python-da/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/phys-astro/friedmann-equation/index.html</loc>
+    <loc>http://localhost:1313/tags/pytorch/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/limit-and-continuity-on-r/index.html</loc>
+    <loc>http://localhost:1313/math-cs/pytorch-quickstart/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/logical-quantifier/index.html</loc>
+    <loc>http://localhost:1313/tags/quickstart/index.html</loc>
   </url>
   <url>
-    <loc>https://qavit.github.io/math-cs/set-theory/index.html</loc>
+    <loc>http://localhost:1313/tech/relu/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/script/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/set-theory/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/set_theory/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/shell/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tech/shell-var/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/double-integral/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/topology-on-r/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tech/useful-obsidian-plugins/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/derivative-applications/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/derivative/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/phys-astro/friedmann-equation/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/limit-and-continuity-on-r/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/logical-quantifier/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/math-cs/set-theory/index.html</loc>
   </url>
 </urlset>

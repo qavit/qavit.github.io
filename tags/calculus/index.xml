@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Calculus :: Tag</title>
-    <link>https://qavit.github.io/tags/calculus/index.html</link>
+    <link>http://localhost:1313/tags/calculus/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://qavit.github.io/tags/calculus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/calculus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二重積分</title>
-      <link>https://qavit.github.io/math-cs/double-integral/index.html</link>
+      <link>http://localhost:1313/math-cs/double-integral/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math-cs/double-integral/index.html</guid>
+      <guid>http://localhost:1313/math-cs/double-integral/index.html</guid>
       <description>多重積分 1. 矩形區域上的二重積分 例題： 計算&#xA;(a) \(\int_{0}^{3}{\int_{1}^{2}{x^{2}y \dd{y} \dd{x}}}\) (b) \(\int_{1}^{2}{\int_{0}^{3}{x^{2}y \dd{x}\dd{y}}}\) 富比尼定理（Fubini’s Theorem）說明在某些條件下，二重積分的順序可以交換。&#xA;1.4 富比尼定理的初步形式 如果 \(f\) 在矩形 \(R = [a,b] \times [c,d] = \left\{ (x,y) \in \mathbb{R}^{2} \mid a \leq x \leq b, c \leq y \leq d \right\}\) 上連續，則&#xA;\[ \iint_R f(x, y) \dd{x} \dd{y} = \int_c^d \left( \int_a^b f(x, y) \dd{x} \right) \dd{y} = \int_a^b \left( \int_c^d f(x, y) \dd{y} \right) \dd{x} \] 此定理適用於被積函數在積分區域上連續或可積的情況。一般來說，Fubini 定理成立的條件如下：&#xA;\(f\) 在 \(R\) 上有界， \(f\) 只在「有限多條光滑曲線上」不連續， 迭代積分存在。 Fubini 定理的證明非常複雜。</description>
     </item>
     <item>
       <title>導函數的應用</title>
-      <link>https://qavit.github.io/math-cs/derivative-applications/index.html</link>
+      <link>http://localhost:1313/math-cs/derivative-applications/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math-cs/derivative-applications/index.html</guid>
+      <guid>http://localhost:1313/math-cs/derivative-applications/index.html</guid>
       <description>1. 習題 對於以下函數，求 \(f&#39;(x)\)。 (a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2+x+1}}\) (b) \(f(x)=(2x+1)^5\left(x^3-x+1\right)^4\) (c) \(f(x)=\sin(\cos(\tan{x}))\) (d) \(f(x)=\ln{(\sec{x^3})}\) 對於以下隱函數，求 \(y&#39;\)。 (a) \(\sin(x+y)=y^2\cos{x}\) (b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\) 判斷以下函數的可微性。（如：在哪一點不可微？） ![[calculus-problems-2024-06-24_set1.png]] ![[calculus-problems-2024-06-24_set2.png]] 下圖顯示 \(f\)、\(f&#39;\)、\(f&#39;&#39;\)、\(f&#39;&#39;&#39;\) 的圖形。請做配對。（如：a ↔︎ \(f&#39;\)） ![[calculus-problems-2024-06-24_set3.png]] 試著用導數的定義證明 \((\sin{x})&#39; = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。 2. 序理論與點集拓撲基礎 參考：&#xA;王 pp.30–33 【定義】下界、上界、最小元素、最大元素 設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。&#xA;\(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個下界（lower bound）， 若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。 \(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個上界（upper bound）， 若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。 若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) 有界（bounded）；否則稱 \(S\) 無界（unbounded）。 \(\exists!</description>
     </item>
     <item>
       <title>導數</title>
-      <link>https://qavit.github.io/math-cs/derivative/index.html</link>
+      <link>http://localhost:1313/math-cs/derivative/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math-cs/derivative/index.html</guid>
+      <guid>http://localhost:1313/math-cs/derivative/index.html</guid>
       <description>本文中，函數的定義域一律以 \(D\) 表示。\(D\subseteq\mathbb{R}\)。&#xA;導數 【定義】函數圖形 設 \(f:D\to\mathbb{R}\) 為一函數。則有序對集合 \(\Gamma = \{(x,f(x))|x\in D\}\) 稱為 \(f\) 的圖形（graph）或曲線（curve）。&#xA;注意：我們可以（稍微不那麼嚴謹地）稱呼 \(y=f(x)\) 是函數圖形。&#xA;【定義】割線斜率與切線斜率 設 \(f:D\to\mathbb{R}\) 為一函數，\(\Gamma\) 為 \(f\) 的圖形，又設 \(P=(c,f(c))\) 、\(Q=(x,f(x))\) 為 \(\Gamma\) 上的兩個點，其中 \(c,x\in D\)。於是，&#xA;\(PQ\) 為 \(f\) 的割線（secant line），而且 \(PQ\) 的斜率為 \[\frac{f(x)-f(c)}{x-c}。\tag{1}\] 只要極限 \[\lim_{x\to c}{\frac{f(x)-f(c)}{x-c}}\tag{2}\]存在，則圖形 \(\Gamma\) 過點 \(P\) 的切線（tangent line）存在，而且切線斜率就等於該極限。 註. 式 (2) 也可被稱為 \(f(x)\) 的變化率（rate of change），特別是當自變數 \(x\) 被視為時間的時候。&#xA;[!NOTE] 割線斜率的極限 \(\to\) 切線斜率&#xA;![[secant-tangent.png|400]] 圖片取自1&#xA;增量 \(h\) 若引入增量（increment） \(h:=x-c\)，則可將 (2) 式改寫為</description>
     </item>
     <item>
       <title>極限與連續</title>
-      <link>https://qavit.github.io/math-cs/limit-and-continuity-on-r/index.html</link>
+      <link>http://localhost:1313/math-cs/limit-and-continuity-on-r/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/math-cs/limit-and-continuity-on-r/index.html</guid>
+      <guid>http://localhost:1313/math-cs/limit-and-continuity-on-r/index.html</guid>
       <description>函數極限的定義 【定義】函數的極限，使用 ε-δ 語言 （王 p.45） 設 \(f:[a,b]\to \mathbb{R}\)，\(c\in(a,b)\) 和 \(A\in\mathbb{R}\)。 則 \[\begin{split}(\forall \varepsilon &gt; 0)(\exists\delta &gt; 0)(\forall x\in[a,b])\Big(0&lt;|x-c|&lt;\delta\implies |f(x)-A|&lt;\varepsilon\Big)\\ \iff \lim_{x\to c}f(x)=A\end{split} \] 補充. 翻譯：「對任一正數 \(\varepsilon\)，都存在一個正數 \(\delta\)，使得所有區間 \([a,b]\) 內的 \(x\) 都滿足以下陳述，即「只要 \(x\) 和 \(c\) 的距離小於 \(\delta\)（且 \(x\neq c\)），則 \(f(x)\) 和 \(A\) 的距離小於 \(\varepsilon\)」。以上這句話等價於「函數 \(f\) 在點 \(c\) 的極限為 \(A\)」，或稍微說得精確一點，等價於「當 \(x\) 趨近於 \(c\) 時，函數 \(f\) 的極限為 \(A\)」 幾何意義：「若點 \(x\) 在 \(c\) 的附近（但不包含 \(c\)），則函數值 \(f(x)\) 在 \(A\) 的附近」（參考翁 p.24） 日常用語「附近」在數學上用鄰域（neighborhood）來表述。其中 \(0&lt;|x-c|&lt;\delta\) 是 \(c\) 的一個去心鄰域（deleted neighborhood）。 !</description>
     </item>
   </channel>

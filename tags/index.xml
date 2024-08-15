@@ -2,122 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags</title>
-    <link>https://qavit.github.io/tags/index.html</link>
+    <link>http://localhost:1313/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 13 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://qavit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tag :: Mutiple_integral</title>
-      <link>https://qavit.github.io/tags/mutiple_integral/index.html</link>
+      <link>http://localhost:1313/tags/mutiple_integral/index.html</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/mutiple_integral/index.html</guid>
+      <guid>http://localhost:1313/tags/mutiple_integral/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Tutor</title>
-      <link>https://qavit.github.io/tags/tutor/index.html</link>
+      <link>http://localhost:1313/tags/tutor/index.html</link>
       <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/tutor/index.html</guid>
+      <guid>http://localhost:1313/tags/tutor/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Calculus</title>
-      <link>https://qavit.github.io/tags/calculus/index.html</link>
+      <link>http://localhost:1313/tags/calculus/index.html</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/calculus/index.html</guid>
+      <guid>http://localhost:1313/tags/calculus/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Integral</title>
-      <link>https://qavit.github.io/tags/integral/index.html</link>
+      <link>http://localhost:1313/tags/integral/index.html</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/integral/index.html</guid>
+      <guid>http://localhost:1313/tags/integral/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Sequence</title>
-      <link>https://qavit.github.io/tags/sequence/index.html</link>
+      <link>http://localhost:1313/tags/sequence/index.html</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/sequence/index.html</guid>
+      <guid>http://localhost:1313/tags/sequence/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Series</title>
-      <link>https://qavit.github.io/tags/series/index.html</link>
+      <link>http://localhost:1313/tags/series/index.html</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/series/index.html</guid>
+      <guid>http://localhost:1313/tags/series/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Gradient</title>
-      <link>https://qavit.github.io/tags/gradient/index.html</link>
+      <link>http://localhost:1313/tags/gradient/index.html</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/gradient/index.html</guid>
+      <guid>http://localhost:1313/tags/gradient/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Partial_derivative</title>
-      <link>https://qavit.github.io/tags/partial_derivative/index.html</link>
+      <link>http://localhost:1313/tags/partial_derivative/index.html</link>
       <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/partial_derivative/index.html</guid>
+      <guid>http://localhost:1313/tags/partial_derivative/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: ChatGPT</title>
-      <link>https://qavit.github.io/tags/chatgpt/index.html</link>
+      <link>http://localhost:1313/tags/chatgpt/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/chatgpt/index.html</guid>
+      <guid>http://localhost:1313/tags/chatgpt/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Conda</title>
-      <link>https://qavit.github.io/tags/conda/index.html</link>
+      <link>http://localhost:1313/tags/conda/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/conda/index.html</guid>
+      <guid>http://localhost:1313/tags/conda/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Cosmology</title>
-      <link>https://qavit.github.io/tags/cosmology/index.html</link>
+      <link>http://localhost:1313/tags/cosmology/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/cosmology/index.html</guid>
+      <guid>http://localhost:1313/tags/cosmology/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: HowTo</title>
-      <link>https://qavit.github.io/tags/howto/index.html</link>
+      <link>http://localhost:1313/tags/howto/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/howto/index.html</guid>
+      <guid>http://localhost:1313/tags/howto/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Logic</title>
-      <link>https://qavit.github.io/tags/logic/index.html</link>
+      <link>http://localhost:1313/tags/logic/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/logic/index.html</guid>
+      <guid>http://localhost:1313/tags/logic/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Neural_network</title>
+      <link>http://localhost:1313/tags/neural_network/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/neural_network/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Obsidian</title>
+      <link>http://localhost:1313/tags/obsidian/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/obsidian/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: ODE</title>
-      <link>https://qavit.github.io/tags/ode/index.html</link>
+      <link>http://localhost:1313/tags/ode/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/ode/index.html</guid>
+      <guid>http://localhost:1313/tags/ode/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: PyTorch</title>
+      <link>http://localhost:1313/tags/pytorch/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/pytorch/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Quickstart</title>
+      <link>http://localhost:1313/tags/quickstart/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quickstart/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Script</title>
+      <link>http://localhost:1313/tags/script/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/script/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Set Theory</title>
-      <link>https://qavit.github.io/tags/set-theory/index.html</link>
+      <link>http://localhost:1313/tags/set-theory/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/set-theory/index.html</guid>
+      <guid>http://localhost:1313/tags/set-theory/index.html</guid>
       <description></description>
     </item>
     <item>
       <title>Tag :: Set_theory</title>
-      <link>https://qavit.github.io/tags/set_theory/index.html</link>
+      <link>http://localhost:1313/tags/set_theory/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://qavit.github.io/tags/set_theory/index.html</guid>
+      <guid>http://localhost:1313/tags/set_theory/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Shell</title>
+      <link>http://localhost:1313/tags/shell/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/shell/index.html</guid>
       <description></description>
     </item>
   </channel>
