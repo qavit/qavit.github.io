@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python :: Tag</title>
+    <link>http://localhost:1313/tags/python/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSGI</title>
+      <link>http://localhost:1313/nchu-ai/wsgi/index.html</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/wsgi/index.html</guid>
+      <description>WSGI（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。&#xA;mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：&#xA;&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt;</description>
+    </item>
+    <item>
+      <title>用 Conda 管理虛擬環境</title>
+      <link>http://localhost:1313/tech/conda/conda/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/conda/conda/index.html</guid>
+      <description>Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。&#xA;安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。&#xA;前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 使用 建立一個新的 Conda 環境 建立一個名為myenv的 Python 3.11 環境：&#xA;conda create --name myenv python=3.11 啟動 Conda 環境 啟動名為myenv的環境&#xA;conda activate myenv啟動之後，你應該會看到終端機的提示字元（prompt）前面出現&#xA;基於個人偏好，我會設定一個簡單的終端機指令別名&#xA;alias con=&#39;conda activate&#39;</description>
+    </item>
+    <item>
+      <title>用 Conda 管理虛擬環境</title>
+      <link>http://localhost:1313/tech/conda/conda/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/conda/conda/index.html</guid>
+      <description>Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。&#xA;安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。&#xA;前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 使用 建立一個新的 Conda 環境 建立一個名為myenv的 Python 3.11 環境：&#xA;conda create --name myenv python=3.11 啟動 Conda 環境 啟動名為myenv的環境&#xA;conda activate myenv啟動之後，你應該會看到終端機的提示字元（prompt）前面出現&#xA;![[static/images/conda-activate.png]]&#xA;基於個人偏好，我會設定一個簡單的終端機指令別名&#xA;alias con=&#39;conda activate&#39;</description>
+    </item>
+  </channel>
+</rss>

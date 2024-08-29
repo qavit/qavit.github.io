@@ -3,64 +3,68 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="description" content="3.1 簡介 我們心中的目標是了解宇宙的演化。為了描述宇宙的過去、現在和未來及其動力學，我們需要知道標度因子如何依賴於時間——即 \(R(t)\)。為此，我們必須選擇一個理論模型。標準現代相對論宇宙學的基本成分是：
 愛因斯坦場方程式 宇宙學原理 狀態方程式 首先，我們在廣義相對論的框架下假設愛因斯坦場方程式來描述時空在宇宙場的存在下是如何變化的：
-\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \] 其中包含：
+\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \]其中包含：
 愛因斯坦張量 \(G_{\mu \nu}\) 度量張量 \(g_{\mu\nu}\) Ricci 張量 \(R_{\mu\nu}\) Ricci 純量 \(R\) 能量應力張量 \(T_{\mu \nu}\) 宇宙學常數 \(\Lambda\) 然後，我們假設宇宙是各向同性的和均勻的，所以宇宙學原理成立。
 這樣的粒子分佈（例如星系分佈）顯得像一種完美的、無摩擦的流體。所以我們可以擬定一個狀態方程式。
 在我們開始廣義相對論的論述之前，值得一提的是，只用牛頓式表述（Newtonian formalism）就可以計算出宇宙的膨脹和不同的世界模型。使用膨脹球體模型，可以推導出一個類似於所謂的弗里德曼方程式（Friedmann equation）的方程式。這在附錄 A 中完成。牛頓動力學可以幫助我們理解宇宙演化的某些方面。但是，牛頓式模型存在嚴重的局限性：
-模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。">
+模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。
+3.2 幾何學與度規 哪一種度規描述了均勻且各向同性的四維時空連續體？其中，四維是三個空間坐標和一個時間坐標的組合？因為四維和三維空間的可視化非常困難，所以我們通常從二維空間開始發展一些想法，這有助於理解三維案例。">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
     <meta name="twitter:title" content="弗里德曼方程式">
     <meta name="twitter:description" content="3.1 簡介 我們心中的目標是了解宇宙的演化。為了描述宇宙的過去、現在和未來及其動力學，我們需要知道標度因子如何依賴於時間——即 \(R(t)\)。為此，我們必須選擇一個理論模型。標準現代相對論宇宙學的基本成分是：
 愛因斯坦場方程式 宇宙學原理 狀態方程式 首先，我們在廣義相對論的框架下假設愛因斯坦場方程式來描述時空在宇宙場的存在下是如何變化的：
-\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \] 其中包含：
+\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \]其中包含：
 愛因斯坦張量 \(G_{\mu \nu}\) 度量張量 \(g_{\mu\nu}\) Ricci 張量 \(R_{\mu\nu}\) Ricci 純量 \(R\) 能量應力張量 \(T_{\mu \nu}\) 宇宙學常數 \(\Lambda\) 然後，我們假設宇宙是各向同性的和均勻的，所以宇宙學原理成立。
 這樣的粒子分佈（例如星系分佈）顯得像一種完美的、無摩擦的流體。所以我們可以擬定一個狀態方程式。
 在我們開始廣義相對論的論述之前，值得一提的是，只用牛頓式表述（Newtonian formalism）就可以計算出宇宙的膨脹和不同的世界模型。使用膨脹球體模型，可以推導出一個類似於所謂的弗里德曼方程式（Friedmann equation）的方程式。這在附錄 A 中完成。牛頓動力學可以幫助我們理解宇宙演化的某些方面。但是，牛頓式模型存在嚴重的局限性：
-模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。">
+模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。
+3.2 幾何學與度規 哪一種度規描述了均勻且各向同性的四維時空連續體？其中，四維是三個空間坐標和一個時間坐標的組合？因為四維和三維空間的可視化非常困難，所以我們通常從二維空間開始發展一些想法，這有助於理解三維案例。">
     <meta property="og:url" content="http://localhost:1313/phys-astro/friedmann-equation/index.html">
     <meta property="og:title" content="弗里德曼方程式">
     <meta property="og:description" content="3.1 簡介 我們心中的目標是了解宇宙的演化。為了描述宇宙的過去、現在和未來及其動力學，我們需要知道標度因子如何依賴於時間——即 \(R(t)\)。為此，我們必須選擇一個理論模型。標準現代相對論宇宙學的基本成分是：
 愛因斯坦場方程式 宇宙學原理 狀態方程式 首先，我們在廣義相對論的框架下假設愛因斯坦場方程式來描述時空在宇宙場的存在下是如何變化的：
-\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \] 其中包含：
+\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \]其中包含：
 愛因斯坦張量 \(G_{\mu \nu}\) 度量張量 \(g_{\mu\nu}\) Ricci 張量 \(R_{\mu\nu}\) Ricci 純量 \(R\) 能量應力張量 \(T_{\mu \nu}\) 宇宙學常數 \(\Lambda\) 然後，我們假設宇宙是各向同性的和均勻的，所以宇宙學原理成立。
 這樣的粒子分佈（例如星系分佈）顯得像一種完美的、無摩擦的流體。所以我們可以擬定一個狀態方程式。
 在我們開始廣義相對論的論述之前，值得一提的是，只用牛頓式表述（Newtonian formalism）就可以計算出宇宙的膨脹和不同的世界模型。使用膨脹球體模型，可以推導出一個類似於所謂的弗里德曼方程式（Friedmann equation）的方程式。這在附錄 A 中完成。牛頓動力學可以幫助我們理解宇宙演化的某些方面。但是，牛頓式模型存在嚴重的局限性：
-模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。">
+模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。
+3.2 幾何學與度規 哪一種度規描述了均勻且各向同性的四維時空連續體？其中，四維是三個空間坐標和一個時間坐標的組合？因為四維和三維空間的可視化非常困難，所以我們通常從二維空間開始發展一些想法，這有助於理解三維案例。">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Phys &amp; Astro">
+    <meta property="article:section" content="Phys & Astro">
     <meta property="article:tag" content="Cosmology">
     <meta property="og:image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="name" content="弗里德曼方程式">
     <meta itemprop="description" content="3.1 簡介 我們心中的目標是了解宇宙的演化。為了描述宇宙的過去、現在和未來及其動力學，我們需要知道標度因子如何依賴於時間——即 \(R(t)\)。為此，我們必須選擇一個理論模型。標準現代相對論宇宙學的基本成分是：
 愛因斯坦場方程式 宇宙學原理 狀態方程式 首先，我們在廣義相對論的框架下假設愛因斯坦場方程式來描述時空在宇宙場的存在下是如何變化的：
-\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \] 其中包含：
+\[ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1} \]其中包含：
 愛因斯坦張量 \(G_{\mu \nu}\) 度量張量 \(g_{\mu\nu}\) Ricci 張量 \(R_{\mu\nu}\) Ricci 純量 \(R\) 能量應力張量 \(T_{\mu \nu}\) 宇宙學常數 \(\Lambda\) 然後，我們假設宇宙是各向同性的和均勻的，所以宇宙學原理成立。
 這樣的粒子分佈（例如星系分佈）顯得像一種完美的、無摩擦的流體。所以我們可以擬定一個狀態方程式。
 在我們開始廣義相對論的論述之前，值得一提的是，只用牛頓式表述（Newtonian formalism）就可以計算出宇宙的膨脹和不同的世界模型。使用膨脹球體模型，可以推導出一個類似於所謂的弗里德曼方程式（Friedmann equation）的方程式。這在附錄 A 中完成。牛頓動力學可以幫助我們理解宇宙演化的某些方面。但是，牛頓式模型存在嚴重的局限性：
-模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。">
-    <meta itemprop="wordCount" content="395">
+模型不再是各向同性的，因為所選球體有一個中心點。根據宇宙學原理，不應該有特定一個「朝向中心」的方向。 嵌入宇宙中的球體（a sphere embedded in the Universe）的概念與均勻性以及宇宙學原理相悖。宇宙中沒有特殊的地方可以放置這個球體。 牛頓方法僅使用物質的密度，根據廣義相對論，能量等同於質量，因此，還需要進行一些概括，以便將能量密度考慮進去。 為了解決這些問題，首先必須引入一種特殊的度規，這種度規要符合宇宙學原理。然後，為了確定宇宙的動力學，我們必須了解度規如何因應宇宙中的場（輻射場、物質場等）而隨時間演變。這可以藉助愛因斯坦場方程式 (3.1) 式來完成，其中能量應力張量張量 包含了造成時空曲率的場。
+3.2 幾何學與度規 哪一種度規描述了均勻且各向同性的四維時空連續體？其中，四維是三個空間坐標和一個時間坐標的組合？因為四維和三維空間的可視化非常困難，所以我們通常從二維空間開始發展一些想法，這有助於理解三維案例。">
+    <meta itemprop="wordCount" content="384">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Cosmology">
     <title>弗里德曼方程式</title>
-    <link href="/images/favicon.png?1723691978" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723691978" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723691978" rel="stylesheet">
-    <link href="/css/fonts.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723691978" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723691978" rel="stylesheet">
-    <link href="/css/print.css?1723691978" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723691978"></script>
+    <link href="/images/favicon.png?1724947537" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1724947537" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1724947537" rel="stylesheet">
+    <link href="/css/fonts.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1724947537" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1724947537" rel="stylesheet">
+    <link href="/css/print.css?1724947537" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1724947537"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -113,7 +117,7 @@
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/phys-astro/friedmann-equation.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/phys-astro/hydrogen-wavefunction/index.html" title="Hydrogen wave function (Streamlit app) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/phys-astro/index.html" title="Phys &amp; Astro (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
@@ -152,8 +156,7 @@
 <p>首先，我們在廣義相對論的框架下假設<strong>愛因斯坦場方程式</strong>來描述時空在宇宙場的存在下是如何變化的：</p>
 \[
 G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \Lambda g_{\mu \nu} = \frac{8\pi G}{c^{4}} T_{\mu \nu} \tag{3.1}
-\]
-<p>其中包含：</p>
+\]<p>其中包含：</p>
 <ul>
 <li>愛因斯坦張量  \(G_{\mu \nu}\)</li>
 <li>度量張量  \(g_{\mu\nu}\)</li>
@@ -180,34 +183,28 @@ G_{\mu \nu} - \Lambda g_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} g_{\mu \nu} R - \L
 \require{physics}
 \dd{s}^{2} = \dd{x_{1}^{2}}+ \dd{x_{2}^{2}} = \sum_{\mu} \sum_{\nu} g_{\mu \nu}\dd{x^{\mu}\dd{x^{\nu}}} = g_{\mu \nu}\dd{x^{\mu}\dd{x^{\nu}}}
 \tag{3.2}
-\]
-<p>所以我們有 \(g_{11} = g_{22} = 1\)，\(g_{12}=g_{21}=0\)，或
+\]<p>所以我們有 \(g_{11} = g_{22} = 1\)，\(g_{12}=g_{21}=0\)，或
 </p>
 \[
 g_{\mu \nu} = \begin{pmatrix}1&0\\0&1\end{pmatrix}
 \tag{3.3}
-\]
-<p>如果我們使用不同的坐標系，例如 \(x_1 = r'\cos{\theta}\)，\(x_2 = r'\sin{\theta}\)  和 \(r'=Rr\) 的極坐標，如圖 3.2 所示，距離將由下式給出：</p>
+\]<p>如果我們使用不同的坐標系，例如 \(x_1 = r'\cos{\theta}\)，\(x_2 = r'\sin{\theta}\)  和 \(r'=Rr\) 的極坐標，如圖 3.2 所示，距離將由下式給出：</p>
 \[
 \dd{s}^{2} = \dd{r'}^{2} + {r'}^{2} \dd{\theta'}^{2} = R^{2}\left( \dd{r}^{2} + {r}^{2} \dd{\theta}^{2} \right)
 \tag{3.4}
-\]
-<p>這可以推廣到球體和雙曲面，見圖 3.2。通過一些繁瑣的幾何（<em>留作習題</em>）我們可以獲得</p>
+\]<p>這可以推廣到球體和雙曲面，見圖 3.2。通過一些繁瑣的幾何（<em>留作習題</em>）我們可以獲得</p>
 \[
 \mbox{球體：}\quad\dd{s}^{2} = R^{2}\left( \frac{{\dd{r}^{2}}}{{1-r^{2}}} + {r}^{2} \dd{\theta}^{2} \right)
 \tag{3.5}
-\]
-\[
+\]\[
 \mbox{雙曲面：}\quad\dd{s}^{2} = R^{2}\left( \frac{{\dd{r}^{2}}}{{1+r^{2}}} + {r}^{2} \dd{\theta}^{2} \right)
 \tag{3.6}
-\]
-<p>極坐標中，這些距離關係都可以通過使用一個新參數 \(k\) 來概括：
+\]<p>極坐標中，這些距離關係都可以通過使用一個新參數 \(k\) 來概括：
 </p>
 \[
 \dd{s}^{2} = R^{2}\left( \frac{{\dd{r}^{2}}}{{1-kr^{2}}} + {r}^{2} \dd{\theta}^{2} \right)
 \tag{3.7}
-\]
-<p>\(k\) 的不同值描述了上面提及的各種二維空間——</p>
+\]<p>\(k\) 的不同值描述了上面提及的各種二維空間——</p>
 <ul>
 <li>\(k = 1\) 表示二維球</li>
 <li>\(k = 2\) 表示平面</li>
@@ -218,29 +215,25 @@ g_{\mu \nu} = \begin{pmatrix}1&0\\0&1\end{pmatrix}
 \[
 \dd{s}^{2} = R^{2}\left( \dd{\theta}^{2} +  S_{k}^{2}(\theta)\dd{\phi}^{2} \right)
 \tag{3.9}
-\]
-\[
+\]\[
 S_{k}(\theta) = 
 \begin{cases}
 \sin{\theta}, & k = +1, & \mbox{球面} \\
  \theta, & k = 0, & \mbox{平面}\\
 \sinh{\theta}, & k = -1, & \mbox{雙曲面}
 \end{cases}
-\]
-<h3 id="322-robertsonwalker-度規">3.2.2 Robertson–Walker 度規</h3>
+\]<h3 id="322-robertsonwalker-度規">3.2.2 Robertson–Walker 度規</h3>
 <p>要了解獲得宇宙演化方程式所需的度規標準，我們從兩個已知的要素開始：宇宙學原理和膨脹。讓我們從考慮通常的平直歐幾里得三維空間開始。它由坐標 \((x,y,z)\) 或球坐標 \((r,\theta,\phi)\) 所描述。對於這個（平直、均勻、各向同性的）空間，線元素距離的平方由下式給出：
 </p>
 \[
 \dd{s}^{2} = R^{2}\left( \dd{r}^{2} + {r}^{2} \dd{\Omega}^{2} \right) \quad \mbox{及} \quad \dd{\Omega}^{2} = \dd{\theta}^{2} +  \sin^{2}\!{\theta}\;\dd{\phi}^{2}
 \tag{3.9}
-\]
-<p><strong>第一個一般化</strong>：可以證明，每個各向同性和均勻的三維空間都可以使用球坐標進行參數化，以獲得：
+\]<p><strong>第一個一般化</strong>：可以證明，每個各向同性和均勻的三維空間都可以使用球坐標進行參數化，以獲得：
 </p>
 \[
 \dd{s}^{2} = c^{2}\dd{t}^{2} - R^{2}(t)\left( \frac{{\dd{r}^{2}}}{{1-kr^{2}}} + {r}^{2} \dd{\Omega}^{2} \right)
 \tag{3.10}
-\]
-<p>
+\]<p>
  \(k\) 的不同值再次描述了不同的空間——</p>
 <ul>
 <li>\(k = 1\)  表示三維球面</li>
@@ -252,15 +245,13 @@ S_{k}(\theta) =
 </p>
 \[
 \dd{s}^{2} = c^{2}\dd{t}^{2} - \dd{s_{\rm 3D}^{2}}
-\]
-<p>
+\]<p>
 給出。插入之前（第一個一般化）的關係式，我們得到所謂的<strong>Roberson-Walker 度規</strong>
 </p>
 \[
 \dd{s}^{2} = c^{2}\dd{t}^{2} - R^{2}(t)\left( \frac{{\dd{r}^{2}}}{{1-kr^{2}}} + {r}^{2} \dd{\theta}^{2} + r^{2} \sin^{2}\!{\theta}\, \dd{\phi}^{2} \right)
 \tag{3.11}
-\]
-<p>它描述了==隨時間變化的一般的、均勻的、各向同性的時空（ the generic, homogeneous, isotropic space-time that changes with time）==。</p>
+\]<p>它描述了==隨時間變化的一般的、均勻的、各向同性的時空（ the generic, homogeneous, isotropic space-time that changes with time）==。</p>
 <p>因此，Roberson-Walker 度規遵循宇宙學原理。寫成 (3.11) 形式的方程式包含了我們宇宙的一個重要屬性——膨脹。透過時間相關的標度因子 \(R(t)\)，宇宙的膨脹也在考慮之內。 我們應該觀察到：</p>
 <ol>
 <li>標度因子 \(R(t)\) 將由物理學決定。換句話說，我們將使用愛因斯坦場方程式獲得標度的時間演化，從而獲得宇宙的時間演化，其中包括改變時空的物質和能量。</li>
@@ -351,12 +342,12 @@ S_{k}(\theta) =
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723691978" defer></script>
-        <script src="/js/search.js?1723691978" defer></script>
+        <script src="/js/auto-complete.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1724947537" defer></script>
+        <script src="/js/search.js?1724947537" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -367,19 +358,21 @@ S_{k}(\theta) =
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/index.html" class=""><input type="checkbox" id="R-section-ca7a4950064d29b1d9e0bc233d042c6a" aria-controls="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a"><label for="R-section-ca7a4950064d29b1d9e0bc233d042c6a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 興大AI班</span></label><a class="padding" href="/nchu-ai/index.html">興大AI班<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a" class="morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/apache/index.html" class=""><a class="padding" href="/nchu-ai/apache/index.html">Apache<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/apache-conf/index.html" class=""><a class="padding" href="/nchu-ai/apache-conf/index.html">Apache 設定檔解析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/seaborn/index.html" class=""><a class="padding" href="/nchu-ai/seaborn/index.html">Seaborn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/wsgi/index.html" class=""><a class="padding" href="/nchu-ai/wsgi/index.html">WSGI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/yolo/index.html" class=""><a class="padding" href="/nchu-ai/yolo/index.html">YOLO 物件偵測模型<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/matplotlib/index.html" class=""><a class="padding" href="/nchu-ai/matplotlib/index.html">Matplotlib<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tech/index.html" class=""><input type="checkbox" id="R-section-03f8c09f19b1233ed6c8a8fe181f47b9" aria-controls="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9"><label for="R-section-03f8c09f19b1233ed6c8a8fe181f47b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Techniques</span></label><a class="padding" href="/tech/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" class="morespace collapsible-menu">
-          <li data-nav-id="/tech/b-buduma-1/index.html" class=""><a class="padding" href="/tech/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/index.html" class=""><a class="padding" href="/tech/conda/index.html">Conda<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/mermaid/index.html" class=""><a class="padding" href="/tech/mermaid/index.html">Mermaid<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/days-between/index.html" class=""><a class="padding" href="/tech/days-between/index.html">days_between<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/git/index.html" class=""><a class="padding" href="/tech/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/hugging-face/index.html" class=""><a class="padding" href="/tech/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/b-python-da/index.html" class=""><a class="padding" href="/tech/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/relu/index.html" class=""><a class="padding" href="/tech/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/shell-var/index.html" class=""><a class="padding" href="/tech/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/useful-obsidian-plugins/index.html" class=""><a class="padding" href="/tech/useful-obsidian-plugins/index.html">實用的Obsidian外掛<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class=""><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45"><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/math-models-and-ode/index.html" class=""><a class="padding" href="/math-cs/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -391,10 +384,7 @@ S_{k}(\theta) =
           <li data-nav-id="/math-cs/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math-cs/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/logical-quantifier/index.html" class=""><a class="padding" href="/math-cs/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/set-theory/index.html" class=""><a class="padding" href="/math-cs/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/hum-ss/index.html" class=""><input type="checkbox" id="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7" aria-controls="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7"><label for="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/hum-ss/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7" class="morespace collapsible-menu">
-          <li data-nav-id="/hum-ss/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/hum-ss/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/phys-astro/index.html" class="parent "><input type="checkbox" id="R-section-d623ed7decfe62cba15fd2b8723858b9" aria-controls="R-subsections-d623ed7decfe62cba15fd2b8723858b9" checked><label for="R-section-d623ed7decfe62cba15fd2b8723858b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Phys &amp; Astro</span></label><a class="padding" href="/phys-astro/index.html">Phys &amp; Astro<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d623ed7decfe62cba15fd2b8723858b9" class="morespace collapsible-menu">
-          <li data-nav-id="/phys-astro/hydrogen-wavefunction/index.html" class=""><a class="padding" href="/phys-astro/hydrogen-wavefunction/index.html">Hydrogen wave function (Streamlit app)<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/phys-astro/friedmann-equation/index.html" class="active"><a class="padding" href="/phys-astro/friedmann-equation/index.html">弗里德曼方程式<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
@@ -460,8 +450,8 @@ S_{k}(\theta) =
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723691978" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723691978" defer></script>
+    <script src="/js/clipboard.min.js?1724947537" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1724947537" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -476,28 +466,28 @@ S_{k}(\theta) =
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723691978"></script>
-    <script src="/js/d3/d3-color.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723691978" defer></script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
-    <script src="/js/mermaid.min.js?1723691978" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724947537"></script>
+    <script src="/js/d3/d3-color.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1724947537" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
+    <script src="/js/mermaid.min.js?1724947537" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723691978" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723691978" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724947537" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724947537" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723691978", cssInProject: true, assetsBuster: "?1723691978" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724947537", cssInProject: true, assetsBuster: "?1724947537" };
     </script>
-    <script src="/js/theme.js?1723691978" defer></script>
+    <script src="/js/theme.js?1724947537" defer></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>伺服器 :: Tag</title>
+    <link>http://localhost:1313/tags/%E4%BC%BA%E6%9C%8D%E5%99%A8/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%BC%BA%E6%9C%8D%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache</title>
+      <link>http://localhost:1313/nchu-ai/apache/index.html</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/apache/index.html</guid>
+      <description>Apache 是一款跨平台、開放原始碼的網頁伺服器軟體1。&#xA;Apache HTTP Server Documentation 核心功能 Apache 的虛擬主機（virtual host）允許一台伺服器主機上同時運行多個網站。 Apache 有模組化（modularized）的結構，例如在 Django 專案中使用的 mod_wsgi 模組。 安裝 在 Ubuntu 上使用 apt 命令安裝 Apache&#xA;sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下&#xA;/etc/apache2/sites-available 存放「可用的」設定檔 /etc/apache2/sites-enabled 存放「啟用的」設定檔 Apache 的設定檔使用一種特殊語法，它有以下特點&#xA;指令（Directives） 區塊（block）的語法是使用尖括號 (&lt; &gt;) 來包圍關鍵字，某種程度上類似於 HTML 標籤。常見的區塊有 &lt;VirtualHost&gt; 區塊是虛擬主機設定，允許在同一台伺服器上運行多個網站或應用程式 &lt;Directory&gt; 區塊用來設定伺服器中不同目錄的訪問權限和屬性。 &lt;Files&gt; 區塊用來設定特定類型或名稱的檔案。 &lt;Location&gt; 區塊用來設定與 URL 路徑相關的配置。 常見結構 全域設定：通常放在配置文件的開頭部分，用來設定伺服器級別的全域選項。 虛擬主機設定：用來配置多個網站或應用程式在同一台伺服器上運行。 模組設定：啟用或配置 Apache 的模組功能，例如 SSL 模組、URL 重寫模組等。 目錄設定： 註解使用 # 來標示。 一個簡單的虛擬主機</description>
+    </item>
+    <item>
+      <title>Apache 設定檔解析</title>
+      <link>http://localhost:1313/nchu-ai/apache-conf/index.html</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/apache-conf/index.html</guid>
+      <description>全域設定 通常放在配置文件的開頭部分，用來設定伺服器級別的全域選項。&#xA;ServerName localhost Listen 80虛擬主機設定 用來配置多個網站或應用程式在同一台伺服器上運行。&#xA;&lt;VirtualHost *:80&gt; ServerAdmin webmaster@localhost DocumentRoot /var/www/html ServerName example.com &lt;/VirtualHost&gt;模組設定 啟用或配置 Apache 的模組功能，例如 SSL 模組、URL 重寫模組等。&#xA;LoadModule ssl_module modules/mod_ssl.so LoadModule rewrite_module modules/mod_rewrite.so目錄設定 用來設定伺服器中不同目錄的訪問權限和屬性。&#xA;&lt;Directory &#34;/var/www/html&#34;&gt; AllowOverride None Require all granted &lt;/Directory&gt;</description>
+    </item>
+    <item>
+      <title>WSGI</title>
+      <link>http://localhost:1313/nchu-ai/wsgi/index.html</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/wsgi/index.html</guid>
+      <description>WSGI（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。&#xA;mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：&#xA;&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt;</description>
+    </item>
+  </channel>
+</rss>

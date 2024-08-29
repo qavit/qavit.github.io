@@ -3,22 +3,22 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="積分技巧 (0) 上課日期：[[2024-07-09]] 目錄 A. [[#^A|基本積分公式]]〔[[#^poly|多項式]]、[[#^exp|指數函數]]、[[#^ln|對數函數]]和[[#^tri|三角函數]]〕 B. [[#^B|變數變換法]]（integration by substitution） C. [[#^C|分部積分法]]（integration by parts） [[tutor-int-tech|本章]]其他部分 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) A. 基本積分公式 ^A A.1 多項式函數的積分 ^poly 定理： 若 \(n \neq -1\)，則 \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 其中，\(C\) 是積分常數。
-證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 例題： 計算 \(\int x^3 \dd{x}\)。">
+證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \]例題： 計算 \(\int x^3 \dd{x}\)。">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
     <meta name="twitter:description" content="積分技巧 (0) 上課日期：[[2024-07-09]] 目錄 A. [[#^A|基本積分公式]]〔[[#^poly|多項式]]、[[#^exp|指數函數]]、[[#^ln|對數函數]]和[[#^tri|三角函數]]〕 B. [[#^B|變數變換法]]（integration by substitution） C. [[#^C|分部積分法]]（integration by parts） [[tutor-int-tech|本章]]其他部分 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) A. 基本積分公式 ^A A.1 多項式函數的積分 ^poly 定理： 若 \(n \neq -1\)，則 \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 其中，\(C\) 是積分常數。
-證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 例題： 計算 \(\int x^3 \dd{x}\)。">
+證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \]例題： 計算 \(\int x^3 \dd{x}\)。">
     <meta property="og:url" content="http://localhost:1313/math-cs/tutor-10/index.html">
     <meta property="og:description" content="積分技巧 (0) 上課日期：[[2024-07-09]] 目錄 A. [[#^A|基本積分公式]]〔[[#^poly|多項式]]、[[#^exp|指數函數]]、[[#^ln|對數函數]]和[[#^tri|三角函數]]〕 B. [[#^B|變數變換法]]（integration by substitution） C. [[#^C|分部積分法]]（integration by parts） [[tutor-int-tech|本章]]其他部分 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) A. 基本積分公式 ^A A.1 多項式函數的積分 ^poly 定理： 若 \(n \neq -1\)，則 \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 其中，\(C\) 是積分常數。
-證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 例題： 計算 \(\int x^3 \dd{x}\)。">
+證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \]例題： 計算 \(\int x^3 \dd{x}\)。">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Math &amp; CS">
+    <meta property="article:section" content="Math & CS">
     <meta property="article:published_time" content="2024-07-29T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-07-29T00:00:00+00:00">
     <meta property="article:tag" content="Tutor">
@@ -26,25 +26,25 @@
     <meta property="article:tag" content="Integral">
     <meta property="og:image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="description" content="積分技巧 (0) 上課日期：[[2024-07-09]] 目錄 A. [[#^A|基本積分公式]]〔[[#^poly|多項式]]、[[#^exp|指數函數]]、[[#^ln|對數函數]]和[[#^tri|三角函數]]〕 B. [[#^B|變數變換法]]（integration by substitution） C. [[#^C|分部積分法]]（integration by parts） [[tutor-int-tech|本章]]其他部分 [[tutor-11|積分技巧 (1)]] (2024-07-10) — 含有三角函數的被積函數、三角代換法 [[tutor-12|積分技巧 (2)]] (2024-07-16) — 雙曲代換法、部分分式法、降次積分法、其他積分技巧 (1) [[tutor-13|積分技巧 (3)]] (2024-07-17) — 其他積分技巧 (2)、積分策略、積分表與計算機代數系統、數值積分簡介 [[tutor-14|積分技巧 (4)]] (2024-07-30) — 瑕積分、其他積分技巧 (3) A. 基本積分公式 ^A A.1 多項式函數的積分 ^poly 定理： 若 \(n \neq -1\)，則 \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 其中，\(C\) 是積分常數。
-證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \] 例題： 計算 \(\int x^3 \dd{x}\)。">
+證明： 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n&#43;1}}{n&#43;1}\)，則 \[ F&#39;(x) = \dv{x} \left( \frac{x^{n&#43;1}}{n&#43;1} \right) = x^n \] 因此， \[ \int x^n \dd{x} = \frac{x^{n&#43;1}}{n&#43;1} &#43; C \]例題： 計算 \(\int x^3 \dd{x}\)。">
     <meta itemprop="datePublished" content="2024-07-29T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-07-29T00:00:00+00:00">
-    <meta itemprop="wordCount" content="584">
+    <meta itemprop="wordCount" content="570">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Tutor,Calculus,Integral">
     <title></title>
-    <link href="/images/favicon.png?1723691978" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723691978" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723691978" rel="stylesheet">
-    <link href="/css/fonts.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723691978" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723691978" rel="stylesheet">
-    <link href="/css/print.css?1723691978" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723691978"></script>
+    <link href="/images/favicon.png?1724947537" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1724947537" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1724947537" rel="stylesheet">
+    <link href="/css/fonts.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1724947537" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1724947537" rel="stylesheet">
+    <link href="/css/print.css?1724947537" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1724947537"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -163,94 +163,79 @@
 </p>
 \[
 \int x^n \dd{x} = \frac{x^{n+1}}{n+1} + C
-\]
-<p>
+\]<p>
 其中，\(C\) 是積分常數。</p>
 <p><strong>證明：</strong>
 根據微積分基本定理，我們知道微分和積分是互為反操作的。考慮函數 \(F(x) = \frac{x^{n+1}}{n+1}\)，則
 </p>
 \[
 F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
-\]
-<p>
+\]<p>
 因此，
 </p>
 \[
 \int x^n \dd{x} = \frac{x^{n+1}}{n+1} + C
-\]
-<p><strong>例題：</strong>
+\]<p><strong>例題：</strong>
 計算 \(\int x^3 \dd{x}\)。</p>
 <p><strong>解答：</strong>
 </p>
 \[
 \int x^3 \dd{x} = \frac{x^{3+1}}{3+1} + C = \frac{x^4}{4} + C
-\]
-<h3 id="a2-指數函數的積分-exp">A.2 指數函數的積分 ^exp</h3>
+\]<h3 id="a2-指數函數的積分-exp">A.2 指數函數的積分 ^exp</h3>
 <p><strong>定理：</strong>
 </p>
 \[
 \int e^x \dd{x} = e^x + C
-\]
-<p><strong>證明：</strong>
+\]<p><strong>證明：</strong>
 根據微積分基本定理，我們知道函數 \(F(x) = e^x\) 的導數是 \(F'(x) = e^x\)，因此
 </p>
 \[
 \int e^x \dd{x} = e^x + C
-\]
-<p><strong>例題：</strong>
+\]<p><strong>例題：</strong>
 計算 \(\int e^{2x} \dd{x}\)。</p>
 <p><strong>解答：</strong>
 設 \(u = 2x\)，則 \(du = 2 \dd{x}\)，即 \(dx = \frac{1}{2} du\)。
 </p>
 \[
 \int e^{2x} \dd{x} = \int e^u \cdot \frac{1}{2} \dd{u} = \frac{1}{2} \int e^u \dd{u} = \frac{1}{2} e^u + C = \frac{1}{2} e^{2x} + C
-\]
-<h3 id="a3-對數函數的積分-ln">A.3 對數函數的積分 ^ln</h3>
+\]<h3 id="a3-對數函數的積分-ln">A.3 對數函數的積分 ^ln</h3>
 <p><strong>定理：</strong>
 </p>
 \[
 \int \frac{1}{x} \dd{x} = \ln |x| + C
-\]
-<p><strong>證明：</strong>
+\]<p><strong>證明：</strong>
 根據微積分基本定理，我們知道函數 \(F(x) = \ln |x|\) 的導數是 \(F'(x) = \frac{1}{x}\)，因此
 </p>
 \[
 \int \frac{1}{x} \dd{x} = \ln |x| + C
-\]
-<p><strong>例題：</strong>
+\]<p><strong>例題：</strong>
 計算 \(\int \frac{2}{x} \dd{x}\)。</p>
 <p><strong>解答：</strong>
 </p>
 \[
 \int \frac{2}{x} \dd{x} = 2 \int \frac{1}{x} \dd{x} = 2 \ln |x| + C
-\]
-<h3 id="a4-三角函數的積分-tri">A.4 三角函數的積分 ^tri</h3>
+\]<h3 id="a4-三角函數的積分-tri">A.4 三角函數的積分 ^tri</h3>
 <p><strong>定理：</strong>
 </p>
 \[
 \int \sin x \dd{x} = -\cos x + C
-\]
-\[
+\]\[
 \int \cos x \dd{x} = \sin x + C
-\]
-<p><strong>證明：</strong>
+\]<p><strong>證明：</strong>
 根據微積分基本定理，我們知道 \(\frac{d}{dx} (-\cos x) = \sin x\) 和 \(\frac{d}{dx} (\sin x) = \cos x\)，因此
 </p>
 \[
 \int \sin x \dd{x} = -\cos x + C
-\]
-\[
+\]\[
 \int \cos x \dd{x} = \sin x + C
-\]
-<p><strong>例題：</strong>
+\]<p><strong>例題：</strong>
 計算 \(\int \cos(3x) \dd{x}\)。</p>
 <p><strong>解答：</strong>
 設 \(u = 3x\)，則 \(du = 3 \dd{x}\)，即 \(dx = \frac{1}{3} du\)。
 </p>
 \[
 \int \cos(3x) \dd{x} = \int \cos u \cdot \frac{1}{3} \dd{u} = \frac{1}{3} \int \cos u \dd{u} = \frac{1}{3} \sin u + C = \frac{1}{3} \sin(3x) + C
-\]
-<blockquote>
+\]<blockquote>
 <p>[!Note]
 ![[integral-table-small.png|800]]</p>
 </blockquote>
@@ -260,8 +245,7 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
 <h4 id="定理變數變換法則">【定理】變數變換法則</h4>
 <p>如果 \(u=g(x)\) 是一個可微函數，其值域為區間 \(I\)，且函數 \(f\) 在 \(I\) 上連續，則
 </p>
-\[\boxed{\int f(g(x))g'(x)\dd{x}=\int f(u)\dd{u}}\]
-<p>
+\[\boxed{\int f(g(x))g'(x)\dd{x}=\int f(u)\dd{u}}\]<p>
 %% (§5.5, Theorem 4, p.420) %%</p>
 <p><strong>例題：</strong></p>
 <ol>
@@ -272,8 +256,7 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
 <h4 id="定理定積分的變數變換法則">【定理】定積分的變數變換法則</h4>
 <p>如果 \(g:[a,b]\to\mathbb{R}\) 是一個可微函數（且 \(u=g(x)\)），且 \(g'\) 在 \([a,b]\) 上連續，且函數 \(f\) 在 \(g([a,b])\) 上連續，則
 </p>
-\[\boxed{\int^b_a f(g(x))g'(x)\dd{x}=\int^{g(b)}_{g(a)} f(u)\dd{u}}\]
-<p>
+\[\boxed{\int^b_a f(g(x))g'(x)\dd{x}=\int^{g(b)}_{g(a)} f(u)\dd{u}}\]<p>
 %% (§5.5, Theorem 6, p.423) %%</p>
 <p><strong>例題：</strong></p>
 <ol>
@@ -293,18 +276,14 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
 </ol>
 <h2 id="c-分部積分法-integration-by-parts-c">C. 分部積分法 (Integration by Parts) ^C</h2>
 <p>設 \(f(x)\)、\(g(x)\) 是可微函數，導數的積法則 </p>
-\[\dv{x}[f(x)g(x)]=f'(x)g(x)+f(x)g'(x)\]
-<p>
+\[\dv{x}[f(x)g(x)]=f'(x)g(x)+f(x)g'(x)\]<p>
 由 FTC </p>
-\[f(x)g(x)=\int{\big[f'(x)g(x)+f(x)g'(x)\big]\dd{x}}\]
-\[\boxed{\int{f(x)g'(x)\dd{x}}=f(x)g(x)-\int{f'(x)g(x)\dd{x}}}\]
-<p>
+\[f(x)g(x)=\int{\big[f'(x)g(x)+f(x)g'(x)\big]\dd{x}}\]\[\boxed{\int{f(x)g'(x)\dd{x}}=f(x)g(x)-\int{f'(x)g(x)\dd{x}}}\]<p>
 此為<strong>分部積分</strong>（integration by parts）的公式。令 \(u=f(x)\)、\(v=g(x)\)，則 \(\dd{u}=f'(x)\dd{u}\) 、\(\dd{v}=g'(x)\dd{v}\)，於是
 </p>
 \[
 \int u \dd{v} = uv - \int v \dd{u}
-\]
-<p>
+\]<p>
 其中，\(u\) 和 \(v\) 是可微函數。</p>
 <p><strong>例題：</strong></p>
 <ol>
@@ -315,8 +294,7 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
 </p>
 \[
 	\int x e^x \dd{x} = x e^x - \int e^x \dd{x} = x e^x - e^x + C = e^x (x - 1) + C
-	\]
-</li>
+	\]</li>
 <li>
 <p>計算 \(\int x \sin{x} \dd{x}\)。%% (§7.1, Example 1, p.486) %%</p>
 </li>
@@ -328,8 +306,7 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
 </li>
 </ol>
 <h3 id="c1-定積分的分部積分-c-1">C.1 定積分的分部積分 ^C-1</h3>
-\[\boxed{\int^b_a{f(x)g'(x)\dd{x}}=f(x)g(x)\Big|^b_a-\int^b_a{f'(x)g(x)\dd{x}}}\]
-<p>\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
+\[\boxed{\int^b_a{f(x)g'(x)\dd{x}}=f(x)g(x)\Big|^b_a-\int^b_a{f'(x)g(x)\dd{x}}}\]<p>\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
 \(\renewcommand{\dv}[1]{\frac{\operatorname{d}}{\operatorname{d}\!{#1}}}\)</p>
 
             <footer class="footline">
@@ -406,12 +383,12 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723691978" defer></script>
-        <script src="/js/search.js?1723691978" defer></script>
+        <script src="/js/auto-complete.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1724947537" defer></script>
+        <script src="/js/search.js?1724947537" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -422,19 +399,21 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/index.html" class=""><input type="checkbox" id="R-section-ca7a4950064d29b1d9e0bc233d042c6a" aria-controls="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a"><label for="R-section-ca7a4950064d29b1d9e0bc233d042c6a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 興大AI班</span></label><a class="padding" href="/nchu-ai/index.html">興大AI班<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a" class="morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/apache/index.html" class=""><a class="padding" href="/nchu-ai/apache/index.html">Apache<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/apache-conf/index.html" class=""><a class="padding" href="/nchu-ai/apache-conf/index.html">Apache 設定檔解析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/seaborn/index.html" class=""><a class="padding" href="/nchu-ai/seaborn/index.html">Seaborn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/wsgi/index.html" class=""><a class="padding" href="/nchu-ai/wsgi/index.html">WSGI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/yolo/index.html" class=""><a class="padding" href="/nchu-ai/yolo/index.html">YOLO 物件偵測模型<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/matplotlib/index.html" class=""><a class="padding" href="/nchu-ai/matplotlib/index.html">Matplotlib<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tech/index.html" class=""><input type="checkbox" id="R-section-03f8c09f19b1233ed6c8a8fe181f47b9" aria-controls="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9"><label for="R-section-03f8c09f19b1233ed6c8a8fe181f47b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Techniques</span></label><a class="padding" href="/tech/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" class="morespace collapsible-menu">
-          <li data-nav-id="/tech/b-buduma-1/index.html" class=""><a class="padding" href="/tech/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/index.html" class=""><a class="padding" href="/tech/conda/index.html">Conda<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/mermaid/index.html" class=""><a class="padding" href="/tech/mermaid/index.html">Mermaid<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/days-between/index.html" class=""><a class="padding" href="/tech/days-between/index.html">days_between<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/git/index.html" class=""><a class="padding" href="/tech/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/hugging-face/index.html" class=""><a class="padding" href="/tech/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/b-python-da/index.html" class=""><a class="padding" href="/tech/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/relu/index.html" class=""><a class="padding" href="/tech/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/shell-var/index.html" class=""><a class="padding" href="/tech/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/useful-obsidian-plugins/index.html" class=""><a class="padding" href="/tech/useful-obsidian-plugins/index.html">實用的Obsidian外掛<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class="parent "><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45" checked><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/tutor-10/index.html" class="active"><a class="padding" href="/math-cs/tutor-10/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -447,10 +426,7 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
           <li data-nav-id="/math-cs/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math-cs/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/logical-quantifier/index.html" class=""><a class="padding" href="/math-cs/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/set-theory/index.html" class=""><a class="padding" href="/math-cs/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/hum-ss/index.html" class=""><input type="checkbox" id="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7" aria-controls="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7"><label for="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/hum-ss/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7" class="morespace collapsible-menu">
-          <li data-nav-id="/hum-ss/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/hum-ss/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/phys-astro/index.html" class=""><input type="checkbox" id="R-section-d623ed7decfe62cba15fd2b8723858b9" aria-controls="R-subsections-d623ed7decfe62cba15fd2b8723858b9"><label for="R-section-d623ed7decfe62cba15fd2b8723858b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Phys &amp; Astro</span></label><a class="padding" href="/phys-astro/index.html">Phys &amp; Astro<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d623ed7decfe62cba15fd2b8723858b9" class="morespace collapsible-menu">
-          <li data-nav-id="/phys-astro/hydrogen-wavefunction/index.html" class=""><a class="padding" href="/phys-astro/hydrogen-wavefunction/index.html">Hydrogen wave function (Streamlit app)<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/phys-astro/friedmann-equation/index.html" class=""><a class="padding" href="/phys-astro/friedmann-equation/index.html">弗里德曼方程式<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
@@ -516,8 +492,8 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723691978" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723691978" defer></script>
+    <script src="/js/clipboard.min.js?1724947537" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1724947537" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -532,28 +508,28 @@ F'(x) = \dv{x} \left( \frac{x^{n+1}}{n+1} \right) = x^n
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723691978"></script>
-    <script src="/js/d3/d3-color.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723691978" defer></script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
-    <script src="/js/mermaid.min.js?1723691978" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724947537"></script>
+    <script src="/js/d3/d3-color.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1724947537" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
+    <script src="/js/mermaid.min.js?1724947537" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723691978" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723691978" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724947537" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724947537" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723691978", cssInProject: true, assetsBuster: "?1723691978" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724947537", cssInProject: true, assetsBuster: "?1724947537" };
     </script>
-    <script src="/js/theme.js?1723691978" defer></script>
+    <script src="/js/theme.js?1724947537" defer></script>
   </body>
 </html>

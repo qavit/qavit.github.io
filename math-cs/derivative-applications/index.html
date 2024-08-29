@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="description" content="1. 習題 對於以下函數，求 \(f&#39;(x)\)。 (a) \(f(x)=\dfrac{1}{\sqrt[3]{x^2&#43;x&#43;1}}\) (b) \(f(x)=(2x&#43;1)^5\left(x^3-x&#43;1\right)^4\) (c) \(f(x)=\sin(\cos(\tan{x}))\) (d) \(f(x)=\ln{(\sec{x^3})}\) 對於以下隱函數，求 \(y&#39;\)。 (a) \(\sin(x&#43;y)=y^2\cos{x}\) (b) \(\left(y^2-1\right)\left(y^2-4\right)=x^2\left(x^2-4\right)\) 判斷以下函數的可微性。（如：在哪一點不可微？） ![[calculus-problems-2024-06-24_set1.png]] ![[calculus-problems-2024-06-24_set2.png]] 下圖顯示 \(f\)、\(f&#39;\)、\(f&#39;&#39;\)、\(f&#39;&#39;&#39;\) 的圖形。請做配對。（如：a ↔︎ \(f&#39;\)） ![[calculus-problems-2024-06-24_set3.png]] 試著用導數的定義證明 \((\sin{x})&#39; = \cos{x}\)。需證明 \(\displaystyle\lim_{h\to0}{\frac{\sin{h}}{h}}=1\) 等引理。 2. 序理論與點集拓撲基礎 參考：
 王 pp.30–33 【定義】下界、上界、最小元素、最大元素 設 \(S\subseteq \mathbb{R}\) 且 \(S\neq \varnothing\)。
@@ -22,7 +22,7 @@
 \(\exists\, a\in \mathbb{R},\ \forall x\in S,\ x\geq a \iff a\) 是 \(S\) 的一個下界（lower bound）， 若上述 \(a\) 存在，則稱 \(S\) 有下界（bounded below）；否則稱 \(S\) 無下界（unbounded below）。 \(\exists\, b\in \mathbb{R},\ \forall x\in S,\ x\leq b \iff b\) 是 \(S\) 的一個上界（upper bound）， 若上述 \(b\) 存在，則稱 \(S\) 有上界（bounded above）；否則稱 \(S\) 無上界（unbounded above）。 若 \(S\) 存在上界或 \(S\) 存在下界，則稱 \(S\) 有界（bounded）；否則稱 \(S\) 無界（unbounded）。 \(\exists!">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Math &amp; CS">
+    <meta property="article:section" content="Math & CS">
     <meta property="article:tag" content="Calculus">
     <meta property="og:image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="name" content="導函數的應用">
@@ -33,18 +33,18 @@
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Calculus">
     <title>導函數的應用</title>
-    <link href="/images/favicon.png?1723691978" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723691978" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723691978" rel="stylesheet">
-    <link href="/css/fonts.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723691978" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723691978" rel="stylesheet">
-    <link href="/css/print.css?1723691978" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723691978"></script>
+    <link href="/images/favicon.png?1724947537" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1724947537" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1724947537" rel="stylesheet">
+    <link href="/css/fonts.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1724947537" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1724947537" rel="stylesheet">
+    <link href="/css/print.css?1724947537" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1724947537"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -230,8 +230,8 @@
 <p>若 \(S\) 無上界，則定義 \(\sup{S}=\infty\)。</p>
 </li>
 </ol>
-<p><a href="#R-image-3fec8417b361c5ad78b4b0a581ca0a73" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Illustration_of_supremum.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fec8417b361c5ad78b4b0a581ca0a73"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Illustration_of_supremum.svg"></a></p>
+<p><a href="#R-image-aca56ad0933e1b6ee97b94969e283347" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Illustration_of_supremum.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aca56ad0933e1b6ee97b94969e283347"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Illustration_of_supremum.svg"></a></p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>對於以上兩定義，雖然我們規定 \(S\) 是非空實數子集，但其實所有敘述對於<a href="https://zh.wikipedia.org/wiki/%E5%81%8F%E5%BA%8F%E5%85%B3%E7%B3%BB" rel="external" target="_self">偏序集合</a>（partially ordered set）成立。而且實數不只是一種偏序集合，更是<a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BA%8F%E5%85%B3%E7%B3%BB" rel="external" target="_self">全序集合</a>（total ordered set）。</li>
@@ -395,8 +395,7 @@
 </ul>
 <h4 id="定理極值定理-evt">【定理】極值定理 ^evt</h4>
 <p>設 \(f:[a,b]\to\mathbb{R}\) 為一連續函數，則 </p>
-\[\exists\ c,d\in[a,b],\ \forall\, x\in[a,b], f(c)\leq f(x)\leq f(d);\]
-<p>
+\[\exists\ c,d\in[a,b],\ \forall\, x\in[a,b], f(c)\leq f(x)\leq f(d);\]<p>
 亦即，\(f\) 在 \([a,b]\) 上存在絕對極小值 \(f(c)\) 和絕對極大值 \(f(d)\)。</p>
 <blockquote>
 <p>[!NOTE]
@@ -441,8 +440,7 @@
 </ul>
 <h4 id="定義臨界點">【定義】臨界點</h4>
 <p>設 \(f:D\to\mathbb{R}\)，且 \(c\) 為 \(D\) 的一個內點。則 </p>
-\[ c\mbox{ 是 }f \mbox{ 的臨界點（critical point）}\iff f'(c)=0\mbox{ 或 }f'(c) \mbox{ 不存在}。\]
-<p><strong>註</strong>：</p>
+\[ c\mbox{ 是 }f \mbox{ 的臨界點（critical point）}\iff f'(c)=0\mbox{ 或 }f'(c) \mbox{ 不存在}。\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -580,8 +578,7 @@
 <h3 id="35-漸近線">3.5 漸近線</h3>
 <h4 id="定義水平漸近線">【定義】水平漸近線</h4>
 <p>設 \(f:D\to \mathbb{R}\) 為一函數，又設 \(L\in\mathbb{R}\)。則 \(y=L\) 為 \(f\) 的函數圖形的<strong>水平漸近線</strong>（horizontal asymptote）若且唯若 </p>
-\[\lim_{x\to\infty}f(x)=L\quad\mbox{或}\quad\lim_{x\to-\infty}f(x)=L \]
-<p><strong>註</strong>：</p>
+\[\lim_{x\to\infty}f(x)=L\quad\mbox{或}\quad\lim_{x\to-\infty}f(x)=L \]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -593,8 +590,7 @@
 </ul>
 <h4 id="定義鉛直漸近線">【定義】鉛直漸近線</h4>
 <p>設 \(f:D\to \mathbb{R}\) 為一函數，又設 \(c\in D\)。則 \(x=c\) 為 \(f\) 的函數圖形的<strong>鉛直漸近線</strong>（horizontal asymptote）若且唯若 \(f\) 滿足下列任一條件： </p>
-\[\begin{array}{ll}\displaystyle\lim_{x\to c^-}f(x)=\infty,&\displaystyle\lim_{x\to c^-}f(x)=-\infty,\\\displaystyle\lim_{x\to c^+}f(x)=\infty,&\displaystyle\lim_{x\to c^+}f(x)=-\infty.\end{array}\]
-<p><strong>註</strong>：</p>
+\[\begin{array}{ll}\displaystyle\lim_{x\to c^-}f(x)=\infty,&\displaystyle\lim_{x\to c^-}f(x)=-\infty,\\\displaystyle\lim_{x\to c^+}f(x)=\infty,&\displaystyle\lim_{x\to c^+}f(x)=-\infty.\end{array}\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -605,8 +601,7 @@
 </ul>
 <h4 id="定義傾斜漸近線">【定義】傾斜漸近線</h4>
 <p>設 \(f:D\to \mathbb{R}\) 為一函數，\(y=mx+b\) 為一直線，其中 \(m\neq 0\)。則 \(y=mx+b\) 為 \(f\) 的函數圖形的<strong>斜漸近線</strong>（horizontal asymptote）若且唯若 </p>
-\[\lim_{x\to\infty}{\big[f(x)-(mx+b)\big]}=0\quad\mbox{或}\quad\lim_{x\to-\infty}{\big[f(x)-(mx+b)\big]}=0.\]
-<p><strong>註</strong>：參考王 定理 5.3-36 (p.185)</p>
+\[\lim_{x\to\infty}{\big[f(x)-(mx+b)\big]}=0\quad\mbox{或}\quad\lim_{x\to-\infty}{\big[f(x)-(mx+b)\big]}=0.\]<p><strong>註</strong>：參考王 定理 5.3-36 (p.185)</p>
 <h3 id="36-函數作圖">3.6 函數作圖</h3>
 <ul>
 <li>求定義域</li>
@@ -716,12 +711,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723691978" defer></script>
-        <script src="/js/search.js?1723691978" defer></script>
+        <script src="/js/auto-complete.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1724947537" defer></script>
+        <script src="/js/search.js?1724947537" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -732,19 +727,21 @@
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/index.html" class=""><input type="checkbox" id="R-section-ca7a4950064d29b1d9e0bc233d042c6a" aria-controls="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a"><label for="R-section-ca7a4950064d29b1d9e0bc233d042c6a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 興大AI班</span></label><a class="padding" href="/nchu-ai/index.html">興大AI班<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a" class="morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/apache/index.html" class=""><a class="padding" href="/nchu-ai/apache/index.html">Apache<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/apache-conf/index.html" class=""><a class="padding" href="/nchu-ai/apache-conf/index.html">Apache 設定檔解析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/seaborn/index.html" class=""><a class="padding" href="/nchu-ai/seaborn/index.html">Seaborn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/wsgi/index.html" class=""><a class="padding" href="/nchu-ai/wsgi/index.html">WSGI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/yolo/index.html" class=""><a class="padding" href="/nchu-ai/yolo/index.html">YOLO 物件偵測模型<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/matplotlib/index.html" class=""><a class="padding" href="/nchu-ai/matplotlib/index.html">Matplotlib<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tech/index.html" class=""><input type="checkbox" id="R-section-03f8c09f19b1233ed6c8a8fe181f47b9" aria-controls="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9"><label for="R-section-03f8c09f19b1233ed6c8a8fe181f47b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Techniques</span></label><a class="padding" href="/tech/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" class="morespace collapsible-menu">
-          <li data-nav-id="/tech/b-buduma-1/index.html" class=""><a class="padding" href="/tech/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/index.html" class=""><a class="padding" href="/tech/conda/index.html">Conda<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/mermaid/index.html" class=""><a class="padding" href="/tech/mermaid/index.html">Mermaid<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/days-between/index.html" class=""><a class="padding" href="/tech/days-between/index.html">days_between<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/git/index.html" class=""><a class="padding" href="/tech/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/hugging-face/index.html" class=""><a class="padding" href="/tech/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/b-python-da/index.html" class=""><a class="padding" href="/tech/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/relu/index.html" class=""><a class="padding" href="/tech/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/shell-var/index.html" class=""><a class="padding" href="/tech/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/useful-obsidian-plugins/index.html" class=""><a class="padding" href="/tech/useful-obsidian-plugins/index.html">實用的Obsidian外掛<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class="parent "><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45" checked><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/math-models-and-ode/index.html" class=""><a class="padding" href="/math-cs/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -756,10 +753,7 @@
           <li data-nav-id="/math-cs/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math-cs/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/logical-quantifier/index.html" class=""><a class="padding" href="/math-cs/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/set-theory/index.html" class=""><a class="padding" href="/math-cs/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/hum-ss/index.html" class=""><input type="checkbox" id="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7" aria-controls="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7"><label for="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/hum-ss/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7" class="morespace collapsible-menu">
-          <li data-nav-id="/hum-ss/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/hum-ss/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/phys-astro/index.html" class=""><input type="checkbox" id="R-section-d623ed7decfe62cba15fd2b8723858b9" aria-controls="R-subsections-d623ed7decfe62cba15fd2b8723858b9"><label for="R-section-d623ed7decfe62cba15fd2b8723858b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Phys &amp; Astro</span></label><a class="padding" href="/phys-astro/index.html">Phys &amp; Astro<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d623ed7decfe62cba15fd2b8723858b9" class="morespace collapsible-menu">
-          <li data-nav-id="/phys-astro/hydrogen-wavefunction/index.html" class=""><a class="padding" href="/phys-astro/hydrogen-wavefunction/index.html">Hydrogen wave function (Streamlit app)<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/phys-astro/friedmann-equation/index.html" class=""><a class="padding" href="/phys-astro/friedmann-equation/index.html">弗里德曼方程式<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
@@ -825,8 +819,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723691978" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723691978" defer></script>
+    <script src="/js/clipboard.min.js?1724947537" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1724947537" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -841,28 +835,28 @@
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723691978"></script>
-    <script src="/js/d3/d3-color.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723691978" defer></script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
-    <script src="/js/mermaid.min.js?1723691978" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724947537"></script>
+    <script src="/js/d3/d3-color.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1724947537" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
+    <script src="/js/mermaid.min.js?1724947537" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723691978" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723691978" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724947537" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724947537" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723691978", cssInProject: true, assetsBuster: "?1723691978" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724947537", cssInProject: true, assetsBuster: "?1724947537" };
     </script>
-    <script src="/js/theme.js?1723691978" defer></script>
+    <script src="/js/theme.js?1724947537" defer></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="\(\renewcommand{\dd}[1]{\operatorname{d}\!{#1}}\)
@@ -21,7 +21,7 @@
 將區間 \([a,b]\) 分為 \(n\) 個閉區間 \[[x_0,x_1],[x_1,x_2],\ldots,[x_i,x_{i&#43;1}],\ldots,[x_{n-1},x_n],\]其中 \(x_0=a\)，\(x_n=b\)，且 \(x_0">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Math &amp; CS">
+    <meta property="article:section" content="Math & CS">
     <meta property="article:published_time" content="2024-07-03T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-07-03T00:00:00+00:00">
     <meta property="article:tag" content="Calculus">
@@ -37,18 +37,18 @@
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Calculus,Tutor,Integral">
     <title></title>
-    <link href="/images/favicon.png?1723691978" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723691978" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723691978" rel="stylesheet">
-    <link href="/css/fonts.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723691978" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723691978" rel="stylesheet">
-    <link href="/css/print.css?1723691978" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723691978"></script>
+    <link href="/images/favicon.png?1724947537" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1724947537" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1724947537" rel="stylesheet">
+    <link href="/css/fonts.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1724947537" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1724947537" rel="stylesheet">
+    <link href="/css/print.css?1724947537" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1724947537"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -194,13 +194,10 @@
 \[\begin{aligned}L_{n}&=\frac{1}{n}f\left(\frac{0}{n}\right)+\frac{1}{n}f\left(\frac{1}{n}\right)+\frac{1}{n}f\left(\frac{2}{n}\right)+\cdots+\frac{1}{n}f\left(\frac{n-1}{n}\right)\\&=\frac{1}{n}\left(\frac{0}{n}\right)^2+\frac{1}{n}\left(\frac{1}{n}\right)^2+\frac{1}{n}\left(\frac{2}{n}\right)^2+\cdots+\frac{1}{n}\left(\frac{n-1}{n}\right)^2\\&=\frac{1}{n^3}\left[0^2+1^2+2^2+\cdots+(n-1)^2\right]\\&=\frac{1}{n^3}\cdot\frac{n(n-1)(2n-1)}{6}\\&=\frac{(n-1)(2n-1)}{6n^2}\end{aligned}\]</li>
 </ul>
 <p>可以（用函數 \(y=x^2\) 的單調性）證明：對於任意子區間數量 \(n\)，面積 \(S\) 總是介於 \(L_n\) 和 \(R_n\) 之間，也就是 </p>
-\[L_n\leq S\leq R_n\]
-<p>
+\[L_n\leq S\leq R_n\]<p>
 當 \(n\to\infty\) 時，
 </p>
-\[\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n+1)(2n+1)}{6n^2}}=\frac{1}{3}\]
-\[\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}\]
-<p>根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 \(S=\frac{1}{3}\)。</p>
+\[\lim_{n\to\infty}{R_n}=\lim_{n\to\infty}{\frac{(n+1)(2n+1)}{6n^2}}=\frac{1}{3}\]\[\lim_{n\to\infty}{L_n}=\lim_{n\to\infty}{\frac{(n-1)(2n-1)}{6n^2}}=\frac{1}{3}\]<p>根據[[tutor-7#^squeeze|數列夾擠定理]]，面積 \(S=\frac{1}{3}\)。</p>
 <p>一般來說，可以取第 \(i\) 子區間內的任意數 \(x_i^*\in[x_{i-1},x_1]\) 作為樣本點（sample points），取函數值 \(f(x_i^*)\) 作為矩形的高。</p>
 <p>![[tutot9-riemann-sum.png|800]]</p>
 <p>對所有 \(i=1,2,\ldots,n\) ，可以選取第 \(i\) 子區間內的樣本點 \(x_i^*\) ，使得矩形高度 \(f(x_i^*)\) 在該子區間內有<strong>極小值</strong>或<strong>極大值</strong>。（只要函數 \(f\) 在第 \(i\) 子區間內連續，根據[[derivative-applications#^evt|極值定理]]，這樣的極值存在。）</p>
@@ -209,12 +206,11 @@
 <h4 id="定義黎曼和">【定義】黎曼和</h4>
 <p>設 \(f:[a,b]\to\mathbb{R}\) 為一連續函數，且 \(a=x_0<x_1<\ldots<x_n=b\) 為 \([a,b]\) 的一個分割。則 \(f\) 關於分割的<strong>黎曼和</strong>（Riemann sum）為
 </p>
-\[\sum^{n}_{i=1}{f(x_i^*)\Delta x_i},\tag{1}\]
-<p>
+\[\sum^{n}_{i=1}{f(x_i^*)\Delta x_i},\tag{1}\]<p>
 其中對於 \(i=1,2,\ldots,n\) ，定義 \(\Delta x_i=x_{i-1}-x_i\) 和 \(x_i^*\in[x_{i-1},x_i]\)。</p>
 <p>隨著分割的精細化（refinement，直觀上來說就是子區間數量變多、長度變短），如果黎曼和趨於一個極限值，則稱函數 \(f\) 是<strong>黎曼可積</strong>（Riemann-integrable）的，所得的極限值稱為 <strong><a href="https://zh.wikipedia.org/wiki/%E9%BB%8E%E6%9B%BC%E7%A7%AF%E5%88%86" rel="external" target="_self">黎曼積分</a></strong> （Riemann integral）。</p>
-<p><a href="#R-image-cf230a63aae130463593a3470cc7f1f8" class="lightbox-link"><img class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Riemann.gif" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cf230a63aae130463593a3470cc7f1f8"><img class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Riemann.gif"></a></p>
+<p><a href="#R-image-b3959f7920e5cf1da27bfbca0714deaa" class="lightbox-link"><img class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Riemann.gif" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b3959f7920e5cf1da27bfbca0714deaa"><img class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Riemann.gif"></a></p>
 <p>另一種與黎曼積分等價的表述是 <strong><a href="https://zh.wikipedia.org/zh-tw/%E8%BE%BE%E5%B8%83%E7%A7%AF%E5%88%86" rel="external" target="_self">達布積分</a></strong>（Darboux integral）。</p>
 <hr>
 <blockquote>
@@ -237,36 +233,29 @@
 <p>黎曼積分是一種將曲線下面積數值化的方法。給定一個區間 \([a, b]\) 和在該區間上的函數 \(f(x)\)，我們將這個區間分割成 \(n\) 個子區間，每個子區間的寬度為 \(\Delta x_i\)，然後對每個子區間選擇一個點 \(x_i^*\)，計算函數在這些點的值 \(f(x_i^*)\)，最後求和：</p>
 \[
 S = \sum_{i=1}^{n} f(x_i^*) \Delta x_i
-\]
-<p>當 \(n \to \infty\) 且每個 \(\Delta x_i \to 0\) 時，若這個和的極限存在，則稱此極限為 \(f(x)\) 在 \([a, b]\) 上的黎曼積分，記為：</p>
+\]<p>當 \(n \to \infty\) 且每個 \(\Delta x_i \to 0\) 時，若這個和的極限存在，則稱此極限為 \(f(x)\) 在 \([a, b]\) 上的黎曼積分，記為：</p>
 \[
 \int_a^b f(x) \dd{x}
-\]
-<h3 id="例題與解答">例題與解答</h3>
+\]<h3 id="例題與解答">例題與解答</h3>
 <p><strong>例題 1：</strong>
 計算函數 \(f(x) = x\) 在區間 \([0, 1]\) 上的黎曼積分。</p>
 <p><strong>解答：</strong>
 將區間 \([0, 1]\) 分成 \(n\) 等份，每個子區間的寬度為 \(\Delta x = \frac{1}{n}\)。選取子區間的右端點，則有：</p>
 \[
 x_i^* = \frac{i}{n}
-\]
-<p>黎曼和為：</p>
+\]<p>黎曼和為：</p>
 \[
 S_n = \sum_{i=1}^{n} f(x_i^*) \Delta x = \sum_{i=1}^{n} \frac{i}{n} \cdot \frac{1}{n} = \frac{1}{n^2} \sum_{i=1}^{n} i
-\]
-<p>已知：</p>
+\]<p>已知：</p>
 \[
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
-\]
-<p>因此：</p>
+\]<p>因此：</p>
 \[
 S_n = \frac{1}{n^2} \cdot \frac{n(n+1)}{2} = \frac{n+1}{2n}
-\]
-<p>當 \(n \to \infty\) 時，\(S_n \to \frac{1}{2}\)，所以：</p>
+\]<p>當 \(n \to \infty\) 時，\(S_n \to \frac{1}{2}\)，所以：</p>
 \[
 \int_0^1 x \dd{x} = \frac{1}{2}
-\]
-<hr>
+\]<hr>
 <h2 id="勒貝格積分簡介與比較">勒貝格積分簡介與比較</h2>
 <p>勒貝格積分是一種更廣泛的積分方法，適用於更複雜的函數。在勒貝格積分中，我們不僅考慮函數的定義域的分割，也考慮函數值域的分割。勒貝格積分對於某些函數可以提供比黎曼積分更強的積分條件。</p>
 <p><strong>比較：</strong></p>
@@ -277,8 +266,7 @@ S_n = \frac{1}{n^2} \cdot \frac{n(n+1)}{2} = \frac{n+1}{2n}
 <h3 id="測度簡介">測度簡介</h3>
 <h4 id="1-測度">1. 測度</h4>
 <p><strong>測度</strong>是一種用來給集合分配「大小」的方法。它本身是一種映射 </p>
-\[\mu:\Sigma\to[0,\infty)\]
-<ul>
+\[\mu:\Sigma\to[0,\infty)\]<ul>
 <li>\(\Sigma\) 是某個集合 \(X\) 的 <strong><a href="https://zh.wikipedia.org/wiki/%CE%A3-%E4%BB%A3%E6%95%B0" rel="external" target="_self">σ-代數</a></strong> （σ-algebra），它本質上是 \(X\) 的子集合，並且滿足某種特殊的運算性質（如：對於補集運算和可數個聯集運算具有封閉性）。</li>
 <li>有序對 \((X,\Sigma)\) 稱為 <strong><a href="https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%B5%8B%E7%A9%BA%E9%97%B4" rel="external" target="_self">可測空間</a></strong>（measurable space）。</li>
 </ul>
@@ -301,16 +289,13 @@ S_n = \frac{1}{n^2} \cdot \frac{n(n+1)}{2} = \frac{n+1}{2n}
 <p>因為 \(\mu(I_i) = \epsilon_i\)，我們有：</p>
 \[
 \mu(A) \leq \mu\left(\bigcup_{i=1}^\infty I_i\right) \leq \sum_{i=1}^\infty \mu(I_i) = \sum_{i=1}^\infty \epsilon_i
-\]
-<p>由於 \(\epsilon_i\) 是任意小的，我們可以選擇 \(\epsilon_i = \frac{\epsilon}{2^i}\)，其中 \(\epsilon\) 是一個任意小的正數。這樣一來：</p>
+\]<p>由於 \(\epsilon_i\) 是任意小的，我們可以選擇 \(\epsilon_i = \frac{\epsilon}{2^i}\)，其中 \(\epsilon\) 是一個任意小的正數。這樣一來：</p>
 \[
 \sum_{i=1}^\infty \epsilon_i = \sum_{i=1}^\infty \frac{\epsilon}{2^i} = \epsilon \sum_{i=1}^\infty \frac{1}{2^i} = \epsilon \cdot 1 = \epsilon
-\]
-<p>由於 \(\epsilon\) 可以任意小，所以 \(\mu(A) \leq \epsilon\) 對於任何正數 \(\epsilon\) 成立。因此：</p>
+\]<p>由於 \(\epsilon\) 可以任意小，所以 \(\mu(A) \leq \epsilon\) 對於任何正數 \(\epsilon\) 成立。因此：</p>
 \[
 \mu(A) = 0
-\]
-<p>結論：==可數集的測度為零==，因為可以將可數集的每個點包含在一個任意小的區間內，這些區間的測度總和可以任意接近於零。根據勒貝格測度的定義，這樣的集合的測度即為零。</p>
+\]<p>結論：==可數集的測度為零==，因為可以將可數集的每個點包含在一個任意小的區間內，這些區間的測度總和可以任意接近於零。根據勒貝格測度的定義，這樣的集合的測度即為零。</p>
 <h4 id="案例狄利克雷函數">案例：狄利克雷函數</h4>
 <p><strong>狄利克雷函數</strong> (Dirichlet function) 是在 \([0, 1]\) 區間上的一個典型案例，常用於展示某些函數==不適合用黎曼積分==的方法進行積分。這個函數定義如下：</p>
 \[
@@ -319,41 +304,34 @@ D(x) =
 1 & \text{若 } x \text{ 是有理數} \\
 0 & \text{若 } x \text{ 是無理數}
 \end{cases}
-\]
-<p>狄利克雷函數在 \([0, 1]\) 區間上是黎曼不可積的，因為無論怎麼分割區間，都無法使上下黎曼和的差距變得足夠小。然而，它是勒貝格可積的。這是因為勒貝格積分主要關注函數值的測度。</p>
+\]<p>狄利克雷函數在 \([0, 1]\) 區間上是黎曼不可積的，因為無論怎麼分割區間，都無法使上下黎曼和的差距變得足夠小。然而，它是勒貝格可積的。這是因為勒貝格積分主要關注函數值的測度。</p>
 <h3 id="勒貝格積分的可積性條件">勒貝格積分的可積性條件</h3>
 <p>一個函數 \(f\) 在區間 \([a, b]\) 上<strong>勒貝格可積</strong>，如果其絕對值的勒貝格積分有限，即：</p>
 \[
 \int_a^b |f(x)| \dd{x} < \infty
-\]
-<h4 id="狄利克雷函數的勒貝格積分">狄利克雷函數的勒貝格積分</h4>
+\]<h4 id="狄利克雷函數的勒貝格積分">狄利克雷函數的勒貝格積分</h4>
 <p>在 \([0, 1]\) 上，狄利克雷函數 \(D(x)\) 的絕對值仍為 \(D(x)\) 自身。對於狄利克雷函數，我們來計算它的勒貝格積分。</p>
 <p>勒貝格積分基於集合的測度。在 \([0, 1]\) 區間內，有理數的集合是可數集，測度為 0；無理數的集合是不可數集，測度為 1。因此，狄利克雷函數在 \([0, 1]\) 上的勒貝格積分為：</p>
 \[
 \int_0^1 D(x) \dd{x} = \int_0^1 1 \cdot \chi_{\mathbb{Q} \cap [0, 1]}(x) \dd{x} + \int_0^1 0 \cdot \chi_{\mathbb{R} \setminus \mathbb{Q} \cap [0, 1]}(x) \dd{x}
-\]
-<p>其中 \(\chi_{\mathbb{Q} \cap [0, 1]}(x)\) 是有理數的指示函數，當 \(x\) 是有理數，值為 1 ，否則為 0。因為有理數在 \([0, 1]\) 上的測度為 0，所以：</p>
+\]<p>其中 \(\chi_{\mathbb{Q} \cap [0, 1]}(x)\) 是有理數的指示函數，當 \(x\) 是有理數，值為 1 ，否則為 0。因為有理數在 \([0, 1]\) 上的測度為 0，所以：</p>
 \[
 \int_0^1 1 \cdot \chi_{\mathbb{Q} \cap [0, 1]}(x) \dd{x} = 0
-\]
-<p>因此：</p>
+\]<p>因此：</p>
 \[
 \int_0^1 D(x) \dd{x} = 0
-\]
-<p>狄利克雷函數在 \([0, 1]\) 上是勒貝格可積的，且其勒貝格積分為 0。這個結果展示了勒貝格積分的強大，能處理一些黎曼積分無法處理的函數。</p>
+\]<p>狄利克雷函數在 \([0, 1]\) 上是勒貝格可積的，且其勒貝格積分為 0。這個結果展示了勒貝格積分的強大，能處理一些黎曼積分無法處理的函數。</p>
 <hr>
 <h2 id="定積分的定義">定積分的定義</h2>
 <p><strong>定積分</strong>（definite integral）表示為 \(\int_a^b f(x) \dd{x}\)，代表函數 \(f(x)\) 在區間 \([a, b]\) 上的累積面積。定積分可以通過求==黎曼和的極限==來計算：</p>
 \[
 \int_a^b f(x) \dd{x} = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x_i
-\]
-<hr>
+\]<hr>
 <h2 id="可積函數的定義">可積函數的定義</h2>
 <p>一個函數 \(f(x)\) 在區間 \([a, b]\) 上是<strong>可積的</strong>（integrable），如果其黎曼積分存在，即：</p>
 \[
 \int_a^b f(x) \dd{x} = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x_i
-\]
-<p>這表示當分割區間變得越來越細時，黎曼和趨近於一個有限值。</p>
+\]<p>這表示當分割區間變得越來越細時，黎曼和趨近於一個有限值。</p>
 <h3 id="可積性與連續性">可積性與連續性</h3>
 <p>可積性和連續性是微積分中的兩個重要概念。了解這兩者之間的關係有助於更好地理解函數的行為及其積分性質。以下是它們之間的主要關係：</p>
 <h4 id="1-連續函數一定可積">1. ==連續函數一定可積==</h4>
@@ -388,19 +366,16 @@ D(x) =
 <h3 id="1-線性法則">1. 線性法則</h3>
 <p>設 \(f,g:[a,b]\to\mathbb{R}\) 是兩個可積函數，且 \(c_1,c_2\in\mathbb{R}\) 是兩個任意常數。則
 </p>
-\[\int_a^b (c_1 f(x) + c_2 g(x)) \dd{x} = c_1 \int_a^b f(x) \dd{x} + c_2 \int_a^b g(x) \dd{x}\]
-<h3 id="2-子區間法則">2. 子區間法則</h3>
+\[\int_a^b (c_1 f(x) + c_2 g(x)) \dd{x} = c_1 \int_a^b f(x) \dd{x} + c_2 \int_a^b g(x) \dd{x}\]<h3 id="2-子區間法則">2. 子區間法則</h3>
 <p>設 \(f:[a,b]\to\mathbb{R}\) 是一個可積函數，且 \(c\in(a,b)\) 是任一點。則
 </p>
-\[\int_a^b f(x) \dd{x} = \int_a^c f(x) \dd{x} + \int_c^b f(x) \dd{x}\]
-<h3 id="3-正法則">3. 正法則</h3>
+\[\int_a^b f(x) \dd{x} = \int_a^c f(x) \dd{x} + \int_c^b f(x) \dd{x}\]<h3 id="3-正法則">3. 正法則</h3>
 <p>積分的正法則（positivity rule）表明，如果一個函數在區間內非負，則它的定積分也是非負的。</p>
 <p><strong>定理：</strong> 若 \(f(x) \geq 0\) 在區間 \([a, b]\) 上，則：
 </p>
 \[
 \int_a^b f(x) \dd{x} \geq 0
-\]
-<p><strong>例題：</strong>
+\]<p><strong>例題：</strong>
 計算 \(\int_0^2 x^2 \dd{x}\)。</p>
 <p><strong>解答：</strong>
 因為 \(x^2 \geq 0\) 在 \([0, 2]\) 上，所以 \(\int_0^2 x^2 \dd{x} \geq 0\)。</p>
@@ -408,8 +383,7 @@ D(x) =
 </p>
 \[
 \int_0^2 x^2 \dd{x} = \left[ \frac{x^3}{3} \right]_0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3} \geq 0
-\]
-<h3 id="4-合成法則">4. 合成法則</h3>
+\]<h3 id="4-合成法則">4. 合成法則</h3>
 <p>積分的合成法則（composition rule）是積分==變數變換==的一種方法，類似於微分的鏈法則。這種方法通過變數變換，使積分變得更容易計算。</p>
 <p><strong>定理：</strong>
 設 \(g:[a, b]\to[c,d]\) 是一個連續可微（continuously differentiable）函數，\(f:[c, d]\to\mathbb{R}\) 是一個連續函數。則</p>
@@ -430,34 +404,28 @@ D(x) =
 </p>
 \[
 \int_0^1 2x e^{x^2} \dd{x} = \int_0^1 e^u \, du = \left[ e^u \right]_0^1 = e^1 - e^0 = e - 1
-\]
-<h3 id="5-絕對值法則">5. 絕對值法則</h3>
+\]<h3 id="5-絕對值法則">5. 絕對值法則</h3>
 <p>積分絕對值法則（absolute value inequality）表明，==函數的定積分的絕對值小於等於該函數絕對值的定積分==。</p>
 <p><strong>定理：</strong> 對於任何可積函數 \(f(x)\)，有：
 </p>
 \[
 \left| \int_a^b f(x) \dd{x} \right| \leq \int_a^b |f(x)| \dd{x}
-\]
-<h4 id="例題">例題</h4>
+\]<h4 id="例題">例題</h4>
 <p>計算 \(\int_0^2 (3x^2 + 2x) \dd{x}\)。</p>
 <p><strong>解.</strong>
 利用線性性質，我們可以分別計算兩個積分：</p>
 \[
 \int_0^2 (3x^2 + 2x) \dd{x} = \int_0^2 3x^2 \dd{x} + \int_0^2 2x \dd{x}
-\]
-<p>計算第一個積分：</p>
+\]<p>計算第一個積分：</p>
 \[
 \int_0^2 3x^2 \dd{x} = 3 \int_0^2 x^2 \dd{x} = 3 \left[ \frac{x^3}{3} \right]_0^2 = \left[ x^3 \right]_0^2 = 8 - 0 = 8
-\]
-<p>計算第二個積分：</p>
+\]<p>計算第二個積分：</p>
 \[
 \int_0^2 2x \dd{x} = 2 \int_0^2 x \dd{x} = 2 \left[ \frac{x^2}{2} \right]_0^2 = \left[ x^2 \right]_0^2 = 4 - 0 = 4
-\]
-<p>所以：</p>
+\]<p>所以：</p>
 \[
 \int_0^2 (3x^2 + 2x) \dd{x} = 8 + 4 = 12
-\]
-<hr>
+\]<hr>
 <h2 id="積分的比較性質">積分的比較性質</h2>
 <p>積分也有一些比較性質，有助於判斷函數積分的性質：</p>
 <ol>
@@ -465,18 +433,15 @@ D(x) =
 <p><strong>單調性：</strong>
 如果 \(f(x) \leq g(x)\) 對於 \([a, b]\) 上的所有 \(x\) 成立，則：
 </p>
-\[\int_a^b f(x) \dd{x} \leq \int_a^b g(x) \dd{x}\]
-</li>
+\[\int_a^b f(x) \dd{x} \leq \int_a^b g(x) \dd{x}\]</li>
 <li>
 <p><strong>夾擠性質：</strong>
 如果 \(f(x) \leq h(x) \leq g(x)\) 對於 \([a, b]\) 上的所有 \(x\) 成立，且：
 </p>
-\[\int_a^b f(x) \dd{x} = \int_a^b g(x) \dd{x} = L\]
-<p>
+\[\int_a^b f(x) \dd{x} = \int_a^b g(x) \dd{x} = L\]<p>
 那麼：
 </p>
-\[\int_a^b h(x) \dd{x} = L\]
-</li>
+\[\int_a^b h(x) \dd{x} = L\]</li>
 </ol>
 <h3 id="例題與解答-1">例題與解答</h3>
 <p><strong>例題 3：</strong>
@@ -485,12 +450,10 @@ D(x) =
 由於 \(0 \leq \sin(x) \leq 1\)：</p>
 \[
 \int_0^\pi 0 \dd{x} \leq \int_0^\pi \sin(x) \dd{x} \leq \int_0^\pi 1 \dd{x}
-\]
-<p>所以：</p>
+\]<p>所以：</p>
 \[
 0 \leq \int_0^\pi \sin(x) \dd{x} \leq \pi
-\]
-<hr>
+\]<hr>
 <h2 id="微積分基本定理">微積分基本定理</h2>
 <p>微積分基本定理將微分與積分聯繫起來，分為兩部分：</p>
 <ol>
@@ -498,14 +461,12 @@ D(x) =
 <p><strong>基本定理第一部分：</strong>
 如果 \(f\) 是在 \([a, b]\) 上連續的函數，且 \(F\) 是 \(f\) 的不定積分，即 \(F'(x) = f(x)\)，則：
 </p>
-\[\int_a^b f(x) \dd{x} = F(b) - F(a)\]
-</li>
+\[\int_a^b f(x) \dd{x} = F(b) - F(a)\]</li>
 <li>
 <p><strong>基本定理第二部分：</strong>
 如果 \(f\) 是在 \([a, b]\) 上連續的函數，則函數 \(F\) 定義為：
 </p>
-\[F(x) = \int_a^x f(t) \, dt\]
-<p>
+\[F(x) = \int_a^x f(t) \, dt\]<p>
 那麼 \(F\) 在 \([a, b]\) 上是可微的，且 \(F'(x) = f(x)\)。</p>
 </li>
 </ol>
@@ -517,7 +478,6 @@ D(x) =
 \[
 \int_1^4 \frac{1}{x} \dd{x} = \left[ \ln|x| \right]_1^4 = \ln(4) - \ln(1) = \ln(4)
 \]
-
             <footer class="footline">
             </footer>
           </article>
@@ -592,12 +552,12 @@ D(x) =
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723691978" defer></script>
-        <script src="/js/search.js?1723691978" defer></script>
+        <script src="/js/auto-complete.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1724947537" defer></script>
+        <script src="/js/search.js?1724947537" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -608,19 +568,21 @@ D(x) =
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/index.html" class=""><input type="checkbox" id="R-section-ca7a4950064d29b1d9e0bc233d042c6a" aria-controls="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a"><label for="R-section-ca7a4950064d29b1d9e0bc233d042c6a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 興大AI班</span></label><a class="padding" href="/nchu-ai/index.html">興大AI班<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a" class="morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/apache/index.html" class=""><a class="padding" href="/nchu-ai/apache/index.html">Apache<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/apache-conf/index.html" class=""><a class="padding" href="/nchu-ai/apache-conf/index.html">Apache 設定檔解析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/seaborn/index.html" class=""><a class="padding" href="/nchu-ai/seaborn/index.html">Seaborn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/wsgi/index.html" class=""><a class="padding" href="/nchu-ai/wsgi/index.html">WSGI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/yolo/index.html" class=""><a class="padding" href="/nchu-ai/yolo/index.html">YOLO 物件偵測模型<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/matplotlib/index.html" class=""><a class="padding" href="/nchu-ai/matplotlib/index.html">Matplotlib<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tech/index.html" class=""><input type="checkbox" id="R-section-03f8c09f19b1233ed6c8a8fe181f47b9" aria-controls="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9"><label for="R-section-03f8c09f19b1233ed6c8a8fe181f47b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Techniques</span></label><a class="padding" href="/tech/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" class="morespace collapsible-menu">
-          <li data-nav-id="/tech/b-buduma-1/index.html" class=""><a class="padding" href="/tech/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/index.html" class=""><a class="padding" href="/tech/conda/index.html">Conda<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/mermaid/index.html" class=""><a class="padding" href="/tech/mermaid/index.html">Mermaid<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/days-between/index.html" class=""><a class="padding" href="/tech/days-between/index.html">days_between<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/git/index.html" class=""><a class="padding" href="/tech/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/hugging-face/index.html" class=""><a class="padding" href="/tech/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/b-python-da/index.html" class=""><a class="padding" href="/tech/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/relu/index.html" class=""><a class="padding" href="/tech/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/shell-var/index.html" class=""><a class="padding" href="/tech/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/useful-obsidian-plugins/index.html" class=""><a class="padding" href="/tech/useful-obsidian-plugins/index.html">實用的Obsidian外掛<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class="parent "><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45" checked><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/tutor-9/index.html" class="active"><a class="padding" href="/math-cs/tutor-9/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -633,10 +595,7 @@ D(x) =
           <li data-nav-id="/math-cs/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math-cs/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/logical-quantifier/index.html" class=""><a class="padding" href="/math-cs/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/set-theory/index.html" class=""><a class="padding" href="/math-cs/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/hum-ss/index.html" class=""><input type="checkbox" id="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7" aria-controls="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7"><label for="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/hum-ss/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7" class="morespace collapsible-menu">
-          <li data-nav-id="/hum-ss/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/hum-ss/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/phys-astro/index.html" class=""><input type="checkbox" id="R-section-d623ed7decfe62cba15fd2b8723858b9" aria-controls="R-subsections-d623ed7decfe62cba15fd2b8723858b9"><label for="R-section-d623ed7decfe62cba15fd2b8723858b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Phys &amp; Astro</span></label><a class="padding" href="/phys-astro/index.html">Phys &amp; Astro<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d623ed7decfe62cba15fd2b8723858b9" class="morespace collapsible-menu">
-          <li data-nav-id="/phys-astro/hydrogen-wavefunction/index.html" class=""><a class="padding" href="/phys-astro/hydrogen-wavefunction/index.html">Hydrogen wave function (Streamlit app)<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/phys-astro/friedmann-equation/index.html" class=""><a class="padding" href="/phys-astro/friedmann-equation/index.html">弗里德曼方程式<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
@@ -702,8 +661,8 @@ D(x) =
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723691978" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723691978" defer></script>
+    <script src="/js/clipboard.min.js?1724947537" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1724947537" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -718,28 +677,28 @@ D(x) =
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723691978"></script>
-    <script src="/js/d3/d3-color.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723691978" defer></script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
-    <script src="/js/mermaid.min.js?1723691978" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724947537"></script>
+    <script src="/js/d3/d3-color.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1724947537" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
+    <script src="/js/mermaid.min.js?1724947537" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723691978" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723691978" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724947537" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724947537" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723691978", cssInProject: true, assetsBuster: "?1723691978" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724947537", cssInProject: true, assetsBuster: "?1724947537" };
     </script>
-    <script src="/js/theme.js?1723691978" defer></script>
+    <script src="/js/theme.js?1724947537" defer></script>
   </body>
 </html>

@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/mutiple_integral/index.html</loc>
-    <lastmod>2024-08-13T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/apache/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/nchu-ai/apache/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/nchu-ai/apache-conf/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tech/mermaid/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/python/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/nchu-ai/seaborn/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/tags/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/nchu-ai/wsgi/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/nchu-ai/yolo/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/%E4%BC%BA%E6%9C%8D%E5%99%A8/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/nchu-ai/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/%E8%B3%87%E6%96%99%E8%A6%96%E8%A6%BA%E5%8C%96/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/%E9%9B%BB%E8%85%A6%E8%A6%96%E8%A6%BA/index.html</loc>
+    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/mutiple_integral/index.html</loc>
     <lastmod>2024-08-13T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -22,14 +70,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/math-cs/index.html</loc>
-    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/hum-ss/index.html</loc>
-    <lastmod>2024-08-09T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tech/b-buduma-1/index.html</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url>
   <url>
@@ -69,16 +109,10 @@
     <loc>http://localhost:1313/tags/conda/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tech/conda/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/tags/cosmology/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tech/days-between/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tech/git/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/hum-ss/the-origins-of-totalitarianism-ch10/index.html</loc>
@@ -93,34 +127,22 @@
     <loc>http://localhost:1313/tags/howto/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tech/hugging-face/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/phys-astro/hydrogen-wavefunction/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/tags/logic/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/math-cs/math-models-and-ode/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/nchu-ai/matplotlib/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/tech/conda-cheatsheet/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/neural_network/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/obsidian/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tags/ode/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/phys-astro/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tech/b-python-da/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tags/pytorch/index.html</loc>
@@ -132,31 +154,16 @@
     <loc>http://localhost:1313/tags/quickstart/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tech/relu/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tags/script/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/tags/set-theory/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tags/set_theory/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/shell/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tech/shell-var/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/math-cs/double-integral/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/math-cs/topology-on-r/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/tech/useful-obsidian-plugins/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/math-cs/derivative-applications/index.html</loc>
@@ -169,6 +176,12 @@
   </url>
   <url>
     <loc>http://localhost:1313/math-cs/limit-and-continuity-on-r/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tech/conda/conda/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tech/conda/conda/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/math-cs/logical-quantifier/index.html</loc>

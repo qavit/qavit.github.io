@@ -6,21 +6,14 @@
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>神經網路</title>
-      <link>http://localhost:1313/tech/b-buduma-1/index.html</link>
-      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/b-buduma-1/index.html</guid>
-      <description>機器學習的機制 p.4 用函數 $h(\mathbf{x},{\boldsymbol\theta})$ 來定義一個機器學習模型。 輸入項 $\mathbf{x}$ （是一實例，例如灰階圖片，每個分量是圖面中每個像素的強度） 參數向量 ${\boldsymbol\theta}$ （分量為個別參數） 舉例：考試成績預測模型 輸入項為 $\mathbf{x} = \begin{bmatrix}x_1\x_2\end{bmatrix}$ ，其中睡覺時數 $x_1$ ，唸書時數 $x_2$ 參數向量為 ${\boldsymbol\theta}=\begin{bmatrix}\theta_0\\theta_1\\theta_2\end{bmatrix}$ 模型為 $$ h(\mathbf{x},{\boldsymbol\theta})= \begin{cases} -1 &amp; \mbox{若 } \mathbf{x}^T \cdot \begin{bmatrix}\theta_1\\\theta_2\end{bmatrix}+\theta_0 &lt; 0 \\ 1 &amp; \mbox{若 } \mathbf{x}^T \cdot \begin{bmatrix}\theta_1\\\theta_2\end{bmatrix}+\theta_0 \geq 0 \end{cases} $$ $-1$ 代表成績低於平均 $1$ 代表成績高於平均 此模型屬於[[線性感知器]] 對下圖來說，參數向量 ${\boldsymbol\theta}=\begin{bmatrix}-24 &amp; 3 &amp; 4\end{bmatrix}^T$ 可以對每個資料點做出正確的預測，於是一個最佳化的模型為 $$ h(\mathbf{x},{\boldsymbol\theta})= \begin{cases} -1 &amp; \mbox{若 } 3x_1+4x_2-24 &lt; 0 \\ 1 &amp; \mbox{若 } 3x_1+4x_2-24 \geq 0 \end{cases} $$ !</description>
-    </item>
-    <item>
-      <title>Conda</title>
-      <link>http://localhost:1313/tech/conda/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/conda/index.html</guid>
-      <description>Conda is an open-source, cross-platform, language-agnostic package manager and environment management system.</description>
+      <title>Mermaid</title>
+      <link>http://localhost:1313/tech/mermaid/index.html</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/mermaid/index.html</guid>
+      <description>Mermaid 是一種用來生成各種圖表和流程圖的簡潔語法。它是基於 JavaScript，可以直接在 Markdown 文件中渲染。&#xA;https://mermaid.js.org/ 流程圖 語法 → https://mermaid.js.org/syntax/flowchart.html&#xA;```mermaid graph TD A[使用魔鏡] --&gt; B{我是不是很帥？} B -- 是 --&gt; C[很好，繼續保養] B -- 否 --&gt; D[去整形] ``` graph TD A[使用魔鏡] --&gt; B{我是不是很帥？} B -- 是 --&gt; C[很好，繼續保養] B -- 否 --&gt; D[去整形]解釋：&#xA;graph TD 表示從上到下（Top to Down）的流程圖。 方括號 [] 表示方形節點，大括號 {} 表示菱形節點（判斷），請參考以下 #節點形狀。 --&gt; 表示節點之間的連接線，可以填入文字，請參考以下 #連接線形狀。 節點樣式 節點樣式 語法 圓角 id(round edge) 方形 id[square] stadium-shaped id([stadium-shaped]) 菱形 id{rhombus} 平行線 id[||| parallel |||] 圓柱 id[(cylindrical)] 子流程 id[[subroutine]] 圓圈 id((circle)) 不對稱 id&gt;asymmetric] 六邊形 id{{hexgon}} 平行四邊形 id[/parallelogram/] 平行四邊形（顛倒） id[\parallelogram alt\] 梯形 id[/trapezoid\] 梯形（顛倒） id[\trapezoid/] 雙重圓圈 id(((double circle))) graph TD A(&#34;(round edge)&#34;) --&gt; B[&#34;[square]&#34;] B -.</description>
     </item>
     <item>
       <title>days_between</title>
@@ -28,13 +21,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/days-between/index.html</guid>
       <description>#!/usr/bin/env python3 import argparse from datetime import datetime, timedelta def calculate_days(date1, date2, business_days=False): date_format = &#34;%Y-%m-%d&#34; today_str = datetime.now().strftime(date_format) # Convert &#39;today&#39; to the current date if date1.lower() == &#34;today&#34;: date1 = today_str if date2.lower() == &#34;today&#34;: date2 = today_str try: start_date = datetime.strptime(date1, date_format) end_date = datetime.strptime(date2, date_format) except ValueError as e: print(f&#34;Date format error: {e}&#34;) return if business_days: days_diff = 0 current_date = start_date while current_date &lt;= end_date: if current_date.</description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>http://localhost:1313/tech/git/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/git/index.html</guid>
-      <description>[!quote] 1 Git is a free and open source distributed [[version control]] system designed to handle everything from small to very large projects with speed and efficiency.&#xA;[!quote] github.com/git/git Git - fast, scalable, distributed revision control system&#xA;[!quote] 維基百科 git 是一個分散式版本控制系統，最初由林納斯・托瓦茲（Linus Torvalds）創作，於 2005 年以 [[GPL]] 授權條款釋出。最初目的是為了更好地管理 [[Linux]] 核心開發而設計。&#xA;使用儲存庫（repository）管理項目 克隆（clone）項目以在本地副本上工作 透過預存（staging）和 提交（commiting）來控制和追蹤更改 分支（branch）和合併（merge）允許處理項目的不同部分和版本 將專案的最新版本拉取（pull）到本機副本 將本地更新推送（push）到主項目 My version &amp; config $ git --version git version 2.39.3 (Apple Git-146) $ git config -l credential.</description>
     </item>
     <item>
       <title>How to add new line to YAML file</title>
@@ -48,49 +34,21 @@
       <link>http://localhost:1313/tech/how-to-install-ipykernel-in-conda-environments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/how-to-install-ipykernel-in-conda-environments/index.html</guid>
-      <description>Question What does these commands do?&#xA;conda install -n myenv ipykernel python -m ipykernel install --user --name myenvChatGPT’s answer The commands you’ve provided relate to setting up a Python environment with Conda and configuring a Jupyter Notebook kernel to use this environment. Here’s a detailed breakdown of each command and its function:&#xA;1. conda install -n myenv ipykernel conda: This is the package and environment management system used with Anaconda and Miniconda.</description>
-    </item>
-    <item>
-      <title>Hugging Face</title>
-      <link>http://localhost:1313/tech/hugging-face/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/hugging-face/index.html</guid>
-      <description>Hugging Face is a company that provides natural language processing (NLP) tools and services. It was founded in 2016 by Julien Chaumond and Nicolas Frossard. Hugging Face’s products are used by companies such as Google, Facebook, and Microsoft.&#xA;Hugging Face’s most popular product is its Transformers library, which provides pre-trained NLP models. The Transformers library is used by developers to build NLP applications such as chatbots, question answering systems, and text summarization systems.</description>
+      <description>Question What does these commands do?&#xA;conda install -n myenv ipykernel python -m ipykernel install --user --name myenv ChatGPT’s answer The commands you’ve provided relate to setting up a Python environment with Conda and configuring a Jupyter Notebook kernel to use this environment. Here’s a detailed breakdown of each command and its function:&#xA;1. conda install -n myenv ipykernel conda: This is the package and environment management system used with Anaconda and Miniconda.</description>
     </item>
     <item>
       <title>My Conda cheatsheet</title>
       <link>http://localhost:1313/tech/conda-cheatsheet/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/conda-cheatsheet/index.html</guid>
-      <description>This is my [conda] cheatsheet.&#xA;Package management List installed packages conda list conda list --show-channel-urlsInstall a package conda install PKGNAME conda install PKGNAME=3.1.4 conda install CHANNELNAME::PKGNAMEUpdate a package conda update --all conda update PKGNAME conda upgrade PKGNAMEUninstall a package conda uninstall PKGNAME conda remove PKGNAMEVirtual environment Create a new environment conda create --name myenv python=3.8Activate/deactivate an environment Activate an environment on Windows (this also works on MacOS)&#xA;conda activate myenvActivate an environment on Linux/MacOS</description>
+      <description>This is my [conda] cheatsheet.&#xA;Package management List installed packages conda list conda list --show-channel-urls Install a package conda install PKGNAME conda install PKGNAME=3.1.4 conda install CHANNELNAME::PKGNAME Update a package conda update --all conda update PKGNAME conda upgrade PKGNAME Uninstall a package conda uninstall PKGNAME conda remove PKGNAME Virtual environment Create a new environment conda create --name myenv python=3.8 Activate/deactivate an environment Activate an environment on Windows (this also works on MacOS)</description>
     </item>
     <item>
-      <title>Python 資料分析</title>
-      <link>http://localhost:1313/tech/b-python-da/index.html</link>
+      <title>用 Conda 管理虛擬環境</title>
+      <link>http://localhost:1313/tech/conda/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/b-python-da/index.html</guid>
-      <description>本書筆記暫時存放於同一檔案。&#xA;第一章 寫在前面 1.1 這本書在講什麼 這本書講 Python 中操作、處理、清理資料的各種細節。 我的目標是介紹 Python 程式語言、以及相關的資料導向函式庫和工具。 本書的重點不是介紹資料分析方法 何謂資料？資料是「結構化數據」，例如 表格或試算表。每個欄可以為不同的資料型態。儲存在關聯式資料庫或是以 tab 或逗號分隔的文字檔案（tsv、csv），多屬於這種。 多維度陣列（矩陣） key 欄位互相關聯的多個資料表 均等或不均等的時間間隔序列 … 1.2 為什麼用 Python 做資料分析 在直譯式語言中，基於歷史和文化的各種原因，Python 已坐擁巨大且活躍的科學計算與資料分析社群。 近年來因為 Python 對函式庫的改良，使其成為資料分析工作的熱門選擇。 競爭者：R、MATLAB、SAS、Stata⋯⋯ 再加上一般軟體工程的綜合實力，是建置資料應用程式的絕佳選擇。（能用一個語言完成所有事，就不需要兩個語言） Python 很容易整合 C、C++ 以及 Fortran 程式碼。 Python 不適合高同步、多執行緒的應用程式。 因為 Python 有 GIL（global interpreter lock），防止直譯其同時執行超過一個命令。 不過，只要不經常和 Python 物件相互存取，可以在 Python 的 C Extension 中使用原生的多執行緒，這樣就可以平行處理而不會被 GIL 限制。 1.3 重要的 Python 函式庫 p.4&#xA;[[NumPy]] 是 Numerical Python 的簡稱 Python 中數值計算的重要基石 為多數的科學應用提供資料結構、演算法以及所需的函式庫年和 特點 快速、有效率的多維陣列物件 ndarray 陣列的 elementwise 計算或 inter-array 數值計算 從磁碟讀寫陣列資料集 線性代數運算、傅立葉轉換、亂數逞生氣 成熟的 C API，能做 Python extension，也讓 C/C++ 存取 NumPy 的資料結構與計算功能 [[Pandas]] 提供高階的資料結構和函式 設計用來快速、簡單、有效處理有結構的資料或是表格資料 主要物件： DataFrame：以表格、欄位為主的資料結構，有行和列標籤 Series：一維標籤陣列 結合 NumPy 高效陣列計算的特性、以及試算比和關聯式資料庫（如 SQL）的性資料操作能力 提供複雜的索引功能，使得重構、切片、切塊、聚合和選擇資料子集合等工作變得容易 pandas 的名稱有兩個來源，一格式 panel data 的延伸，另一個是 Python data analysis 的縮寫。 [[Matplotlib]] Python 用來產生繪圖和二為資料視覺會最常用的函式庫。 最早是 John H.</description>
-    </item>
-    <item>
-      <title>ReLU</title>
-      <link>http://localhost:1313/tech/relu/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/relu/index.html</guid>
-      <description>\[f(z)=\max{(0,z)}\] </description>
-    </item>
-    <item>
-      <title>Shell 變數操作</title>
-      <link>http://localhost:1313/tech/shell-var/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/shell-var/index.html</guid>
-      <description> 變數是用來儲存數值或字串的實體。 在 Shell 中宣告變數時，等號左右不能有空格。 使用變數時，要加上 $ 符號。 變數可分為區域變數（使用 local）、環境變數（使用 export 或 local） 列出所有變數用 set，列出環境變數用 env 建立檔案 test.sh&#xA;#!/bin/bash hello=&#34;Hello world&#34; echo $Hello執行 test.sh&#xA;&gt; sh Hello world Hello world Shell 的變數沒有分類型 </description>
-    </item>
-    <item>
-      <title>實用的Obsidian外掛</title>
-      <link>http://localhost:1313/tech/useful-obsidian-plugins/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/useful-obsidian-plugins/index.html</guid>
-      <description>Smart typography Quick LaTeX Wrap with shortcuts https://github.com/manic/obsidian-wrap-with-shortcuts </description>
+      <guid>http://localhost:1313/tech/conda/index.html</guid>
+      <description>Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。&#xA;安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。&#xA;使用安裝檔 前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 base 環境 當你安裝 Conda 後，會自動建立一個叫做 base 的環境，並設為默認環境。base 包含了 Conda 的執行所需的所有軟體套件。&#xA;虛擬環境管理 基礎操作 建立新環境 建立一個名為 myenv 的 Python 3.11 環境：&#xA;conda create --name myenv python=3.11 確定環境的安裝位置 conda info --base 像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 /usr/local/Caskroom/miniconda/base。&#xA;啟動環境 啟動名為 myenv 的環境&#xA;conda activate myenv 啟動之後，你應該會看到終端機的提示字元（prompt）前面出現</description>
     </item>
   </channel>
 </rss>

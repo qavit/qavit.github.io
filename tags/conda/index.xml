@@ -12,7 +12,14 @@
       <link>http://localhost:1313/tech/conda-cheatsheet/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/conda-cheatsheet/index.html</guid>
-      <description>This is my [conda] cheatsheet.&#xA;Package management List installed packages conda list conda list --show-channel-urlsInstall a package conda install PKGNAME conda install PKGNAME=3.1.4 conda install CHANNELNAME::PKGNAMEUpdate a package conda update --all conda update PKGNAME conda upgrade PKGNAMEUninstall a package conda uninstall PKGNAME conda remove PKGNAMEVirtual environment Create a new environment conda create --name myenv python=3.8Activate/deactivate an environment Activate an environment on Windows (this also works on MacOS)&#xA;conda activate myenvActivate an environment on Linux/MacOS</description>
+      <description>This is my [conda] cheatsheet.&#xA;Package management List installed packages conda list conda list --show-channel-urls Install a package conda install PKGNAME conda install PKGNAME=3.1.4 conda install CHANNELNAME::PKGNAME Update a package conda update --all conda update PKGNAME conda upgrade PKGNAME Uninstall a package conda uninstall PKGNAME conda remove PKGNAME Virtual environment Create a new environment conda create --name myenv python=3.8 Activate/deactivate an environment Activate an environment on Windows (this also works on MacOS)</description>
+    </item>
+    <item>
+      <title>用 Conda 管理虛擬環境</title>
+      <link>http://localhost:1313/tech/conda/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/conda/index.html</guid>
+      <description>Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。&#xA;安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。&#xA;使用安裝檔 前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 base 環境 當你安裝 Conda 後，會自動建立一個叫做 base 的環境，並設為默認環境。base 包含了 Conda 的執行所需的所有軟體套件。&#xA;虛擬環境管理 基礎操作 建立新環境 建立一個名為 myenv 的 Python 3.11 環境：&#xA;conda create --name myenv python=3.11 確定環境的安裝位置 conda info --base 像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 /usr/local/Caskroom/miniconda/base。&#xA;啟動環境 啟動名為 myenv 的環境&#xA;conda activate myenv 啟動之後，你應該會看到終端機的提示字元（prompt）前面出現</description>
     </item>
   </channel>
 </rss>

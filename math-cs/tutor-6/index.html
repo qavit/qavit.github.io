@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="1. 偏導數 1.1 偏導數 【定義】偏導數 設 \(\Omega\) 為 \(\mathbb{R}^2\) 上的開集，\(f:\Omega\to\mathbb{R}\) 為一函數，且 \((a,b)\in \Omega\)。
@@ -21,7 +21,7 @@
 參考 王 定義 18.1-13 (p.590) 翁 定義 5.2.1 (p.194) 朱 定義 14.4.1、符號 14.4.2 (p.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Math &amp; CS">
+    <meta property="article:section" content="Math & CS">
     <meta property="article:published_time" content="2024-06-25T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-06-25T00:00:00+00:00">
     <meta property="article:tag" content="Tutor">
@@ -34,22 +34,22 @@
 參考 王 定義 18.1-13 (p.590) 翁 定義 5.2.1 (p.194) 朱 定義 14.4.1、符號 14.4.2 (p.">
     <meta itemprop="datePublished" content="2024-06-25T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-06-25T00:00:00+00:00">
-    <meta itemprop="wordCount" content="1352">
+    <meta itemprop="wordCount" content="1336">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Tutor,Calculus,Partial_derivative,Gradient">
     <title></title>
-    <link href="/images/favicon.png?1723691978" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723691978" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723691978" rel="stylesheet">
-    <link href="/css/fonts.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723691978" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723691978" rel="stylesheet">
-    <link href="/css/print.css?1723691978" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723691978"></script>
+    <link href="/images/favicon.png?1724947537" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1724947537" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1724947537" rel="stylesheet">
+    <link href="/css/fonts.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724947537" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1724947537" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1724947537" rel="stylesheet">
+    <link href="/css/print.css?1724947537" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1724947537"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -198,8 +198,7 @@
 </ol>
 <h4 id="變數數量-geq-3-的情況">變數數量 \(\geq 3\) 的情況</h4>
 <p>一般而言，若 \(f:\Omega\subseteq\mathbb{R}^n\to\mathbb{R}\)，它對於第 \(i\) 個變數 \(x_i\) 的偏導函數為 </p>
-\[\frac{\partial f}{\partial x_i}=\lim_{h\to0}{\frac{f(x_1,\ldots,{\color{blue}x_i+h},\ldots,x_n)-f(x_1,\ldots,{\color{blue}x_i},\ldots,x_n)}{h}},\tag{7}\]
-<p> 也記作 \(f_{x_i}=f_i=D_i\)。</p>
+\[\frac{\partial f}{\partial x_i}=\lim_{h\to0}{\frac{f(x_1,\ldots,{\color{blue}x_i+h},\ldots,x_n)-f(x_1,\ldots,{\color{blue}x_i},\ldots,x_n)}{h}},\tag{7}\]<p> 也記作 \(f_{x_i}=f_i=D_i\)。</p>
 <h5 id="例題-1">例題</h5>
 <p>設 \(f(x,y,z)=e^{xy}\ln{z}\)。求 \(f_x\)、\(f_y\)、\(f_z\)。答：<!-- raw HTML omitted -->\(f_x=ye^{xy}\ln{z}\)，\(f_y=xe^{xy}\ln{z}\)，\(f_z=e^{xy}/z\)。<!-- raw HTML omitted --></p>
 <h4 id="定義二階偏導數與偏導函數">【定義】二階偏導數與偏導函數</h4>
@@ -230,8 +229,7 @@
 答：<!-- raw HTML omitted -->\(f_{xx}=6x+2y^3,\,f_{xy}=6xy^2,\,f_{yx}=6xy^2,\,f_{yy}=6x^2y-4.\)<!-- raw HTML omitted --></p>
 <h4 id="定理二階導數的對稱性">【定理】二階導數的對稱性</h4>
 <p>設 \(\Omega\) 為 \(\mathbb{R}^2\) 上的開集，\((a,b)\in \Omega\)，\(f:\Omega\to\mathbb{R}\) 為一函數。若 \(f_{xy}\) 和 \(f_{yx}\) 在 \(\Omega\) 上連續，則 \(f_{xy}=f_{yx}\)，或者記作 </p>
-\[\frac{\partial^2 f}{\partial y \partial x}=\frac{\partial^2 f}{\partial x \partial y}.\]
-<p><strong>註</strong>：</p>
+\[\frac{\partial^2 f}{\partial y \partial x}=\frac{\partial^2 f}{\partial x \partial y}.\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -247,10 +245,8 @@
 <h3 id="12-方向導數與梯度">1.2 方向導數與梯度</h3>
 <h4 id="定義方向導數">【定義】方向導數</h4>
 <p>設 \(\Omega\) 為 \(\mathbb{R}^2\) 上的開集，\(\mathbf{r}=(a,b)\in \Omega\) 為一點，\(\mathbf{u}=(s,t)=s\mathbf{i} + t\mathbf{j} \in\mathbb{R}^2\) 為一單位向量，\(f:\Omega\to\mathbb{R}\) 為一函數。若 </p>
-\[\lim_{h\to 0}{\frac{f(\mathbf{r}+h\mathbf{u})-f(\mathbf{r})}{h}}=\lim_{t\to 0}{\frac{f(a+hs,b+ht)-f(a,b)}{h}}\tag{10}\]
-<p> 存在，則稱該極限為 \(f\) 在點 \(\mathbf{r}=(a,b)\) 以 \(\mathbf{u}=(s,t)\) 為方向的<strong>方向導數</strong>（directional derivative），記作 </p>
-\[D_\mathbf{u}f(\mathbf{r})=D_{(s,t)}f(a,b).\]
-<p><strong>註</strong>：</p>
+\[\lim_{h\to 0}{\frac{f(\mathbf{r}+h\mathbf{u})-f(\mathbf{r})}{h}}=\lim_{t\to 0}{\frac{f(a+hs,b+ht)-f(a,b)}{h}}\tag{10}\]<p> 存在，則稱該極限為 \(f\) 在點 \(\mathbf{r}=(a,b)\) 以 \(\mathbf{u}=(s,t)\) 為方向的<strong>方向導數</strong>（directional derivative），記作 </p>
+\[D_\mathbf{u}f(\mathbf{r})=D_{(s,t)}f(a,b).\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -283,8 +279,7 @@
 <p>![[tutor6-directional-derivative.png|760]]</p>
 <h4 id="定理">【定理】</h4>
 <p>設 \(\Omega\) 為 \(\mathbb{R}^2\) 上的開集，\(\mathbf{u}=(s,t)=s\mathbf{i} + t\mathbf{j} \in\mathbb{R}^2\) 為一單位向量，\(f:\Omega\to\mathbb{R}\) 為一函數。若對任一點 \((x,y)\in\Omega\)，偏導數\(f_x(x,y)\)、\(f_y(x,y)\) 存在，則 \(f\) 在 \((x,y)\) 以 \(\mathbf{u}\) 為方向的方向導數存在，且 </p>
-\[D_\mathbf{u}f(x,y)=sf_x(x,y)+tf_y(x,y).\tag{11}\]
-<p><strong>註</strong>：</p>
+\[D_\mathbf{u}f(x,y)=sf_x(x,y)+tf_y(x,y).\tag{11}\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -302,8 +297,7 @@
 </ol>
 <h4 id="定義梯度">【定義】梯度</h4>
 <p>設 \(\Omega\) 為 \(\mathbb{R}^2\) 上的開集，\(f:\Omega\to\mathbb{R}\) 為一函數，且 \((a,b)\in \Omega\)。若偏導數 \(f_x(a,b)\)、\(f_y(a,b)\) 存在，則 \(f\) 的<strong>梯度</strong>（gradient）記為 \(\nabla f\) ，定義為 </p>
-\[\boxed{\nabla f(a,b)=f_x(a,b)\mathbf{i}+f_y(a,b)\mathbf{j}=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}.}\tag{12}\]
-<p><strong>註</strong>：</p>
+\[\boxed{\nabla f(a,b)=f_x(a,b)\mathbf{i}+f_y(a,b)\mathbf{j}=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}.}\tag{12}\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -349,15 +343,12 @@
 <h4 id="變數數量-geq-3-的情況-1">變數數量 \(\geq 3\) 的情況</h4>
 <p>三變數函數 \(f(x,y,z)\) 的梯度定義為
 </p>
-\[\boxed{\nabla f=f_x\mathbf{i}+f_y\mathbf{j}+f_z\mathbf{k}=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}+\frac{\partial f}{\partial z}\mathbf{k}.}\tag{14}\]
-<p>
+\[\boxed{\nabla f=f_x\mathbf{i}+f_y\mathbf{j}+f_z\mathbf{k}=\frac{\partial f}{\partial x}\mathbf{i}+\frac{\partial f}{\partial y}\mathbf{j}+\frac{\partial f}{\partial z}\mathbf{k}.}\tag{14}\]<p>
 三變數函數 \(f(x,y,z)\) 在 \(\mathbf{u}\in\mathbb{R}^3\) 方向的方向導數定義為 </p>
-\[\boxed{D_\mathbf{u}f(x,y,z)=\nabla f(x,y,z){\,\boldsymbol\cdot\,}\mathbf{u}.}\tag{15}\]
-<h4 id="定理-1">【定理】</h4>
+\[\boxed{D_\mathbf{u}f(x,y,z)=\nabla f(x,y,z){\,\boldsymbol\cdot\,}\mathbf{u}.}\tag{15}\]<h4 id="定理-1">【定理】</h4>
 <p>設 \(\Omega\) 為 \(\mathbb{R}^n\) 上的開集（\(n=2,3,\ldots\)），\(\mathbf{x}\in \Omega\) 為一點，\(\mathbf{u}\in\mathbb{R}^n\) 為一單位向量，\(f:\Omega\to\mathbb{R}\) 為一函數。若 \(\nabla f(\mathbf{x})\neq 0\)，則方向導數 \(D_\mathbf{u}(\mathbf{x})\) 在梯度方向 \(\nabla f(\mathbf{x})\)  有最大值。</p>
 <p><strong>證.</strong> 當 \(n=2,3\)，由式 (13) 可得 </p>
-\[D_\mathbf{u}f(x,y)=\nabla f(x,y){\,\boldsymbol\cdot\,}\mathbf{u}=\|\nabla f(x,y)\|\,\|\mathbf{u}\|\cos{\theta},\]
-<p>其中 \(\theta\) 為 \(\nabla f(x,y)\) 與 \(\mathbf{u}\) 的夾角；又因為 \(\|\mathbf{u}\|=1\) 且 \(-1\leq\cos{\theta}\leq 1\)，故當 \(\theta=0\)，即 \(\mathbf{u}\) 平行於 \(\nabla f\) 時，\(D_\mathbf{u}f(x,y)\) 有最大值。\(\blacksquare\)</p>
+\[D_\mathbf{u}f(x,y)=\nabla f(x,y){\,\boldsymbol\cdot\,}\mathbf{u}=\|\nabla f(x,y)\|\,\|\mathbf{u}\|\cos{\theta},\]<p>其中 \(\theta\) 為 \(\nabla f(x,y)\) 與 \(\mathbf{u}\) 的夾角；又因為 \(\|\mathbf{u}\|=1\) 且 \(-1\leq\cos{\theta}\leq 1\)，故當 \(\theta=0\)，即 \(\mathbf{u}\) 平行於 \(\nabla f\) 時，\(D_\mathbf{u}f(x,y)\) 有最大值。\(\blacksquare\)</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -377,8 +368,7 @@
 <h4 id="函數圖形的切面方程式">函數圖形的切面方程式</h4>
 <p>設 \(z=f(x,y)\) 是二變數函數 \(f(x,y)\) 的圖形，則該圖形過點 \((a,b,f(a,b))\) 的<strong>切面</strong>（tangent plane）方程式為
 </p>
-\[z=f(a,b)+\left[\frac{\partial f}{\partial x}(a,b)\right](x-a)+\left[\frac{\partial f}{\partial y}(a,b)\right](y-b).\tag{16}\]
-<p>^eq16</p>
+\[z=f(a,b)+\left[\frac{\partial f}{\partial x}(a,b)\right](x-a)+\left[\frac{\partial f}{\partial y}(a,b)\right](y-b).\tag{16}\]<p>^eq16</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -437,8 +427,7 @@
 <h4 id="多變數函數的線性近似">多變數函數的線性近似</h4>
 <p>切面方程式（[[#^eq16|式 (16)]]）可以稱為 \(f(x,y)\) 在點 \((a,b)\) 的<strong>線性化</strong>（linearization）。若考慮 \((a,b)\) 附近的點 \((x,y)\)，\(f(x,y)\) 的<strong>線性近似</strong>（linear approximation）為
 </p>
-\[f(x,y)\approx f(a,b)+\left[\frac{\partial f}{\partial x}(a,b)\right](x-a)+\left[\frac{\partial f}{\partial y}(a,b)\right](y-b).\tag{19}\]
-<p>^eq19</p>
+\[f(x,y)\approx f(a,b)+\left[\frac{\partial f}{\partial x}(a,b)\right](x-a)+\left[\frac{\partial f}{\partial y}(a,b)\right](y-b).\tag{19}\]<p>^eq19</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -450,11 +439,9 @@
 </ul>
 <h4 id="定義多變數函數的微分">【定義】多變數函數的微分</h4>
 <p>承[[#^eq19|式 (19)]]。令 \(x=a+\Delta x\)，\(y=b+\Delta y\)。則函數值 \(z=f(x,y)\) 的增量（increment）為 </p>
-\[\Delta z=f(a+\Delta x,b+\Delta y)-f(a,b)\approx\left[\frac{\partial f}{\partial x}(a,b)\right]\Delta x                     +\left[\frac{\partial f}{\partial y}(a,b)\right]\Delta y.\tag{20}\]
-<p>
+\[\Delta z=f(a+\Delta x,b+\Delta y)-f(a,b)\approx\left[\frac{\partial f}{\partial x}(a,b)\right]\Delta x                     +\left[\frac{\partial f}{\partial y}(a,b)\right]\Delta y.\tag{20}\]<p>
 當 \(\Delta x, \Delta y\to 0\) 時，將增量改為無窮小（infinitesimal）增量，可以得到 \(z\) 的<strong>微分</strong>（differential）\(\text{d}z\)，又稱<strong>全微分</strong>（total differential），為 </p>
-\[\boxed{\text{d}z=\frac{\partial f}{\partial x}\text{d}x+\frac{\partial f}{\partial y}\text{d}y.}\tag{21}\]
-<p>![[tutor6-total-differential.png|800]]</p>
+\[\boxed{\text{d}z=\frac{\partial f}{\partial x}\text{d}x+\frac{\partial f}{\partial y}\text{d}y.}\tag{21}\]<p>![[tutor6-total-differential.png|800]]</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -472,8 +459,7 @@
 </ol>
 <h4 id="定義多變數函數的可微性">【定義】多變數函數的可微性</h4>
 <p>設 \(\Omega\) 為 \(\mathbb{R}^2\) 上的開集，\((a,b)\in \Omega\)。設 \(f:\Omega\to\mathbb{R}\) 為一函數，且 \(f_x,f_y:\Omega\to\mathbb{R}\) 存在。若 </p>
-\[\lim_{(\Delta x,\Delta y)\to(0,0)}{\frac{\Delta z-f_x(a,b)\Delta x-f_y(a,b)\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}}=0,\tag{22}\]
-<p>則稱 \(f\) 在點 \((a,b)\) 上<strong>可微</strong>（differentiable）。</p>
+\[\lim_{(\Delta x,\Delta y)\to(0,0)}{\frac{\Delta z-f_x(a,b)\Delta x-f_y(a,b)\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}}=0,\tag{22}\]<p>則稱 \(f\) 在點 \((a,b)\) 上<strong>可微</strong>（differentiable）。</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -500,8 +486,7 @@
 <h4 id="定理多變數函數的鏈法則">【定理】多變數函數的鏈法則</h4>
 <h5 id="特例-1">特例 1</h5>
 <p>設 \(z=h(x,y)\) 為 \(x\)、\(y\) 的可微函數，\(x=f(t)\)、\(y=g(t)\) 為 \(t\) 的可微函數。則合成函數 \(z(t)=h(f(t),g(t))\) 亦為 \(t\) 的可微函數，且 </p>
-\[\boxed{\dfrac{\text{d}z}{\text{d}t}=\frac{\partial z}{\partial x}\frac{\text{d}x}{\text{d}t}+\frac{\partial z}{\partial y}\frac{\text{d}y}{\text{d}t}.}\tag{23}\]
-<p>^eq23</p>
+\[\boxed{\dfrac{\text{d}z}{\text{d}t}=\frac{\partial z}{\partial x}\frac{\text{d}x}{\text{d}t}+\frac{\partial z}{\partial y}\frac{\text{d}y}{\text{d}t}.}\tag{23}\]<p>^eq23</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -514,8 +499,7 @@
 </ul>
 <h5 id="特例-2">特例 2</h5>
 <p>設 \(z=h(x,y)\) 為 \(x\)、\(y\) 的可微函數，\(x=f(u,v)\)、\(y=g(u,v)\) 為 \(u\)、\(v\) 的可微函數。則合成函數 \(z(t)=h(f(u,v),g(u,v))\) 亦為 \(u\)、\(v\) 的可微函數，且 </p>
-\[\boxed{\dfrac{\partial z}{\partial  u}=\frac{\partial z}{\partial x}\frac{\partial x}{\partial u}+\frac{\partial z}{\partial y}\frac{\partial y}{\partial u},\qquad\dfrac{\partial z}{\partial  v}=\frac{\partial z}{\partial x}\frac{\partial x}{\partial v}+\frac{\partial z}{\partial y}\frac{\partial y}{\partial v}}\tag{24}\]
-<p>^eq24</p>
+\[\boxed{\dfrac{\partial z}{\partial  u}=\frac{\partial z}{\partial x}\frac{\partial x}{\partial u}+\frac{\partial z}{\partial y}\frac{\partial y}{\partial u},\qquad\dfrac{\partial z}{\partial  v}=\frac{\partial z}{\partial x}\frac{\partial x}{\partial v}+\frac{\partial z}{\partial y}\frac{\partial y}{\partial v}}\tag{24}\]<p>^eq24</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考
@@ -528,8 +512,7 @@
 </ul>
 <h5 id="一般情況">一般情況</h5>
 <p>設 \(u=u(x_1,\ldots,x_n)\) 為 \(n\) 變數可微函數，且每個變數 \(x_n=x_n(t_1,\ldots,t_m)\) 都是 \(m\) 變數可微函數，則 \(u\) 是一個 \(m\) 變數可微函數，且對於 \(i=1,2,\ldots,m\) ，都滿足 </p>
-\[\begin{aligned}\frac{\partial u}{\partial t_i}&=\sum^{n}_{j=1}{\frac{\partial u}{\partial x_j}\frac{\partial x_j}{\partial t_i}}\\&=\frac{\partial u}{\partial x_1}\frac{\partial x_1}{\partial t_i}+\cdots+\frac{\partial u}{\partial x_n}\frac{\partial x_n}{\partial t_i}.\end{aligned}\tag{25}\]
-<p>^eq25</p>
+\[\begin{aligned}\frac{\partial u}{\partial t_i}&=\sum^{n}_{j=1}{\frac{\partial u}{\partial x_j}\frac{\partial x_j}{\partial t_i}}\\&=\frac{\partial u}{\partial x_1}\frac{\partial x_1}{\partial t_i}+\cdots+\frac{\partial u}{\partial x_n}\frac{\partial x_n}{\partial t_i}.\end{aligned}\tag{25}\]<p>^eq25</p>
 <p><strong>註</strong>：</p>
 <ul>
 <li>參考：
@@ -557,8 +540,7 @@
 </ul>
 <p>則 \(y\) 在 \(\Omega\) 上可以被定義為 \(x\) 的可微函數，且
 </p>
-\[\frac{\text{d}y}{\text{d}x}=-\frac{F_x}{F_y}=-\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}\tag{26}\]
-<p><strong>證.</strong></p>
+\[\frac{\text{d}y}{\text{d}x}=-\frac{F_x}{F_y}=-\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}\tag{26}\]<p><strong>證.</strong></p>
 <ul>
 <li>根據條件 (ii) 和「偏導數存在且連續時的可微性定理」， \(F\) 在 \((a,b)\) 可微。</li>
 <li>由條件 (i)，\(F(a,b)=0\)，對兩邊同時微分，得到 \[\displaystyle F_x\frac{\text{d}x}{\text{d}x}+F_y\frac{\text{d}y}{\text{d}x}=0\]（使用了鏈法則），故 \[\frac{\text{d}y}{\text{d}x}=-\frac{F_x}{F_y}.\blacksquare\]</li>
@@ -582,9 +564,7 @@
 </ul>
 <p>則 \(z\) 在 \(\Omega\) 上可以被定義為 \(x\)、\(y\) 的可微函數，且
 </p>
-\[\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=-\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}}\tag{27}\]
-\[\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=-\frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}}\tag{28}\]
-<p><strong>註</strong>：</p>
+\[\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=-\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}}\tag{27}\]\[\frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=-\frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}}\tag{28}\]<p><strong>註</strong>：</p>
 <ul>
 <li>參考
 <ul>
@@ -671,12 +651,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723691978" defer></script>
-        <script src="/js/search.js?1723691978" defer></script>
+        <script src="/js/auto-complete.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1724947537" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1724947537" defer></script>
+        <script src="/js/search.js?1724947537" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -687,19 +667,21 @@
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/index.html" class=""><input type="checkbox" id="R-section-ca7a4950064d29b1d9e0bc233d042c6a" aria-controls="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a"><label for="R-section-ca7a4950064d29b1d9e0bc233d042c6a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 興大AI班</span></label><a class="padding" href="/nchu-ai/index.html">興大AI班<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a" class="morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/apache/index.html" class=""><a class="padding" href="/nchu-ai/apache/index.html">Apache<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/apache-conf/index.html" class=""><a class="padding" href="/nchu-ai/apache-conf/index.html">Apache 設定檔解析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/seaborn/index.html" class=""><a class="padding" href="/nchu-ai/seaborn/index.html">Seaborn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/wsgi/index.html" class=""><a class="padding" href="/nchu-ai/wsgi/index.html">WSGI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/yolo/index.html" class=""><a class="padding" href="/nchu-ai/yolo/index.html">YOLO 物件偵測模型<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/matplotlib/index.html" class=""><a class="padding" href="/nchu-ai/matplotlib/index.html">Matplotlib<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tech/index.html" class=""><input type="checkbox" id="R-section-03f8c09f19b1233ed6c8a8fe181f47b9" aria-controls="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9"><label for="R-section-03f8c09f19b1233ed6c8a8fe181f47b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Techniques</span></label><a class="padding" href="/tech/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" class="morespace collapsible-menu">
-          <li data-nav-id="/tech/b-buduma-1/index.html" class=""><a class="padding" href="/tech/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/index.html" class=""><a class="padding" href="/tech/conda/index.html">Conda<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/mermaid/index.html" class=""><a class="padding" href="/tech/mermaid/index.html">Mermaid<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/days-between/index.html" class=""><a class="padding" href="/tech/days-between/index.html">days_between<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/git/index.html" class=""><a class="padding" href="/tech/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/hugging-face/index.html" class=""><a class="padding" href="/tech/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/b-python-da/index.html" class=""><a class="padding" href="/tech/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/relu/index.html" class=""><a class="padding" href="/tech/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/shell-var/index.html" class=""><a class="padding" href="/tech/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/useful-obsidian-plugins/index.html" class=""><a class="padding" href="/tech/useful-obsidian-plugins/index.html">實用的Obsidian外掛<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class="parent "><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45" checked><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/tutor-6/index.html" class="active"><a class="padding" href="/math-cs/tutor-6/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -712,10 +694,7 @@
           <li data-nav-id="/math-cs/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math-cs/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/logical-quantifier/index.html" class=""><a class="padding" href="/math-cs/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/set-theory/index.html" class=""><a class="padding" href="/math-cs/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/hum-ss/index.html" class=""><input type="checkbox" id="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7" aria-controls="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7"><label for="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/hum-ss/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7" class="morespace collapsible-menu">
-          <li data-nav-id="/hum-ss/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/hum-ss/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/phys-astro/index.html" class=""><input type="checkbox" id="R-section-d623ed7decfe62cba15fd2b8723858b9" aria-controls="R-subsections-d623ed7decfe62cba15fd2b8723858b9"><label for="R-section-d623ed7decfe62cba15fd2b8723858b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Phys &amp; Astro</span></label><a class="padding" href="/phys-astro/index.html">Phys &amp; Astro<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d623ed7decfe62cba15fd2b8723858b9" class="morespace collapsible-menu">
-          <li data-nav-id="/phys-astro/hydrogen-wavefunction/index.html" class=""><a class="padding" href="/phys-astro/hydrogen-wavefunction/index.html">Hydrogen wave function (Streamlit app)<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/phys-astro/friedmann-equation/index.html" class=""><a class="padding" href="/phys-astro/friedmann-equation/index.html">弗里德曼方程式<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
@@ -781,8 +760,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723691978" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723691978" defer></script>
+    <script src="/js/clipboard.min.js?1724947537" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1724947537" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -797,28 +776,28 @@
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723691978"></script>
-    <script src="/js/d3/d3-color.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723691978" defer></script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
-    <script src="/js/mermaid.min.js?1723691978" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724947537"></script>
+    <script src="/js/d3/d3-color.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1724947537" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1724947537" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
+    <script src="/js/mermaid.min.js?1724947537" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
+    <script src="/js/js-yaml.min.js?1724947537" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723691978" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723691978" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724947537" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724947537" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723691978", cssInProject: true, assetsBuster: "?1723691978" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724947537", cssInProject: true, assetsBuster: "?1724947537" };
     </script>
-    <script src="/js/theme.js?1723691978" defer></script>
+    <script src="/js/theme.js?1724947537" defer></script>
   </body>
 </html>

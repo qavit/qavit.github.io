@@ -3,38 +3,65 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.129.0">
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
-    <meta name="description" content="Conda is an open-source, cross-platform, language-agnostic package manager and environment management system.">
+    <meta name="description" content="Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。
+安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。
+使用安裝檔 前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 base 環境 當你安裝 Conda 後，會自動建立一個叫做 base 的環境，並設為默認環境。base 包含了 Conda 的執行所需的所有軟體套件。
+虛擬環境管理 基礎操作 建立新環境 建立一個名為 myenv 的 Python 3.11 環境：
+conda create --name myenv python=3.11 確定環境的安裝位置 conda info --base 像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 /usr/local/Caskroom/miniconda/base。
+啟動環境 啟動名為 myenv 的環境
+conda activate myenv 啟動之後，你應該會看到終端機的提示字元（prompt）前面出現">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
-    <meta name="twitter:title" content="Conda">
-    <meta name="twitter:description" content="Conda is an open-source, cross-platform, language-agnostic package manager and environment management system.">
+    <meta name="twitter:title" content="用 Conda 管理虛擬環境">
+    <meta name="twitter:description" content="Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。
+安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。
+使用安裝檔 前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 base 環境 當你安裝 Conda 後，會自動建立一個叫做 base 的環境，並設為默認環境。base 包含了 Conda 的執行所需的所有軟體套件。
+虛擬環境管理 基礎操作 建立新環境 建立一個名為 myenv 的 Python 3.11 環境：
+conda create --name myenv python=3.11 確定環境的安裝位置 conda info --base 像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 /usr/local/Caskroom/miniconda/base。
+啟動環境 啟動名為 myenv 的環境
+conda activate myenv 啟動之後，你應該會看到終端機的提示字元（prompt）前面出現">
     <meta property="og:url" content="http://localhost:1313/tech/conda/index.html">
-    <meta property="og:title" content="Conda">
-    <meta property="og:description" content="Conda is an open-source, cross-platform, language-agnostic package manager and environment management system.">
+    <meta property="og:title" content="用 Conda 管理虛擬環境">
+    <meta property="og:description" content="Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。
+安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。
+使用安裝檔 前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 base 環境 當你安裝 Conda 後，會自動建立一個叫做 base 的環境，並設為默認環境。base 包含了 Conda 的執行所需的所有軟體套件。
+虛擬環境管理 基礎操作 建立新環境 建立一個名為 myenv 的 Python 3.11 環境：
+conda create --name myenv python=3.11 確定環境的安裝位置 conda info --base 像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 /usr/local/Caskroom/miniconda/base。
+啟動環境 啟動名為 myenv 的環境
+conda activate myenv 啟動之後，你應該會看到終端機的提示字元（prompt）前面出現">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Techniques">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Conda">
     <meta property="og:image" content="http://localhost:1313/images/qavit.png">
-    <meta itemprop="name" content="Conda">
-    <meta itemprop="description" content="Conda is an open-source, cross-platform, language-agnostic package manager and environment management system.">
-    <meta itemprop="wordCount" content="12">
+    <meta itemprop="name" content="用 Conda 管理虛擬環境">
+    <meta itemprop="description" content="Conda 是一款開放原始碼、跨平台的 虛擬環境管理和軟體套件管理工具，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。
+安裝 要安裝 Conda，你可以下載和安裝 Anaconda 或 Miniconda。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。
+使用安裝檔 前往 Miniconda 官網 ，根據你的作業系統選擇合適的版本進行下載。 按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。 base 環境 當你安裝 Conda 後，會自動建立一個叫做 base 的環境，並設為默認環境。base 包含了 Conda 的執行所需的所有軟體套件。
+虛擬環境管理 基礎操作 建立新環境 建立一個名為 myenv 的 Python 3.11 環境：
+conda create --name myenv python=3.11 確定環境的安裝位置 conda info --base 像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 /usr/local/Caskroom/miniconda/base。
+啟動環境 啟動名為 myenv 的環境
+conda activate myenv 啟動之後，你應該會看到終端機的提示字元（prompt）前面出現">
+    <meta itemprop="wordCount" content="97">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
-    <title>Conda</title>
-    <link href="/images/favicon.png?1723691978" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1723691978" rel="stylesheet">
-    <link href="/css/auto-complete.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1723691978" rel="stylesheet">
-    <link href="/css/fonts.css?1723691978" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1723691978" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1723691978" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1723691978" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1723691978" rel="stylesheet">
-    <link href="/css/print.css?1723691978" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1723691978"></script>
+    <meta itemprop="keywords" content="Python,Conda">
+    <title>用 Conda 管理虛擬環境</title>
+    <link href="/images/favicon.png?1724949599" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1724949599" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724949599" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1724949599" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724949599" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724949599" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1724949599" rel="stylesheet">
+    <link href="/css/fonts.css?1724949599" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724949599" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1724949599" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1724949599" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1724949599" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1724949599" rel="stylesheet">
+    <link href="/css/print.css?1724949599" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1724949599"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -64,7 +91,22 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li><a href="#安裝">安裝</a>
+      <ul>
+        <li><a href="#使用安裝檔">使用安裝檔</a></li>
+      </ul>
+    </li>
+    <li><a href="#base-環境">base 環境</a></li>
+    <li><a href="#虛擬環境管理">虛擬環境管理</a>
+      <ul>
+        <li><a href="#基礎操作">基礎操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#套件管理">套件管理</a></li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -72,14 +114,14 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Qavit&#39;s Notebook</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/index.html"><span itemprop="name">Techniques</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Conda</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">用 Conda 管理虛擬環境</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/tech/conda.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/McShelby/hugo-theme-relearn/edit/main/exampleSite/content/tech/conda/index.md" target="_self" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/tech/b-buduma-1/index.html" title="神經網路 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/tech/conda-cheatsheet/index.html" title="My Conda cheatsheet (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/tech/days-between/index.html" title="days_between (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math-cs/index.html" title="Math &amp; CS (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -97,11 +139,78 @@
         <div class="flex-block-wrapper">
           <article class="default">
             <header class="headline">
+<div class=" taxonomy-tags term-list cstyle  tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/conda/index.html">Conda</a></li>
+    <li><a class="term-link" href="/tags/python/index.html">Python</a></li>
+  </ul>
+</div>
             </header>
 
-<h1 id="conda">Conda</h1>
+<h1 id="用-conda-管理虛擬環境">用 Conda 管理虛擬環境</h1>
 
-<p><strong>Conda</strong> is an open-source, cross-platform, language-agnostic package manager and environment management system.</p>
+<p><strong>Conda</strong> 是一款開放原始碼、跨平台的 <strong>虛擬環境管理和軟體套件管理工具</strong>，特別適合用於科學計算和資料科學。Conda 不僅支援 Python，也支援 R 語言。</p>
+<h2 id="安裝">安裝</h2>
+<p>要安裝 Conda，你可以下載和安裝 <strong>Anaconda</strong> 或 <strong>Miniconda</strong>。這兩者之間的主要差異在於 Anaconda 包含了大量的預安裝套件，而 Miniconda 是一個輕量版，只包含 Conda 和Python。</p>
+<h3 id="使用安裝檔">使用安裝檔</h3>
+<ol>
+<li>前往 <a href="https://www.google.com/search?q=Miniconda&sourceid=chrome&ie=UTF-8" rel="external" target="_self">Miniconda 官網</a> ，根據你的作業系統選擇合適的版本進行下載。</li>
+<li>按照官方的安裝指南，執行安裝檔，並按照指示完成安裝。</li>
+</ol>
+<h2 id="base-環境">base 環境</h2>
+<p>當你安裝 Conda 後，會自動建立一個叫做 <strong><code>base</code></strong> 的環境，並設為默認環境。<code>base</code> 包含了 Conda 的執行所需的所有軟體套件。</p>
+<h2 id="虛擬環境管理">虛擬環境管理</h2>
+<h3 id="基礎操作">基礎操作</h3>
+<h5 id="建立新環境">建立新環境</h5>
+<p>建立一個名為 <code>myenv</code> 的 Python 3.11 環境：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda create --name myenv python<span style="color:#f92672">=</span>3.11</span></span></code></pre></div>
+<h5 id="確定環境的安裝位置">確定環境的安裝位置</h5>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda info --base</span></span></code></pre></div>
+<p>像我是在 macOS 系統上使用 Homebrew 安裝 Miniconda，我的 Conda 環境安裝位置在 <code>/usr/local/Caskroom/miniconda/base</code>。</p>
+<h5 id="啟動環境">啟動環境</h5>
+<p>啟動名為 <code>myenv</code> 的環境</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda activate myenv</span></span></code></pre></div>
+<p>啟動之後，你應該會看到終端機的提示字元（prompt）前面出現</p>
+<p>![[static/images/conda-activate.png]]</p>
+
+
+
+  <blockquote class="alert alert-tip">
+    <p class="alert-heading">
+      💡
+      Tip
+    </p>
+    <p>基於個人偏好，我會為這種常用指令設定一個簡單的指令別名</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias con<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;conda activate&#39;</span></span></span></code></pre></div>
+
+  </blockquote>
+<h5 id="退出環境">退出環境</h5>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda deactivate</span></span></code></pre></div>
+
+
+
+  <blockquote class="alert alert-tip">
+    <p class="alert-heading">
+      💡
+      Tip
+    </p>
+    <p>對於這個常用指令，我會設定一個簡單的終端機指令別名</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias coff<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;conda deactivate&#39;</span></span></span></code></pre></div>
+
+  </blockquote>
+<h5 id="列出環境">列出環境</h5>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda env list</span></span></code></pre></div>
+<h5 id="移除環境">移除環境</h5>
+
+<pre tabindex="0"><code>conda env remove -n myenv</code></pre>
+<h2 id="套件管理">套件管理</h2>
 
             <footer class="footline">
             </footer>
@@ -177,12 +286,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1723691978" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1723691978" defer></script>
-        <script src="/js/search.js?1723691978" defer></script>
+        <script src="/js/auto-complete.js?1724949599" defer></script>
+        <script src="/js/lunr/lunr.min.js?1724949599" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1724949599" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1724949599" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1724949599" defer></script>
+        <script src="/js/search.js?1724949599" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -193,19 +302,20 @@
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-topics">
           <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/index.html" class=""><input type="checkbox" id="R-section-ca7a4950064d29b1d9e0bc233d042c6a" aria-controls="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a"><label for="R-section-ca7a4950064d29b1d9e0bc233d042c6a"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 興大AI班</span></label><a class="padding" href="/nchu-ai/index.html">興大AI班<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ca7a4950064d29b1d9e0bc233d042c6a" class="morespace collapsible-menu">
+          <li data-nav-id="/nchu-ai/apache/index.html" class=""><a class="padding" href="/nchu-ai/apache/index.html">Apache<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/apache-conf/index.html" class=""><a class="padding" href="/nchu-ai/apache-conf/index.html">Apache 設定檔解析<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/seaborn/index.html" class=""><a class="padding" href="/nchu-ai/seaborn/index.html">Seaborn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/wsgi/index.html" class=""><a class="padding" href="/nchu-ai/wsgi/index.html">WSGI<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/yolo/index.html" class=""><a class="padding" href="/nchu-ai/yolo/index.html">YOLO 物件偵測模型<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/nchu-ai/matplotlib/index.html" class=""><a class="padding" href="/nchu-ai/matplotlib/index.html">Matplotlib<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/tech/index.html" class="parent "><input type="checkbox" id="R-section-03f8c09f19b1233ed6c8a8fe181f47b9" aria-controls="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" checked><label for="R-section-03f8c09f19b1233ed6c8a8fe181f47b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Techniques</span></label><a class="padding" href="/tech/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-03f8c09f19b1233ed6c8a8fe181f47b9" class="morespace collapsible-menu">
-          <li data-nav-id="/tech/b-buduma-1/index.html" class=""><a class="padding" href="/tech/b-buduma-1/index.html">神經網路<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/index.html" class="active"><a class="padding" href="/tech/conda/index.html">Conda<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/tech/mermaid/index.html" class=""><a class="padding" href="/tech/mermaid/index.html">Mermaid<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/days-between/index.html" class=""><a class="padding" href="/tech/days-between/index.html">days_between<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/git/index.html" class=""><a class="padding" href="/tech/git/index.html">Git<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/hugging-face/index.html" class=""><a class="padding" href="/tech/hugging-face/index.html">Hugging Face<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/b-python-da/index.html" class=""><a class="padding" href="/tech/b-python-da/index.html">Python 資料分析<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/relu/index.html" class=""><a class="padding" href="/tech/relu/index.html">ReLU<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/shell-var/index.html" class=""><a class="padding" href="/tech/shell-var/index.html">Shell 變數操作<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/useful-obsidian-plugins/index.html" class=""><a class="padding" href="/tech/useful-obsidian-plugins/index.html">實用的Obsidian外掛<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/index.html" class="active"><a class="padding" href="/tech/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class=""><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45"><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/math-models-and-ode/index.html" class=""><a class="padding" href="/math-cs/math-models-and-ode/index.html">Mathematical model and ODE<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -217,10 +327,7 @@
           <li data-nav-id="/math-cs/limit-and-continuity-on-r/index.html" class=""><a class="padding" href="/math-cs/limit-and-continuity-on-r/index.html">極限與連續<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/logical-quantifier/index.html" class=""><a class="padding" href="/math-cs/logical-quantifier/index.html">量詞邏輯<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/set-theory/index.html" class=""><a class="padding" href="/math-cs/set-theory/index.html">集合論與數系<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/hum-ss/index.html" class=""><input type="checkbox" id="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7" aria-controls="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7"><label for="R-section-c1e29bf4f5cac5f53e8bbb39d8b677c7"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu 人文社會</span></label><a class="padding" href="/hum-ss/index.html">人文社會<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-c1e29bf4f5cac5f53e8bbb39d8b677c7" class="morespace collapsible-menu">
-          <li data-nav-id="/hum-ss/the-origins-of-totalitarianism-ch10/index.html" class=""><a class="padding" href="/hum-ss/the-origins-of-totalitarianism-ch10/index.html">Hannah Arendt 無階級社會<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/phys-astro/index.html" class=""><input type="checkbox" id="R-section-d623ed7decfe62cba15fd2b8723858b9" aria-controls="R-subsections-d623ed7decfe62cba15fd2b8723858b9"><label for="R-section-d623ed7decfe62cba15fd2b8723858b9"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Phys &amp; Astro</span></label><a class="padding" href="/phys-astro/index.html">Phys &amp; Astro<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d623ed7decfe62cba15fd2b8723858b9" class="morespace collapsible-menu">
-          <li data-nav-id="/phys-astro/hydrogen-wavefunction/index.html" class=""><a class="padding" href="/phys-astro/hydrogen-wavefunction/index.html">Hydrogen wave function (Streamlit app)<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/phys-astro/friedmann-equation/index.html" class=""><a class="padding" href="/phys-astro/friedmann-equation/index.html">弗里德曼方程式<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
@@ -286,8 +393,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1723691978" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1723691978" defer></script>
+    <script src="/js/clipboard.min.js?1724949599" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1724949599" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -302,28 +409,28 @@
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1723691978"></script>
-    <script src="/js/d3/d3-color.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1723691978" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1723691978" defer></script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
-    <script src="/js/mermaid.min.js?1723691978" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724949599"></script>
+    <script src="/js/d3/d3-color.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1724949599" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1724949599" defer></script>
+    <script src="/js/js-yaml.min.js?1724949599" defer></script>
+    <script src="/js/mermaid.min.js?1724949599" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1723691978" defer></script>
+    <script src="/js/js-yaml.min.js?1724949599" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1723691978" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1723691978" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724949599" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724949599" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1723691978", cssInProject: true, assetsBuster: "?1723691978" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724949599", cssInProject: true, assetsBuster: "?1724949599" };
     </script>
-    <script src="/js/theme.js?1723691978" defer></script>
+    <script src="/js/theme.js?1724949599" defer></script>
   </body>
 </html>

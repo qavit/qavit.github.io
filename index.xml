@@ -6,8 +6,15 @@
     <description>This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。&#xA;Che sī góa ê phō͘-á-chóa.&#xA;Get Hugo </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Aug 2024 15:42:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>興大AI班</title>
+      <link>http://localhost:1313/nchu-ai/index.html</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/index.html</guid>
+      <description>2024 年 7 月到 9 月，我參加國立中興大學的 AI 人工智慧程式設計與應用開發人才培訓班。&#xA;雖然冠上人工智慧之名，這個訓練班的內容其實包山包海，包含了：&#xA;Python 程式設計 機器學習 深度學習 智慧物聯網（AIoT） Web 應用程式開發與部署 新興 AI 工具 雲端伺服器 網路爬蟲 然後，學最多的其實是小組專案。我們小組做的是辨識美國手語拼字的小遊戲——Swordle，可以參考我們的 GitHub。</description>
+    </item>
     <item>
       <title>Techniques</title>
       <link>http://localhost:1313/tech/index.html</link>
@@ -20,13 +27,6 @@
       <link>http://localhost:1313/math-cs/index.html</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/math-cs/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>人文社會</title>
-      <link>http://localhost:1313/hum-ss/index.html</link>
-      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hum-ss/index.html</guid>
       <description></description>
     </item>
     <item>
