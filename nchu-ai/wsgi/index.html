@@ -7,19 +7,19 @@
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="description" content="WSGI（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。
 mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：
-&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt;">
+&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt; ">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
     <meta name="twitter:title" content="WSGI">
     <meta name="twitter:description" content="WSGI（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。
 mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：
-&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt;">
+&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt; ">
     <meta property="og:url" content="http://localhost:1313/nchu-ai/wsgi/index.html">
     <meta property="og:title" content="WSGI">
     <meta property="og:description" content="WSGI（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。
 mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：
-&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt;">
+&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt; ">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="興大AI班">
@@ -31,25 +31,25 @@ mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案�
     <meta itemprop="name" content="WSGI">
     <meta itemprop="description" content="WSGI（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。
 mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：
-&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt;">
+&lt;VirtualHost *:80&gt; ServerAdmin admin@mydomain.com DocumentRoot /var/www/myproject # 指定 WSGI 應用程式入口點 WSGIDaemonProcess myproject python-path=/var/www/myproject python-home=/var/www/myproject/venv WSGIProcessGroup myproject WSGIScriptAlias / /var/www/myproject/myproject/wsgi.py &lt;Directory /var/www/myproject&gt; &lt;Files wsgi.py&gt; Require all granted &lt;/Files&gt; &lt;/Directory&gt; ErrorLog ${APACHE_LOG_DIR}/error.log CustomLog ${APACHE_LOG_DIR}/access.log combined &lt;/VirtualHost&gt; ">
     <meta itemprop="datePublished" content="2024-08-29T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-08-29T00:00:00+00:00">
     <meta itemprop="wordCount" content="48">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="伺服器,Python">
     <title>WSGI</title>
-    <link href="/images/favicon.png?1724949342" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724949342" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724949342" rel="stylesheet">
-    <link href="/css/fonts.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724949342" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1724949342" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1724949342" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724949342" rel="stylesheet">
-    <link href="/css/print.css?1724949342" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1724949342"></script>
+    <link href="/images/favicon.png?1725033398" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725033398" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725033398" rel="stylesheet">
+    <link href="/css/fonts.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725033398" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725033398" rel="stylesheet">
+    <link href="/css/print.css?1725033398" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725033398"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -129,7 +129,8 @@ mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案�
 <p><strong>WSGI</strong>（Web Server Gateway Interface）是 Python 應用程式與網頁伺服器之間的一個標準介面，定義了應用程式如何與伺服器進行通訊。</p>
 <h2 id="mod_wsgi">mod_wsgi</h2>
 <p>假設你有一個位於 <code>/var/www/myproject</code> 目錄下的 Django 專案，你可以在 Apache 的配置文件中進行如下設定：</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>&lt;VirtualHost *:80&gt;
+
+<pre tabindex="0"><code>&lt;VirtualHost *:80&gt;
     ServerAdmin admin@mydomain.com
     DocumentRoot /var/www/myproject
 
@@ -146,7 +147,8 @@ mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案�
 
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-&lt;/VirtualHost&gt;</code></pre></div>
+&lt;/VirtualHost&gt;</code></pre>
+
             <footer class="footline">
             </footer>
           </article>
@@ -221,12 +223,12 @@ mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案�
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1724949342" defer></script>
-        <script src="/js/search.js?1724949342" defer></script>
+        <script src="/js/auto-complete.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725033398" defer></script>
+        <script src="/js/search.js?1725033398" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -328,8 +330,8 @@ mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案�
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1724949342" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724949342" defer></script>
+    <script src="/js/clipboard.min.js?1725033398" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725033398" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -344,28 +346,28 @@ mod_wsgi 假設你有一個位於 /var/www/myproject 目錄下的 Django 專案�
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724949342"></script>
-    <script src="/js/d3/d3-color.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1724949342" defer></script>
-    <script src="/js/js-yaml.min.js?1724949342" defer></script>
-    <script src="/js/mermaid.min.js?1724949342" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1725033398"></script>
+    <script src="/js/d3/d3-color.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1725033398" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
+    <script src="/js/mermaid.min.js?1725033398" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1724949342" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724949342" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724949342" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1725033398" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1725033398" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724949342", cssInProject: true, assetsBuster: "?1724949342" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1725033398", cssInProject: true, assetsBuster: "?1725033398" };
     </script>
-    <script src="/js/theme.js?1724949342" defer></script>
+    <script src="/js/theme.js?1725033398" defer></script>
   </body>
 </html>

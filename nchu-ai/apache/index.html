@@ -7,7 +7,7 @@
     <meta name="generator" content="Relearn 6.1.1+tip">
     <meta name="description" content="Apache 是一款跨平台、開放原始碼的網頁伺服器軟體1。
 Apache HTTP Server Documentation 核心功能 Apache 的虛擬主機（virtual host）允許一台伺服器主機上同時運行多個網站。 Apache 有模組化（modularized）的結構，例如在 Django 專案中使用的 mod_wsgi 模組。 安裝 在 Ubuntu 上使用 apt 命令安裝 Apache
-sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
+sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動 HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
 /etc/apache2/sites-available 存放「可用的」設定檔 /etc/apache2/sites-enabled 存放「啟用的」設定檔 Apache 的設定檔使用一種特殊語法，它有以下特點
 指令（Directives） 區塊（block）的語法是使用尖括號 (&lt; &gt;) 來包圍關鍵字，某種程度上類似於 HTML 標籤。常見的區塊有 &lt;VirtualHost&gt; 區塊是虛擬主機設定，允許在同一台伺服器上運行多個網站或應用程式 &lt;Directory&gt; 區塊用來設定伺服器中不同目錄的訪問權限和屬性。 &lt;Files&gt; 區塊用來設定特定類型或名稱的檔案。 &lt;Location&gt; 區塊用來設定與 URL 路徑相關的配置。 常見結構 全域設定：通常放在配置文件的開頭部分，用來設定伺服器級別的全域選項。 虛擬主機設定：用來配置多個網站或應用程式在同一台伺服器上運行。 模組設定：啟用或配置 Apache 的模組功能，例如 SSL 模組、URL 重寫模組等。 目錄設定： 註解使用 # 來標示。 一個簡單的虛擬主機">
     <meta name="author" content="Sin-iu Ho">
@@ -16,14 +16,14 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
     <meta name="twitter:title" content="Apache">
     <meta name="twitter:description" content="Apache 是一款跨平台、開放原始碼的網頁伺服器軟體1。
 Apache HTTP Server Documentation 核心功能 Apache 的虛擬主機（virtual host）允許一台伺服器主機上同時運行多個網站。 Apache 有模組化（modularized）的結構，例如在 Django 專案中使用的 mod_wsgi 模組。 安裝 在 Ubuntu 上使用 apt 命令安裝 Apache
-sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
+sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動 HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
 /etc/apache2/sites-available 存放「可用的」設定檔 /etc/apache2/sites-enabled 存放「啟用的」設定檔 Apache 的設定檔使用一種特殊語法，它有以下特點
 指令（Directives） 區塊（block）的語法是使用尖括號 (&lt; &gt;) 來包圍關鍵字，某種程度上類似於 HTML 標籤。常見的區塊有 &lt;VirtualHost&gt; 區塊是虛擬主機設定，允許在同一台伺服器上運行多個網站或應用程式 &lt;Directory&gt; 區塊用來設定伺服器中不同目錄的訪問權限和屬性。 &lt;Files&gt; 區塊用來設定特定類型或名稱的檔案。 &lt;Location&gt; 區塊用來設定與 URL 路徑相關的配置。 常見結構 全域設定：通常放在配置文件的開頭部分，用來設定伺服器級別的全域選項。 虛擬主機設定：用來配置多個網站或應用程式在同一台伺服器上運行。 模組設定：啟用或配置 Apache 的模組功能，例如 SSL 模組、URL 重寫模組等。 目錄設定： 註解使用 # 來標示。 一個簡單的虛擬主機">
     <meta property="og:url" content="http://localhost:1313/nchu-ai/apache/index.html">
     <meta property="og:title" content="Apache">
     <meta property="og:description" content="Apache 是一款跨平台、開放原始碼的網頁伺服器軟體1。
 Apache HTTP Server Documentation 核心功能 Apache 的虛擬主機（virtual host）允許一台伺服器主機上同時運行多個網站。 Apache 有模組化（modularized）的結構，例如在 Django 專案中使用的 mod_wsgi 模組。 安裝 在 Ubuntu 上使用 apt 命令安裝 Apache
-sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
+sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動 HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
 /etc/apache2/sites-available 存放「可用的」設定檔 /etc/apache2/sites-enabled 存放「啟用的」設定檔 Apache 的設定檔使用一種特殊語法，它有以下特點
 指令（Directives） 區塊（block）的語法是使用尖括號 (&lt; &gt;) 來包圍關鍵字，某種程度上類似於 HTML 標籤。常見的區塊有 &lt;VirtualHost&gt; 區塊是虛擬主機設定，允許在同一台伺服器上運行多個網站或應用程式 &lt;Directory&gt; 區塊用來設定伺服器中不同目錄的訪問權限和屬性。 &lt;Files&gt; 區塊用來設定特定類型或名稱的檔案。 &lt;Location&gt; 區塊用來設定與 URL 路徑相關的配置。 常見結構 全域設定：通常放在配置文件的開頭部分，用來設定伺服器級別的全域選項。 虛擬主機設定：用來配置多個網站或應用程式在同一台伺服器上運行。 模組設定：啟用或配置 Apache 的模組功能，例如 SSL 模組、URL 重寫模組等。 目錄設定： 註解使用 # 來標示。 一個簡單的虛擬主機">
     <meta property="og:locale" content="en">
@@ -37,27 +37,27 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
     <meta itemprop="name" content="Apache">
     <meta itemprop="description" content="Apache 是一款跨平台、開放原始碼的網頁伺服器軟體1。
 Apache HTTP Server Documentation 核心功能 Apache 的虛擬主機（virtual host）允許一台伺服器主機上同時運行多個網站。 Apache 有模組化（modularized）的結構，例如在 Django 專案中使用的 mod_wsgi 模組。 安裝 在 Ubuntu 上使用 apt 命令安裝 Apache
-sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
+sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apache sudo systemctl status apache2 # 檢查 Apache 是否成功啟動 HTTP 設定檔 Apache 虛擬主機的設定檔通常位於 /etc/apache2/ 目錄下
 /etc/apache2/sites-available 存放「可用的」設定檔 /etc/apache2/sites-enabled 存放「啟用的」設定檔 Apache 的設定檔使用一種特殊語法，它有以下特點
 指令（Directives） 區塊（block）的語法是使用尖括號 (&lt; &gt;) 來包圍關鍵字，某種程度上類似於 HTML 標籤。常見的區塊有 &lt;VirtualHost&gt; 區塊是虛擬主機設定，允許在同一台伺服器上運行多個網站或應用程式 &lt;Directory&gt; 區塊用來設定伺服器中不同目錄的訪問權限和屬性。 &lt;Files&gt; 區塊用來設定特定類型或名稱的檔案。 &lt;Location&gt; 區塊用來設定與 URL 路徑相關的配置。 常見結構 全域設定：通常放在配置文件的開頭部分，用來設定伺服器級別的全域選項。 虛擬主機設定：用來配置多個網站或應用程式在同一台伺服器上運行。 模組設定：啟用或配置 Apache 的模組功能，例如 SSL 模組、URL 重寫模組等。 目錄設定： 註解使用 # 來標示。 一個簡單的虛擬主機">
     <meta itemprop="datePublished" content="2024-08-29T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-08-29T00:00:00+00:00">
-    <meta itemprop="wordCount" content="104">
+    <meta itemprop="wordCount" content="106">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="伺服器,Apache">
     <title>Apache</title>
-    <link href="/images/favicon.png?1724949342" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724949342" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724949342" rel="stylesheet">
-    <link href="/css/fonts.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724949342" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1724949342" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1724949342" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724949342" rel="stylesheet">
-    <link href="/css/print.css?1724949342" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1724949342"></script>
+    <link href="/images/favicon.png?1725033398" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725033398" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725033398" rel="stylesheet">
+    <link href="/css/fonts.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725033398" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725033398" rel="stylesheet">
+    <link href="/css/print.css?1725033398" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725033398"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -149,9 +149,11 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
 </ol>
 <h2 id="安裝">安裝</h2>
 <p>在 Ubuntu 上使用 apt 命令安裝 Apache</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get update  <span style="color:#75715e"># 更新軟體套件</span>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get update  <span style="color:#75715e"># 更新軟體套件</span>
 </span></span><span style="display:flex;"><span>sudo apt install apache2  <span style="color:#75715e"># 安裝 Apache</span>
-</span></span><span style="display:flex;"><span>sudo systemctl status apache2  <span style="color:#75715e"># 檢查 Apache 是否成功啟動</span></span></span></code></pre></div><h2 id="http-設定檔">HTTP 設定檔</h2>
+</span></span><span style="display:flex;"><span>sudo systemctl status apache2  <span style="color:#75715e"># 檢查 Apache 是否成功啟動</span></span></span></code></pre></div>
+<h2 id="http-設定檔">HTTP 設定檔</h2>
 <p>Apache 虛擬主機的設定檔通常位於 <code>/etc/apache2/</code> 目錄下</p>
 <ul>
 <li><code>/etc/apache2/sites-available</code> 存放「可用的」設定檔</li>
@@ -179,13 +181,15 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
 <li>註解使用 <code>#</code> 來標示。</li>
 </ul>
 <p>一個簡單的虛擬主機</p>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>    ServerAdmin admin@yourdomain.com
 </span></span><span style="display:flex;"><span>    DocumentRoot <span style="color:#e6db74">/var/www/html/yourdomain</span>
 </span></span><span style="display:flex;"><span>    ServerName yourdomain.com
 </span></span><span style="display:flex;"><span>    ErrorLog ${APACHE_LOG_DIR}/error.log
 </span></span><span style="display:flex;"><span>    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/VirtualHost&gt;</span></span></span></code></pre></div><h2 id="https-設定檔">HTTPS 設定檔</h2>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/VirtualHost&gt;</span></span></span></code></pre></div>
+<h2 id="https-設定檔">HTTPS 設定檔</h2>
 <p>我們可以申請 SSL/TLS 憑證</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -270,12 +274,12 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1724949342" defer></script>
-        <script src="/js/search.js?1724949342" defer></script>
+        <script src="/js/auto-complete.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725033398" defer></script>
+        <script src="/js/search.js?1725033398" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -377,8 +381,8 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1724949342" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724949342" defer></script>
+    <script src="/js/clipboard.min.js?1725033398" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725033398" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -393,28 +397,28 @@ sudo apt-get update # 更新軟體套件 sudo apt install apache2 # 安裝 Apach
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724949342"></script>
-    <script src="/js/d3/d3-color.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1724949342" defer></script>
-    <script src="/js/js-yaml.min.js?1724949342" defer></script>
-    <script src="/js/mermaid.min.js?1724949342" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1725033398"></script>
+    <script src="/js/d3/d3-color.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1725033398" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
+    <script src="/js/mermaid.min.js?1725033398" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1724949342" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724949342" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724949342" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1725033398" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1725033398" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724949342", cssInProject: true, assetsBuster: "?1724949342" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1725033398", cssInProject: true, assetsBuster: "?1725033398" };
     </script>
-    <script src="/js/theme.js?1724949342" defer></script>
+    <script src="/js/theme.js?1725033398" defer></script>
   </body>
 </html>

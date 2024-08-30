@@ -19,7 +19,7 @@
       <link>http://localhost:1313/tech/how-to-install-ipykernel-in-conda-environments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tech/how-to-install-ipykernel-in-conda-environments/index.html</guid>
-      <description>Question What does these commands do?&#xA;conda install -n myenv ipykernel python -m ipykernel install --user --name myenvChatGPT’s answer The commands you’ve provided relate to setting up a Python environment with Conda and configuring a Jupyter Notebook kernel to use this environment. Here’s a detailed breakdown of each command and its function:&#xA;1. conda install -n myenv ipykernel conda: This is the package and environment management system used with Anaconda and Miniconda.</description>
+      <description>Question What does these commands do?&#xA;conda install -n myenv ipykernel python -m ipykernel install --user --name myenv ChatGPT’s answer The commands you’ve provided relate to setting up a Python environment with Conda and configuring a Jupyter Notebook kernel to use this environment. Here’s a detailed breakdown of each command and its function:&#xA;1. conda install -n myenv ipykernel conda: This is the package and environment management system used with Anaconda and Miniconda.</description>
     </item>
   </channel>
 </rss>

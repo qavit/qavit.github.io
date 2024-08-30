@@ -12,7 +12,7 @@
       <link>http://localhost:1313/math-cs/pytorch-quickstart/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/math-cs/pytorch-quickstart/index.html</guid>
-      <description>Delip Rao &amp; Brain McMaham. Natural Language Processing with PyTorch: Build Intelligent Language Applications Using Deep Learning.&#xA;Install pip install torchTensor def describe(x: torch.Tensor) -&gt; None: print(f&#34;Type: {x.type()}&#34;) print(f&#34;Shape: {x.shape}&#34;) print(f&#34;Values:\n{x}\n&#34;) return NoneInitialize a tensor import torch describe(torch.Tensor(2,3))Type: torch.FloatTensor Shape: torch.Size([2, 3]) Values: tensor([[0., 0., 0.], [0., 0., 0.]])Initialize a tensor with random values torch.rand torch.randn normal distribution describe(torch.rand(2,3)) # describe(torch.randn(2,3))Type: torch.FloatTensor Shape: torch.Size([2, 3]) Values: tensor([[0.3788, 0.4874, 0.8994], [0.</description>
+      <description>Delip Rao &amp; Brain McMaham. Natural Language Processing with PyTorch: Build Intelligent Language Applications Using Deep Learning.&#xA;Install pip install torch Tensor def describe(x: torch.Tensor) -&gt; None: print(f&#34;Type: {x.type()}&#34;) print(f&#34;Shape: {x.shape}&#34;) print(f&#34;Values:\n{x}\n&#34;) return None Initialize a tensor import torch describe(torch.Tensor(2,3)) Type: torch.FloatTensor Shape: torch.Size([2, 3]) Values: tensor([[0., 0., 0.], [0., 0., 0.]]) Initialize a tensor with random values torch.rand torch.randn normal distribution describe(torch.rand(2,3)) # describe(torch.randn(2,3)) Type: torch.FloatTensor Shape: torch.Size([2, 3]) Values: tensor([[0.</description>
     </item>
   </channel>
 </rss>

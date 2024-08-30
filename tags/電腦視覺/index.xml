@@ -13,7 +13,7 @@
       <link>http://localhost:1313/nchu-ai/yolo/index.html</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/nchu-ai/yolo/index.html</guid>
-      <description>[^]: [^paper]: [論文] You Only Look Once : Unified, Real-Time Object Detection</description>
+      <description>YOLO：從基礎到最新發展的物件偵測技術 物件偵測技術在近幾年的深度學習領域中有了巨大的發展，而 YOLO（You Only Look Once）系列模型以其高效的即時物件偵測能力，成為了這一領域的重要技術之一。本文將深入介紹 YOLO 的基本原理、技術演進以及如何在實際應用中使用這些模型，特別是最新版本 YOLOv8 的新特性。&#xA;YOLO 的基本概念 YOLO 是一種基於深度學習的物件偵測技術，其最大特色在於其高效性。YOLO 的名稱 “You Only Look Once” 強調了模型在只需一次前向傳播（forward pass）下就能識別出圖像中的所有物體及其位置。這種設計使得 YOLO 特別適合用於對時間延遲非常敏感的應用場景，例如自動駕駛和監控系統等。&#xA;YOLO 透過將輸入圖像劃分為多個網格，每個網格負責偵測其中的物體。通過比對物體的形狀、顏色等特徵，結合深度學習模型預先學習到的知識，YOLO 能夠快速、準確地識別圖像中的物體。&#xA;YOLO 的演進歷史 自 2015 年由 Joseph Redmon 首次提出以來，YOLO 系列模型經歷了多次重大升級和改進：&#xA;YOLO v1（2015）：引入了即時物件檢測的概念，雖然速度快，但在小物件偵測和處理相近物件方面存在一定的局限。 YOLO v2（2016）：改進了小物件的偵測能力，並提升了模型的準確性。 YOLO v3（2018）：引入了多尺度預測架構，進一步平衡了速度和準確性。 YOLO v4（2020）：由台灣學者王健堯及其團隊與俄羅斯學者 Alexey 共同開發，新增了骨幹網絡和特徵提取技術，顯著提升了模型的速度和精確度。 YOLO v5（2020）：雖然並非官方版本，但由商業公司 Ultralytics 基於 PyTorch 框架開發，簡化了模型的架構和部署過程。 YOLO v6（2022）：進一步提升了平均精度（AP）和推理速度，是 YOLO v5 的兩倍快。 YOLO v7（2022）：在性能和速度上取得了顯著突破，成為當時 YOLO 家族中最強大的模型。 YOLOv8（2023）：最新版本的 YOLO 支持在邊緣裝置上運行，適用於影像分類、物件偵測、實例分割、姿勢預測等多種 AI 視覺任務，並引入了無錨檢測等新技術。 這些版本的演進展示了 YOLO 系列模型在提高物件偵測準確性、速度和實用性方面的持續努力。&#xA;YOLOv8 的新特性和應用 YOLOv8 作為 YOLO 系列的最新版本，在技術上進行了多項改進，特別是針對邊緣裝置的應用進行了優化：</description>
     </item>
   </channel>
 </rss>

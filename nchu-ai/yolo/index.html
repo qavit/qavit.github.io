@@ -5,15 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.133.0">
     <meta name="generator" content="Relearn 6.1.1+tip">
-    <meta name="description" content="[^]: [^paper]: [論文] You Only Look Once : Unified, Real-Time Object Detection">
+    <meta name="description" content="YOLO：從基礎到最新發展的物件偵測技術 物件偵測技術在近幾年的深度學習領域中有了巨大的發展，而 YOLO（You Only Look Once）系列模型以其高效的即時物件偵測能力，成為了這一領域的重要技術之一。本文將深入介紹 YOLO 的基本原理、技術演進以及如何在實際應用中使用這些模型，特別是最新版本 YOLOv8 的新特性。
+YOLO 的基本概念 YOLO 是一種基於深度學習的物件偵測技術，其最大特色在於其高效性。YOLO 的名稱 “You Only Look Once” 強調了模型在只需一次前向傳播（forward pass）下就能識別出圖像中的所有物體及其位置。這種設計使得 YOLO 特別適合用於對時間延遲非常敏感的應用場景，例如自動駕駛和監控系統等。
+YOLO 透過將輸入圖像劃分為多個網格，每個網格負責偵測其中的物體。通過比對物體的形狀、顏色等特徵，結合深度學習模型預先學習到的知識，YOLO 能夠快速、準確地識別圖像中的物體。
+YOLO 的演進歷史 自 2015 年由 Joseph Redmon 首次提出以來，YOLO 系列模型經歷了多次重大升級和改進：
+YOLO v1（2015）：引入了即時物件檢測的概念，雖然速度快，但在小物件偵測和處理相近物件方面存在一定的局限。 YOLO v2（2016）：改進了小物件的偵測能力，並提升了模型的準確性。 YOLO v3（2018）：引入了多尺度預測架構，進一步平衡了速度和準確性。 YOLO v4（2020）：由台灣學者王健堯及其團隊與俄羅斯學者 Alexey 共同開發，新增了骨幹網絡和特徵提取技術，顯著提升了模型的速度和精確度。 YOLO v5（2020）：雖然並非官方版本，但由商業公司 Ultralytics 基於 PyTorch 框架開發，簡化了模型的架構和部署過程。 YOLO v6（2022）：進一步提升了平均精度（AP）和推理速度，是 YOLO v5 的兩倍快。 YOLO v7（2022）：在性能和速度上取得了顯著突破，成為當時 YOLO 家族中最強大的模型。 YOLOv8（2023）：最新版本的 YOLO 支持在邊緣裝置上運行，適用於影像分類、物件偵測、實例分割、姿勢預測等多種 AI 視覺任務，並引入了無錨檢測等新技術。 這些版本的演進展示了 YOLO 系列模型在提高物件偵測準確性、速度和實用性方面的持續努力。
+YOLOv8 的新特性和應用 YOLOv8 作為 YOLO 系列的最新版本，在技術上進行了多項改進，特別是針對邊緣裝置的應用進行了優化：">
     <meta name="author" content="Sin-iu Ho">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="http://localhost:1313/images/qavit.png">
     <meta name="twitter:title" content="YOLO 物件偵測模型">
-    <meta name="twitter:description" content="[^]: [^paper]: [論文] You Only Look Once : Unified, Real-Time Object Detection">
+    <meta name="twitter:description" content="YOLO：從基礎到最新發展的物件偵測技術 物件偵測技術在近幾年的深度學習領域中有了巨大的發展，而 YOLO（You Only Look Once）系列模型以其高效的即時物件偵測能力，成為了這一領域的重要技術之一。本文將深入介紹 YOLO 的基本原理、技術演進以及如何在實際應用中使用這些模型，特別是最新版本 YOLOv8 的新特性。
+YOLO 的基本概念 YOLO 是一種基於深度學習的物件偵測技術，其最大特色在於其高效性。YOLO 的名稱 “You Only Look Once” 強調了模型在只需一次前向傳播（forward pass）下就能識別出圖像中的所有物體及其位置。這種設計使得 YOLO 特別適合用於對時間延遲非常敏感的應用場景，例如自動駕駛和監控系統等。
+YOLO 透過將輸入圖像劃分為多個網格，每個網格負責偵測其中的物體。通過比對物體的形狀、顏色等特徵，結合深度學習模型預先學習到的知識，YOLO 能夠快速、準確地識別圖像中的物體。
+YOLO 的演進歷史 自 2015 年由 Joseph Redmon 首次提出以來，YOLO 系列模型經歷了多次重大升級和改進：
+YOLO v1（2015）：引入了即時物件檢測的概念，雖然速度快，但在小物件偵測和處理相近物件方面存在一定的局限。 YOLO v2（2016）：改進了小物件的偵測能力，並提升了模型的準確性。 YOLO v3（2018）：引入了多尺度預測架構，進一步平衡了速度和準確性。 YOLO v4（2020）：由台灣學者王健堯及其團隊與俄羅斯學者 Alexey 共同開發，新增了骨幹網絡和特徵提取技術，顯著提升了模型的速度和精確度。 YOLO v5（2020）：雖然並非官方版本，但由商業公司 Ultralytics 基於 PyTorch 框架開發，簡化了模型的架構和部署過程。 YOLO v6（2022）：進一步提升了平均精度（AP）和推理速度，是 YOLO v5 的兩倍快。 YOLO v7（2022）：在性能和速度上取得了顯著突破，成為當時 YOLO 家族中最強大的模型。 YOLOv8（2023）：最新版本的 YOLO 支持在邊緣裝置上運行，適用於影像分類、物件偵測、實例分割、姿勢預測等多種 AI 視覺任務，並引入了無錨檢測等新技術。 這些版本的演進展示了 YOLO 系列模型在提高物件偵測準確性、速度和實用性方面的持續努力。
+YOLOv8 的新特性和應用 YOLOv8 作為 YOLO 系列的最新版本，在技術上進行了多項改進，特別是針對邊緣裝置的應用進行了優化：">
     <meta property="og:url" content="http://localhost:1313/nchu-ai/yolo/index.html">
     <meta property="og:title" content="YOLO 物件偵測模型">
-    <meta property="og:description" content="[^]: [^paper]: [論文] You Only Look Once : Unified, Real-Time Object Detection">
+    <meta property="og:description" content="YOLO：從基礎到最新發展的物件偵測技術 物件偵測技術在近幾年的深度學習領域中有了巨大的發展，而 YOLO（You Only Look Once）系列模型以其高效的即時物件偵測能力，成為了這一領域的重要技術之一。本文將深入介紹 YOLO 的基本原理、技術演進以及如何在實際應用中使用這些模型，特別是最新版本 YOLOv8 的新特性。
+YOLO 的基本概念 YOLO 是一種基於深度學習的物件偵測技術，其最大特色在於其高效性。YOLO 的名稱 “You Only Look Once” 強調了模型在只需一次前向傳播（forward pass）下就能識別出圖像中的所有物體及其位置。這種設計使得 YOLO 特別適合用於對時間延遲非常敏感的應用場景，例如自動駕駛和監控系統等。
+YOLO 透過將輸入圖像劃分為多個網格，每個網格負責偵測其中的物體。通過比對物體的形狀、顏色等特徵，結合深度學習模型預先學習到的知識，YOLO 能夠快速、準確地識別圖像中的物體。
+YOLO 的演進歷史 自 2015 年由 Joseph Redmon 首次提出以來，YOLO 系列模型經歷了多次重大升級和改進：
+YOLO v1（2015）：引入了即時物件檢測的概念，雖然速度快，但在小物件偵測和處理相近物件方面存在一定的局限。 YOLO v2（2016）：改進了小物件的偵測能力，並提升了模型的準確性。 YOLO v3（2018）：引入了多尺度預測架構，進一步平衡了速度和準確性。 YOLO v4（2020）：由台灣學者王健堯及其團隊與俄羅斯學者 Alexey 共同開發，新增了骨幹網絡和特徵提取技術，顯著提升了模型的速度和精確度。 YOLO v5（2020）：雖然並非官方版本，但由商業公司 Ultralytics 基於 PyTorch 框架開發，簡化了模型的架構和部署過程。 YOLO v6（2022）：進一步提升了平均精度（AP）和推理速度，是 YOLO v5 的兩倍快。 YOLO v7（2022）：在性能和速度上取得了顯著突破，成為當時 YOLO 家族中最強大的模型。 YOLOv8（2023）：最新版本的 YOLO 支持在邊緣裝置上運行，適用於影像分類、物件偵測、實例分割、姿勢預測等多種 AI 視覺任務，並引入了無錨檢測等新技術。 這些版本的演進展示了 YOLO 系列模型在提高物件偵測準確性、速度和實用性方面的持續努力。
+YOLOv8 的新特性和應用 YOLOv8 作為 YOLO 系列的最新版本，在技術上進行了多項改進，特別是針對邊緣裝置的應用進行了優化：">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="興大AI班">
@@ -22,25 +37,30 @@
     <meta property="article:tag" content="電腦視覺">
     <meta property="og:image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="name" content="YOLO 物件偵測模型">
-    <meta itemprop="description" content="[^]: [^paper]: [論文] You Only Look Once : Unified, Real-Time Object Detection">
+    <meta itemprop="description" content="YOLO：從基礎到最新發展的物件偵測技術 物件偵測技術在近幾年的深度學習領域中有了巨大的發展，而 YOLO（You Only Look Once）系列模型以其高效的即時物件偵測能力，成為了這一領域的重要技術之一。本文將深入介紹 YOLO 的基本原理、技術演進以及如何在實際應用中使用這些模型，特別是最新版本 YOLOv8 的新特性。
+YOLO 的基本概念 YOLO 是一種基於深度學習的物件偵測技術，其最大特色在於其高效性。YOLO 的名稱 “You Only Look Once” 強調了模型在只需一次前向傳播（forward pass）下就能識別出圖像中的所有物體及其位置。這種設計使得 YOLO 特別適合用於對時間延遲非常敏感的應用場景，例如自動駕駛和監控系統等。
+YOLO 透過將輸入圖像劃分為多個網格，每個網格負責偵測其中的物體。通過比對物體的形狀、顏色等特徵，結合深度學習模型預先學習到的知識，YOLO 能夠快速、準確地識別圖像中的物體。
+YOLO 的演進歷史 自 2015 年由 Joseph Redmon 首次提出以來，YOLO 系列模型經歷了多次重大升級和改進：
+YOLO v1（2015）：引入了即時物件檢測的概念，雖然速度快，但在小物件偵測和處理相近物件方面存在一定的局限。 YOLO v2（2016）：改進了小物件的偵測能力，並提升了模型的準確性。 YOLO v3（2018）：引入了多尺度預測架構，進一步平衡了速度和準確性。 YOLO v4（2020）：由台灣學者王健堯及其團隊與俄羅斯學者 Alexey 共同開發，新增了骨幹網絡和特徵提取技術，顯著提升了模型的速度和精確度。 YOLO v5（2020）：雖然並非官方版本，但由商業公司 Ultralytics 基於 PyTorch 框架開發，簡化了模型的架構和部署過程。 YOLO v6（2022）：進一步提升了平均精度（AP）和推理速度，是 YOLO v5 的兩倍快。 YOLO v7（2022）：在性能和速度上取得了顯著突破，成為當時 YOLO 家族中最強大的模型。 YOLOv8（2023）：最新版本的 YOLO 支持在邊緣裝置上運行，適用於影像分類、物件偵測、實例分割、姿勢預測等多種 AI 視覺任務，並引入了無錨檢測等新技術。 這些版本的演進展示了 YOLO 系列模型在提高物件偵測準確性、速度和實用性方面的持續努力。
+YOLOv8 的新特性和應用 YOLOv8 作為 YOLO 系列的最新版本，在技術上進行了多項改進，特別是針對邊緣裝置的應用進行了優化：">
     <meta itemprop="datePublished" content="2024-08-29T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-08-29T00:00:00+00:00">
-    <meta itemprop="wordCount" content="12">
+    <meta itemprop="wordCount" content="188">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="電腦視覺">
     <title>YOLO 物件偵測模型</title>
-    <link href="/images/favicon.png?1724949342" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724949342" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724949342" rel="stylesheet">
-    <link href="/css/fonts.css?1724949342" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724949342" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724949342" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1724949342" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1724949342" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724949342" rel="stylesheet">
-    <link href="/css/print.css?1724949342" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1724949342"></script>
+    <link href="/images/favicon.png?1725033398" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725033398" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725033398" rel="stylesheet">
+    <link href="/css/fonts.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725033398" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725033398" rel="stylesheet">
+    <link href="/css/print.css?1725033398" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725033398"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -70,7 +90,16 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper"><nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#yolo從基礎到最新發展的物件偵測技術">YOLO：從基礎到最新發展的物件偵測技術</a></li>
+        <li><a href="#結論">結論</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -112,7 +141,107 @@
 
 <h1 id="yolo-物件偵測模型">YOLO 物件偵測模型</h1>
 
-<p>[^]: [^paper]: <a href="https://hackmd.io/@allen108108/r1-wSTAjS" rel="external" target="_self">[論文] You Only Look Once : Unified, Real-Time Object Detection</a></p>
+<h3 id="yolo從基礎到最新發展的物件偵測技術">YOLO：從基礎到最新發展的物件偵測技術</h3>
+<p>物件偵測技術在近幾年的深度學習領域中有了巨大的發展，而 YOLO（You Only Look Once）系列模型以其高效的即時物件偵測能力，成為了這一領域的重要技術之一。本文將深入介紹 YOLO 的基本原理、技術演進以及如何在實際應用中使用這些模型，特別是最新版本 YOLOv8 的新特性。</p>
+<hr>
+<h4 id="yolo-的基本概念">YOLO 的基本概念</h4>
+<p>YOLO 是一種基於深度學習的物件偵測技術，其最大特色在於其高效性。YOLO 的名稱 &ldquo;You Only Look Once&rdquo; 強調了模型在只需一次前向傳播（forward pass）下就能識別出圖像中的所有物體及其位置。這種設計使得 YOLO 特別適合用於對時間延遲非常敏感的應用場景，例如自動駕駛和監控系統等。</p>
+<p>YOLO 透過將輸入圖像劃分為多個網格，每個網格負責偵測其中的物體。通過比對物體的形狀、顏色等特徵，結合深度學習模型預先學習到的知識，YOLO 能夠快速、準確地識別圖像中的物體。</p>
+<hr>
+<h4 id="yolo-的演進歷史">YOLO 的演進歷史</h4>
+<p>自 2015 年由 Joseph Redmon 首次提出以來，YOLO 系列模型經歷了多次重大升級和改進：</p>
+<ul>
+<li><strong>YOLO v1（2015）</strong>：引入了即時物件檢測的概念，雖然速度快，但在小物件偵測和處理相近物件方面存在一定的局限。</li>
+<li><strong>YOLO v2（2016）</strong>：改進了小物件的偵測能力，並提升了模型的準確性。</li>
+<li><strong>YOLO v3（2018）</strong>：引入了多尺度預測架構，進一步平衡了速度和準確性。</li>
+<li><strong>YOLO v4（2020）</strong>：由台灣學者王健堯及其團隊與俄羅斯學者 Alexey 共同開發，新增了骨幹網絡和特徵提取技術，顯著提升了模型的速度和精確度。</li>
+<li><strong>YOLO v5（2020）</strong>：雖然並非官方版本，但由商業公司 Ultralytics 基於 PyTorch 框架開發，簡化了模型的架構和部署過程。</li>
+<li><strong>YOLO v6（2022）</strong>：進一步提升了平均精度（AP）和推理速度，是 YOLO v5 的兩倍快。</li>
+<li><strong>YOLO v7（2022）</strong>：在性能和速度上取得了顯著突破，成為當時 YOLO 家族中最強大的模型。</li>
+<li><strong>YOLOv8（2023）</strong>：最新版本的 YOLO 支持在邊緣裝置上運行，適用於影像分類、物件偵測、實例分割、姿勢預測等多種 AI 視覺任務，並引入了無錨檢測等新技術。</li>
+</ul>
+<p>這些版本的演進展示了 YOLO 系列模型在提高物件偵測準確性、速度和實用性方面的持續努力。</p>
+<hr>
+<h4 id="yolov8-的新特性和應用">YOLOv8 的新特性和應用</h4>
+<p>YOLOv8 作為 YOLO 系列的最新版本，在技術上進行了多項改進，特別是針對邊緣裝置的應用進行了優化：</p>
+<ul>
+<li><strong>無錨檢測（Anchor Free Detection）</strong>：YOLOv8 不再依賴於傳統的錨點機制，這樣可以減少模型的計算負擔，提高推理速度。</li>
+<li><strong>新的卷積層（New Convolutions）</strong>：引入新的卷積層設計，有助於更好地特徵提取和信息融合。</li>
+<li><strong>關閉馬賽克增強（Closing the Mosaic Augmentation）</strong>：針對某些場景中無效的增強技術進行了關閉處理，以提高訓練效率。</li>
+</ul>
+<p>此外，YOLOv8 還支持多種 AI 視覺任務，這些任務在電腦視覺領域有著不同的應用場景：</p>
+<ol>
+<li><strong>分類（Classification）</strong>：將整張圖片分類為特定類別。</li>
+<li><strong>物件偵測（Object Detection）</strong>：識別圖片中所有物體的位置，並使用邊界框標記。</li>
+<li><strong>實例分割（Instance Segmentation）</strong>：進一步區分圖片中的各個物體，精確到每個像素點。</li>
+</ol>
+<p>這些新特性和改進使得 YOLOv8 能夠在更多樣化的環境中運行，尤其是在 NVIDIA Jetson Orin Nano 等邊緣裝置上表現出色。</p>
+<hr>
+<h4 id="如何使用-yolo-模型進行訓練和推理">如何使用 YOLO 模型進行訓練和推理</h4>
+<p>使用 YOLO 模型進行訓練和推理相對簡單，這得益於其優化的 API 和 PyTorch 框架支持。以下是使用 YOLOv8 進行模型訓練和推理的步驟：</p>
+<ol>
+<li>
+<p><strong>準備資料</strong>：需要按照 YOLO 的要求準備資料，包括設定圖像和標籤的目錄結構以及編寫 YAML 檔案來配置資料集。</p>
+</li>
+<li>
+<p><strong>安裝 YOLO</strong>：可以通過 <code>pip install ultralytics</code> 命令來安裝 YOLO。</p>
+</li>
+<li>
+<p><strong>載入模型</strong>：使用 Python 可以輕鬆地載入預訓練的 YOLOv8 模型：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> ultralytics <span style="color:#f92672">import</span> YOLO  
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> YOLO(<span style="color:#e6db74">&#34;yolov8n.pt&#34;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>模型訓練</strong>：可以選擇使用 Python 或命令列介面（CLI）進行模型訓練：</p>
+<ul>
+<li>
+<p><strong>Python</strong>：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>results <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>train(data<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;data.yaml&#34;</span>, epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>CLI</strong>：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yolo detect train data<span style="color:#f92672">=</span>coco128.yaml model<span style="color:#f92672">=</span>yolov8n.pt epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span> imgsz<span style="color:#f92672">=</span><span style="color:#ae81ff">640</span></span></span></code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>模型預測</strong>：可以使用預訓練的模型進行預測，支持多種輸入格式，如本地圖像或網路圖片連結：</p>
+<ul>
+<li>
+<p><strong>Python</strong>：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>results <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(source<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ultralytics.com/images/bus.jpg&#34;</span>, save<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>CLI</strong>：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yolo detect predict model<span style="color:#f92672">=</span>yolov8n.pt source<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ultralytics.com/images/bus.jpg&#34;</span></span></span></code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>模型導出</strong>：YOLOv8 支持多種格式的模型導出，如 ONNX、OpenVINO、TensorRT 等：</p>
+<ul>
+<li>
+<p><strong>Python</strong>：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>model<span style="color:#f92672">.</span>export(format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;onnx&#34;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>CLI</strong>：</p>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yolo export model<span style="color:#f92672">=</span>yolov8n.pt format<span style="color:#f92672">=</span>onnx</span></span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol>
+<p>這些步驟使得開發者可以靈活地使用 YOLOv8 進行多種 AI 視覺任務。</p>
+<hr>
+<h3 id="結論">結論</h3>
+<p>本文介紹了 YOLO 物件偵測技術的基本原理、歷史演進及其最新版本 YOLOv8 的新特性和應用。YOLO 系列模型以其高效性和即時性，已成為物件偵測領域的重要技術，並且在不斷的版本更新中，進一步提高了速度和精確度。</p>
 
             <footer class="footline">
             </footer>
@@ -188,12 +317,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1724949342" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1724949342" defer></script>
-        <script src="/js/search.js?1724949342" defer></script>
+        <script src="/js/auto-complete.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725033398" defer></script>
+        <script src="/js/search.js?1725033398" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -295,8 +424,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1724949342" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724949342" defer></script>
+    <script src="/js/clipboard.min.js?1725033398" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725033398" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -311,28 +440,28 @@
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724949342"></script>
-    <script src="/js/d3/d3-color.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1724949342" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1724949342" defer></script>
-    <script src="/js/js-yaml.min.js?1724949342" defer></script>
-    <script src="/js/mermaid.min.js?1724949342" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1725033398"></script>
+    <script src="/js/d3/d3-color.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1725033398" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
+    <script src="/js/mermaid.min.js?1725033398" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1724949342" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724949342" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724949342" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1725033398" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1725033398" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724949342", cssInProject: true, assetsBuster: "?1724949342" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1725033398", cssInProject: true, assetsBuster: "?1725033398" };
     </script>
-    <script src="/js/theme.js?1724949342" defer></script>
+    <script src="/js/theme.js?1725033398" defer></script>
   </body>
 </html>

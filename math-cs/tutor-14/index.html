@@ -29,22 +29,22 @@
 10.1 第一類：積分端點在無窮遠 ^10-1 假設對所有 \(t\geq a\)，\(\int^t_a{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^\infty_a{f(x)\dd{x}} = \lim_{t\to\infty}{\int^t_a{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 假設對所有 \(t\leq b\)，\(\int^b_t{f(x)\dd{x}}\) 都存在。 若極限 \(\lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\) 存在，則定義瑕積分 \[\int^b_{-\infty}{f(x)\dd{x}} = \lim_{t\to\infty}{\int^b_t{f(x)\dd{x}}}\]並稱瑕積分收斂。 反之，若該極限不存在，則稱瑕積分發散。 如果對任意 \(a\in\mathbb{R}\) ，瑕積分 \(\int^\infty_a{f(x)\dd{x}}\) 和 \(\int^a_{-\infty}{f(x)\dd{x}}\) 都存在，則定義瑕積分 \[\int^\infty_{-\infty}{f(x)\dd{x}}=\int^{\infty}_a{f(x)\dd{x}}&#43;\int^a_{-\infty}{f(x)\dd{x}}\] 例題 10-1 ^ex10-1 計算 \(\int^\infty_0{x e^x \dd{x}}\)。">
     <meta itemprop="datePublished" content="2024-07-29T00:00:00+00:00">
     <meta itemprop="dateModified" content="2024-07-29T00:00:00+00:00">
-    <meta itemprop="wordCount" content="883">
+    <meta itemprop="wordCount" content="886">
     <meta itemprop="image" content="http://localhost:1313/images/qavit.png">
     <meta itemprop="keywords" content="Tutor,Calculus,Integral">
     <title></title>
-    <link href="/images/favicon.png?1724947537" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1724947537" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1724947537" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1724947537" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1724947537" rel="stylesheet">
-    <link href="/css/fonts.css?1724947537" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1724947537" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1724947537" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1724947537" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/variant.css?1724947537" rel="stylesheet">
-    <link href="/css/print.css?1724947537" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1724947537"></script>
+    <link href="/images/favicon.png?1725033398" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1725033398" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1725033398" rel="stylesheet">
+    <link href="/css/fonts.css?1725033398" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1725033398" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1725033398" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1725033398" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/variant.css?1725033398" rel="stylesheet">
+    <link href="/css/print.css?1725033398" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1725033398"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -232,9 +232,9 @@
 \Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt
 \]<p>其中，\(z\) 是一個複數變數，實部大於零 (\(\Re(z) > 0\))。
 \(\Gamma\) 函數又稱歐拉第二類積分（Euler integral of the second kind）
-<a href="#R-image-38bc8496ad680fc970077f8a57f974f7" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-38bc8496ad680fc970077f8a57f974f7"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg"></a><a href="#R-image-67f05e8bbf92bcb87f19c5750f5420ca" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-67f05e8bbf92bcb87f19c5750f5420ca"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png"></a></p>
+<a href="#R-image-33278c1ddc9041692a23b52891d698a0" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-33278c1ddc9041692a23b52891d698a0"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Gamma_plot.svg"></a><a href="#R-image-389ccf91a0ae25c5093ae2dcb9f4d9a0" class="lightbox-link"><img alt="|450" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-389ccf91a0ae25c5093ae2dcb9f4d9a0"><img alt="|450" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Gamma_abs_3D.png"></a></p>
 <h4 id="1032-性質-10-3-2">10.3.2 性質 ^10-3-2</h4>
 <p>\(\Gamma\) 函數有許多重要的性質和特徵，其中一些包括：</p>
 <ol>
@@ -402,9 +402,9 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
 \[
 \operatorname{B}(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
 \]<h3 id="105-gabriels-horn-10-5">10.5 Gabriel&rsquo;s Horn ^10-5</h3>
-<p><a href="#R-image-04d5be41adf1ab395efde55010ea75fc" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-04d5be41adf1ab395efde55010ea75fc"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png"></a><a href="#R-image-ae672a48031724b046eb469b63acd7bc" class="lightbox-link"><img alt="|500" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae672a48031724b046eb469b63acd7bc"><img alt="|500" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg"></a></p>
+<p><a href="#R-image-1ea9958000ee75075065aa970a58b92e" class="lightbox-link"><img alt="|600" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ea9958000ee75075065aa970a58b92e"><img alt="|600" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/89/GabrielHorn.png"></a><a href="#R-image-e6aec08db2497dd73ecc1f007202dcdf" class="lightbox-link"><img alt="|500" class="border lazy lightbox noshadow figure-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6aec08db2497dd73ecc1f007202dcdf"><img alt="|500" class="border lazy lightbox noshadow lightbox-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/db/GabrielsHorn.svg"></a></p>
 <ul>
 <li>體積
 <ul>
@@ -425,10 +425,17 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
 <h2 id="6-其他積分技巧-3-6">6. 其他積分技巧 (3) ^6</h2>
 <h3 id="64-關於根式分式的其他技巧-6-4">6.4 關於根式、分式的其他技巧 ^6-4</h3>
 <h4 id="641-sqrtnaxb-型根式-6-4-1">6.4.1 \(\sqrt[n]{ax+b}\) 型根式 ^6-4-1</h4>
-<blockquote>
-<p>[!tip]
-被積函數出現 \(\sqrt[n]{ax+b}\) 時，令 \(ax+b= u^n\)。</p>
-</blockquote>
+
+
+
+  <blockquote class="alert alert-tip">
+    <p class="alert-heading">
+      💡
+      Tip
+    </p>
+    <p>被積函數出現 \(\sqrt[n]{ax+b}\) 時，令 \(ax+b= u^n\)。</p>
+
+  </blockquote>
 <h5 id="例題-6-5-ex6-5">例題 6-5 ^ex6-5</h5>
 <p>求 \(\displaystyle \int\frac{\dd{x}}{(x-2)\sqrt{x+2}}\)。</p>
 <p><strong>解.</strong>
@@ -438,10 +445,17 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
 \[\int\frac{2}{u^2-4}\dd{u} = \frac{1}{2}\int\left(\frac{1}{u-2}-\frac{1}{u+2}\right)\dd{u}=\frac{1}{2}\left(\ln{|u-2|}-\ln{|u+2|}\right)+C\]<p>因此 </p>
 \[\int\frac{\dd{x}}{(x-2)\sqrt{x+2}} = \frac{1}{2}\ln\left|\frac{\sqrt{x+2}-2}{\sqrt{x+2}+2}\right|+C\]<p>%% <a href="https://www.youtube.com/watch?v=OnhEFRvYRF4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=3" rel="external" target="_self">https://www.youtube.com/watch?v=OnhEFRvYRF4&list=PLP1Ynr8cs97uFPNReAr5Z4DT9VtvYCX1R&index=3</a>  %%</p>
 <h4 id="642-sqrtx2axb-型根式-6-4-2">6.4.2 \(\sqrt{x^2+ax+b}\) 型根式 ^6-4-2</h4>
-<blockquote>
-<p>[!tip]
-被積函數出現 \(\sqrt{x^2+ax+b}\) 時，令 \(x^2+ax+b = (u-x)^2\)。</p>
-</blockquote>
+
+
+
+  <blockquote class="alert alert-tip">
+    <p class="alert-heading">
+      💡
+      Tip
+    </p>
+    <p>被積函數出現 \(\sqrt{x^2+ax+b}\) 時，令 \(x^2+ax+b = (u-x)^2\)。</p>
+
+  </blockquote>
 <p>另類方法：[[tutor-12#^6-2|§Euler 代換]]</p>
 <h5 id="例題-6-6-ex6-6">例題 6-6 ^ex6-6</h5>
 <p>求 \(\displaystyle \int\frac{\dd{x}}{x\sqrt{x^2+x+2}}\)。</p>
@@ -454,13 +468,20 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
 於是 </p>
 \[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)(u-x)}=\int\frac{\frac{2u^2+2u+4}{(1+2u)^2}\dd{u}}{\left(\frac{u^2-2}{1+2u}\right)\left(\frac{u^2+u+4}{1+2u}\right)}=\int\frac{2}{u^2-2}\dd{u}\]<p>然後 </p>
 \[\int\frac{2}{u^2-2}\dd{u} = \frac{1}{\sqrt{2}}\int\left(\frac{1}{u-\sqrt{2}}-\frac{1}{u+\sqrt{2}}\right)\dd{u} = \frac{1}{\sqrt{2}} \ln{\left|\frac{u-\sqrt{2}}{u+\sqrt{2}}\right|} +C\]<p>因此 </p>
-\[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}} = \frac{1}{\sqrt{2}}\ln\left|\frac{x+\sqrt{x^2+x+2}-\sqrt{2}}{x+\sqrt{x^2+x+2}+\sqrt{2}}\right|+C\]<blockquote>
-<p>[!NOTE]</p>
-<ol>
+\[\int\frac{\dd{x}}{x\sqrt{x^2+x+2}} = \frac{1}{\sqrt{2}}\ln\left|\frac{x+\sqrt{x^2+x+2}-\sqrt{2}}{x+\sqrt{x^2+x+2}+\sqrt{2}}\right|+C\]
+
+
+  <blockquote class="alert alert-note">
+    <p class="alert-heading">
+      ℹ️
+      Note
+    </p>
+    <p><ol>
 <li>\(\displaystyle \int\frac{1}{x^2+1}\dd{x} = \arctan{x} + C\)</li>
 <li>\(\displaystyle \int\frac{x}{x^2+1}\dd{x} = \frac{1}{2}\ln{\left(x^2+1\right)} + C\)</li>
 </ol>
-</blockquote>
+
+  </blockquote>
 <h4 id="643-配方法-6-4-3">6.4.3 配方法 ^6-4-3</h4>
 <p>當被積函數出現 \(x^2+2ax+b\) （特別是出現在分式的分母時），做配方法（completing the square），得到 \((x+a)^2+b'\)，其中 \(b' = b-a^2\)；然後令 \(u = x + a\)。</p>
 <h5 id="例題-6-7-ex6-7">例題 6-7 ^ex6-7</h5>
@@ -553,12 +574,12 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1724947537" defer></script>
-        <script src="/js/lunr/lunr.min.js?1724947537" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1724947537" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1724947537" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1724947537" defer></script>
-        <script src="/js/search.js?1724947537" defer></script>
+        <script src="/js/auto-complete.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1725033398" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1725033398" defer></script>
+        <script src="/js/search.js?1725033398" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -582,8 +603,7 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
           <li data-nav-id="/tech/how-to-add-new-line-to-yaml-file/index.html" class=""><a class="padding" href="/tech/how-to-add-new-line-to-yaml-file/index.html">How to add new line to YAML file<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/how-to-install-ipykernel-in-conda-environments/index.html" class=""><a class="padding" href="/tech/how-to-install-ipykernel-in-conda-environments/index.html">How to install ipykernel in conda environments<i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/tech/conda-cheatsheet/index.html" class=""><a class="padding" href="/tech/conda-cheatsheet/index.html">My Conda cheatsheet<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/tech/conda/conda/index.html" class=""><a class="padding" href="/tech/conda/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          <li data-nav-id="/tech/conda/index.html" class=""><a class="padding" href="/tech/conda/index.html">用 Conda 管理虛擬環境<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/math-cs/index.html" class="parent "><input type="checkbox" id="R-section-69e54e561b3fc149f153825085824c45" aria-controls="R-subsections-69e54e561b3fc149f153825085824c45" checked><label for="R-section-69e54e561b3fc149f153825085824c45"><i class="fa-fw fas fa-chevron-down"></i><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math &amp; CS</span></label><a class="padding" href="/math-cs/index.html">Math &amp; CS<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-69e54e561b3fc149f153825085824c45" class="morespace collapsible-menu">
           <li data-nav-id="/math-cs/tutor-14/index.html" class="active"><a class="padding" href="/math-cs/tutor-14/index.html"><i class="fa-fw fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/math-cs/function-on-r/index.html" class=""><a class="padding" href="/math-cs/function-on-r/index.html">\(\mathbb{R}\) 上的函數<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -662,8 +682,8 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1724947537" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1724947537" defer></script>
+    <script src="/js/clipboard.min.js?1725033398" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1725033398" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -678,28 +698,28 @@ J = \begin{vmatrix}\pdv{u}{s} & \pdv{u}{t} \\ \pdv{v}{s} & \pdv{v}{t}\end{vmatri
       }
       useMathJax( JSON.parse("{loader: {load: ['[tex]/physics']}, tex: {packages: {'[+]': ['physics']}}}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1724947537"></script>
-    <script src="/js/d3/d3-color.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1724947537" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1724947537" defer></script>
-    <script src="/js/js-yaml.min.js?1724947537" defer></script>
-    <script src="/js/mermaid.min.js?1724947537" defer></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1725033398"></script>
+    <script src="/js/d3/d3-color.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1725033398" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1725033398" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
+    <script src="/js/mermaid.min.js?1725033398" defer></script>
     <script>
       window.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/js/js-yaml.min.js?1724947537" defer></script>
+    <script src="/js/js-yaml.min.js?1725033398" defer></script>
     <script>window.noZensmooth = true;</script>
-    <script src="/js/swagger-ui/swagger-ui-bundle.js?1724947537" defer></script>
-    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1724947537" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-bundle.js?1725033398" defer></script>
+    <script src="/js/swagger-ui/swagger-ui-standalone-preset.js?1725033398" defer></script>
     <script>
-      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1724947537", cssInProject: true, assetsBuster: "?1724947537" };
+      window.themeUseOpenapi = { css: "/js/swagger-ui/swagger-ui.css?1725033398", cssInProject: true, assetsBuster: "?1725033398" };
     </script>
-    <script src="/js/theme.js?1724947537" defer></script>
+    <script src="/js/theme.js?1725033398" defer></script>
   </body>
 </html>
