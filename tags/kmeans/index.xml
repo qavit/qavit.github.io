@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kmeans :: Tag</title>
+    <link>http://localhost:1313/tags/kmeans/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kmeans/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kmeans demo</title>
+      <link>http://localhost:1313/nchu-ai/kmeans-app/index.html</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/kmeans-app/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

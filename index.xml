@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qavit&#39;s Notebook</title>
+    <title>Qavit&#39;s GitHub Pages</title>
     <link>http://localhost:1313/index.html</link>
-    <description>This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。&#xA;Che sī góa ê phō͘-á-chóa.&#xA;Get Hugo </description>
+    <description>我是何信佑（Hô Sìn-iū），有一个天文物理碩士學位，這陣當 leh 學新技能，向望成做一位 AI 工程師 kah Web App ê 開發者。&#xA;Qavit 是我 ê GitHub 名稱，是巒群武崙語（Takbanuaz Bunun）內底「百步蛇」的意思。因為我主要是使用 Python 生態系的家私，所以就揀一種「蛇」ê 名，上好是會當結合台灣 ê 生態 a̍h 是傳統文化。&#xA;架站紀要 Che是我 2024 年 8 月用 Hugo 框架建立ê blog。 Chia ê 文章亂操操，m̄-kò 我猶未打算來處理，因為我當 leh 建立一套有效率 ê 工作流。 Go get Hugo!&#xA;我最近（9月初）又閣用 Hexo 框架建立一個 blog，叫做 Ludun（https://qavit.github.io/ludun）。我拍算 kā 大部分 ê 文章搬徙–過去，換掉 Hugo chit-pêng ê theme，kā 伊當做入口。&#xA;我閣有一个拋荒真久 ê HackMD 筆記，主要是我 2020 年左右讀量子物理 ê 筆記。</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2024 12:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multilingual test</title>
+      <link>http://localhost:1313/multilingual/index.html</link>
+      <pubDate>Tue, 03 Sep 2024 12:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/multilingual/index.html</guid>
+      <description>Che sī góa ê phō͘-á-chóa.&#xA;This is my notebook.&#xA;Este es mi cuaderno.&#xA;Este é meu caderno.&#xA;Ceci est mon carnet.&#xA;Das ist mein Notizbuch.&#xA;To jest mój notatnik.&#xA;Αυτό είναι το σημειωματάριό μου.&#xA;Это мой блокнот.&#xA;यह मेरी नोटबुक है.&#xA;هذا هو دفتر ملاحظاتي.&#xA;འདི་ངའི་འབྲི་དེབ་ཡིན།&#xA;這是我的筆記本。&#xA;呢個係我嘅筆記本。&#xA;이것은 제 노트북입니다.&#xA;Ini buku nota saya.&#xA;これは私のノートです。</description>
+    </item>
     <item>
       <title>興大AI班</title>
       <link>http://localhost:1313/nchu-ai/index.html</link>

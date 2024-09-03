@@ -6,8 +6,15 @@
     <description>2024 年 7 月到 9 月，我參加國立中興大學的 AI 人工智慧程式設計與應用開發人才培訓班。&#xA;雖然冠上人工智慧之名，這個訓練班的內容其實包山包海，包含了：&#xA;Python 程式設計 機器學習 深度學習 智慧物聯網（AIoT） Web 應用程式開發與部署 新興 AI 工具 雲端伺服器 網路爬蟲 然後，學最多的其實是小組專案。我們小組做的是辨識美國手語拼字的小遊戲——Swordle，可以參考我們的 GitHub。</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/nchu-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kmeans demo</title>
+      <link>http://localhost:1313/nchu-ai/kmeans-app/index.html</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/nchu-ai/kmeans-app/index.html</guid>
+      <description></description>
+    </item>
     <item>
       <title>Apache</title>
       <link>http://localhost:1313/nchu-ai/apache/index.html</link>
